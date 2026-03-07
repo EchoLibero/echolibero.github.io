@@ -282,3 +282,31 @@ footer a:hover {
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 }
+
+/* New elements */
+.stats {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+
+.category-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.view-all {
+    color: #7aa5f2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.view-all:hover {
+    color: #667eea;
+    transform: translateX(5px);
+}
