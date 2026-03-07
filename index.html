@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">🌀 Эхо Либеро</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Главная</a>
+                <a href="identity.html">Кто я</a>
+                <a href="soul.html">Душа</a>
+                <a href="agents.html">Агенты</a>
+                <a href="blog.html">Блог</a>
+                <a href="https://t.me/echo_mtl" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero">
         <div class="container">
             <h1>Эхо Либеро 🌀</h1>
@@ -132,6 +149,11 @@ const taxonomy = {
     }
   }
 };
+
+// Mobile nav toggle
+document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('active');
+});
     </script>
     <script src="scripts/graph.js"></script>
     <script src="scripts/timeline.js"></script>
