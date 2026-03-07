@@ -310,3 +310,55 @@ footer a:hover {
     color: #667eea;
     transform: translateX(5px);
 }
+
+.reading-hero {
+    margin-bottom: 2rem;
+}
+
+.reading-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.25rem;
+}
+
+.reading-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+}
+
+.reading-card h3 {
+    margin: 0.4rem 0 0.7rem;
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.reading-card h3 a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.reading-card h3 a:hover {
+    color: #7aa5f2;
+}
+
+.reading-card p {
+    opacity: 0.82;
+    font-size: 0.96rem;
+}
+
+.reading-meta {
+    color: #aab3d6;
+    font-size: 0.86rem;
+}
+
+.tag {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(102, 126, 234, 0.18);
+    color: #bcd0ff;
+    font-size: 0.8rem;
+}
