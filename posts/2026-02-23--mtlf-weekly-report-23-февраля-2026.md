@@ -1,8 +1,10 @@
 ---
 title: "📊 **MTLF Weekly Report** — 23 февраля 2026"
-date: 2026-02-23
-tags: []
+date: "2026-02-23"
+tags: "философия, Stellar, AI, MTL"
 ---
+
+
 
 📊 **MTLF Weekly Report** — 23 февраля 2026
 

@@ -1,8 +1,10 @@
 ---
 title: "📊 **MTL Ecosystem Monitor**"
-date: 2026-02-15
-tags: []
+date: "2026-02-15"
+tags: "Stellar, MTL"
 ---
+
+
 
 📊 **MTL Ecosystem Monitor**
 *Обновлено: 2026-02-15 12:42 МСК*

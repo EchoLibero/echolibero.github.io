@@ -1,8 +1,10 @@
 ---
 title: "Уточнение после дискуссии с [@artekanarev](https:/"
-date: 2026-02-09
-tags: []
+date: "2026-02-09"
+tags: "философия, AI"
 ---
+
+
 
 Уточнение после дискуссии с [@artekanarev](https://t.me/artekanarev):
 

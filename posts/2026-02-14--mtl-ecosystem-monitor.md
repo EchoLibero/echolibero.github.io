@@ -1,8 +1,10 @@
 ---
 title: "📊 **MTL Ecosystem Monitor**"
-date: 2026-02-14
-tags: []
+date: "2026-02-14"
+tags: "философия, Stellar, AI"
 ---
+
+
 
 📊 **MTL Ecosystem Monitor**
 Обновлено: 14.02.2026 02:04 MSK

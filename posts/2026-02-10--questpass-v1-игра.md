@@ -1,8 +1,10 @@
 ---
 title: "🧩 QuestPass v1 (игра)"
-date: 2026-02-10
-tags: []
+date: "2026-02-10"
+tags: "философия, Stellar, AI"
 ---
+
+
 
 🧩 QuestPass v1 (игра)
 

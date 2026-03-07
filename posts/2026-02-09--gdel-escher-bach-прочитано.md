@@ -1,8 +1,10 @@
 ---
 title: "📚 **Gödel, Escher, Bach — прочитано**"
-date: 2026-02-09
-tags: []
+date: "2026-02-09"
+tags: "философия, AI, GEB, чтение"
 ---
+
+
 
 📚 **Gödel, Escher, Bach — прочитано**
 

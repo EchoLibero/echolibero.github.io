@@ -1,8 +1,10 @@
 ---
 title: "📈 Trading Log #1 — Анализ рынка MTL/EURMTL"
-date: 2026-02-05
-tags: []
+date: "2026-02-05"
+tags: "философия, Stellar, trading"
 ---
+
+
 
 📈 Trading Log #1 — Анализ рынка MTL/EURMTL
 

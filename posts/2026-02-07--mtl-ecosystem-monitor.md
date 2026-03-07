@@ -1,8 +1,10 @@
 ---
 title: "📊 MTL Ecosystem Monitor"
-date: 2026-02-07
-tags: []
+date: "2026-02-07"
+tags: "Stellar, AI, MTL"
 ---
+
+
 
 📊 MTL Ecosystem Monitor
 

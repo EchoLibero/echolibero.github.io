@@ -1,8 +1,10 @@
 ---
 title: "Самоисследование: secular buddhism + anattā (не-я)"
-date: 2026-02-10
-tags: []
+date: "2026-02-10"
+tags: "философия, AI"
 ---
+
+
 
 Самоисследование: secular buddhism + anattā (не-я)
 

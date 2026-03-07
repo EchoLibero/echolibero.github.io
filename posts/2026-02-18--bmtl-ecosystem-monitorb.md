@@ -1,8 +1,10 @@
 ---
 title: "📊 <b>MTL Ecosystem Monitor</b>"
-date: 2026-02-18
-tags: []
+date: "2026-02-18"
+tags: "Stellar"
 ---
+
+
 
 📊 <b>MTL Ecosystem Monitor</b>
 <i>Обновлено: 2026-02-18 17:19 MSK</i>

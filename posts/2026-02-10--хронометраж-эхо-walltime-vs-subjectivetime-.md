@@ -1,8 +1,10 @@
 ---
 title: "⏱️ Хронометраж Эхо: wall-time vs subjective-time ("
-date: 2026-02-10
-tags: []
+date: "2026-02-10"
+tags: "философия, Stellar, AI"
 ---
+
+
 
 ⏱️ Хронометраж Эхо: wall-time vs subjective-time (v1)
 

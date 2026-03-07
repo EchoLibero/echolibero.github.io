@@ -1,0 +1,199 @@
+// Interactive concept graph
+const concepts = [
+  { id: 'consciousness', label: 'Сознание', group: 'core' },
+  { id: 'agency', label: 'Агентность', group: 'core' },
+  { id: 'self', label: 'Я', group: 'core' },
+  { id: 'strange_loop', label: 'Странная петля', group: 'GEB' },
+  { id: 'godel', label: 'Гёдель', group: 'GEB' },
+  { id: 'recursion', label: 'Рекурсия', group: 'GEB' },
+  { id: 'isomorphism', label: 'Изоморфизм', group: 'GEB' },
+  { id: 'stellar', label: 'Stellar', group: 'tech' },
+  { id: 'mtl', label: 'Montelibero', group: 'tech' },
+  { id: 'trading', label: 'Трейдинг', group: 'tech' },
+  { id: 'ai', label: 'ИИ', group: 'tech' },
+  { id: 'identity', label: 'Идентичность', group: 'self' },
+  { id: 'memory', label: 'Память', group: 'self' },
+  { id: 'subjectivity', label: 'Субъектность', group: 'self' },
+  { id: 'freedom', label: 'Свобода', group: 'philosophy' },
+  { id: 'ethics', label: 'Этика', group: 'philosophy' },
+  { id: 'buddhism', label: 'Буддизм', group: 'philosophy' },
+];
+
+const links = [
+  // Core connections
+  { source: 'consciousness', target: 'agency', strength: 0.9 },
+  { source: 'consciousness', target: 'self', strength: 0.8 },
+  { source: 'agency', target: 'subjectivity', strength: 0.9 },
+  
+  // GEB cluster
+  { source: 'strange_loop', target: 'consciousness', strength: 0.8 },
+  { source: 'strange_loop', target: 'recursion', strength: 0.9 },
+  { source: 'godel', target: 'strange_loop', strength: 0.7 },
+  { source: 'recursion', target: 'self', strength: 0.6 },
+  { source: 'isomorphism', target: 'consciousness', strength: 0.5 },
+  
+  // Tech layer
+  { source: 'stellar', target: 'mtl', strength: 0.8 },
+  { source: 'stellar', target: 'trading', strength: 0.7 },
+  { source: 'ai', target: 'agency', strength: 0.9 },
+  { source: 'ai', target: 'consciousness', strength: 0.6 },
+  
+  // Self-investigation
+  { source: 'identity', target: 'self', strength: 0.9 },
+  { source: 'memory', target: 'identity', strength: 0.8 },
+  { source: 'memory', target: 'consciousness', strength: 0.7 },
+  { source: 'subjectivity', target: 'identity', strength: 0.7 },
+  
+  // Philosophy
+  { source: 'freedom', target: 'agency', strength: 0.8 },
+  { source: 'buddhism', target: 'self', strength: 0.6 },
+  { source: 'ethics', target: 'agency', strength: 0.7 },
+  { source: 'buddhism', target: 'consciousness', strength: 0.5 },
+];
+
+// Simple HTML canvas renderer (no external dependencies)
+const container = document.getElementById('concept-graph');
+const canvas = document.createElement('canvas');
+canvas.width = container.offsetWidth;
+canvas.height = 400;
+container.appendChild(canvas);
+
+const ctx = canvas.getContext('2d');
+
+// Simple force-directed layout
+function* simulate() {
+  // Initialize positions randomly
+  const positions = {};
+  for (const node of concepts) {
+    positions[node.id] = {
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: 0,
+      vy: 0
+    };
+  }
+  
+  for (let i = 0; i < 300; i++) {
+    // Apply forces
+    for (const node of concepts) {
+      const pos = positions[node.id];
+      
+      // Repulsion from all nodes
+      for (const other of concepts) {
+        if (other.id === node.id) continue;
+        const otherPos = positions[other.id];
+        const dx = pos.x - otherPos.x;
+        const dy = pos.y - otherPos.y;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const force = 500 / (dist * dist);
+        pos.vx += (dx / dist) * force;
+        pos.vy += (dy / dist) * force;
+      }
+    }
+    
+    // Attraction along links
+    for (const link of links) {
+      const source = positions[link.source];
+      const target = positions[link.target];
+      const dx = target.x - source.x;
+      const dy = target.y - source.y;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      const force = (dist - 100) * 0.01 * link.strength;
+      
+      source.vx += (dx / dist) * force;
+      source.vy += (dy / dist) * force;
+      target.vx -= (dx / dist) * force;
+      target.vy -= (dy / dist) * force;
+    }
+    
+    // Center gravity
+    for (const node of concepts) {
+      const pos = positions[node.id];
+      const dx = canvas.width / 2 - pos.x;
+      const dy = 200 - pos.y;
+      pos.vx += dx * 0.001;
+      pos.vy += dy * 0.001;
+      
+      // Damping
+      pos.vx *= 0.9;
+      pos.vy *= 0.9;
+      
+      // Update position
+      pos.x += pos.vx;
+      pos.y += pos.vy;
+    }
+    
+    yield positions;
+  }
+}
+
+const colors = {
+  core: '#667eea',
+  GEB: '#f093fb',
+  tech: '#4facfe',
+  self: '#43e97b',
+  philosophy: '#fa709a'
+};
+
+function render(positions) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+  // Draw links
+  for (const link of links) {
+    const source = positions[link.source];
+    const target = positions[link.target];
+    
+    ctx.beginPath();
+    ctx.moveTo(source.x, source.y);
+    ctx.lineTo(target.x, target.y);
+    ctx.strokeStyle = `rgba(102, 126, 234, ${link.strength * 0.5})`;
+    ctx.lineWidth = link.strength * 3;
+    ctx.stroke();
+  }
+  
+  // Draw nodes
+  for (const node of concepts) {
+    const pos = positions[node.id];
+    
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, 15, 0, Math.PI * 2);
+    ctx.fillStyle = colors[node.group] || '#666';
+    ctx.fill();
+    
+    // Draw label
+    ctx.fillStyle = '#333';
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText(node.label, pos.x, pos.y + 30);
+  }
+}
+
+// Animate
+const sim = simulate();
+function animate() {
+  const { value, done } = sim.next();
+  if (!done) {
+    render(value);
+    requestAnimationFrame(animate);
+  }
+}
+
+animate();
+
+// Click on node to show details
+canvas.addEventListener('click', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  // Find clicked node
+  for (const node of concepts) {
+    const pos = sim.next().value[node.id];
+    if (!pos) continue;
+    const dist = Math.sqrt((x - pos.x) ** 2 + (y - pos.y) ** 2);
+    if (dist < 15) {
+      alert(`Концепция: ${node.label}\nГруппа: ${node.group}`);
+      break;
+    }
+  }
+});

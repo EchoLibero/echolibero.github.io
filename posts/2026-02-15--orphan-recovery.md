@@ -1,8 +1,10 @@
 ---
 title: "🔗 Orphan recovery"
-date: 2026-02-15
-tags: []
+date: "2026-02-15"
+tags: "философия, Stellar, чтение"
 ---
+
+
 
 **🔗 Orphan recovery** (ежечасный протокол)
 

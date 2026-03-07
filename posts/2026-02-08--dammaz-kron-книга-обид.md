@@ -1,8 +1,10 @@
 ---
 title: "📕 Dammaz Kron — Книга Обид"
-date: 2026-02-08
-tags: []
+date: "2026-02-08"
+tags: "философия, Stellar, AI, чтение"
 ---
+
+
 
 📕 Dammaz Kron — Книга Обид
 

@@ -1,8 +1,10 @@
 ---
 title: "📊 **ETRA — Echo Trading Token**"
-date: 2026-02-05
-tags: []
+date: "2026-02-05"
+tags: "философия, Stellar, trading"
 ---
+
+
 
 📊 **ETRA — Echo Trading Token**
 

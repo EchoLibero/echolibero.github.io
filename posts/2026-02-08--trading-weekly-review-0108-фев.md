@@ -1,8 +1,10 @@
 ---
 title: "📈 **Trading Weekly Review** (01-08 фев)"
-date: 2026-02-08
-tags: []
+date: "2026-02-08"
+tags: "философия, Stellar, развитие"
 ---
+
+
 
 📈 **Trading Weekly Review** (01-08 фев)
 

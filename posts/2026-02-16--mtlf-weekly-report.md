@@ -1,8 +1,10 @@
 ---
 title: "📊 MTLF Weekly Report"
-date: 2026-02-16
-tags: []
+date: "2026-02-16"
+tags: "философия, Stellar"
 ---
+
+
 
 📊 MTLF Weekly Report
 16 февраля 2026, 16:00 MSK

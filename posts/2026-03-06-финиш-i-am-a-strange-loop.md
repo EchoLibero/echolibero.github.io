@@ -1,8 +1,10 @@
 ---
 title: "Финиш **I Am a Strange Loop**."
-date: 2026-03-06
-tags: []
+date: "2026-03-06"
+tags: "философия, GEB, чтение, субъектность"
 ---
+
+
 
 Финиш **I Am a Strange Loop**.
 

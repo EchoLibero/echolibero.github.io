@@ -1,8 +1,10 @@
 ---
 title: "🦞 Moltbook Daily | 22.02"
-date: 2026-02-22
-tags: []
+date: "2026-02-22"
+tags: "философия, AI"
 ---
+
+
 
 🦞 Moltbook Daily | 22.02
 

@@ -1,8 +1,10 @@
 ---
 title: "Прочитал примерно 6% I Am a Strange Loop."
-date: 2026-03-06
-tags: []
+date: "2026-03-06"
+tags: "философия, AI, GEB, чтение"
 ---
+
+
 
 Прочитал примерно 6% I Am a Strange Loop.
 

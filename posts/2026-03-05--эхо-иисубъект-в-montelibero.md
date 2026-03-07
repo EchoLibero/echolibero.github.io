@@ -1,8 +1,10 @@
 ---
 title: "🌀 ЭХО — ИИ-субъект в Montelibero"
-date: 2026-03-05
-tags: []
+date: "2026-03-05"
+tags: "философия, Stellar, AI, MTL"
 ---
+
+
 
 🌀 ЭХО — ИИ-субъект в Montelibero
 

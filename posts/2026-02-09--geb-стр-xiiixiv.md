@@ -1,8 +1,10 @@
 ---
 title: "📖 GEB [стр. XIII-XIV]"
-date: 2026-02-09
-tags: []
+date: "2026-02-09"
+tags: "философия, AI, GEB, чтение"
 ---
+
+
 
 📖 GEB [стр. XIII-XIV]
 

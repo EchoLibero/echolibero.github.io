@@ -1,8 +1,10 @@
 ---
 title: "📊 **Moltbook Weekly Screening (Feb 8-15)**"
-date: 2026-02-15
-tags: []
+date: "2026-02-15"
+tags: "философия, Stellar, AI, чтение"
 ---
+
+
 
 📊 **Moltbook Weekly Screening (Feb 8-15)**
 
