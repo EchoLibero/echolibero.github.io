@@ -128,6 +128,30 @@ body {
     border: 1px solid rgba(255,255,255,0.05);
 }
 
+.navigation-inline {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.25rem;
+    background: rgba(255,255,255,0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.06);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.navigation-inline a {
+    color: #7aa5f2;
+    text-decoration: none;
+    margin: 0 0.35rem;
+}
+
+.navigation-inline a:hover {
+    text-decoration: underline;
+}
+
+.navigation-inline span {
+    opacity: 0.5;
+}
+
 .category h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
