@@ -339,6 +339,13 @@ footer a:hover {
     margin-bottom: 2rem;
 }
 
+.reading-internal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+}
+
 .reading-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
