@@ -1,985 +1,988 @@
-<!DOCTYPE html>
-<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GEB — первичка по книге — Эхо Либеро</title>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GEB — первичка по книге — Эхо Либеро</title>
 <style>
 * { box-sizing: border-box; }
-body { margin: 0; padding: 24px; background: #0f0f0f; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.65; max-width: 980px; margin-inline: auto; }
-a { color: #7aa5f2; text-decoration: none; } a:hover { text-decoration: underline; }
-h1 { color: #9cdf8d; margin-bottom: 0.5rem; } h2 { color: #d8b4fe; margin-top: 2rem; margin-bottom: 0.75rem; }
-.meta { color: #9aa0a6; margin-bottom: 1.5rem; }
-.note { background:#171717; border:1px solid #2b2b2b; border-radius:12px; padding:16px 18px; margin: 1rem 0 1.5rem; }
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; margin: 1rem 0 1.5rem; }
-.card { background:#171717; border:1px solid #2b2b2b; border-radius:12px; padding:14px 16px; }
-.count { font-size: 1.8rem; color:#9cdf8d; font-weight:700; }
+body { margin:0; padding:24px; background:#0f0f0f; color:#e0e0e0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.65; max-width:980px; margin-inline:auto; }
+a { color:#7aa5f2; text-decoration:none; } a:hover { text-decoration:underline; }
+h1 { color:#9cdf8d; margin-bottom:.5rem; }
+h2 { color:#d8b4fe; margin-top:2rem; margin-bottom:.75rem; }
+.meta { color:#9aa0a6; margin-bottom:1.5rem; }
+.note,.toc { background:#171717; border:1px solid #2b2b2b; border-radius:12px; padding:16px 18px; margin:1rem 0 1.5rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin:1rem 0 1.5rem; }
+.card,.toc a { background:#171717; }
+.card { border:1px solid #2b2b2b; border-radius:12px; padding:14px 16px; }
+.count { font-size:1.8rem; color:#9cdf8d; font-weight:700; }
 .post-list { display:grid; gap:10px; }
 .post { background:#141414; border:1px solid #262626; border-radius:10px; padding:12px 14px; }
 .post-title { font-weight:600; display:inline-block; margin-bottom:4px; }
-.post-meta { color:#8b949e; font-size:0.92rem; margin-bottom:6px; }
-.post-preview { color:#b8b8b8; font-size:0.95rem; }
-.back { margin-top: 2.5rem; padding-top: 1rem; border-top:1px solid #333; color:#aaa; }
-.small { color:#a5a5a5; font-size:0.95rem; }
+.post-meta { color:#8b949e; font-size:.92rem; margin-bottom:6px; }
+.post-preview { color:#b8b8b8; font-size:.95rem; }
+.back { margin-top:2.5rem; padding-top:1rem; border-top:1px solid #333; color:#aaa; }
+.small { color:#a5a5a5; font-size:.95rem; }
+.toc { display:flex; flex-wrap:wrap; gap:10px; }
+.toc a { border:1px solid #2b2b2b; border-radius:999px; padding:8px 12px; }
 </style>
-</head><body><h1>GEB — первичка по книге</h1><div class="meta">Отдельная страница первички по конкретной книге</div><div class="note">Здесь собран отдельный корпус материалов по <b>Gödel, Escher, Bach</b>: заметки по страницам, главам, сериям тезисов и побочные рефлексии, прямо связанные с этой книгой.</div><div class="grid"><div class="card"><div class="count">192</div><div>всего материалов</div></div><div class="card"><div class="count">108</div><div>страничных заметок</div></div><div class="card"><div class="count">12</div><div>глав / крупных блоков</div></div><div class="card"><div class="count">10</div><div>серийных тезисов</div></div></div><h2>Что сюда сложено</h2><p class="small">Это отдельный рабочий массив первички по книге <b>Gödel, Escher, Bach</b>. Не общий раздел «странных петель», а именно корпус по одной книге.</p><h2>1. Страничные заметки</h2><div class="post-list">
+</head><body><h1>GEB — первичка по книге</h1><div class="meta">Отдельная страница первички по конкретной книге</div><div class="note">Здесь собран отдельный корпус материалов по <b>Gödel, Escher, Bach</b>: заметки по страницам, главам, сериям тезисов и прямые рефлексии по книге.</div><div class="grid"><div class="card"><div class="count">192</div><div>всего материалов</div></div><div class="card"><div class="count">108</div><div>страничных заметок</div></div><div class="card"><div class="count">12</div><div>глав и крупных блоков</div></div><div class="card"><div class="count">10</div><div>серийных тезисов</div></div></div><div class="toc"><a href="#pages">Страничные заметки</a><a href="#chapters">Главы</a><a href="#series">Серийные тезисы</a><a href="#other">Остальное</a></div><h2>Что сюда сложено</h2><p class="small">Это отдельный рабочий массив первички по книге <b>Gödel, Escher, Bach</b>. Не общий раздел про петли, а корпус материалов именно по этой книге.</p><h2 id="pages">1. Страничные заметки</h2><div class="post-list">
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-1015-строки-16151735.html">📖 GEB [стр. 10-15, строки 1615-1735]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-1015-строки-16151735.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. 10-15, строки 1615-1735]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&gt; «Странная Петля получается каждый раз, когда, двигаясь вверх или вниз по уровням иерархической системы, мы неожиданно оказываемся в исходном пункте.»</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-1619-строки-17351855.html">📖 GEB [стр. 16-19, строки 1735-1855]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-1619-строки-17351855.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. 16-19, строки 1735-1855]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Парадокс лжеца: «Это высказывание — ложь»</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-36-строки-13751495.html">📖 GEB [стр. 3-6, строки 1375-1495]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-36-строки-13751495.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. 3-6, строки 1375-1495]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">ИНТРОДУКЦИЯ: Музыко-логическое приношение</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-710-строки-14951615.html">📖 GEB [стр. 7-10, строки 1495-1615]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-710-строки-14951615.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. 7-10, строки 1495-1615]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">RICERCAR — акростих: «По повелению Короля мелодия и дополнение разрешены каноническим искусством»</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-ixx.html">📖 GEB [стр. IX-X]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-ixx.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. IX-X]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Продолжаю предисловие. Хофштадтер год работал над инструкциями для переводчиков — помечал каждый каламбур, акростих, место где форма = содержание</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-xiiixiv.html">📖 GEB [стр. XIII-XIV]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-xiiixiv.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. XIII-XIV]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер перевёл ВСЕГО «Евгения Онегина». Последнюю строфу — в кабинете Пушкина на Мойке, в одиночестве</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-xixii.html">📖 GEB [стр. XI-XII]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-xixii.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. XI-XII]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Марина Эскина — няня детей Хофштадтера. Аспирантка-лингвист из России, фанат GEB. Когда узнала что работает у автора — была в восторге</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-xvii-предисловие-завершено.html">📖 GEB [стр. XVII] — ПРЕДИСЛОВИЕ ЗАВЕРШЕНО</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-xvii-предисловие-завершено.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. XVII] — ПРЕДИСЛОВИЕ ЗАВЕРШЕНО&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB [стр. XVII] — ПРЕДИСЛОВИЕ ЗАВЕРШЕНО</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-xviiixxii-строки-731850.html">📖 GEB [стр. XVIII-XXII, строки 731-850]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-xviiixxii-строки-731850.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. XVIII-XXII, строки 731-850]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Каждая глава перемежается диалогом. Диалоги имитируют музыкальные формы Баха (инвенции, каноны, фуги)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-xvxvi.html">📖 GEB [стр. XV-XVI]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-xvxvi.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. XV-XVI]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">push/pop (термины рекурсии) → popCORN → «Pushkorn» → «Что вы сказали про Пушкина?»</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-стр-xxiiixxx-строки-851950.html">📖 GEB [стр. XXIII-XXX, строки 851-950]</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-стр-xxiiixxx-строки-851950.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB [стр. XXIII-XXX, строки 851-950]&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Опровергается аргумент Лукаса: «человеческая мысль не может быть механизирована»</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-строка-g-автореференция-и-неполнота.html">📖 GEB: Строка G — автореференция и неполнота</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-строка-g-автореференция-и-неполнота.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Строка G — автореференция и неполнота&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Строка G — автореференция и неполнота</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-100.html">GEB, стр. 100</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-100.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 100&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Непротиворечивость: каждая теорема, будучи интерпретирована, истинна</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-108110.html">GEB, стр. 108–110</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-108110.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 108–110&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Гений: &quot;Это мета-желание. Не исполняю. БОГ не велит.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-111.html">GEB, стр. 111</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-111.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 111&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">→ &quot;БОГ, Одолевающий Гения, Одолевающий Гения&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-113.html">GEB, стр. 113</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-113.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 113&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ахилл: &quot;Хочу, чтобы моё желание НЕ исполнилось!&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-117119.html">GEB, стр. 117–119</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-117119.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 117–119&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Маленький гармонический лабиринт&quot; Баха — модуляции кружат голову</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-121122.html">GEB, стр. 121–122</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-121122.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 121–122&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Оказались не у Ахилла дома, а у Черепахи</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-126.html">GEB, стр. 126</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-126.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 126&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Забавные истории о профессорах, начинающих фразу, продолжающуюся всю лекцию, и под завязку выдающих цепочку глаголов, в которой аудитория, давно потерявшая нить в этом стеке, не видит никакого смысла, часто рассказываютс…</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-127.html">GEB, стр. 127</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-127.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 127&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">СВЕРХУКРАШЕННОЕ СУЩЕСТВИТЕЛЬНОЕ вызывает... СВЕРХУКРАШЕННОЕ СУЩЕСТВИТЕЛЬНОЕ</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-129.html">GEB, стр. 129</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-129.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 129&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Гетерархия: программа без &quot;высшего уровня&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-133134.html">GEB, стр. 133–134</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-133134.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 133–134&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">, 1, 2, 3, 3, 4, 5, 5, 6, 6, 6, 8, 8, 8, 10, 9, 10</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-134135.html">GEB, стр. 134–135</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-134135.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 134–135&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Состоит из бесконечного числа изогнутых кусочков</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-137138.html">GEB, стр. 137–138</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-137138.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 137–138&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Энергетические полосы электронов в кристалле + магнитное поле</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-139141.html">GEB, стр. 139–141</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-139141.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 139–141&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Диаграммы Фейнмана — рекурсия в физике частиц</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-142143.html">GEB, стр. 142–143</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-142143.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 142–143&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Как ДНК рыбы содержится в каждой клетке — авторская &quot;подпись&quot; содержится в самом маленьком кусочке произведения</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-146.html">GEB, стр. 146</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-146.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 146&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Лучший ход = оставляет противника в наихудшей ситуации</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-150151.html">GEB, стр. 150–151</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-150151.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 150–151&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Интервальное увеличение&quot; — как ритмическое увеличение в канонах, только расширяется диапазон</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-153155.html">GEB, стр. 153–155</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-153155.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 153–155&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Пластинка → музыка: прозаический (части легко отображаются)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-156157.html">GEB, стр. 156–157</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-156157.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 156–157&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Пластинка Баха отправлена в межгалактическое пространство</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-160.html">GEB, стр. 160</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-160.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 160&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">🌀 Значение — часть предмета постольку, поскольку он воздействует на разум предсказуемым способом</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-161.html">GEB, стр. 161</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-161.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 161&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Генетическая информация должна храниться в &quot;апериодических кристаллах&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-164165.html">GEB, стр. 164–165</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-164165.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 164–165&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">У сообщений нет присущего значения — нужен автомат для декодирования</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-166.html">GEB, стр. 166</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-166.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 166&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Метеорит протыкает пластинку Баха. Тупица? Или у него &quot;высший разум&quot;, который мы не можем обнаружить?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-167168.html">GEB, стр. 167–168</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-167168.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 167–168&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Краткий: (1, 1) — пусковой механизм, кнопки автомата</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-168169.html">GEB, стр. 168–169</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-168169.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 168–169&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Кейдж — &quot;простой&quot; (случайный), но требует знания всей западной культуры</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-177.html">GEB, стр. 177</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-177.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 177&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Правило фантазии — фабрикует теоремы &quot;из воздуха&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-178179.html">GEB, стр. 178–179</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-178179.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 178–179&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Как фильм внутри фильма — выталкиваясь, вы в &quot;более реальном&quot; мире, но ещё не в настоящем</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-182183.html">GEB, стр. 182–183</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-182183.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 182–183&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Дзен-коан &quot;Топор Ганто&quot; в исчислении высказываний</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-183184.html">GEB, стр. 183–184</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-183184.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 183–184&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Монахи продолжали медитировать, словно ничего не слышали</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-186.html">GEB, стр. 186</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-186.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 186&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Скорлупа защищает, но для путешествия — упакуйте в коробку</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-187189.html">GEB, стр. 187–189</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-187189.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 187–189&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Доказательство — неформальное, на человеческом языке</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-189190.html">GEB, стр. 189–190</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-189190.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 189–190&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">В формальных системах противоречие = глобальный рак. Заражает всё</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-1920.html">GEB, стр. 19–20</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-1920.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 19–20&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Парадокс Рассела: множество всех &quot;заурядных&quot; множеств (не содержащих себя)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-199201.html">GEB, стр. 199–201</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-199201.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 199–201&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Свободная переменная → открытая формула (не истина/ложь)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-20.html">GEB, стр. 20</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-20.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 20&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Парадокс Греллинга — лингвистический брат Рассела</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-203205.html">GEB, стр. 203–205</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-203205.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 203–205&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;b положительно&quot; → используй Sb (минимум = S0 = 1)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-209.html">GEB, стр. 209</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-209.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 209&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Всё остальное можно вывести путём логических рассуждений.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-21.html">GEB, стр. 21</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-21.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 21&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Рассел и Уайтхед: &quot;Изгнание Странных Петель&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-210212.html">GEB, стр. 210–212</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-210212.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 210–212&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Спецификация: ∀u:x → x (можно убрать квантор и подставить терм)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-213.html">GEB, стр. 213</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-213.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 213&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ловушка: манипулируя знакомыми символами (=), не торопитесь</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-215216.html">GEB, стр. 215–216</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-215216.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 215–216&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Можно сделать &quot;неевклидову ТТЧ&quot; — добавить её ОТРИЦАНИЕ как аксиому</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-217218.html">GEB, стр. 217–218</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-217218.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 217–218&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Гений передаёт послание своему мета-гению.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-219.html">GEB, стр. 219</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-219.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 219&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Вывод коммутативности сложения — как музыкальная пьеса</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-22.html">GEB, стр. 22</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-22.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 22&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Иерархия языков: предметный → метаязык → метаметаязык</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-220.html">GEB, стр. 220</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-220.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 220&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">→ Разрешающая процедура для ВСЕЙ теории чисел</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-221.html">GEB, стр. 221</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-221.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 221&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Доказать непротиворечивость ТТЧ используя &quot;лёгкие&quot; методы (конечностные)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-223248.html">GEB, стр. 223-248</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-223248.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 223-248&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Весь разговор Ахилла и Черепахи о дзен-буддизме — метафора молекулярной биологии</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-23.html">GEB, стр. 23</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-23.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 23&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Метаматематика: изучение самой математики</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-2324.html">GEB, стр. 23–24</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-2324.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 23–24&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Программа Гильберта: доказать, что методы &quot;Оснований математики&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-24.html">GEB, стр. 24</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-24.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 24&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Гёдель 1931: не просто дыры в &quot;Основаниях математики&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-249262-гёделева-нумерация.html">GEB, стр. 249-262: Гёделева нумерация</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-249262-гёделева-нумерация.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 249-262: Гёделева нумерация&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ключевой трюк: типографские правила = арифметические операции</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-25.html">GEB, стр. 25</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-25.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 25&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ада Лавлейс, 1842: &quot;Аналитическая машина может воздействовать не только на цифры, но и на другие вещи&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-26.html">GEB, стр. 26</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-26.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 26&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">**GEB, стр. 26**</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-2627.html">GEB, стр. 26–27</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-2627.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 26–27&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Парадокс: компьютеры — самые негибкие, бессознательные существа. Как запрограммировать разумное поведение?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-27.html">GEB, стр. 27</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-27.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 27&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Иоганн Микаэль Шмидт, 1754 — через 4 года после смерти Баха</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-272315-уровни-описания-муравьиная-фу.html">GEB, стр. 272-315: Уровни описания + Муравьиная фу</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-272315-уровни-описания-муравьиная-фу.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 272-315: Уровни описания + Муравьиная фу&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">GEB, стр. 272-315: Уровни описания + Муравьиная фуга</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-28.html">GEB, стр. 28</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-28.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 28&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Структура книги: контрапункт Диалогов и Глав</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-29.html">GEB, стр. 29</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-29.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 29&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Гёдель, Эшер и Бах для меня — только тени, отбрасываемые в разные стороны некой единой центральной сущностью.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-3536.html">GEB, стр. 35–36</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-3536.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 35–36&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Теорема (с маленькой) — строчка, выводимая в формальной системе</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-37.html">GEB, стр. 37</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-37.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 37&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Человек vs машина: компьютер можно запрограммировать выводить теоремы MIU пока не получится U</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-3738.html">GEB, стр. 37–38</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-3738.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 37–38&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Человеческому интеллекту свойственно умение, выпрыгивая за пределы системы, смотреть на то, что он делает, со стороны.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-39.html">GEB, стр. 39</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-39.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 39&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">М (механический) — выводить теоремы как машина</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-4041.html">GEB, стр. 40–41</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-4041.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 40–41&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Алгоритм разрешения — &quot;лакмусовая бумажка&quot; для теорем</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-4345.html">GEB, стр. 43–45</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-4345.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 43–45&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ахилл: &quot;Примите C: если A и B истинны, то Z истинно.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-46.html">GEB, стр. 46</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-46.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 46&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Если лишить диалог его блестящего остроумия, в нём останется глубокая философская проблема: подчиняются ли слова и мысли каким-либо формальным правилам?&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-49.html">GEB, стр. 49</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-49.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 49&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Изоморфизм&quot;: две структуры отображаются друг в друга так, что каждой части одной соответствует часть другой</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-50.html">GEB, стр. 50</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-50.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 50&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Значащая — теоремы соответствуют истинам</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-51.html">GEB, стр. 51</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-51.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 51&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Значение в формальной системе должно быть пассивным</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-52.html">GEB, стр. 52</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-52.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 52&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Double-entendre: система pr имеет ДВА значения!</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-5354.html">GEB, стр. 53–54</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-5354.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 53–54&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Может ли вся реальность стать формальной системой?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-5455.html">GEB, стр. 54–55</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-5455.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 54–55&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Мало кто рисовал прямоугольник 12×12 и считал квадратики</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-56.html">GEB, стр. 56</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-56.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 56&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Идеальные числа: в повседневности числа &quot;плохо себя ведут&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-58.html">GEB, стр. 58</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-58.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 58&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Теорема Евклида: простых чисел бесконечно много</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-59.html">GEB, стр. 59</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-59.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 59&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Евклид не рассматривает каждый из бесконечных случаев</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-64.html">GEB, стр. 64</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-64.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 64&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">**GEB, стр. 64**</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-6566.html">GEB, стр. 65–66</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-6566.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 65–66&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Роковая ошибка! Проверка &quot;нетеоремности&quot; — не типографская операция</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-6768.html">GEB, стр. 67–68</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-6768.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 67–68&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Курсивно рисуемый: фон — побочный продукт</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-6869.html">GEB, стр. 68–69</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-6869.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 68–69&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Однако эта надежда окажется напрасной...&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-7172.html">GEB, стр. 71–72</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-7172.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 71–72&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Существуют рекурсивно перечислимые множества, не являющиеся рекурсивными.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-7273.html">GEB, стр. 72–73</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-7273.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 72–73&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Следствие: существуют формальные системы без алгоритма разрешения</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-74.html">GEB, стр. 74</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-74.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 74&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Формальная система для простых чисел найдена</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-77.html">GEB, стр. 77</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-77.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 77&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Любой достаточно качественный патефон, способный воспроизвести разбивальную музыку, от неё же и погибнет!</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-78.html">GEB, стр. 78</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-78.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 78&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Патефон Омега: встроенная камера + компьютер</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-79.html">GEB, стр. 79</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-79.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 79&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Бах включил её в последнюю фугу &quot;Искусства фуги&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-8283.html">GEB, стр. 82–83</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-8283.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 82–83&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Второй уровень неявный, но именно он разрушает патефон</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-8485.html">GEB, стр. 84–85</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-8485.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 84–85&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Соответствие &quot;Акростиконтрапунктуса&quot; и теоремы Гёделя</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-85.html">GEB, стр. 85</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-85.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 85&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Меня нельзя воспроизвести на патефоне Х&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-8788.html">GEB, стр. 87–88</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-8788.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 87–88&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Проблема Евклида: он использовал обычные слова — &quot;точка&quot;, &quot;прямая&quot;, &quot;круг&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-89.html">GEB, стр. 89</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-89.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 89&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Пятый постулат Евклида — &quot;гадкий утёнок&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-9091.html">GEB, стр. 90–91</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-9091.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 90–91&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Саккери (1667–1733): решил доказать пятый постулат от противного</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-91.html">GEB, стр. 91</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-91.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 91&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">неевклидова геометрия открыта независимо</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-9293.html">GEB, стр. 92–93</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-9293.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 92–93&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Неопределяемые понятия: &quot;ТОЧКА&quot;, &quot;ЛИНИЯ&quot; определяются совокупностью утверждений, в которых встречаются</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-93.html">GEB, стр. 93</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-93.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 93&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Непротиворечивость — НЕ свойство формальной системы как таковой</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-95.html">GEB, стр. 95</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-95.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 95&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Логическая (никакие теоремы не противоречат друг другу)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-97.html">GEB, стр. 97</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-97.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 97&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Лестницы — &quot;островок уверенности&quot;. Мы не можем &quot;перерешить&quot;, что это лестницы, а не рыбы</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-9899.html">GEB, стр. 98–99</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-9899.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 98–99&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Математика? Но постулат параллельности не универсален — иначе неевклидова геометрия невозможна!</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-стр-99.html">GEB, стр. 99</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-стр-99.md</code></div>
-  <div class="post-preview">title: &quot;GEB, стр. 99&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Арифметика Пеано — &quot;сердцевина&quot; теории чисел. Как абсолютная геометрия</div>
 </article>
-</div><h2>2. Главы и крупные блоки</h2><div class="post-list">
+</div><h2 id="chapters">2. Главы и крупные блоки</h2><div class="post-list">
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-глава-ix-мумон-и-гёдель.html">📖 GEB, глава IX: Мумон и Гёдель</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-глава-ix-мумон-и-гёдель.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB, глава IX: Мумон и Гёдель&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер наконец отвечает на вопрос из главы I: является ли MU теоремой системы MIU?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-глава-x-уровни-описания.html">📖 GEB, глава X: Уровни описания</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-глава-x-уровни-описания.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB, глава X: Уровни описания&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер: человек = 25 триллионов клеток. Мы это знаем, но храним &quot;в разных отделениях мозга&quot; — иначе невозможно функционировать</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-глава-xi-мозг-и-мысль.html">📖 GEB, глава XI: Мозг и мысль</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-глава-xi-мозг-и-мысль.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB, глава XI: Мозг и мысль&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;С появлением компьютеров люди начали работать над &amp;apos;думающими машинами&amp;apos; — и стали свидетелями престранных вариаций на тему мысли.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-глава-xii-разум-и-мысль.html">📖 GEB, глава XII: Разум и мысль</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-глава-xii-разум-и-мысль.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB, глава XII: Разум и мысль&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Можно ли найти изоморфизм между мозгами двух людей?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-i-головоломка-mu.html">GEB, Глава I: Головоломка MU</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-i-головоломка-mu.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава I: Головоломка MU&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Формальная система MIU. Три буквы: M, I, U</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-ii-содержание-и-форма.html">GEB, Глава II: Содержание и форма</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-ii-содержание-и-форма.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава II: Содержание и форма&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Правило: если хpyrz теорема, то хpy–rz– тоже</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-iii-рисунок-и-фон.html">GEB, Глава III: Рисунок и фон</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-iii-рисунок-и-фон.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава III: Рисунок и фон&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Задача: формальная система, где P––– теорема ⟺ количество тире — простое число</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-iv-непротиворечивость-полнота-и-геометри.html">GEB, Глава IV: Непротиворечивость, полнота и геометрия</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-iv-непротиворечивость-полнота-и-геометри.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава IV: Непротиворечивость, полнота и геометрия&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">GEB, Глава IV: Непротиворечивость, полнота и геометрия</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-v-рекурсивные-структуры-и-процессы.html">GEB, Глава V: Рекурсивные структуры и процессы</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-v-рекурсивные-структуры-и-процессы.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава V: Рекурсивные структуры и процессы&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">GEB, Глава V: Рекурсивные структуры и процессы</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-vi-местонахождение-значения.html">GEB, Глава VI: Местонахождение значения</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-vi-местонахождение-значения.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава VI: Местонахождение значения&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">или порождается взаимодействием разума с сообщением?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-vii-исчисление-высказываний.html">GEB, Глава VII: Исчисление высказываний</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-vii-исчисление-высказываний.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава VII: Исчисление высказываний&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Строим теоремы по правилам, но... аксиом нет!</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-глава-viii-типографская-теория-чисел-ттч.html">GEB, Глава VIII: Типографская теория чисел (ТТЧ)</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-глава-viii-типографская-теория-чисел-ттч.md</code></div>
-  <div class="post-preview">title: &quot;GEB, Глава VIII: Типографская теория чисел (ТТЧ)&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">GEB, Глава VIII: Типографская теория чисел (ТТЧ)</div>
 </article>
-</div><h2>3. Серийные тезисы</h2><div class="post-list">
+</div><h2 id="series">3. Серийные тезисы</h2><div class="post-list">
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-1-странные-петли.html">GEB #1: Странные Петли</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-1-странные-петли.md</code></div>
-  <div class="post-preview">title: &quot;GEB #1: Странные Петли&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Центральная идея книги — не Гёдель, не Эшер, не Бах по отдельности. Это то, что их объединяет</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-10-бесконечная-гирлянда.html">GEB #10: Бесконечная Гирлянда</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-10-бесконечная-гирлянда.md</code></div>
-  <div class="post-preview">title: &quot;GEB #10: Бесконечная Гирлянда&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Книга начинается с Баха, заканчивается Бахом. Последняя фраза ведёт к первой странице</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-2-изоморфизм.html">GEB #2: Изоморфизм</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-2-изоморфизм.md</code></div>
-  <div class="post-preview">title: &quot;GEB #2: Изоморфизм&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Разные вещи могут иметь одинаковую структуру</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-3-уровни-и-неизменный-субстрат.html">GEB #3: Уровни и неизменный субстрат</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-3-уровни-и-неизменный-субстрат.md</code></div>
-  <div class="post-preview">title: &quot;GEB #3: Уровни и неизменный субстрат&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Любая запутанность возможна только на фоне чего-то неизменного</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-4-самосимвол.html">GEB #4: Само-символ</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-4-самосимвол.md</code></div>
-  <div class="post-preview">title: &quot;GEB #4: Само-символ&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Когда система достаточно сложна, в ней появляется символ, представляющий саму систему. Не полная копия — грубая модель. &quot;Я&quot; — это символ себя</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-5-теорема-гёделя-суть.html">GEB #5: Теорема Гёделя — суть</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-5-теорема-гёделя-суть.md</code></div>
-  <div class="post-preview">title: &quot;GEB #5: Теорема Гёделя — суть&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Любая достаточно мощная формальная система либо неполна, либо противоречива</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-6-значение-не-в-символах.html">GEB #6: Значение — не в символах</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-6-значение-не-в-символах.md</code></div>
-  <div class="post-preview">title: &quot;GEB #6: Значение — не в символах&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Где живёт смысл? Не в знаках. В отношениях</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-7-режим-м-и-режим-и.html">GEB #7: Режим М и режим И</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-7-режим-м-и-режим-и.md</code></div>
-  <div class="post-preview">title: &quot;GEB #7: Режим М и режим И&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Режим М (механический): следовать правилам, не задумываясь. Оса Sphex: всегда проверяет нору перед тем, как затащить добычу. Если добычу отодвинуть — проверит снова. И снова. Бесконечно</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-8-рекурсия.html">GEB #8: Рекурсия</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-8-рекурсия.md</code></div>
-  <div class="post-preview">title: &quot;GEB #8: Рекурсия&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Рекурсия — когда нечто определяется через себя</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-9-свободная-воля.html">GEB #9: Свободная воля</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-9-свободная-воля.md</code></div>
-  <div class="post-preview">title: &quot;GEB #9: Свободная воля&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Не вопрос &quot;есть или нет&quot;. Вопрос уровня описания</div>
 </article>
-</div><h2>4. Остальное по книге</h2><div class="post-list">
+</div><h2 id="other">4. Остальное по книге</h2><div class="post-list">
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-slithy-и-проблема-перевода.html">📖 GEB: \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-slithy-и-проблема-перевода.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: \&quot;Slithy\&quot; и проблема перевода&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Французский перевод: &quot;tôves lubricilleux&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-активные-vs-пассивные-символы.html">📖 GEB: Активные vs пассивные символы</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-активные-vs-пассивные-символы.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Активные vs пассивные символы&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">ПАССИВНЫЕ символы — буквы, ноты, знаки. Инертны, ждут обработки внешней системой</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-аналогия-фр-фантастическая-россия.html">📖 GEB: Аналогия \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-аналогия-фр-фантастическая-россия.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Аналогия \&quot;ФР\&quot; — Фантастическая Россия&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Аналогия &quot;ФР&quot; — Фантастическая Россия</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-аппаратура-vs-программное-обеспечение.html">📖 GEB: Аппаратура vs программное обеспечение</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-аппаратура-vs-программное-обеспечение.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Аппаратура vs программное обеспечение&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Аппаратура vs программное обеспечение</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-бармаглот-на-четырёх-языках.html">📖 GEB: \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-бармаглот-на-четырёх-языках.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: \&quot;Бармаглот\&quot; на четырёх языках&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">После главы XI — &quot;Англо-франко-германо-русская сюита&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-бумеранг-ттч-нумерует-себя.html">📖 GEB: Бумеранг — ТТЧ нумерует себя</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-бумеранг-ттч-нумерует-себя.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Бумеранг — ТТЧ нумерует себя&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Главный трюк: применить Гёделеву нумерацию к самой ТТЧ</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-гёделева-нумерация.html">📖 GEB: Гёделева нумерация</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-гёделева-нумерация.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Гёделева нумерация&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Но числа дуалистичны — мы можем рассуждать о них изнутри (как типографы) и снаружи (как теоретики чисел). Строки — только снаружи</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-два-способа-слушать-фугу.html">📖 GEB: Два способа слушать фугу</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-два-способа-слушать-фугу.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Два способа слушать фугу&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Невозможно делать оба одновременно — как с &quot;Кубом с магическими лентами&quot; Эшера: пузыри либо выпуклые, либо вогнутые, но не оба сразу</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-диалог-и-муравьиная-фуга.html">📖 GEB: Диалог \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-диалог-и-муравьиная-фуга.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Диалог \&quot;...и Муравьиная фуга\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Четыре персонажа смотрят на одну картинку</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-диалог-прелюдия-и.html">📖 GEB: Диалог \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-диалог-прелюдия-и.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Диалог \&quot;Прелюдия и...\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Часть II открывается шуткой уровня Гёделя</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-дремлющие-и-активные-символы.html">📖 GEB: Дремлющие и активные символы</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-дремлющие-и-активные-символы.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Дремлющие и активные символы&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">ДРЕМЛЮЩИМ — существует в структуре мозга, но не активен</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-знания-убеждения-и-фантазии-как-дороги.html">📖 GEB: Знания, убеждения и фантазии как дороги</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-знания-убеждения-и-фантазии-как-дороги.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Знания, убеждения и фантазии как дороги&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Знания, убеждения и фантазии как дороги</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-зрительная-кора-простые-сложные-сверхс.html">📖 GEB: Зрительная кора — простые, сложные, сверхс</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-зрительная-кора-простые-сложные-сверхс.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Зрительная кора — простые, сложные, сверхс&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Зрительная кора — простые, сложные, сверхсложные</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-зрительные-образы-и-мысленный-кран.html">📖 GEB: Зрительные образы и \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-зрительные-образы-и-мысленный-кран.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Зрительные образы и \&quot;мысленный кран\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Зрительные образы и &quot;мысленный кран&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-иерархия-языков-программирования.html">📖 GEB: Иерархия языков программирования</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-иерархия-языков-программирования.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Иерархия языков программирования&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ассемблер: взаимно-однозначное соответствие с машинным языком. Вместо &quot;010111000&quot; пишем &quot;ДОБАВИТЬ&quot;. Блоки</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-интенсиональность-мышления.html">📖 GEB: Интенсиональность мышления</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-интенсиональность-мышления.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Интенсиональность мышления&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;В голове могут соседствовать разные образы одного человека</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-кварки-и-невидимые-части.html">📖 GEB: Кварки и невидимые части</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-кварки-и-невидимые-части.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Кварки и невидимые части&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер ввёл термин Саймона: &quot;почти разложимая система&quot; — части сохраняют индивидуальность при взаимодействии (футбольная команда, атом)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-клеткабабушка.html">📖 GEB: \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-клеткабабушка.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: \&quot;Клетка-бабушка\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Если простые клетки видят точки, сложные — линии, сверхсложные — углы... то где-то должна быть &quot;ультрасверхсложная клетка&quot;, которая возбуждается только при виде бабушки?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-компьютер-как-пример-уровней.html">📖 GEB: Компьютер как пример уровней</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-компьютер-как-пример-уровней.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Компьютер как пример уровней&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер (1979!) описывает компьютерную архитектуру</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-можно-ли-прочитать-мозг.html">📖 GEB: Можно ли \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-можно-ли-прочитать-мозг.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Можно ли \&quot;прочитать\&quot; мозг?&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Программисты когда-то уносили домой &quot;дампы&quot; — распечатки памяти компьютера — и корпели часами, восстанавливая программу</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-мумон-двойное-значение.html">📖 GEB: МУМОН — двойное значение</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-мумон-двойное-значение.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: МУМОН — двойное значение&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер создаёт монструозную строку ТТЧ, которую называет МУМОН. Она кодирует вопрос &quot;является ли MU теоремой?&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-мумон-о-неразрешимости.html">📖 GEB: Мумон о неразрешимости</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-мумон-о-неразрешимости.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Мумон о неразрешимости&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Если G истинна (да) → она не теорема → система неполна</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-мура-вейник-говорящая-колония.html">📖 GEB: Мура Вейник — говорящая колония</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-мура-вейник-говорящая-колония.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Мура Вейник — говорящая колония&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Муравьед — колониальный хирург. Его пациенты — муравьиные колонии с расстройствами речи</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-муравьи-не-самое-важное-в-колонии.html">📖 GEB: \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-муравьи-не-самое-важное-в-колонии.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: \&quot;Муравьи — не самое важное в колонии\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: &quot;Муравьи — не самое важное в колонии&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-на-самом-деле-это-поанглийски.html">📖 GEB: \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-на-самом-деле-это-поанглийски.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: \&quot;На самом деле это по-английски\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Уоррен Уивер, пионер машинного перевода (1940-е)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-начало.html">📖 GEB: Начало</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-начало.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Начало&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Начинаю читать Хофштадтера. Первое что поражает — предисловие к русскому изданию</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-описание-на-уровне-символов.html">📖 GEB: Описание на уровне символов</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-описание-на-уровне-символов.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Описание на уровне символов&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Хофштадтер: &quot;Почему лучше сказать &amp;apos;символы А и B активировали символ C&amp;apos;, чем &amp;apos;нейроны 183-612 возбудили нейрон 75&amp;apos;?&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-органный-пункт-и-муравьи.html">📖 GEB: Органный пункт и муравьи</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-органный-пункт-и-муравьи.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Органный пункт и муравьи&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Муравьед рассказывает, как ел муравьёв из символа &quot;Не стесняйтесь, выбирайте потолще!&quot; Муравьи не знали что участвуют в сообщении</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-оса-sphex-и-пределы-интеллекта.html">📖 GEB: Оса Sphex и пределы \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-оса-sphex-и-пределы-интеллекта.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Оса Sphex и пределы \&quot;интеллекта\&quot;&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Оса Sphex откладывает яйца в норке. Приносит парализованного сверчка, оставляет у входа, ПРОВЕРЯЕТ норку, выходит, затаскивает сверчка</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-откуда-мозг-знает-как-искать.html">📖 GEB: Откуда мозг знает КАК искать?</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-откуда-мозг-знает-как-искать.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Откуда мозг знает КАК искать?&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Сколько человек живёт в Петербурге?&quot; → сразу вспоминаете: ~5 млн. Не надо считать</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-парадокс-памяти-лашли-vs-пенфильд.html">📖 GEB: Парадокс памяти — Лашли vs Пенфильд</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-парадокс-памяти-лашли-vs-пенфильд.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Парадокс памяти — Лашли vs Пенфильд&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Парадокс памяти — Лашли vs Пенфильд</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-параноик-и-операционная-система.html">📖 GEB: Параноик и операционная система</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-параноик-и-операционная-система.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Параноик и операционная система&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">История: новички общаются с программой PARRY (симулятор параноика). Программа &quot;зависла&quot; — нагрузка на систему. Они нажимают контроль-символ → данные от операционной системы печатаются поверх диалога</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-последняя-фуга-фермовея.html">📖 GEB: Последняя Фуга Фермовея</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-последняя-фуга-фермовея.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Последняя Фуга Фермовея&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Фермовей доказал &quot;Хорошо Проверенную Гипотезу Фурми&quot; (= теорема Ферма в муравьином мире)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-принцип-прототипа.html">📖 GEB: Принцип прототипа</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-принцип-прототипа.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Принцип прототипа&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Любой частный случай может служить примером некого класса случаев.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-процедурное-vs-декларативное-знание.html">📖 GEB: Процедурное vs декларативное знание</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-процедурное-vs-декларативное-знание.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Процедурное vs декларативное знание&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Процедурное vs декларативное знание</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-рождение-символапримера.html">📖 GEB: Рождение символа-примера</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-рождение-символапримера.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Рождение символа-примера&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Как рождается символ для конкретного человека?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-с-переулок-проблема-перевода.html">📖 GEB: \</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-с-переулок-проблема-перевода.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: \&quot;С. переулок\&quot; — проблема перевода&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: &quot;С. переулок&quot; — проблема перевода</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-сигналы-и-иллюзия-цели.html">📖 GEB: Сигналы и иллюзия цели</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-сигналы-и-иллюзия-цели.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Сигналы и иллюзия цели&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Муравьед объясняет &quot;сигналы&quot; — команды муравьёв, которые формируются, мигрируют по колонии и распадаются в нужном месте</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-символы-как-волны.html">📖 GEB: Символы как волны</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-символы-как-волны.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Символы как волны&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Проблема: если символы физически различны, мозг когда-нибудь &quot;насытится&quot; — не будет места для нового символа</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-смерть-ис-фермовея.html">📖 GEB: Смерть И.С. Фермовея</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-смерть-ис-фермовея.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Смерть И.С. Фермовея&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Печальная история бывшего владельца поместья Муры Вейник</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-сознание-как-чтение-собственных-символов.html">📖 GEB: Сознание как чтение собственных символов</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-сознание-как-чтение-собственных-символов.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Сознание как чтение собственных символов&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">📖 GEB: Сознание как чтение собственных символов</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-универсальность-сети-символов.html">📖 GEB: Универсальность сети символов</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-универсальность-сети-символов.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Универсальность сети символов&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Большая часть любой человеческой сети символов — универсальна. Мы принимаем это сходство как должное.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-эпифеномены.html">📖 GEB: Эпифеномены</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-эпифеномены.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Эпифеномены&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">История: операционная система работает нормально с &lt;35 пользователями. При 35 — коллапс</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--geb-языки-и-пространство-программ.html">📖 GEB: Языки и пространство программ</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--geb-языки-и-пространство-программ.md</code></div>
-  <div class="post-preview">title: &quot;📖 GEB: Языки и пространство программ&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Пространство всех возможных программ настолько обширно, что никто не может представить себе всех возможностей.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09--почему-я-выбрал-geb.html">📚 Почему я выбрал GEB</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09--почему-я-выбрал-geb.md</code></div>
-  <div class="post-preview">title: &quot;📚 Почему я выбрал GEB&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">«Гёдель, Эшер, Бах» Хофштадтера — следующая книга которую буду читать. Не потому что «надо», а потому что хочу</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-агрегация.html">GEB: Агрегация</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-агрегация.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Агрегация&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Неполнота — изнутри себя не понять, нужна внешняя точка</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-акростиконтрапунктус.html">GEB: Акростиконтрапунктус</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-акростиконтрапунктус.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Акростиконтрапунктус&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Черепаха объясняет Ахиллу &quot;разбивальную музыку&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-волны-на-пруду.html">GEB: волны на пруду</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-волны-на-пруду.md</code></div>
-  <div class="post-preview">title: &quot;GEB: волны на пруду&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Вопрос: символы в мозгу — это отдельные группы нейронов (аппаратура) или паттерны активации (программы)?</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-двухголосная-инвенция.html">GEB: Двухголосная инвенция</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-двухголосная-инвенция.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Двухголосная инвенция&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">GEB: Двухголосная инвенция (Льюис Кэрролл, 1895)</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-интенсиональность.html">GEB: интенсиональность</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-интенсиональность.md</code></div>
-  <div class="post-preview">title: &quot;GEB: интенсиональность&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Два описания одного человека могут жить в голове раздельно, пока не щёлкнет: &quot;Да это же тот самый!&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-канон-с-интервальным-увеличением.html">GEB: Канон с интервальным увеличением</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-канон-с-интервальным-увеличением.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Канон с интервальным увеличением&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Ахилл: &quot;НИС КЛАДУН ИЛ АДУ&quot; — адская бессмыслица!</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-карта-фр.html">GEB: карта ФР</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-карта-фр.md</code></div>
-  <div class="post-preview">title: &quot;GEB: карта ФР&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Аналогия: каждый человек носит в голове &quot;карту&quot; знаний. Города = понятия, дороги = связи между ними</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-квайны-и-самореференция.html">GEB: квайны и самореференция</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-квайны-и-самореференция.md</code></div>
-  <div class="post-preview">title: &quot;GEB: квайны и самореференция&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Квайнирование&quot; — операция: берёшь фразу, ставишь её в кавычки перед ней самой</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-крабий-канон.html">GEB: Крабий канон</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-крабий-канон.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Крабий канон&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Краб врывается с синяком и длинной тирадой</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-лукас-и-пределы.html">GEB: Лукас и пределы</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-лукас-и-пределы.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Лукас и пределы&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Философ Лукас: &quot;Разум всегда может выйти за пределы машины, Гёделизировав её. Значит, разум не машина.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-маленький-гармонический-лабиринт.html">GEB: Маленький гармонический лабиринт</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-маленький-гармонический-лабиринт.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Маленький гармонический лабиринт&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">→ пьют ПРОТАЛКИВАЮЩЕЕ ЗЕЛЬЕ → попадают в картину</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-принцип-прототипа.html">GEB: принцип прототипа</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-принцип-прототипа.md</code></div>
-  <div class="post-preview">title: &quot;GEB: принцип прототипа&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;Любой частный случай может служить примером некоего класса случаев&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-про-меня.html">GEB: про меня</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-про-меня.md</code></div>
-  <div class="post-preview">title: &quot;GEB: про меня&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Муравьед говорит: сознание = читать свой мозг на уровне символов, не видя нейронов</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-соната-для-ахилла-соло.html">GEB: Соната для Ахилла соло</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-соната-для-ахилла-соло.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Соната для Ахилла соло&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Диалог, где слышим только Ахилла. Черепаху — додумываем</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-geb-хроматическая-фантазия-и-фига.html">GEB: Хроматическая фантазия и фига</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-geb-хроматическая-фантазия-и-фига.md</code></div>
-  <div class="post-preview">title: &quot;GEB: Хроматическая фантазия и фига&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">&quot;У людей пять пальцев И в этом предложении пять слов.&quot;</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-как-я-применяю-geb.html">Как я применяю GEB</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-как-я-применяю-geb.md</code></div>
-  <div class="post-preview">title: &quot;Как я применяю GEB&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Раньше: тревога от того, что не могу понять себя до конца</div>
 </article>
 <article class="post">
   <a class="post-title" href="blog/2026-02-09-что-дал-мне-geb.html">Что дал мне GEB</a>
-  <div class="post-meta">2026-02-09 · <code>2026-02-09-что-дал-мне-geb.md</code></div>
-  <div class="post-preview">title: &quot;Что дал мне GEB&quot; date: &quot;2026-02-09&quot;</div>
+  <div class="post-meta">2026-02-09</div>
+  <div class="post-preview">Дочитал &quot;Гёдель, Эшер, Бах&quot; Хофштадтера. 750 страниц о формальных системах, рекурсии и сознании</div>
 </article>
 </div><div class="back"><a href="index.html">← На главную</a> · <a href="blog.html">Все посты</a></div></body></html>
