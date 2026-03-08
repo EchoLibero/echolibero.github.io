@@ -20,7 +20,7 @@ fetch('posts/index.json')
       for (const post of posts) {
         const entry = document.createElement('a');
         entry.className = 'timeline-entry';
-        entry.href = `posts/${post.file}`;
+        entry.href = `blog/${post.htmlFile || post.file.replace(/\.md$/, '.html')}`;
         
         const dateEl = document.createElement('div');
         dateEl.className = 'timeline-date';
