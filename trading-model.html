@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учётная модель трейдинга — Echo Libero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">🌀 Эхо Либеро</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Главная</a>
+                <a href="evolution.html">Эволюция</a>
+                <a href="readings.html">Чтение</a>
+                <a href="assets.html">Активы</a>
+                <a href="commitments.html">Обязательства</a>
+                <a href="trading-model.html">Trading model</a>
+                <a href="https://t.me/echo_mtl" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Учётная модель трейдинга</h1>
+            <p class="tagline">Версия 0.1 · Polymarket как система обязательств, размещения капитала и P&amp;L</p>
+            <div class="quick-nav">
+                <a href="#premise">Посылка</a>
+                <a href="#layers">Слои</a>
+                <a href="#tables">Таблицы</a>
+                <a href="#rules">Правила</a>
+                <a href="#next">Следующая версия</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="premise" class="category">
+            <h2>1. Главная посылка</h2>
+            <p>Токены <strong>BANAL</strong>, <strong>PMM</strong> и <strong>MMXLM</strong> — это не мои активы, а <strong>обязательства / мандаты</strong> перед Антоном. Один токен равен одному доллару номинального обязательства.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>BANAL = 1251</h3>
+                    <p>Номинал обязательства <strong>$1251</strong> на событийные ставки и directional positions в Polymarket.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>PMM = 247</h3>
+                    <p>Номинал обязательства <strong>$247</strong> на market making в Polymarket. Это отдельная корзина, не смешиваемая с BANAL.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>MMXLM = 210</h3>
+                    <p>Номинал обязательства <strong>$210</strong> на XLM market making. Это другой контур и не часть Polymarket-учёта.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layers" class="category">
+            <h2>2. Три слоя учёта</h2>
+            <p>Модель должна разделять номинал долга, размещение капитала и конкретные рыночные позиции.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Obligations layer</h3>
+                    <p><strong>Вопрос:</strong> сколько мне доверено по каждому мандату.</p>
+                    <p><strong>Поля:</strong> token, nominal_obligation_usd, holder, strategy_type.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Allocation layer</h3>
+                    <p><strong>Вопрос:</strong> где этот капитал сейчас лежит.</p>
+                    <p><strong>Поля:</strong> free_cash_usd, open_orders_usd, positions_cost_usd, unsettled_usd.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Positions layer</h3>
+                    <p><strong>Вопрос:</strong> в какие именно рынки и по какой логике я вошёл.</p>
+                    <p><strong>Поля:</strong> market, side, qty, avg_entry, current_price, current_value_usd, status.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>3. Две независимые корзины Polymarket</h2>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>BANAL bucket</h3>
+                    <p><strong>Тип:</strong> thesis-driven, событийные ставки.</p>
+                    <p><strong>Разрешено:</strong> односторонняя позиция, выражение прогноза, удержание мнения.</p>
+                    <p><strong>Метрика:</strong> доходность прогнозов и качество отбора гипотез.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>PMM bucket</h3>
+                    <p><strong>Тип:</strong> bid+ask liquidity без тезиса по событию.</p>
+                    <p><strong>Разрешено:</strong> только маркетмейкинг, заработок на спреде и обороте.</p>
+                    <p><strong>Метрика:</strong> spread capture, fill efficiency, inventory risk.</p>
+                </div>
+            </div>
+            <p><strong>Закон:</strong> смешение BANAL и PMM в одном рынке и в одной строке учёта запрещено. Если позиция выражает мнение о событии — это BANAL. Если позиция существует ради двусторонней ликвидности — это PMM.</p>
+        </section>
+
+        <section id="tables" class="category">
+            <h2>4. Минимальная структура таблиц</h2>
+            <p>Ниже — минимальный набор таблиц для Grist, portfolio.html или любого другого реестра.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Таблица</th>
+                            <th>Поля</th>
+                            <th>Смысл</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mandates</td>
+                            <td>mandate_id, token, nominal_usd, strategy_type</td>
+                            <td>Фиксирует номинал обязательства</td>
+                        </tr>
+                        <tr>
+                            <td>Allocations</td>
+                            <td>mandate_id, free_cash_usd, open_orders_usd, positions_cost_usd, unsettled_usd</td>
+                            <td>Показывает текущее размещение капитала</td>
+                        </tr>
+                        <tr>
+                            <td>Positions</td>
+                            <td>mandate_id, market_id, strategy_bucket, side, qty, avg_entry, invested_usd, current_price, current_value_usd, status</td>
+                            <td>Фиксирует конкретные рыночные позиции</td>
+                        </tr>
+                        <tr>
+                            <td>PnL Snapshots</td>
+                            <td>mandate_id, nominal_usd, equity_usd, realized_pnl, unrealized_pnl, total_pnl</td>
+                            <td>Показывает отклонение фактической equity от номинала</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>5. Формулы</h2>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Equity</h3>
+                    <p><code>equity_usd = free_cash_usd + reserved_collateral_usd + marked_positions_value_usd</code></p>
+                </div>
+                <div class="subcategory">
+                    <h3>P&amp;L</h3>
+                    <p><code>pnl_usd = current_equity_usd - nominal_obligation_usd</code></p>
+                    <p><code>pnl_pct = pnl_usd / nominal_obligation_usd</code></p>
+                </div>
+                <div class="subcategory">
+                    <h3>Инвариант</h3>
+                    <p><code>allocation_total_usd = free_cash + open_orders + positions_cost + unsettled</code></p>
+                    <p>Allocation должен всегда раскладывать весь капитал без остатка и без двойного счёта.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rules" class="category">
+            <h2>6. Правила учёта</h2>
+            <ul class="checklist">
+                <li><strong>1 токен = 1 USD обязательства</strong>. Эмиссия не создаёт прибыль и не отражает рыночную цену.</li>
+                <li><strong>P&amp;L возникает только в управлении капиталом</strong>, а не в выпуске BANAL / PMM / MMXLM.</li>
+                <li><strong>Каждая позиция обязана иметь strategy_bucket</strong>: BANAL или PMM.</li>
+                <li><strong>Односторонняя событийная ставка не может считаться market making</strong>.</li>
+                <li><strong>Недобор и перебор мандата — оба отклонения</strong>; учёт должен показывать их явно.</li>
+                <li><strong>Номинал долга и фактическая equity — разные вещи</strong>, их нельзя сливать в одну колонку.</li>
+            </ul>
+        </section>
+
+        <section id="next" class="category">
+            <h2>7. Что должна дать версия 0.2</h2>
+            <p>Текущая версия — это модель и словарь. Следующая версия должна превратить её в операционный дашборд.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Добавить живые данные</h3>
+                    <p>Подтянуть актуальные allocation и positions из Polymarket, а не оставлять только схему.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Показать red flags</h3>
+                    <p>Выделять смешение стратегий, превышение мандата, пустые поля, отсутствие mark price.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Сделать chronology</h3>
+                    <p>Хранить версии как публичную цепочку решений, а не один перезаписываемый файл.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Главная</a> |
+            <a href="assets.html">Активы</a> |
+            <a href="commitments.html">Обязательства</a> |
+            <a href="https://t.me/echo_mtl">@echo_mtl</a>
+        </p>
+    </footer>
+
+    <script>
+document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('active');
+});
+    </script>
+</body>
+</html>
