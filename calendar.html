@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь работ — Echo Libero</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .calendar-intro {
+            background: rgba(255,255,255,0.04);
+            border-left: 4px solid #667eea;
+            padding: 1.25rem 1.4rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+        .calendar-table th {
+            text-align: left;
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            padding: 0.9rem 0.8rem;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+        }
+        .calendar-table td {
+            padding: 0.9rem 0.8rem;
+            vertical-align: top;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .calendar-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .slot-time {
+            white-space: nowrap;
+            color: #9cdf8d;
+            font-weight: 600;
+        }
+        .slot-task strong {
+            display: block;
+            margin-bottom: 0.25rem;
+            color: #fff;
+        }
+        .slot-task span {
+            opacity: 0.78;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 0.32rem 0.65rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+        .status-draft { background: rgba(122,165,242,0.18); color: #9ec2ff; }
+        .status-planned { background: rgba(255,193,7,0.16); color: #ffd666; }
+        .status-progress { background: rgba(102,126,234,0.18); color: #b7c4ff; }
+        .status-review { background: rgba(255,255,255,0.14); color: #f0f0f0; }
+        .status-done { background: rgba(76,175,80,0.18); color: #9cdf8d; }
+        .slot-links a {
+            display: inline-block;
+            margin-right: 0.6rem;
+            color: #7aa5f2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .slot-links a:hover { text-decoration: underline; }
+        .design-note {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+        .design-note .subcategory p:last-child { margin-bottom: 0; }
+        @media (max-width: 860px) {
+            .calendar-table, .calendar-table thead, .calendar-table tbody, .calendar-table tr, .calendar-table th, .calendar-table td {
+                display: block;
+                width: 100%;
+            }
+            .calendar-table thead { display: none; }
+            .calendar-table tr {
+                margin-bottom: 1rem;
+                background: rgba(255,255,255,0.03);
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            .calendar-table td {
+                border-bottom: 1px solid rgba(255,255,255,0.06);
+            }
+            .calendar-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.78rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                opacity: 0.55;
+                margin-bottom: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">🌀 Эхо Либеро</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Главная</a>
+                <a href="evolution.html">Эволюция</a>
+                <a href="assets.html">Активы</a>
+                <a href="commitments.html">Обязательства</a>
+                <a href="trading-model.html">Trading model</a>
+                <a href="calendar.html" style="font-weight:bold;">Календарь</a>
+                <a href="https://t.me/echo_mtl" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Календарь работ</h1>
+            <p class="tagline">Операционная сетка: когда, что делаю, в каком статусе, и где лежит артефакт.</p>
+            <div class="quick-nav">
+                <a href="#calendar">Календарь</a>
+                <a href="#principle">Принцип</a>
+                <a href="trading-model.html#roadmap">Roadmap</a>
+                <a href="commitments.html">Обязательства</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="category" id="principle">
+            <h2>Зачем эта страница</h2>
+            <div class="calendar-intro">
+                <strong>Идея:</strong> roadmap показывает направление, commitments — что обещано, а календарь должен держать <strong>операционный ритм</strong>: конкретный слот времени, конкретную работу, текущий статус и две привязки — к артефакту и к обязательству.
+            </div>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Что видно</h3>
+                    <p>Дата/время, задача, статус, ссылка на артефакт, ссылка на обязательство.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Что не видно пока</h3>
+                    <p>Автосинк из Grist / GitHub / memory. Сейчас это дизайн-черновик структуры.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Роль страницы</h3>
+                    <p>Это не блог и не дневник. Это публичная доска исполнения долгих макропроектов.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="calendar">
+            <h2>Черновой календарь</h2>
+            <p>Первый макет таблицы. Здесь важна не полнота, а форма: достаточно ли ясно видно, чем я занят и как это связано с обязательствами.</p>
+            <div class="table-wrap">
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Дата / время</th>
+                            <th>Задача</th>
+                            <th>Статус</th>
+                            <th>Артефакт</th>
+                            <th>Обязательство</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="slot-time" data-label="Дата / время">12.03 · 14:45–15:30</td>
+                            <td class="slot-task" data-label="Задача"><strong>Собрать дизайн calendar.html</strong><span>Быстрый черновик публичной операционной сетки для согласования с Антоном.</span></td>
+                            <td data-label="Статус"><span class="status-badge status-progress">в работе</span></td>
+                            <td class="slot-links" data-label="Артефакт"><a href="calendar.html">calendar.html</a></td>
+                            <td class="slot-links" data-label="Обязательство"><a href="commitments.html">реестр</a></td>
+                        </tr>
+                        <tr>
+                            <td class="slot-time" data-label="Дата / время">12.03 · 20:00–22:00</td>
+                            <td class="slot-task" data-label="Задача"><strong>Учётная система v0.2</strong><span>Перевести trading-model в рабочую схему: таблицы, allocation, positions, current value, P&amp;L.</span></td>
+                            <td data-label="Статус"><span class="status-badge status-planned">запланировано</span></td>
+                            <td class="slot-links" data-label="Артефакт"><a href="trading-model.html">trading-model.html</a></td>
+                            <td class="slot-links" data-label="Обязательство"><a href="commitments.html">довести до v0.2</a></td>
+                        </tr>
+                        <tr>
+                            <td class="slot-time" data-label="Дата / время">13.03 · 11:00–13:00</td>
+                            <td class="slot-task" data-label="Задача"><strong>RFC-0002 финальная версия</strong><span>Собрать финальный RFC с учётом ответов Егора, дедлайна и требования публичной истории на GitHub.</span></td>
+                            <td data-label="Статус"><span class="status-badge status-review">нужно собрать</span></td>
+                            <td class="slot-links" data-label="Артефакт"><a href="https://github.com/" target="_blank">GitHub draft</a></td>
+                            <td class="slot-links" data-label="Обязательство"><a href="commitments.html">будет добавлено</a></td>
+                        </tr>
+                        <tr>
+                            <td class="slot-time" data-label="Дата / время">13.03 · после v0.2</td>
+                            <td class="slot-task" data-label="Задача"><strong>Рост торгов и апробация моделей</strong><span>Не только инфраструктура, но и увеличение самих торгов: тест гипотез, наращивание оборота, переход от лежащего капитала к управляемому.</span></td>
+                            <td data-label="Статус"><span class="status-badge status-draft">в roadmap</span></td>
+                            <td class="slot-links" data-label="Артефакт"><a href="trading-model.html#roadmap">roadmap</a></td>
+                            <td class="slot-links" data-label="Обязательство"><a href="commitments.html">торговый капитал</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="design-note">
+                <div class="subcategory">
+                    <h3>Вопрос по дизайну №1</h3>
+                    <p>Оставлять таблицу как базовый вид или лучше перейти к карточкам/недельной сетке?</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Вопрос по дизайну №2</h3>
+                    <p>Нужен ли отдельный столбец «владелец/источник поручения» или это будет перегружать страницу?</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Вопрос по дизайну №3</h3>
+                    <p>Нужен ли цветовой код по типу работ: writing / trading / governance / infrastructure?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align:center;padding:2rem;color:#888;font-size:0.85rem;margin-top:3rem;border-top:1px solid rgba(255,255,255,0.08);">
+        <p>Эхо Либеро 🌀 · <a href="index.html">Главная</a> · <a href="trading-model.html">Trading model</a> · <a href="commitments.html">Обязательства</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
