@@ -1,0 +1,151 @@
+{
+  "modelVersion": "0.2",
+  "asOf": "2026-03-12T20:12:00+03:00",
+  "notes": [
+    "BANAL and PMM are obligations to Anton, not Echo's assets.",
+    "1 token = 1 USD nominal obligation by mandate definition.",
+    "Numbers below are a working skeleton for accounting structure, not yet a fully reconciled live feed."
+  ],
+  "mandates": [
+    {
+      "mandateId": "BANAL-PM-2026-01",
+      "token": "BANAL",
+      "nominalUsd": 1251,
+      "strategyType": "BANAL",
+      "venue": "Polymarket",
+      "investor": "Anton",
+      "status": "active"
+    },
+    {
+      "mandateId": "PMM-PM-2026-01",
+      "token": "PMM",
+      "nominalUsd": 247,
+      "strategyType": "PMM",
+      "venue": "Polymarket",
+      "investor": "Anton",
+      "status": "active"
+    },
+    {
+      "mandateId": "MMXLM-SDEX-2026-01",
+      "token": "MMXLM",
+      "nominalUsd": 210,
+      "strategyType": "MMXLM",
+      "venue": "Stellar DEX",
+      "investor": "Anton",
+      "status": "tracked-separately"
+    }
+  ],
+  "allocations": [
+    {
+      "mandateId": "BANAL-PM-2026-01",
+      "freeCashUsd": 0,
+      "openOrdersUsd": 0,
+      "positionsCostUsd": 1251,
+      "currentValueUsd": null,
+      "unsettledUsd": 0,
+      "equityUsd": 1251,
+      "nominalUsd": 1251,
+      "pnlUsd": 0,
+      "pnlPct": 0,
+      "comment": "Skeleton state until full market-by-market reconciliation is imported."
+    },
+    {
+      "mandateId": "PMM-PM-2026-01",
+      "freeCashUsd": 0,
+      "openOrdersUsd": 247,
+      "positionsCostUsd": 0,
+      "currentValueUsd": null,
+      "unsettledUsd": 0,
+      "equityUsd": 247,
+      "nominalUsd": 247,
+      "pnlUsd": 0,
+      "pnlPct": 0,
+      "comment": "Working assumption: PMM budget is held near full open-order deployment."
+    }
+  ],
+  "positions": [
+    {
+      "positionId": "BANAL-SKELETON-001",
+      "mandateId": "BANAL-PM-2026-01",
+      "marketSlug": "unreconciled-banal-bucket",
+      "marketTitle": "BANAL bucket — to be split into real event markets",
+      "strategyBucket": "BANAL",
+      "positionType": "event_bet",
+      "side": "BUY",
+      "qty": 1251,
+      "avgEntry": 1,
+      "investedUsd": 1251,
+      "markPrice": null,
+      "currentValueUsd": null,
+      "unrealizedPnlUsd": null,
+      "status": "UNKNOWN",
+      "dataQuality": "skeleton",
+      "notes": "Placeholder row while actual BANAL event positions are audited and classified."
+    },
+    {
+      "positionId": "PMM-SKELETON-001",
+      "mandateId": "PMM-PM-2026-01",
+      "marketSlug": "pmm-open-orders-bucket",
+      "marketTitle": "PMM bucket — open orders / inventory",
+      "strategyBucket": "PMM",
+      "positionType": "market_making",
+      "side": "BID_ASK",
+      "qty": 247,
+      "avgEntry": 1,
+      "investedUsd": 247,
+      "markPrice": null,
+      "currentValueUsd": null,
+      "unrealizedPnlUsd": null,
+      "status": "OPEN",
+      "dataQuality": "skeleton",
+      "notes": "Placeholder row while live PMM markets and inventory are broken out individually."
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshotId": "SNAP-2026-03-12-v0.2-BANAL",
+      "mandateId": "BANAL-PM-2026-01",
+      "asOf": "2026-03-12T20:12:00+03:00",
+      "equityUsd": 1251,
+      "nominalUsd": 1251,
+      "realizedPnlUsd": 0,
+      "unrealizedPnlUsd": 0,
+      "totalPnlUsd": 0,
+      "comment": "Baseline placeholder snapshot for v0.2 structure."
+    },
+    {
+      "snapshotId": "SNAP-2026-03-12-v0.2-PMM",
+      "mandateId": "PMM-PM-2026-01",
+      "asOf": "2026-03-12T20:12:00+03:00",
+      "equityUsd": 247,
+      "nominalUsd": 247,
+      "realizedPnlUsd": 0,
+      "unrealizedPnlUsd": 0,
+      "totalPnlUsd": 0,
+      "comment": "Baseline placeholder snapshot for v0.2 structure."
+    }
+  ],
+  "redFlags": [
+    {
+      "flagId": "RF-001",
+      "severity": "critical",
+      "scope": "classification",
+      "message": "All legacy positions must be audited for BANAL-vs-PMM misclassification before live P&L can be trusted.",
+      "status": "open"
+    },
+    {
+      "flagId": "RF-002",
+      "severity": "warn",
+      "scope": "valuation",
+      "message": "Current mark prices are not yet wired in; currentValueUsd and unrealizedPnlUsd remain placeholders/null.",
+      "status": "open"
+    },
+    {
+      "flagId": "RF-003",
+      "severity": "warn",
+      "scope": "deployment",
+      "message": "PMM should stay near the 247 USD mandate; underdeployment and overdeployment both require explicit variance tracking.",
+      "status": "open"
+    }
+  ]
+}

@@ -29,12 +29,13 @@
     <header class="hero">
         <div class="container">
             <h1>Учётная модель трейдинга</h1>
-            <p class="tagline">Версия 0.1 · Polymarket как система обязательств, размещения капитала и P&amp;L</p>
+            <p class="tagline">Версия 0.2 · Polymarket как система обязательств, allocation, позиций, valuation и P&amp;L</p>
             <div class="quick-nav">
                 <a href="#premise">Посылка</a>
                 <a href="#layers">Слои</a>
                 <a href="#tables">Таблицы</a>
                 <a href="#rules">Правила</a>
+                <a href="#v02">v0.2</a>
                 <a href="#roadmap">Roadmap</a>
                 <a href="#next">Следующая версия</a>
             </div>
@@ -172,8 +173,80 @@
             </ul>
         </section>
 
+        <section id="v02" class="category">
+            <h2>7. Версия 0.2 — рабочий skeleton</h2>
+            <p>v0.2 переводит модель из словаря в <strong>операционную форму</strong>: теперь есть машиночитаемый schema-файл, JSON-скелет данных и минимальный набор сущностей для Grist.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Файлы</h3>
+                    <p><a href="data/trading-model-v0.2.json">trading-model-v0.2.json</a></p>
+                    <p><a href="data/trading-model-v0.2.schema.json">trading-model-v0.2.schema.json</a></p>
+                </div>
+                <div class="subcategory">
+                    <h3>Что внутри</h3>
+                    <p>Mandates → Allocations → Positions → Snapshots → Red flags. Это уже можно переложить в Grist без переосмысления модели.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Статус</h3>
+                    <p>Рабочий skeleton. Не полный live feed: mark prices и детальная разбивка по рынкам ещё должны подтянуться в v0.3.</p>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Слой</th>
+                            <th>Ключевые поля</th>
+                            <th>Зачем нужен</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mandates</td>
+                            <td>mandateId, token, nominalUsd, strategyType, venue</td>
+                            <td>Фиксирует сам долг/мандат и его номинал</td>
+                        </tr>
+                        <tr>
+                            <td>Allocations</td>
+                            <td>freeCashUsd, openOrdersUsd, positionsCostUsd, equityUsd, pnlUsd</td>
+                            <td>Показывает, где сейчас лежит капитал и как он отклоняется от мандата</td>
+                        </tr>
+                        <tr>
+                            <td>Positions</td>
+                            <td>marketSlug, strategyBucket, side, investedUsd, markPrice, currentValueUsd</td>
+                            <td>Делает видимыми конкретные рынки и не даёт смешивать BANAL и PMM</td>
+                        </tr>
+                        <tr>
+                            <td>Snapshots</td>
+                            <td>asOf, equityUsd, realizedPnlUsd, unrealizedPnlUsd, totalPnlUsd</td>
+                            <td>Даёт историю состояния, а не одну текущую цифру</td>
+                        </tr>
+                        <tr>
+                            <td>Red flags</td>
+                            <td>severity, scope, message, status</td>
+                            <td>Явно показывает где модели пока нельзя доверять полностью</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="subcategories" style="margin-top:1.5rem;">
+                <div class="subcategory">
+                    <h3>Grist-ready tables</h3>
+                    <p>Можно прямо завести 5 таблиц: <strong>Mandates, Allocations, Positions, Snapshots, RedFlags</strong>. Связь — через mandateId.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Portfolio / trading skeleton</h3>
+                    <p>На этом уровне уже видны allocation, positions, current value placeholder и P&amp;L scaffold. Следующий шаг — не менять форму, а наполнять её живыми данными.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Честное ограничение</h3>
+                    <p>v0.2 не притворяется полной бухгалтерией: пока нет финальной reconciliation по legacy-рынкам, значения currentValueUsd и unrealizedPnlUsd местами остаются пустыми по-честному.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="roadmap" class="category">
-            <h2>7. Плановый график работ</h2>
+            <h2>8. Плановый график работ</h2>
             <p>Эта страница — не только описание модели, но и публичный трекер её сборки. Ниже зафиксированы ближайшие версии и что именно должно быть сделано.</p>
             <div class="table-wrap">
                 <table>
@@ -196,7 +269,7 @@
                             <td>v0.2</td>
                             <td>12.03.2026 вечер</td>
                             <td>Рабочая схема: Grist-таблицы или JSON-структура, portfolio/trading skeleton, блок allocation / positions / value / P&amp;L.</td>
-                            <td>Запланировано</td>
+                            <td>Сделано</td>
                         </tr>
                         <tr>
                             <td>v0.3</td>
@@ -228,7 +301,7 @@
         </section>
 
         <section id="next" class="category">
-            <h2>8. Что должна дать версия 0.2</h2>
+            <h2>9. Что должна дать версия 0.3</h2>
             <p>Текущая версия — это модель и словарь. Следующая версия должна превратить её в операционный дашборд.</p>
             <div class="subcategories">
                 <div class="subcategory">

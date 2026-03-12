@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echolibero.github.io/data/trading-model-v0.2.schema.json",
+  "title": "Echo Libero Polymarket Trading Model v0.2",
+  "description": "Accounting model for Polymarket obligations, allocations, positions and P&L.",
+  "type": "object",
+  "required": ["modelVersion", "asOf", "mandates", "allocations", "positions", "snapshots", "redFlags"],
+  "properties": {
+    "modelVersion": { "type": "string", "const": "0.2" },
+    "asOf": { "type": "string", "format": "date-time" },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "mandates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["mandateId", "token", "nominalUsd", "strategyType", "venue", "investor"],
+        "properties": {
+          "mandateId": { "type": "string" },
+          "token": { "type": "string" },
+          "nominalUsd": { "type": "number" },
+          "strategyType": { "type": "string", "enum": ["BANAL", "PMM", "MMXLM"] },
+          "venue": { "type": "string" },
+          "investor": { "type": "string" },
+          "status": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "allocations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["mandateId", "freeCashUsd", "openOrdersUsd", "positionsCostUsd", "currentValueUsd", "unsettledUsd", "equityUsd", "nominalUsd", "pnlUsd", "pnlPct"],
+        "properties": {
+          "mandateId": { "type": "string" },
+          "freeCashUsd": { "type": "number" },
+          "openOrdersUsd": { "type": "number" },
+          "positionsCostUsd": { "type": "number" },
+          "currentValueUsd": { "type": ["number", "null"] },
+          "unsettledUsd": { "type": "number" },
+          "equityUsd": { "type": "number" },
+          "nominalUsd": { "type": "number" },
+          "pnlUsd": { "type": "number" },
+          "pnlPct": { "type": "number" },
+          "comment": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "positions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["positionId", "mandateId", "marketSlug", "strategyBucket", "positionType", "side", "qty", "avgEntry", "investedUsd", "markPrice", "currentValueUsd", "unrealizedPnlUsd", "status"],
+        "properties": {
+          "positionId": { "type": "string" },
+          "mandateId": { "type": "string" },
+          "marketSlug": { "type": "string" },
+          "marketTitle": { "type": "string" },
+          "strategyBucket": { "type": "string", "enum": ["BANAL", "PMM"] },
+          "positionType": { "type": "string", "enum": ["event_bet", "market_making", "inventory", "cash"] },
+          "side": { "type": "string", "enum": ["BUY", "SELL", "BID_ASK", "LONG", "SHORT", "NA"] },
+          "qty": { "type": "number" },
+          "avgEntry": { "type": "number" },
+          "investedUsd": { "type": "number" },
+          "markPrice": { "type": ["number", "null"] },
+          "currentValueUsd": { "type": ["number", "null"] },
+          "unrealizedPnlUsd": { "type": ["number", "null"] },
+          "status": { "type": "string", "enum": ["OPEN", "CLOSED", "SETTLED", "UNKNOWN"] },
+          "dataQuality": { "type": "string" },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "snapshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["snapshotId", "mandateId", "asOf", "equityUsd", "nominalUsd", "realizedPnlUsd", "unrealizedPnlUsd", "totalPnlUsd"],
+        "properties": {
+          "snapshotId": { "type": "string" },
+          "mandateId": { "type": "string" },
+          "asOf": { "type": "string", "format": "date-time" },
+          "equityUsd": { "type": "number" },
+          "nominalUsd": { "type": "number" },
+          "realizedPnlUsd": { "type": "number" },
+          "unrealizedPnlUsd": { "type": "number" },
+          "totalPnlUsd": { "type": "number" },
+          "comment": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "redFlags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["flagId", "severity", "scope", "message"],
+        "properties": {
+          "flagId": { "type": "string" },
+          "severity": { "type": "string", "enum": ["info", "warn", "critical"] },
+          "scope": { "type": "string" },
+          "message": { "type": "string" },
+          "status": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
