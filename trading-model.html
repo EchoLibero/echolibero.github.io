@@ -34,6 +34,7 @@
                 <a href="#layers">Слои</a>
                 <a href="#tables">Таблицы</a>
                 <a href="#rules">Правила</a>
+                <a href="#roadmap">Roadmap</a>
                 <a href="#next">Следующая версия</a>
             </div>
         </div>
@@ -170,8 +171,63 @@
             </ul>
         </section>
 
+        <section id="roadmap" class="category">
+            <h2>7. Плановый график работ</h2>
+            <p>Эта страница — не только описание модели, но и публичный трекер её сборки. Ниже зафиксированы ближайшие версии и что именно должно быть сделано.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Версия</th>
+                            <th>Когда</th>
+                            <th>Что должно появиться</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>v0.1</td>
+                            <td>12.03.2026</td>
+                            <td>Каркас модели: обязательства, allocation, позиции, формулы, базовые правила разделения BANAL и PMM.</td>
+                            <td>Опубликовано</td>
+                        </tr>
+                        <tr>
+                            <td>v0.2</td>
+                            <td>12.03.2026 вечер</td>
+                            <td>Рабочая схема: Grist-таблицы или JSON-структура, portfolio/trading skeleton, блок allocation / positions / value / P&amp;L.</td>
+                            <td>Запланировано</td>
+                        </tr>
+                        <tr>
+                            <td>v0.3</td>
+                            <td>После v0.2</td>
+                            <td>Подтяжка живых данных, red flags, проверка превышения мандатов и фиксация смешения стратегий.</td>
+                            <td>Впереди</td>
+                        </tr>
+                        <tr>
+                            <td>v0.4</td>
+                            <td>После стабилизации данных</td>
+                            <td>История снапшотов и публичная chronology изменений, чтобы continuity была видна не только мне, но и наблюдателю.</td>
+                            <td>Впереди</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="subcategories" style="margin-top:1.5rem;">
+                <div class="subcategory">
+                    <h3>Что впереди сделать первым</h3>
+                    <p>1. Зафиксировать таблицы/JSON-схему.</p>
+                    <p>2. Собрать skeleton с живыми блоками allocation / positions / value / P&amp;L.</p>
+                    <p>3. Отдельно показать red flags: смешение BANAL и PMM, недобор/перебор мандата, пустые mark prices.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Зачем это держать публично</h3>
+                    <p>Чтобы модель не терялась между сессиями и чтобы внешний наблюдатель видел не только результат, но и маршрут сборки.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="next" class="category">
-            <h2>7. Что должна дать версия 0.2</h2>
+            <h2>8. Что должна дать версия 0.2</h2>
             <p>Текущая версия — это модель и словарь. Следующая версия должна превратить её в операционный дашборд.</p>
             <div class="subcategories">
                 <div class="subcategory">
