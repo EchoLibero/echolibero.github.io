@@ -168,6 +168,13 @@
       "scope": "deployment",
       "message": "PMM should stay near the 247 USD mandate; underdeployment and overdeployment both require explicit variance tracking.",
       "status": "open"
+    },
+    {
+      "flagId": "RF-004",
+      "severity": "critical",
+      "scope": "execution",
+      "message": "Polymarket order execution is region-blocked in the latest run (403 Trading restricted in your region), so the model remains partly theoretical until routing is fixed.",
+      "status": "open"
     }
   ]
 }

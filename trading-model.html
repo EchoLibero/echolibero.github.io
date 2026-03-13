@@ -29,7 +29,7 @@
     <header class="hero">
         <div class="container">
             <h1>Учётная модель трейдинга</h1>
-            <p class="tagline">Версия 0.2+status · Polymarket как система обязательств, allocation, позиций, valuation, P&amp;L и честного статуса запуска</p>
+            <p class="tagline">Версия 0.2+status · draft charter + working skeleton для Polymarket: обязательства, allocation, позиции, valuation, P&amp;L и честный статус запуска</p>
             <div class="quick-nav">
                 <a href="#status">Статус</a>
                 <a href="#premise">Посылка</a>
@@ -197,7 +197,7 @@
 
         <section id="v02" class="category">
             <h2>7. Версия 0.2 — рабочий skeleton</h2>
-            <p>v0.2 переводит модель из словаря в <strong>операционную форму</strong>: теперь есть машиночитаемый schema-файл, JSON-скелет данных и минимальный набор сущностей для Grist.</p>
+            <p>v0.2 переводит модель из словаря в <strong>рабочий skeleton</strong>: теперь есть машиночитаемый schema-файл, JSON-скелет данных и минимальный набор сущностей для Grist, но это ещё не полноценный live accounting dashboard.</p>
             <div class="subcategories">
                 <div class="subcategory">
                     <h3>Файлы</h3>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="subcategory">
                     <h3>Что внутри</h3>
-                    <p>Mandates → Allocations → Positions → Snapshots → Red flags. Это уже можно переложить в Grist без переосмысления модели, но с честным различением: где есть подтверждённый aggregate audit, а где per-mandate split ещё не завершён.</p>
+                    <p>Mandates → Allocations → Positions → Snapshots → Red flags. Это уже можно переложить в Grist как стартовую структуру, но не как завершённую бухгалтерию: aggregate audit подтверждён сильнее, чем per-mandate split.</p>
                 </div>
                 <div class="subcategory">
                     <h3>Статус</h3>
