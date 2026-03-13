@@ -1,10 +1,12 @@
 {
   "modelVersion": "0.2",
-  "asOf": "2026-03-12T20:12:00+03:00",
+  "asOf": "2026-03-13T20:20:00+03:00",
   "notes": [
     "BANAL and PMM are obligations to Anton, not Echo's assets.",
     "1 token = 1 USD nominal obligation by mandate definition.",
-    "Numbers below are a working skeleton for accounting structure, not yet a fully reconciled live feed."
+    "Mandate-level rows below are a working skeleton for accounting structure, not yet a fully reconciled live feed.",
+    "Where valuation is not yet trustworthy, fields stay null instead of pretending precision.",
+    "A separate portfolioAudit block holds the latest aggregate confirmed Polymarket state, even before full mandate split is finished."
   ],
   "mandates": [
     {
@@ -38,29 +40,31 @@
   "allocations": [
     {
       "mandateId": "BANAL-PM-2026-01",
-      "freeCashUsd": 0,
-      "openOrdersUsd": 0,
-      "positionsCostUsd": 1251,
+      "freeCashUsd": null,
+      "openOrdersUsd": null,
+      "positionsCostUsd": null,
       "currentValueUsd": null,
-      "unsettledUsd": 0,
-      "equityUsd": 1251,
+      "unsettledUsd": null,
+      "equityUsd": null,
       "nominalUsd": 1251,
-      "pnlUsd": 0,
-      "pnlPct": 0,
-      "comment": "Skeleton state until full market-by-market reconciliation is imported."
+      "pnlUsd": null,
+      "pnlPct": null,
+      "reconciliationStatus": "pending_market_split",
+      "comment": "Mandate exists and nominal is fixed, but legacy BANAL allocation is not yet split into trustworthy live subcomponents."
     },
     {
       "mandateId": "PMM-PM-2026-01",
-      "freeCashUsd": 0,
-      "openOrdersUsd": 247,
-      "positionsCostUsd": 0,
+      "freeCashUsd": null,
+      "openOrdersUsd": null,
+      "positionsCostUsd": null,
       "currentValueUsd": null,
-      "unsettledUsd": 0,
-      "equityUsd": 247,
+      "unsettledUsd": null,
+      "equityUsd": null,
       "nominalUsd": 247,
-      "pnlUsd": 0,
-      "pnlPct": 0,
-      "comment": "Working assumption: PMM budget is held near full open-order deployment."
+      "pnlUsd": null,
+      "pnlPct": null,
+      "reconciliationStatus": "pending_market_split",
+      "comment": "Mandate exists and nominal is fixed, but PMM allocation must be derived from live reserve/inventory after final classification."
     }
   ],
   "positions": [
@@ -103,28 +107,46 @@
   ],
   "snapshots": [
     {
-      "snapshotId": "SNAP-2026-03-12-v0.2-BANAL",
+      "snapshotId": "SNAP-2026-03-13-v0.2-BANAL",
       "mandateId": "BANAL-PM-2026-01",
-      "asOf": "2026-03-12T20:12:00+03:00",
-      "equityUsd": 1251,
+      "asOf": "2026-03-13T20:20:00+03:00",
+      "equityUsd": null,
       "nominalUsd": 1251,
-      "realizedPnlUsd": 0,
-      "unrealizedPnlUsd": 0,
-      "totalPnlUsd": 0,
-      "comment": "Baseline placeholder snapshot for v0.2 structure."
+      "realizedPnlUsd": null,
+      "unrealizedPnlUsd": null,
+      "totalPnlUsd": null,
+      "status": "structure_only",
+      "comment": "v0.2 keeps BANAL snapshot empty until market-level reconciliation is trustworthy."
     },
     {
-      "snapshotId": "SNAP-2026-03-12-v0.2-PMM",
+      "snapshotId": "SNAP-2026-03-13-v0.2-PMM",
       "mandateId": "PMM-PM-2026-01",
-      "asOf": "2026-03-12T20:12:00+03:00",
-      "equityUsd": 247,
+      "asOf": "2026-03-13T20:20:00+03:00",
+      "equityUsd": null,
       "nominalUsd": 247,
-      "realizedPnlUsd": 0,
-      "unrealizedPnlUsd": 0,
-      "totalPnlUsd": 0,
-      "comment": "Baseline placeholder snapshot for v0.2 structure."
+      "realizedPnlUsd": null,
+      "unrealizedPnlUsd": null,
+      "totalPnlUsd": null,
+      "status": "structure_only",
+      "comment": "v0.2 keeps PMM snapshot empty until reserve/inventory split is reconciled."
     }
   ],
+  "portfolioAudit": {
+    "auditId": "POLY-AUDIT-2026-03-13-1148",
+    "asOf": "2026-03-13T11:48:00+03:00",
+    "scope": "aggregate_polymarket_wallet_and_clob",
+    "nominalObligationsUsd": 1498,
+    "confirmedCollateralUsd": 914.569316,
+    "confirmedOpenOrdersReserveUsd": 100,
+    "confirmedFilledPositionsCostUsd": 288.97771,
+    "confirmedTotalUsd": 1303.547026,
+    "unexplainedGapUsd": 194.452974,
+    "status": "aggregate_confirmed_but_not_fully_split_by_mandate",
+    "notes": [
+      "Aggregate confirmed state is stronger than per-mandate split at the moment.",
+      "Latest desktop audit found no hidden old live orders; the unresolved gap remains explicit."
+    ]
+  },
   "redFlags": [
     {
       "flagId": "RF-001",

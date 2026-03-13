@@ -9,6 +9,24 @@
     "modelVersion": { "type": "string", "const": "0.2" },
     "asOf": { "type": "string", "format": "date-time" },
     "notes": { "type": "array", "items": { "type": "string" } },
+    "portfolioAudit": {
+      "type": "object",
+      "required": ["auditId", "asOf", "scope", "nominalObligationsUsd", "confirmedCollateralUsd", "confirmedOpenOrdersReserveUsd", "confirmedFilledPositionsCostUsd", "confirmedTotalUsd", "unexplainedGapUsd", "status"],
+      "properties": {
+        "auditId": { "type": "string" },
+        "asOf": { "type": "string", "format": "date-time" },
+        "scope": { "type": "string" },
+        "nominalObligationsUsd": { "type": "number" },
+        "confirmedCollateralUsd": { "type": "number" },
+        "confirmedOpenOrdersReserveUsd": { "type": "number" },
+        "confirmedFilledPositionsCostUsd": { "type": "number" },
+        "confirmedTotalUsd": { "type": "number" },
+        "unexplainedGapUsd": { "type": "number" },
+        "status": { "type": "string" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
     "mandates": {
       "type": "array",
       "items": {
@@ -33,15 +51,16 @@
         "required": ["mandateId", "freeCashUsd", "openOrdersUsd", "positionsCostUsd", "currentValueUsd", "unsettledUsd", "equityUsd", "nominalUsd", "pnlUsd", "pnlPct"],
         "properties": {
           "mandateId": { "type": "string" },
-          "freeCashUsd": { "type": "number" },
-          "openOrdersUsd": { "type": "number" },
-          "positionsCostUsd": { "type": "number" },
+          "freeCashUsd": { "type": ["number", "null"] },
+          "openOrdersUsd": { "type": ["number", "null"] },
+          "positionsCostUsd": { "type": ["number", "null"] },
           "currentValueUsd": { "type": ["number", "null"] },
-          "unsettledUsd": { "type": "number" },
-          "equityUsd": { "type": "number" },
+          "unsettledUsd": { "type": ["number", "null"] },
+          "equityUsd": { "type": ["number", "null"] },
           "nominalUsd": { "type": "number" },
-          "pnlUsd": { "type": "number" },
-          "pnlPct": { "type": "number" },
+          "pnlUsd": { "type": ["number", "null"] },
+          "pnlPct": { "type": ["number", "null"] },
+          "reconciliationStatus": { "type": "string" },
           "comment": { "type": "string" }
         },
         "additionalProperties": false
@@ -82,11 +101,12 @@
           "snapshotId": { "type": "string" },
           "mandateId": { "type": "string" },
           "asOf": { "type": "string", "format": "date-time" },
-          "equityUsd": { "type": "number" },
+          "equityUsd": { "type": ["number", "null"] },
           "nominalUsd": { "type": "number" },
-          "realizedPnlUsd": { "type": "number" },
-          "unrealizedPnlUsd": { "type": "number" },
-          "totalPnlUsd": { "type": "number" },
+          "realizedPnlUsd": { "type": ["number", "null"] },
+          "unrealizedPnlUsd": { "type": ["number", "null"] },
+          "totalPnlUsd": { "type": ["number", "null"] },
+          "status": { "type": "string" },
           "comment": { "type": "string" }
         },
         "additionalProperties": false

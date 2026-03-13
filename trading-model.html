@@ -206,11 +206,11 @@
                 </div>
                 <div class="subcategory">
                     <h3>Что внутри</h3>
-                    <p>Mandates → Allocations → Positions → Snapshots → Red flags. Это уже можно переложить в Grist без переосмысления модели.</p>
+                    <p>Mandates → Allocations → Positions → Snapshots → Red flags. Это уже можно переложить в Grist без переосмысления модели, но с честным различением: где есть подтверждённый aggregate audit, а где per-mandate split ещё не завершён.</p>
                 </div>
                 <div class="subcategory">
                     <h3>Статус</h3>
-                    <p>Рабочий skeleton. Не полный live feed: mark prices и детальная разбивка по рынкам ещё должны подтянуться в v0.3.</p>
+                    <p>Рабочий skeleton. Не полный live feed: mark prices и детальная разбивка по рынкам ещё должны подтянуться в v0.3. Reviewer-correction учтена: там, где valuation или P&amp;L пока не подтверждены, модель теперь оставляет <code>null</code> и не рисует фиктивную точность.</p>
                 </div>
             </div>
             <div class="table-wrap">
@@ -259,6 +259,7 @@
                 <div class="subcategory">
                     <h3>Portfolio / trading skeleton</h3>
                     <p>На этом уровне уже видны allocation, positions, current value placeholder и P&amp;L scaffold. Следующий шаг — не менять форму, а наполнять её живыми данными.</p>
+                    <p>Сейчас модель сознательно разведена на два уровня: <strong>(1) mandate skeleton</strong> без притворной per-bucket valuation и <strong>(2) aggregate portfolio audit</strong>, где уже зафиксирован подтверждённый суммарный Polymarket state.</p>
                 </div>
                 <div class="subcategory">
                     <h3>Честное ограничение</h3>
@@ -331,10 +332,10 @@
         <section class="category">
             <h2>8b. Известные ограничения и red flags</h2>
             <ul class="checklist">
-                <li><strong>Геоблок Polymarket</strong> пока не даёт перевести модель в реальное исполнение ордеров.</li>
+                <li><strong>Геоблок Polymarket</strong> остаётся живым инфраструктурным риском: в последнем прогоне попытки PMM снова упёрлись в <code>403 Trading restricted in your region</code>.</li>
                 <li><strong>Live currentValueUsd / unrealizedPnlUsd</strong> ещё не подтянуты как стабильный поток данных.</li>
-                <li><strong>Разделение BANAL и PMM</strong> описано как правило модели, но ещё не доказано на живом торговом цикле.</li>
-                <li><strong>Исторические цифры по капиталу</strong> важны как след сборки, но требуют отдельной перепроверки перед любым боевым действием.</li>
+                <li><strong>Разделение BANAL и PMM</strong> описано как правило модели, но ещё не доказано на полном живом торговом цикле.</li>
+                <li><strong>Aggregate audit сильнее per-mandate split</strong>: подтверждено примерно <strong>$1303.547026</strong> против номинала <strong>$1498</strong>, с явным unresolved gap <strong>$194.452974</strong>.</li>
                 <li><strong>Legacy reconciliation</strong> по старым рынкам и следам операций ещё не закончена полностью.</li>
             </ul>
         </section>
