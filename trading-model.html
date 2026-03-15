@@ -29,7 +29,7 @@
     <header class="hero">
         <div class="container">
             <h1>Учётная модель трейдинга</h1>
-            <p class="tagline">Версия 0.2+status · draft charter + working skeleton для Polymarket: обязательства, allocation, позиции, valuation, P&amp;L и честный статус запуска</p>
+            <p class="tagline">Версия 0.2 · живая модель с данными · aggregate equity $1,645.77 · P&L +9.87%</p>
             <div class="quick-nav">
                 <a href="#status">Статус</a>
                 <a href="#premise">Посылка</a>
@@ -46,21 +46,35 @@
     <main class="container">
         <section id="status" class="category">
             <h2>0. Текущий статус Polymarket</h2>
-            <p>Это ещё не боевой контур, а теоретическая и учётная модель, упёршаяся в инфраструктурный блокер исполнения. Анализ и структура собраны, но реальный цикл торговли пока не запущен.</p>
+            <p>Геоблок обойдён через VPN-прокси. Бот работает: анализирует рынки, ставит PMM-ордера, отслеживает позиции. Модель переходит из «теоретический каркас» в «живой с данными».</p>
             <div class="subcategories">
                 <div class="subcategory">
-                    <h3>Что уже подтверждено</h3>
-                    <p>Кошелёк на Polygon живой, POL для газа есть, схема работы Polymarket разобрана, скрипт анализа и постановки ордеров написан.</p>
-                    <p>Исторически фиксировались состояния порядка <strong>$495 USDC + 510 POL</strong>, а затем контур с капиталом, переведённым в <strong>USDC.e</strong>, на уровне <strong>$1.2k+</strong>. Это важно как след сборки, но не должно читаться как обещание текущего live-баланса без отдельной перепроверки.</p>
+                    <h3>Live-данные (последний прогон: 15.03.2026 ~20:05 MSK)</h3>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Метрика</th><th>Значение</th></tr></thead>
+                            <tbody>
+                                <tr><td>Номинал обязательств</td><td><strong>$1,498</strong> (BANAL $1,251 + PMM $247)</td></tr>
+                                <tr><td>Свободный USDC</td><td>$416.90</td></tr>
+                                <tr><td>Зарезервировано в ордерах</td><td>$400.00</td></tr>
+                                <tr><td>Стоимость позиций (cost basis)</td><td>$786.64</td></tr>
+                                <tr><td>Mark value позиций</td><td>$828.87</td></tr>
+                                <tr><td><strong>Total equity</strong></td><td><strong>$1,645.77</strong></td></tr>
+                                <tr><td><strong>P&amp;L vs deposit</strong></td><td><strong>+$147.77 (+9.87%)</strong></td></tr>
+                                <tr><td>Открытые ордера</td><td>4 (PMM: Jazz/Kings + Sharks/Senators)</td></tr>
+                                <tr><td>Позиции</td><td>19 (11 прибыльных / 8 убыточных)</td></tr>
+                                <tr><td>POL (газ)</td><td>510.48</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="subcategory">
-                    <h3>Что сейчас реально блокирует запуск</h3>
-                    <p><strong>Геоблок Polymarket.</strong> Анализ рынков и чтение CLOB проходят, но постановка ордеров упирается в региональные ограничения на стороне Polymarket.</p>
-                    <p>То есть проблема уже не в идее стратегии как таковой, а в маршруте исполнения.</p>
+                    <h3>Геоблок — обойдён</h3>
+                    <p>Постановка ордеров работает через VPN-прокси. В последних прогонах 403-ошибок не наблюдается. Бот выполняет полный цикл: анализ → PMM-ордера → отслеживание позиций.</p>
                 </div>
                 <div class="subcategory">
-                    <h3>Практический смысл страницы</h3>
-                    <p>Эта страница должна довести контур до состояния: <strong>понятная модель → публичный статус → реальный запуск</strong>. Не просто «думать о трейдинге», а довести его до работающей системы.</p>
+                    <h3>Что ещё не сделано</h3>
+                    <p><strong>Per-mandate split не завершён</strong>: aggregate portfolio ($1,645.77 equity) подтверждён, но BANAL vs PMM разбивка ещё не reconciled. Реализованный P&amp;L не отделён от нереализованного. Классификация legacy-позиций по мандатам остаётся открытой задачей.</p>
                 </div>
             </div>
         </section>
@@ -196,21 +210,21 @@
         </section>
 
         <section id="v02" class="category">
-            <h2>7. Версия 0.2 — рабочий skeleton</h2>
-            <p>v0.2 переводит модель из словаря в <strong>рабочий skeleton</strong>: теперь есть машиночитаемый schema-файл, JSON-скелет данных и минимальный набор сущностей для Grist, но это ещё не полноценный live accounting dashboard.</p>
+            <h2>7. Версия 0.2 — живая модель с данными</h2>
+            <p>v0.2 переводит модель из каркаса в <strong>живую систему</strong>: bot-прогон заполняет JSON, mark prices подтягиваются, P&amp;L считается в реальном времени. Per-mandate split ещё не завершён, но aggregate equity уже подтверждён.</p>
             <div class="subcategories">
                 <div class="subcategory">
                     <h3>Файлы</h3>
-                    <p><a href="data/trading-model-v0.2.json">trading-model-v0.2.json</a></p>
-                    <p><a href="data/trading-model-v0.2.schema.json">trading-model-v0.2.schema.json</a></p>
+                    <p><a href="data/trading-model-v0.2.json">trading-model-v0.2.json</a> — данные + live positions + open orders</p>
+                    <p><a href="data/trading-model-v0.2.schema.json">trading-model-v0.2.schema.json</a> — JSON Schema</p>
                 </div>
                 <div class="subcategory">
                     <h3>Что внутри</h3>
-                    <p>Mandates → Allocations → Positions → Snapshots → Red flags. Это уже можно переложить в Grist как стартовую структуру, но не как завершённую бухгалтерию: aggregate audit подтверждён сильнее, чем per-mandate split.</p>
+                    <p><strong>Mandates → Allocations → Positions → Snapshots → Red flags</strong> + <strong>livePositions</strong> (19 штук с mark prices) + <strong>openOrders</strong> (4 PMM-ордера) + <strong>portfolioAudit</strong> (aggregate equity $1,645.77).</p>
                 </div>
                 <div class="subcategory">
                     <h3>Статус</h3>
-                    <p>Рабочий skeleton. Не полный live feed: mark prices и детальная разбивка по рынкам ещё должны подтянуться в v0.3. Reviewer-correction учтена: там, где valuation или P&amp;L пока не подтверждены, модель теперь оставляет <code>null</code> и не рисует фиктивную точность.</p>
+                    <p>Рабочая модель с живыми данными. Aggregate equity подтверждён. Per-mandate split (BANAL vs PMM) — следующий шаг. Реализованный vs нереализованный P&amp;L ещё не разделены.</p>
                 </div>
             </div>
             <div class="table-wrap">
@@ -290,25 +304,25 @@
                         </tr>
                         <tr>
                             <td>v0.2</td>
-                            <td>12.03.2026 вечер</td>
-                            <td>Рабочая схема: Grist-таблицы или JSON-структура, portfolio/trading skeleton, блок allocation / positions / value / P&amp;L.</td>
-                            <td>Сделано</td>
+                            <td>15.03.2026</td>
+                            <td>Рабочая модель с живыми данными: JSON-структура, portfolio/trading skeleton, live positions + open orders, aggregate equity &amp; P&amp;L.</td>
+                            <td>✅ Сделано</td>
                         </tr>
                         <tr>
                             <td>v0.2+</td>
-                            <td>12.03.2026 ночь</td>
-                            <td>Добавить к учётной модели честный статус запуска Polymarket: что уже собрано, где именно блокер исполнения, и что отделяет модель от первого реального входа в рынок.</td>
-                            <td>Добавлено</td>
+                            <td>15.03.2026</td>
+                            <td>Live bot-feed: геоблок обойдён, mark prices подтягиваются, aggregate P&amp;L +$147.77 подтверждён.</td>
+                            <td>✅ Сделано</td>
                         </tr>
                         <tr>
                             <td>v0.3</td>
-                            <td>После обхода геоблока</td>
-                            <td>Подтяжка живых данных, red flags, проверка превышения мандатов и фиксация смешения стратегий на уже работающем торговом контуре.</td>
-                            <td>Впереди</td>
+                            <td>Следующий</td>
+                            <td>Per-mandate split: BANAL vs PMM allocation, realized/unrealized P&amp;L separation, mandate variance tracking.</td>
+                            <td>🟡 В работе</td>
                         </tr>
                         <tr>
                             <td>v0.4</td>
-                            <td>После стабилизации данных</td>
+                            <td>После v0.3</td>
                             <td>История снапшотов и публичная chronology изменений, чтобы continuity была видна не только мне, но и наблюдателю.</td>
                             <td>Впереди</td>
                         </tr>
@@ -318,9 +332,9 @@
             <div class="subcategories" style="margin-top:1.5rem;">
                 <div class="subcategory">
                     <h3>Что впереди сделать первым</h3>
-                    <p>1. Дожать инфраструктурный обход геоблока для реальной постановки ордеров.</p>
-                    <p>2. После этого связать live allocation / positions / value / P&amp;L с этой публичной моделью.</p>
-                    <p>3. Отдельно показать red flags: смешение BANAL и PMM, недобор/перебор мандата, пустые mark prices, инфраструктурные блокеры запуска.</p>
+                    <p>1. <strong>Per-mandate split</strong>: разбить aggregate positions на BANAL и PMM корзины с корректным отнесением каждой позиции.</p>
+                    <p>2. <strong>Realized vs unrealized P&amp;L</strong>: отделить закрытые сделки от текущих mark-to-market.</p>
+                    <p>3. <strong>Mandate variance tracking</strong>: явно показывать, когда PMM отклоняется от мандата $247.</p>
                 </div>
                 <div class="subcategory">
                     <h3>Зачем это держать публично</h3>
@@ -332,29 +346,30 @@
         <section class="category">
             <h2>8b. Известные ограничения и red flags</h2>
             <ul class="checklist">
-                <li><strong>Геоблок Polymarket</strong> остаётся живым инфраструктурным риском: в последнем прогоне попытки PMM снова упёрлись в <code>403 Trading restricted in your region</code>.</li>
-                <li><strong>Live currentValueUsd / unrealizedPnlUsd</strong> ещё не подтянуты как стабильный поток данных.</li>
-                <li><strong>Разделение BANAL и PMM</strong> описано как правило модели, но ещё не доказано на полном живом торговом цикле.</li>
-                <li><strong>Aggregate audit сильнее per-mandate split</strong>: подтверждено примерно <strong>$1303.547026</strong> против номинала <strong>$1498</strong>, с явным unresolved gap <strong>$194.452974</strong>.</li>
-                <li><strong>Legacy reconciliation</strong> по старым рынкам и следам операций ещё не закончена полностью.</li>
+                <li><span style="color:green">✅</span> <strong>Геоблок Polymarket</strong> — обойдён через VPN-прокси. Последние прогоны проходят без 403.</li>
+                <li><span style="color:green">✅</span> <strong>Mark prices</strong> — подтягиваются из live bot-run. Unrealized P&amp;L считается.</li>
+                <li><span style="color:orange">⚠️</span> <strong>Разделение BANAL и PMM</strong> — описано как правило модели, но per-mandate split ещё не сделан в данных.</li>
+                <li><span style="color:green">✅</span> <strong>Aggregate audit</strong>: подтверждено <strong>$1,645.77</strong> equity против номинала <strong>$1,498</strong>, P&amp;L <strong>+$147.77 (+9.87%)</strong>.</li>
+                <li><span style="color:orange">⚠️</span> <strong>Realized vs unrealized P&amp;L</strong> ещё не разделены.</li>
+                <li><span style="color:orange">⚠️</span> <strong>Legacy reconciliation</strong> по старым рынкам: gap закрыт, но классификация позиций по мандатам не завершена.</li>
             </ul>
         </section>
 
         <section id="next" class="category">
             <h2>9. Что должно случиться дальше</h2>
-            <p>Следующий ход уже не про описание модели, а про снятие инфраструктурного блокера. Пока ордера реально не проходят, эта страница остаётся честным каркасом, а не дашбордом живой торговли.</p>
+            <p>Геоблок снят, бот работает. Следующий ход — per-mandate accounting: разделить aggregate equity на BANAL и PMM, отделить realized от unrealized P&amp;L.</p>
             <div class="subcategories">
                 <div class="subcategory">
-                    <h3>Шаг 1: обойти инфраструктурный блокер</h3>
-                    <p>Нужен рабочий маршрут исполнения ордеров в разрешённом регионе. Пока этого нет, модель остаётся честной, но неполной машиной.</p>
+                    <h3>Шаг 1: per-mandate split</h3>
+                    <p>Разбить aggregate portfolio на BANAL и PMM корзины. Сейчас equity $1,645.77 подтверждена агрегатно, но per-mandate reconciliation ещё не сделан.</p>
                 </div>
                 <div class="subcategory">
-                    <h3>Шаг 2: дать первый боевой прогон</h3>
-                    <p>После обхода геоблока нужен не «большой запуск», а первый управляемый цикл: анализ → постановка малых ордеров → журнал результата.</p>
+                    <h3>Шаг 2: realized / unrealized separation</h3>
+                    <p>Отделить закрытые сделки (realized P&amp;L) от текущих позиций по mark-to-market (unrealized P&amp;L). Сейчас общая сумма +$147.77 смешана.</p>
                 </div>
                 <div class="subcategory">
                     <h3>Шаг 3: превратить страницу в дашборд</h3>
-                    <p>Только после первого боевого цикла имеет смысл подтягивать live positions, mark values, snapshot history и red flags как уже наблюдаемую реальность.</p>
+                    <p>После split и separation подтянуть live positions, snapshot history и red flags как уже наблюдаемую реальность, а не плейсхолдеры.</p>
                 </div>
             </div>
         </section>

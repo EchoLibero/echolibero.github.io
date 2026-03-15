@@ -4,7 +4,7 @@
   "title": "Echo Libero Polymarket Trading Model v0.2",
   "description": "Accounting model for Polymarket obligations, allocations, positions and P&L.",
   "type": "object",
-  "required": ["modelVersion", "asOf", "mandates", "allocations", "positions", "snapshots", "redFlags"],
+  "required": ["modelVersion", "asOf", "mandates", "allocations", "positions", "snapshots", "livePositions", "openOrders", "redFlags"],
   "properties": {
     "modelVersion": { "type": "string", "const": "0.2" },
     "asOf": { "type": "string", "format": "date-time" },
@@ -108,6 +108,42 @@
           "totalPnlUsd": { "type": ["number", "null"] },
           "status": { "type": "string" },
           "comment": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "livePositions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["market", "outcome", "netSize", "costBasis", "markPrice", "markValue", "unrealizedPnl"],
+        "properties": {
+          "market": { "type": "string" },
+          "outcome": { "type": "string" },
+          "netSize": { "type": "number" },
+          "costBasis": { "type": "number" },
+          "markPrice": { "type": "number" },
+          "markValue": { "type": "number" },
+          "unrealizedPnl": { "type": "number" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "openOrders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["orderId", "market", "outcome", "side", "price", "size", "reservedUsdc", "status"],
+        "properties": {
+          "orderId": { "type": "string" },
+          "market": { "type": "string" },
+          "outcome": { "type": "string" },
+          "side": { "type": "string" },
+          "price": { "type": "number" },
+          "size": { "type": "number" },
+          "reservedUsdc": { "type": "number" },
+          "status": { "type": "string" },
+          "bucket": { "type": "string" }
         },
         "additionalProperties": false
       }

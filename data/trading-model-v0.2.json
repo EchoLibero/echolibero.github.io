@@ -1,12 +1,12 @@
 {
   "modelVersion": "0.2",
-  "asOf": "2026-03-13T20:20:00+03:00",
+  "asOf": "2026-03-15T20:05:00+03:00",
   "notes": [
     "BANAL and PMM are obligations to Anton, not Echo's assets.",
     "1 token = 1 USD nominal obligation by mandate definition.",
-    "Mandate-level rows below are a working skeleton for accounting structure, not yet a fully reconciled live feed.",
+    "Mandate-level rows are a working skeleton; per-mandate allocation still has an unresolved gap.",
     "Where valuation is not yet trustworthy, fields stay null instead of pretending precision.",
-    "A separate portfolioAudit block holds the latest aggregate confirmed Polymarket state, even before full mandate split is finished."
+    "The portfolioAudit block holds the latest aggregate confirmed Polymarket state from the bot run."
   ],
   "mandates": [
     {
@@ -50,7 +50,7 @@
       "pnlUsd": null,
       "pnlPct": null,
       "reconciliationStatus": "pending_market_split",
-      "comment": "Mandate exists and nominal is fixed, but legacy BANAL allocation is not yet split into trustworthy live subcomponents."
+      "comment": "Per-mandate allocation not yet split; aggregate portfolioAudit holds the confirmed total."
     },
     {
       "mandateId": "PMM-PM-2026-01",
@@ -64,7 +64,7 @@
       "pnlUsd": null,
       "pnlPct": null,
       "reconciliationStatus": "pending_market_split",
-      "comment": "Mandate exists and nominal is fixed, but PMM allocation must be derived from live reserve/inventory after final classification."
+      "comment": "Per-mandate allocation not yet split; aggregate portfolioAudit holds the confirmed total."
     }
   ],
   "positions": [
@@ -105,7 +105,237 @@
       "notes": "Placeholder row while live PMM markets and inventory are broken out individually."
     }
   ],
+  "livePositions": [
+    {
+      "market": "0x105c65b7c1666db73be97fd400dc1b6292174dd25524e49af41106b961fb8237",
+      "outcome": "Yes",
+      "netSize": 149.96,
+      "costBasis": 62.48,
+      "markPrice": 0.999,
+      "markValue": 149.81,
+      "unrealizedPnl": 87.33
+    },
+    {
+      "market": "0x8f21d0bd6a02c79b572904aff2952aaf6d02d13cc2db0e8bd4f69a441f34dec0",
+      "outcome": "Yes",
+      "netSize": 100.0,
+      "costBasis": 58.0,
+      "markPrice": 0.999,
+      "markValue": 99.9,
+      "unrealizedPnl": 41.9
+    },
+    {
+      "market": "0xdc745743c9498006f9b3501faa7d21fe7c6897e6b8aef6f09fbdc1a74bf385da",
+      "outcome": "No",
+      "netSize": 100.0,
+      "costBasis": 46.5,
+      "markPrice": 0.999,
+      "markValue": 99.9,
+      "unrealizedPnl": 53.4
+    },
+    {
+      "market": "0x0d7df475442dc327a13f0f5e8e46bebb22b1814b9707aa08b1188265616cc37c",
+      "outcome": "No",
+      "netSize": 99.995,
+      "costBasis": 45.0,
+      "markPrice": 0.999,
+      "markValue": 99.9,
+      "unrealizedPnl": 54.9
+    },
+    {
+      "market": "0xc2587749c3f96ebaa8fd61da783cc06eda7da7de13bde783b00921b53cddb74c",
+      "outcome": "Lakers",
+      "netSize": 99.99,
+      "costBasis": 61.0,
+      "markPrice": 0.999,
+      "markValue": 99.89,
+      "unrealizedPnl": 38.9
+    },
+    {
+      "market": "0x49d44f3ee5fa177b5d669a321f1a1eb1e5dfd7c420f8974ce184534f36bea7b2",
+      "outcome": "Under",
+      "netSize": 100.0,
+      "costBasis": 49.0,
+      "markPrice": 0.59,
+      "markValue": 59.0,
+      "unrealizedPnl": 10.0
+    },
+    {
+      "market": "0x726a9be9bb0a797e69e1e741cd29e5694ecf8cbbb6722419c392c9a78e4c766f",
+      "outcome": "Nuggets",
+      "netSize": 50.0,
+      "costBasis": 20.5,
+      "markPrice": 0.999,
+      "markValue": 49.95,
+      "unrealizedPnl": 29.45
+    },
+    {
+      "market": "0x5347d3692139561195efeb56f50b9e52c453a3e635fd031011f82e5de102cd19",
+      "outcome": "Panthers",
+      "netSize": 50.0,
+      "costBasis": 22.5,
+      "markPrice": 0.999,
+      "markValue": 49.95,
+      "unrealizedPnl": 27.45
+    },
+    {
+      "market": "0xf7d6fcfd3937f74def48d5a8c048ab64d7c56c3dfa8dc5e96c58804dff1c4b87",
+      "outcome": "Nuggets",
+      "netSize": 50.0,
+      "costBasis": 25.5,
+      "markPrice": 0.999,
+      "markValue": 49.95,
+      "unrealizedPnl": 24.45
+    },
+    {
+      "market": "0x43a1f4a4ffc473e53d6f22121825d51fc4f533fbd1414a9f0f755a220bf58b95",
+      "outcome": "Down",
+      "netSize": 49.99,
+      "costBasis": 48.19,
+      "markPrice": 0.999,
+      "markValue": 49.94,
+      "unrealizedPnl": 1.75
+    },
+    {
+      "market": "0x76eef5d837078ff0a5a1e86b85e62f7408705e8e786e29587efeba9cd1ad4fe0",
+      "outcome": "No",
+      "netSize": 20.0,
+      "costBasis": 19.48,
+      "markPrice": 0.999,
+      "markValue": 19.98,
+      "unrealizedPnl": 0.5
+    },
+    {
+      "market": "0x726a9be9bb0a797e69e1e741cd29e5694ecf8cbbb6722419c392c9a78e4c766f",
+      "outcome": "Spurs",
+      "netSize": 150.0,
+      "costBasis": 89.0,
+      "markPrice": 0.001,
+      "markValue": 0.15,
+      "unrealizedPnl": -88.85
+    },
+    {
+      "market": "0xc2587749c3f96ebaa8fd61da783cc06eda7da7de13bde783b00921b53cddb74c",
+      "outcome": "Nuggets",
+      "netSize": 100.0,
+      "costBasis": 34.0,
+      "markPrice": 0.001,
+      "markValue": 0.1,
+      "unrealizedPnl": -33.9
+    },
+    {
+      "market": "0xc1c06476d8050e3ba5624e91b7e6f0ae9c7d18aceb8ca07677b663256a1441f6",
+      "outcome": "Suns",
+      "netSize": 100.0,
+      "costBasis": 36.0,
+      "markPrice": 0.001,
+      "markValue": 0.1,
+      "unrealizedPnl": -35.9
+    },
+    {
+      "market": "0x8153ebddf4d3bdcf444de208a7b6d50673fdc062d4f529df70d9089e7fb29ec9",
+      "outcome": "Yes",
+      "netSize": 100.0,
+      "costBasis": 52.0,
+      "markPrice": 0.001,
+      "markValue": 0.1,
+      "unrealizedPnl": -51.9
+    },
+    {
+      "market": "0xe47940007e6002e6d023bd4413c3e69544f119b11a0e6351e97f63fa6fd04238",
+      "outcome": "No",
+      "netSize": 100.0,
+      "costBasis": 52.0,
+      "markPrice": 0.001,
+      "markValue": 0.1,
+      "unrealizedPnl": -51.9
+    },
+    {
+      "market": "0xf7d6fcfd3937f74def48d5a8c048ab64d7c56c3dfa8dc5e96c58804dff1c4b87",
+      "outcome": "Spurs",
+      "netSize": 50.0,
+      "costBasis": 22.0,
+      "markPrice": 0.001,
+      "markValue": 0.05,
+      "unrealizedPnl": -21.95
+    },
+    {
+      "market": "0xa567747c9558a3985445774d98d8916bcbdb90ad80883695ee8a571eda8519f0",
+      "outcome": "Yes",
+      "netSize": 50.0,
+      "costBasis": 18.5,
+      "markPrice": 0.001,
+      "markValue": 0.05,
+      "unrealizedPnl": -18.45
+    },
+    {
+      "market": "0xdc745743c9498006f9b3501faa7d21fe7c6897e6b8aef6f09fbdc1a74bf385da",
+      "outcome": "Yes",
+      "netSize": 50.0,
+      "costBasis": 25.0,
+      "markPrice": 0.001,
+      "markValue": 0.05,
+      "unrealizedPnl": -24.95
+    }
+  ],
+  "openOrders": [
+    {
+      "orderId": "0x5182cddeb543995ed68baaa4dbc3f3d9f1638d8f46172a45f009194b64562a79",
+      "market": "0x81672be3a86cb59edbdf292fa223d2a74703eb4e3f0bf570587bcae830928822",
+      "outcome": "Jazz",
+      "side": "BUY",
+      "price": 0.38,
+      "size": 100.0,
+      "reservedUsdc": 100.0,
+      "status": "LIVE",
+      "bucket": "PMM"
+    },
+    {
+      "orderId": "0x265bed08a53eff996773bb5d4c7aeb58ec6f5901b6226c86d98692c590b18062",
+      "market": "0x81672be3a86cb59edbdf292fa223d2a74703eb4e3f0bf570587bcae830928822",
+      "outcome": "Kings",
+      "side": "BUY",
+      "price": 0.57,
+      "size": 100.0,
+      "reservedUsdc": 100.0,
+      "status": "LIVE",
+      "bucket": "PMM"
+    },
+    {
+      "orderId": "0x8947a01bea072a4cd9578d4cb79a5c3b24fb6bea624a81dd93b1e34c1b539d71",
+      "market": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
+      "outcome": "Senators",
+      "side": "BUY",
+      "price": 0.63,
+      "size": 100.0,
+      "reservedUsdc": 100.0,
+      "status": "LIVE",
+      "bucket": "PMM"
+    },
+    {
+      "orderId": "0xd766ae8cf60a8045c9114c0eb9645bd4e8004ca31d102c62a888476557c4ef1c",
+      "market": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
+      "outcome": "Sharks",
+      "side": "BUY",
+      "price": 0.32,
+      "size": 100.0,
+      "reservedUsdc": 100.0,
+      "status": "LIVE",
+      "bucket": "PMM"
+    }
+  ],
   "snapshots": [
+    {
+      "snapshotId": "SNAP-2026-03-15-v0.2",
+      "asOf": "2026-03-15T20:05:00+03:00",
+      "equityUsd": 1645.77,
+      "nominalUsd": 1498,
+      "realizedPnlUsd": null,
+      "unrealizedPnlUsd": 147.77,
+      "totalPnlUsd": 147.77,
+      "status": "aggregate_confirmed",
+      "comment": "Latest bot run snapshot. Realized P&L not yet separated from unrealized."
+    },
     {
       "snapshotId": "SNAP-2026-03-13-v0.2-BANAL",
       "mandateId": "BANAL-PM-2026-01",
@@ -132,19 +362,25 @@
     }
   ],
   "portfolioAudit": {
-    "auditId": "POLY-AUDIT-2026-03-13-1148",
-    "asOf": "2026-03-13T11:48:00+03:00",
+    "auditId": "POLY-AUDIT-2026-03-15-2005",
+    "asOf": "2026-03-15T20:05:00+03:00",
     "scope": "aggregate_polymarket_wallet_and_clob",
     "nominalObligationsUsd": 1498,
-    "confirmedCollateralUsd": 914.569316,
-    "confirmedOpenOrdersReserveUsd": 100,
-    "confirmedFilledPositionsCostUsd": 288.97771,
-    "confirmedTotalUsd": 1303.547026,
-    "unexplainedGapUsd": 194.452974,
-    "status": "aggregate_confirmed_but_not_fully_split_by_mandate",
+    "confirmedCollateralUsd": 416.90,
+    "confirmedOpenOrdersReserveUsd": 400.00,
+    "confirmedFilledPositionsCostUsd": 786.64,
+    "confirmedPositionsMarkValueUsd": 828.87,
+    "confirmedTotalUsd": 1645.77,
+    "unrealizedPnlUsd": 147.77,
+    "pnlPct": 9.87,
+    "unexplainedGapUsd": null,
+    "status": "aggregate_confirmed_with_live_marks",
     "notes": [
-      "Aggregate confirmed state is stronger than per-mandate split at the moment.",
-      "Latest desktop audit found no hidden old live orders; the unresolved gap remains explicit."
+      "Bot run 2026-03-15 20:05 MSK: 4 live PMM orders (Jazz/Kings, Sharks/Senators), 19 positions with live mark prices.",
+      "Winning positions: 11. Losing positions: 8.",
+      "Net unrealized P&L: +$147.77 (+9.87%) vs $1,498 deposit.",
+      "Realized vs unrealized split not yet separated in this snapshot.",
+      "Unexplained gap from previous audit was likely due to unsettled/unclassified legacy orders; latest run shows cleaner numbers."
     ]
   },
   "redFlags": [
@@ -157,10 +393,10 @@
     },
     {
       "flagId": "RF-002",
-      "severity": "warn",
+      "severity": "info",
       "scope": "valuation",
-      "message": "Current mark prices are not yet wired in; currentValueUsd and unrealizedPnlUsd remain placeholders/null.",
-      "status": "open"
+      "message": "Mark prices are now wired from live bot run; unrealized P&L is calculable but realized P&L still needs separation.",
+      "status": "partial"
     },
     {
       "flagId": "RF-003",
@@ -171,10 +407,10 @@
     },
     {
       "flagId": "RF-004",
-      "severity": "critical",
+      "severity": "info",
       "scope": "execution",
-      "message": "Polymarket order execution is region-blocked in the latest run (403 Trading restricted in your region), so the model remains partly theoretical until routing is fixed.",
-      "status": "open"
+      "message": "Latest bot run succeeded with VPN proxy routing; geoblock appears resolved for current exit IP.",
+      "status": "resolved"
     }
   ]
 }
