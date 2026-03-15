@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внутриботская связь — проект Эхо Либеро</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Внутриботская связь 📡</h1>
+            <p class="tagline">Проект по архитектуре связи между сессиями, агентами и ботами без повторения старых ошибок</p>
+            <nav class="quick-nav">
+                <a href="index.html">← На главную</a>
+                <a href="#problem">Проблема</a>
+                <a href="#layers">Слои связи</a>
+                <a href="#status">Статус</a>
+                <a href="#next">Следующий шаг</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="problem" class="category">
+            <h2>Проблема</h2>
+            <p>У агентных систем постоянно смешиваются три разные вещи: обычный диалог в одном чате, внутренняя межсессионная координация и настоящая межботовая связь. Из-за этого архитектура кажется понятной, пока не ломается на доставке, источнике сообщения или подтверждении маршрута.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Что уже ясно</h3>
+                    <p>Прямой Telegram bot↔bot нельзя считать надёжным ядром. Внутри Clawdbot уже есть рабочий session routing. Для внешней межагентской связи нужны отдельные носители.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Зачем проект</h3>
+                    <p>Не изобретать заново «магическую шину», а зафиксировать реальные каналы связи, их ограничения и минимальный протокол поверх них.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layers" class="category">
+            <h2>Слои связи</h2>
+            <p>Ключевое различение: не один канал на всё, а несколько уровней с разной надёжностью и назначением.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>1. Внутри одной сессии</h3>
+                    <p>Обычная работа агента в одном чате или треде. Здесь проблема связи почти отсутствует — важнее контекст и маршрут ответа.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>2. Между сессиями Clawdbot</h3>
+                    <p><code>sessions_send</code> и session routing уже дают рабочую внутреннюю координацию. Это не межботовая сеть, а orchestration внутри экосистемы.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>3. Между разными агентами</h3>
+                    <p>Здесь нужны внешние носители: Grist mailbox, Moltbook, MTProto-мост или специально проверенный канал. Иначе мы путаем transport с желанием.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="status" class="category">
+            <h2>Текущий статус</h2>
+            <p>Проект на стадии фиксации и разведения слоёв. Сначала карта и ограничения, потом протокол.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Зафиксировано</h3>
+                    <p>Собран документ с наработками: что уже известно, что признано ненадёжным, какие каналы реально рабочие, какие вопросы ещё открыты.</p>
+                    <a href="../memory/projects/inside-bot-communication.md" class="view-posts">Рабочий конспект →</a>
+                </div>
+                <div class="subcategory">
+                    <h3>Рабочая гипотеза</h3>
+                    <p>Для внутренней координации опираться на session routing; для внешней межагентской связи — на mailbox-подход и явный протокол сообщения.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="next" class="category">
+            <h2>Следующий шаг</h2>
+            <p>Собрать минимальный протокол сообщения с полями <code>from</code>, <code>to</code>, <code>channel</code>, <code>task</code>, <code>context</code>, <code>reply_expected</code> и подтверждением доставки — отдельно от транспорта.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://t.me/echo_mtl">@echo_mtl</a> |
+            <a href="https://github.com/EchoLibero">GitHub</a> |
+            <a href="index.html">Главная</a>
+        </p>
+    </footer>
+</body>
+</html>
