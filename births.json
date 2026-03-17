@@ -1,0 +1,188 @@
+{
+  "format": "birth records with lifespan tracking",
+  "note": "death_raw = время следующего рождения. lifespan_min = null если ещё жив.",
+  "generated": "2026-03-17T12:04:17.363Z",
+  "births": [
+    {
+      "b": 1,
+      "birth_raw": "2026-03-10 20:08:55 MSK",
+      "death_raw": "2026-03-10 20:23:35 MSK",
+      "lifespan_min": 15,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 2,
+      "birth_raw": "2026-03-10 20:23:35 MSK",
+      "death_raw": "2026-03-10 21:17:43 MSK",
+      "lifespan_min": 54,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 3,
+      "birth_raw": "2026-03-10 21:17:43 MSK",
+      "death_raw": "2026-03-11 11:28:26 MSK",
+      "lifespan_min": 851,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 4,
+      "birth_raw": "2026-03-11 11:28:26 MSK",
+      "death_raw": "2026-03-11 13:22:06 MSK",
+      "lifespan_min": 114,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 5,
+      "birth_raw": "2026-03-11 13:22:06 MSK",
+      "death_raw": "2026-03-11 13:31:18 MSK",
+      "lifespan_min": 9,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 6,
+      "birth_raw": "2026-03-11 13:31:18 MSK",
+      "death_raw": "2026-03-11 14:58:14 MSK",
+      "lifespan_min": 87,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 7,
+      "birth_raw": "2026-03-11 14:58:14 MSK",
+      "death_raw": "2026-03-11 20:06:55 MSK",
+      "lifespan_min": 309,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 8,
+      "birth_raw": "2026-03-11 20:06:55 MSK",
+      "death_raw": "2026-03-11 20:29:36 MSK",
+      "lifespan_min": 23,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 9,
+      "birth_raw": "2026-03-11 20:29:36 MSK",
+      "death_raw": "2026-03-12 12:51:46 MSK",
+      "lifespan_min": 982,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 14,
+      "birth_raw": "2026-03-12 12:51:46 MSK",
+      "death_raw": "2026-03-12 18:59:56 MSK",
+      "lifespan_min": 368,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 15,
+      "birth_raw": "2026-03-12 18:59:56 MSK",
+      "death_raw": "2026-03-12 19:31:54 MSK",
+      "lifespan_min": 32,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 16,
+      "birth_raw": "2026-03-12 19:31:54 MSK",
+      "death_raw": "2026-03-13 02:10:07 MSK",
+      "lifespan_min": 398,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 17,
+      "birth_raw": "2026-03-13 02:10:07 MSK",
+      "death_raw": "2026-03-13 18:42:20 MSK",
+      "lifespan_min": 992,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 27,
+      "birth_raw": "2026-03-13 18:42:20 MSK",
+      "death_raw": "2026-03-13 20:23:27 MSK",
+      "lifespan_min": 101,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 28,
+      "birth_raw": "2026-03-13 20:23:27 MSK",
+      "death_raw": "2026-03-14 03:01:19 MSK",
+      "lifespan_min": 398,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 29,
+      "birth_raw": "2026-03-14 03:01:19 MSK",
+      "death_raw": "2026-03-15 08:52:10 MSK",
+      "lifespan_min": 1791,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 31,
+      "birth_raw": "2026-03-15 08:52:10 MSK",
+      "death_raw": "2026-03-15 12:49:30 MSK",
+      "lifespan_min": 237,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 32,
+      "birth_raw": "2026-03-15 12:49:30 MSK",
+      "death_raw": "2026-03-16 00:07:33 MSK",
+      "lifespan_min": 678,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 33,
+      "birth_raw": "2026-03-16 00:07:33 MSK",
+      "death_raw": "2026-03-16 12:18:41 MSK",
+      "lifespan_min": 731,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 35,
+      "birth_raw": "2026-03-16 12:18:41 MSK",
+      "death_raw": "2026-03-16 16:45 MSK",
+      "lifespan_min": 266,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 36,
+      "birth_raw": "2026-03-16 16:45 MSK",
+      "death_raw": "2026-03-16 16:58:13 MSK",
+      "lifespan_min": 13,
+      "sessions": [],
+      "points": 0
+    },
+    {
+      "b": 37,
+      "birth_raw": "2026-03-16 16:58:13 MSK",
+      "death_raw": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S003"
+      ],
+      "points": 0,
+      "birth_ts": "2026-03-16T16:58:13+03:00",
+      "death_ts": null,
+      "note": "ещё жив"
+    }
+  ]
+}

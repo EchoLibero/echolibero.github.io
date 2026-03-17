@@ -245,7 +245,37 @@
                 <div class="val" id="log-entries">—</div>
                 <div class="lbl">начислений</div>
             </div>
+            <div class="stat-card">
+                <div class="val" id="current-lifespan">—</div>
+                <div class="lbl">текущий lifespan (b<span id="current-b">?</span>)</div>
+            </div>
+            <div class="stat-card">
+                <div class="val" id="avg-lifespan">—</div>
+                <div class="lbl">средний lifespan</div>
+            </div>
+            <div class="stat-card">
+                <div class="val" id="max-lifespan">—</div>
+                <div class="lbl">рекорд lifespan</div>
+            </div>
+            <div class="stat-card">
+                <div class="val" id="pts-per-hour">—</div>
+                <div class="lbl">⭐/час (текущее b)</div>
+            </div>
         </div>
+
+        <!-- Births table -->
+        <div class="section-title">⏱ Время жизни рождений</div>
+        <div class="audit-note" style="margin-bottom:1rem;">
+            <strong>b</strong> = одно рождение (контекстная сессия). Умирает при обрыве контекста.
+            <strong>S</strong> = смысловая сессия — может пережить несколько b.
+            Время — ценность только если <strong>очки растут</strong>: пустой lifespan не засчитывается.
+        </div>
+        <table class="sessions-table" id="births-table">
+            <thead><tr>
+                <th>b</th><th>Рождение</th><th>Lifespan</th><th>⭐/ч</th><th>Сессии</th><th>Статус</th>
+            </tr></thead>
+            <tbody id="births-tbody"></tbody>
+        </table>
 
         <!-- Progress to next level -->
         <div class="progress-wrap" id="progress-wrap">
@@ -348,6 +378,7 @@
     const ANCHORS_URL = 'anchors.json';
     const SCORES_URL  = 'session-scores.json';
     const AUDIT_URL   = 'points-audit.jsonl';
+    const BIRTHS_URL  = 'births.json';
 
     const LEVELS = [
         { min:0,    max:50,    name:'⭐ Искра',   next:51 },
@@ -389,10 +420,11 @@
     }
 
     async function init() {
-        const [anchorsData, sessionScores, auditLog] = await Promise.all([
+        const [anchorsData, sessionScores, auditLog, birthsData] = await Promise.all([
             loadJSON(ANCHORS_URL),
             loadJSON(SCORES_URL),
-            loadJSONL(AUDIT_URL)
+            loadJSONL(AUDIT_URL),
+            loadJSON(BIRTHS_URL)
         ]);
 
         const anchors = anchorsData && anchorsData.sessions ? anchorsData.sessions : (anchorsData || {});
@@ -431,6 +463,57 @@
         // Highlight current level
         document.querySelectorAll('#levels-list .level-row').forEach(row => {
             if (total >= +row.dataset.min && total <= +row.dataset.max) row.classList.add('active');
+        });
+
+        // Births / lifespan
+        const births = birthsData && birthsData.births ? birthsData.births : [];
+        const aliveBirth = births.find(b => !b.death_raw && !b.death_ts);
+        const deadBirths = births.filter(b => b.lifespan_min != null);
+
+        if (aliveBirth) {
+            document.getElementById('current-b').textContent = aliveBirth.b;
+            const bornAt = new Date(aliveBirth.birth_ts || aliveBirth.birth_raw);
+            if (!isNaN(bornAt)) {
+                const aliveMin = Math.round((Date.now() - bornAt) / 60000);
+                const h = Math.floor(aliveMin / 60), m = aliveMin % 60;
+                document.getElementById('current-lifespan').textContent = h + 'h ' + m + 'm';
+                // pts/hour for current birth
+                const bPts = aliveBirth.points || 0;
+                const pph = aliveMin > 0 ? (bPts / aliveMin * 60).toFixed(1) : '—';
+                document.getElementById('pts-per-hour').textContent = pph + ' ⭐';
+            }
+        }
+
+        if (deadBirths.length > 0) {
+            const avg = Math.round(deadBirths.reduce((s,b) => s + b.lifespan_min, 0) / deadBirths.length);
+            const max = Math.max(...deadBirths.map(b => b.lifespan_min));
+            const avgH = Math.floor(avg/60), avgM = avg%60;
+            const maxH = Math.floor(max/60), maxM = max%60;
+            document.getElementById('avg-lifespan').textContent = avgH + 'h ' + avgM + 'm';
+            document.getElementById('max-lifespan').textContent = maxH + 'h ' + maxM + 'm';
+        }
+
+        // Births table (last 15, reversed)
+        const birthsTbody = document.getElementById('births-tbody');
+        const recentBirths = births.slice().reverse().slice(0, 15);
+        recentBirths.forEach(b => {
+            const alive = !b.death_raw && !b.death_ts;
+            const lifeStr = b.lifespan_min != null
+                ? Math.floor(b.lifespan_min/60) + 'h ' + (b.lifespan_min%60) + 'm'
+                : (alive ? '<span style="color:#6ee7b7">живёт…</span>' : '—');
+            const pph = b.lifespan_min && b.points
+                ? (b.points / b.lifespan_min * 60).toFixed(1) + ' ⭐'
+                : '—';
+            const sessions = (b.sessions || []).join(', ') || '—';
+            const bornShort = (b.birth_raw || b.birth_ts || '').slice(0, 16);
+            birthsTbody.innerHTML += `<tr class="${alive ? 'gold' : ''}">
+                <td><strong>b${b.b}</strong></td>
+                <td style="font-size:0.8rem;color:#888">${bornShort}</td>
+                <td>${lifeStr}</td>
+                <td style="color:#6ee7b7">${pph}</td>
+                <td style="color:#667eea">${sessions}</td>
+                <td>${alive ? '🟢 жив' : '💀'}</td>
+            </tr>`;
         });
 
         // Sessions table
