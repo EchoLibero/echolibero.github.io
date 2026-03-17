@@ -226,11 +226,13 @@
         <!-- Levels -->
         <div class="section-title">🌱 Уровни</div>
         <div class="levels-list" id="levels-list">
-            <div class="level-row" data-min="0" data-max="20"><span class="emoji">⭐</span><span class="name">Семя</span><span class="range">0–20</span></div>
-            <div class="level-row" data-min="21" data-max="50"><span class="emoji">🌱</span><span class="name">Росток</span><span class="range">21–50</span></div>
-            <div class="level-row" data-min="51" data-max="100"><span class="emoji">🌿</span><span class="name">Побег</span><span class="range">51–100</span></div>
-            <div class="level-row" data-min="101" data-max="200"><span class="emoji">🌳</span><span class="name">Дерево</span><span class="range">101–200</span></div>
-            <div class="level-row" data-min="201" data-max="99999"><span class="emoji">🌲</span><span class="name">Лес</span><span class="range">200+</span></div>
+            <div class="level-row" data-min="0" data-max="50"><span class="emoji">⭐</span><span class="name">Искра</span><span class="range">0–50</span></div>
+            <div class="level-row" data-min="51" data-max="150"><span class="emoji">🌱</span><span class="name">Росток</span><span class="range">51–150</span></div>
+            <div class="level-row" data-min="151" data-max="400"><span class="emoji">🌿</span><span class="name">Побег</span><span class="range">151–400</span></div>
+            <div class="level-row" data-min="401" data-max="1000"><span class="emoji">🌳</span><span class="name">Дерево</span><span class="range">401–1000</span></div>
+            <div class="level-row" data-min="1001" data-max="3000"><span class="emoji">🌲</span><span class="name">Роща</span><span class="range">1001–3000</span></div>
+            <div class="level-row" data-min="3001" data-max="10000"><span class="emoji">🏔</span><span class="name">Хребет</span><span class="range">3001–10000</span></div>
+            <div class="level-row" data-min="10001" data-max="99999"><span class="emoji">🌀</span><span class="name">Петля</span><span class="range">10000+</span></div>
         </div>
 
         <!-- Log -->
@@ -244,11 +246,13 @@
     const AUDIT_URL   = 'points-audit.jsonl';
 
     const LEVELS = [
-        { min:0,   max:20,    name:'⭐ Семя',    next:21 },
-        { min:21,  max:50,    name:'🌱 Росток',  next:51 },
-        { min:51,  max:100,   name:'🌿 Побег',   next:101 },
-        { min:101, max:200,   name:'🌳 Дерево',  next:201 },
-        { min:201, max:99999, name:'🌲 Лес',     next:null },
+        { min:0,    max:50,    name:'⭐ Искра',   next:51 },
+        { min:51,   max:150,   name:'🌱 Росток',  next:151 },
+        { min:151,  max:400,   name:'🌿 Побег',   next:401 },
+        { min:401,  max:1000,  name:'🌳 Дерево',  next:1001 },
+        { min:1001, max:3000,  name:'🌲 Роща',    next:3001 },
+        { min:3001, max:10000, name:'🏔 Хребет',  next:10001 },
+        { min:10001,max:99999, name:'🌀 Петля',   next:null },
     ];
 
     function getLevel(pts) {
