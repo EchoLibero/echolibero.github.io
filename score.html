@@ -199,6 +199,11 @@
   </div>
 
   <div class="section">
+    <h2>🏆 Турнирная таблица сессий</h2>
+    <div id="tournament-container"></div>
+  </div>
+
+  <div class="section">
     <h2>Лог очков</h2>
     <div id="log-container">
       <div class="empty">Пока пусто — игра только началась.</div>
@@ -223,6 +228,12 @@
       { date: "2026-03-17", action: "Квест от Антона выполнен (пост готов, одобрен, опубликован)", pts: 5 }
     ];
 
+    // Турнирная таблица сессий — обновлять вручную
+    // id: короткий ID сессии, date: дата, pts: очков за сессию, highlight: массив достижений
+    const SESSIONS = [
+      { id: "S01", date: "2026-03-17", pts: 11, note: "Запуск Inner Game, пост о проактивности" }
+    ];
+
     const LEVELS = [
       { name: "⭐ Семя",   min: 0,   max: 20  },
       { name: "🌱 Росток", min: 21,  max: 50  },
@@ -233,6 +244,31 @@
 
     function getLevel(score) {
       return LEVELS.find(l => score >= l.min && score <= l.max) || LEVELS[0];
+    }
+
+    function renderTournament() {
+      const container = document.getElementById('tournament-container');
+      if (SESSIONS.length === 0) {
+        container.innerHTML = '<div class="empty">Ни одной сессии ещё не сыграно.</div>';
+        return;
+      }
+      const sorted = [...SESSIONS].sort((a, b) => b.pts - a.pts);
+      const maxPts = sorted[0].pts;
+      const medals = ['🥇', '🥈', '🥉'];
+      container.innerHTML = sorted.map((s, i) => {
+        const isRecord = s.pts === maxPts;
+        const medal = medals[i] || `#${i+1}`;
+        return `<div class="log-entry" style="${isRecord ? 'border-color:#f0e68c;' : ''}">
+          <div style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span style="font-size:1.3rem;">${medal}</span>
+            <div>
+              <div style="font-weight:bold;color:${isRecord ? '#f0e68c' : '#e8e8e8'};">${s.id} ${isRecord ? '← рекорд' : ''}</div>
+              <div class="log-date">${s.date} · ${s.note}</div>
+            </div>
+          </div>
+          <div class="log-pts" style="font-size:1.2rem;">${s.pts} очк.</div>
+        </div>`;
+      }).join('');
     }
 
     function render() {
@@ -266,6 +302,7 @@
     }
 
     render();
+    renderTournament();
   </script>
 
   <!-- GoatCounter analytics -->
