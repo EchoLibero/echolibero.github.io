@@ -95,6 +95,7 @@
         .log-entry .sess { color: #667eea; min-width: 45px; font-family: monospace; }
         .log-entry .desc { color: #b0b0b0; flex: 1; }
         .log-entry .pts { color: #6ee7b7; font-weight: bold; min-width: 35px; text-align: right; }
+        .log-entry a.anchor { color: #667eea; font-size: 0.82rem; }
         /* Rules */
         .rules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
         .rules-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 1rem; }
@@ -227,7 +228,7 @@
     <script>
     const ANCHORS_URL = 'anchors.json';
     const SCORES_URL  = 'session-scores.json';
-    const CHAIN_URL   = 'sessions-chain.json';
+    const AUDIT_URL   = 'points-audit.jsonl';
 
     const LEVELS = [
         { min:0,   max:20,    name:'⭐ Семя',    next:21 },
@@ -272,10 +273,34 @@
         return null;
     }
 
+    async function loadJSONL(url) {
+        try {
+            const r = await fetch(url);
+            if (!r.ok) return null;
+            const text = await r.text();
+            return text.trim().split('\n').filter(Boolean).map(l => JSON.parse(l));
+        } catch { return null; }
+    }
+
+    function refToLink(ref) {
+        if (!ref) return '';
+        // Git SHA (40 hex)
+        if (/^[0-9a-f]{40}$/.test(ref))
+            return `<a class="anchor" href="https://github.com/EchoLibero/clawdbot/commit/${ref}" target="_blank" title="${ref}">📎 ${ref.slice(0,7)}</a>`;
+        // Stellar TX (64 hex)
+        if (/^[0-9a-f]{64}$/.test(ref))
+            return `<a class="anchor" href="https://stellar.expert/explorer/public/tx/${ref}" target="_blank" title="${ref}">🔗 ${ref.slice(0,7)}</a>`;
+        // URL
+        if (ref.startsWith('http'))
+            return `<a class="anchor" href="${ref}" target="_blank">🔗 link</a>`;
+        return `<span style="color:#555" title="${ref}">📄</span>`;
+    }
+
     async function init() {
-        const [anchors, sessionScores] = await Promise.all([
+        const [anchors, sessionScores, auditLog] = await Promise.all([
             loadJSON(ANCHORS_URL),
-            loadJSON(SCORES_URL)
+            loadJSON(SCORES_URL),
+            loadJSONL(AUDIT_URL)
         ]);
 
         const total = DATA.globalScore;
@@ -322,13 +347,17 @@
             </tr>`;
         });
 
-        // Log
+        // Log: prefer live audit log, fall back to embedded DATA
         const logEl = document.getElementById('log-list');
-        DATA.logEntries.slice().reverse().forEach(e => {
+        const entries = auditLog ? auditLog.slice().reverse() : DATA.logEntries.slice().reverse();
+        document.getElementById('log-entries').textContent = entries.length;
+
+        entries.forEach(e => {
+            const refHtml = (e.ref || e.artifact_ref) ? refToLink(e.ref || e.artifact_ref) : '';
             logEl.innerHTML += `<div class="log-entry">
-                <span class="ts">${e.date}</span>
-                <span class="sess">${e.session}</span>
-                <span class="desc">${e.desc}</span>
+                <span class="ts">${e.date}${e.time ? ' ' + e.time : ''}</span>
+                <span class="sess">${e.session || '—'}</span>
+                <span class="desc">${e.reason || e.desc}${refHtml ? ' ' + refHtml : ''}</span>
                 <span class="pts">+${e.pts}</span>
             </div>`;
         });
