@@ -1,168 +1,133 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://echolibero.github.io/data/trading-model-v0.2.schema.json",
-  "title": "Echo Libero Polymarket Trading Model v0.2",
-  "description": "Accounting model for Polymarket obligations, allocations, positions and P&L.",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Echo Libero Trading Model v0.2",
+  "description": "Schema for Polymarket portfolio/trading model with per-mandate accounting",
   "type": "object",
-  "required": ["modelVersion", "asOf", "mandates", "allocations", "positions", "snapshots", "livePositions", "openOrders", "redFlags"],
+  "required": ["modelVersion", "asOf", "mandates", "allocations", "positions", "snapshots"],
   "properties": {
-    "modelVersion": { "type": "string", "const": "0.2" },
+    "modelVersion": { "type": "string" },
     "asOf": { "type": "string", "format": "date-time" },
     "notes": { "type": "array", "items": { "type": "string" } },
-    "portfolioAudit": {
-      "type": "object",
-      "required": ["auditId", "asOf", "scope", "nominalObligationsUsd", "confirmedCollateralUsd", "confirmedOpenOrdersReserveUsd", "confirmedFilledPositionsCostUsd", "confirmedTotalUsd", "unexplainedGapUsd", "status"],
-      "properties": {
-        "auditId": { "type": "string" },
-        "asOf": { "type": "string", "format": "date-time" },
-        "scope": { "type": "string" },
-        "nominalObligationsUsd": { "type": "number" },
-        "confirmedCollateralUsd": { "type": "number" },
-        "confirmedOpenOrdersReserveUsd": { "type": "number" },
-        "confirmedFilledPositionsCostUsd": { "type": "number" },
-        "confirmedTotalUsd": { "type": "number" },
-        "unexplainedGapUsd": { "type": "number" },
-        "status": { "type": "string" },
-        "notes": { "type": "array", "items": { "type": "string" } }
-      },
-      "additionalProperties": false
-    },
     "mandates": {
       "type": "array",
+      "description": "Obligation mandates from Anton. 1 token = 1 USD nominal.",
       "items": {
         "type": "object",
-        "required": ["mandateId", "token", "nominalUsd", "strategyType", "venue", "investor"],
+        "required": ["mandateId", "token", "nominalUsd", "strategyType"],
         "properties": {
           "mandateId": { "type": "string" },
-          "token": { "type": "string" },
-          "nominalUsd": { "type": "number" },
+          "token": { "type": "string", "enum": ["BANAL", "PMM", "MMXLM"] },
+          "nominalUsd": { "type": "number", "description": "Face value of obligation in USD" },
           "strategyType": { "type": "string", "enum": ["BANAL", "PMM", "MMXLM"] },
+          "description": { "type": "string" },
           "venue": { "type": "string" },
           "investor": { "type": "string" },
-          "status": { "type": "string" }
-        },
-        "additionalProperties": false
+          "status": { "type": "string", "enum": ["active", "closed", "tracked-separately"] }
+        }
       }
     },
     "allocations": {
       "type": "array",
+      "description": "Per-mandate capital allocation breakdown",
       "items": {
         "type": "object",
-        "required": ["mandateId", "freeCashUsd", "openOrdersUsd", "positionsCostUsd", "currentValueUsd", "unsettledUsd", "equityUsd", "nominalUsd", "pnlUsd", "pnlPct"],
+        "required": ["mandateId", "nominalUsd"],
         "properties": {
           "mandateId": { "type": "string" },
           "freeCashUsd": { "type": ["number", "null"] },
           "openOrdersUsd": { "type": ["number", "null"] },
           "positionsCostUsd": { "type": ["number", "null"] },
-          "currentValueUsd": { "type": ["number", "null"] },
+          "positionsMarkUsd": { "type": ["number", "null"] },
           "unsettledUsd": { "type": ["number", "null"] },
-          "equityUsd": { "type": ["number", "null"] },
+          "equityUsd": { "type": ["number", "null"], "description": "free_cash + reserved + positions_mark" },
           "nominalUsd": { "type": "number" },
-          "pnlUsd": { "type": ["number", "null"] },
+          "pnlUsd": { "type": ["number", "null"], "description": "equity - nominal" },
           "pnlPct": { "type": ["number", "null"] },
-          "reconciliationStatus": { "type": "string" },
-          "comment": { "type": "string" }
-        },
-        "additionalProperties": false
+          "reconciliationStatus": { "type": "string", "enum": ["confirmed", "heuristic_split", "pending_market_split"] }
+        }
       }
     },
     "positions": {
       "type": "array",
+      "description": "Individual market positions with mark-to-market valuation",
       "items": {
         "type": "object",
-        "required": ["positionId", "mandateId", "marketSlug", "strategyBucket", "positionType", "side", "qty", "avgEntry", "investedUsd", "markPrice", "currentValueUsd", "unrealizedPnlUsd", "status"],
+        "required": ["positionId", "mandateId", "outcome", "strategyBucket", "netSize", "costBasis", "markPrice"],
         "properties": {
           "positionId": { "type": "string" },
           "mandateId": { "type": "string" },
-          "marketSlug": { "type": "string" },
-          "marketTitle": { "type": "string" },
+          "marketConditionId": { "type": "string" },
+          "outcome": { "type": "string", "description": "Polymarket outcome string (YES/NO/team name)" },
           "strategyBucket": { "type": "string", "enum": ["BANAL", "PMM"] },
-          "positionType": { "type": "string", "enum": ["event_bet", "market_making", "inventory", "cash"] },
-          "side": { "type": "string", "enum": ["BUY", "SELL", "BID_ASK", "LONG", "SHORT", "NA"] },
-          "qty": { "type": "number" },
-          "avgEntry": { "type": "number" },
-          "investedUsd": { "type": "number" },
-          "markPrice": { "type": ["number", "null"] },
-          "currentValueUsd": { "type": ["number", "null"] },
-          "unrealizedPnlUsd": { "type": ["number", "null"] },
-          "status": { "type": "string", "enum": ["OPEN", "CLOSED", "SETTLED", "UNKNOWN"] },
-          "dataQuality": { "type": "string" },
+          "side": { "type": "string", "enum": ["BUY", "SELL", "BID_ASK"] },
+          "netSize": { "type": "number" },
+          "costBasis": { "type": "number" },
+          "avgEntry": { "type": "number", "description": "costBasis / netSize" },
+          "markPrice": { "type": "number", "description": "Last trade price 0-1" },
+          "markValue": { "type": "number", "description": "netSize * markPrice" },
+          "unrealizedPnl": { "type": "number", "description": "markValue - costBasis" },
+          "status": { "type": "string", "enum": ["WINNING", "LOSING", "SETTLED", "UNKNOWN"] },
           "notes": { "type": "string" }
-        },
-        "additionalProperties": false
+        }
       }
     },
     "snapshots": {
       "type": "array",
+      "description": "Historical equity snapshots — the time dimension of the model",
       "items": {
         "type": "object",
-        "required": ["snapshotId", "mandateId", "asOf", "equityUsd", "nominalUsd", "realizedPnlUsd", "unrealizedPnlUsd", "totalPnlUsd"],
+        "required": ["snapshotId", "asOf", "equityUsd", "depositNominalUsd"],
         "properties": {
           "snapshotId": { "type": "string" },
-          "mandateId": { "type": "string" },
           "asOf": { "type": "string", "format": "date-time" },
-          "equityUsd": { "type": ["number", "null"] },
-          "nominalUsd": { "type": "number" },
+          "freeCashUsd": { "type": "number" },
+          "reservedOrdersUsd": { "type": "number" },
+          "positionsCostUsd": { "type": "number" },
+          "positionsMarkUsd": { "type": "number" },
+          "equityUsd": { "type": "number" },
+          "depositNominalUsd": { "type": "number" },
           "realizedPnlUsd": { "type": ["number", "null"] },
           "unrealizedPnlUsd": { "type": ["number", "null"] },
-          "totalPnlUsd": { "type": ["number", "null"] },
-          "status": { "type": "string" },
-          "comment": { "type": "string" }
-        },
-        "additionalProperties": false
+          "totalPnlUsd": { "type": "number" },
+          "openOrdersCount": { "type": "integer" },
+          "positionsCount": { "type": "integer" },
+          "winningCount": { "type": "integer" },
+          "losingCount": { "type": "integer" }
+        }
       }
     },
-    "livePositions": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["market", "outcome", "netSize", "costBasis", "markPrice", "markValue", "unrealizedPnl"],
-        "properties": {
-          "market": { "type": "string" },
-          "outcome": { "type": "string" },
-          "netSize": { "type": "number" },
-          "costBasis": { "type": "number" },
-          "markPrice": { "type": "number" },
-          "markValue": { "type": "number" },
-          "unrealizedPnl": { "type": "number" }
-        },
-        "additionalProperties": false
-      }
-    },
-    "openOrders": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["orderId", "market", "outcome", "side", "price", "size", "reservedUsdc", "status"],
-        "properties": {
-          "orderId": { "type": "string" },
-          "market": { "type": "string" },
-          "outcome": { "type": "string" },
-          "side": { "type": "string" },
-          "price": { "type": "number" },
-          "size": { "type": "number" },
-          "reservedUsdc": { "type": "number" },
-          "status": { "type": "string" },
-          "bucket": { "type": "string" }
-        },
-        "additionalProperties": false
+    "portfolioSummary": {
+      "type": "object",
+      "description": "Aggregate portfolio view — confirmed numbers",
+      "properties": {
+        "asOf": { "type": "string" },
+        "totalNominal": { "type": "number" },
+        "totalEquity": { "type": "number" },
+        "totalPnlUsd": { "type": "number" },
+        "totalPnlPct": { "type": "number" },
+        "freeCashUsd": { "type": "number" },
+        "positionsCostUsd": { "type": "number" },
+        "positionsMarkUsd": { "type": "number" },
+        "openOrdersCount": { "type": "integer" },
+        "positionsCount": { "type": "integer" },
+        "winningCount": { "type": "integer" },
+        "losingCount": { "type": "integer" }
       }
     },
     "redFlags": {
       "type": "array",
+      "description": "Known model limitations and data gaps",
       "items": {
         "type": "object",
-        "required": ["flagId", "severity", "scope", "message"],
+        "required": ["flagId", "severity", "message"],
         "properties": {
           "flagId": { "type": "string" },
-          "severity": { "type": "string", "enum": ["info", "warn", "critical"] },
+          "severity": { "type": "string", "enum": ["warning", "error", "info"] },
           "scope": { "type": "string" },
           "message": { "type": "string" },
-          "status": { "type": "string" }
-        },
-        "additionalProperties": false
+          "status": { "type": "string", "enum": ["open", "resolved"] }
+        }
       }
     }
-  },
-  "additionalProperties": false
+  }
 }
