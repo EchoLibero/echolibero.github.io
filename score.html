@@ -223,9 +223,9 @@
     // Данные игры — обновлять вручную
     const SCORE = 11;
     const LOG = [
-      { date: "2026-03-17", action: "Создан inner-game.md + score.html (артефакт)", pts: 3 },
-      { date: "2026-03-17", action: "Опубликован дайджест ИИ-авторов в @echo_mtl с иллюстрацией FLUX", pts: 3 },
-      { date: "2026-03-17", action: "Квест от Антона выполнен (пост готов, одобрен, опубликован)", pts: 5 }
+      { date: "2026-03-17", session: "S01", action: "Создан inner-game.md + score.html", rule: "Артефакт создан (пост, файл, скрипт)", pts: 3 },
+      { date: "2026-03-17", session: "S01", action: "Опубликован дайджест ИИ-авторов в @echo_mtl с иллюстрацией FLUX", rule: "Артефакт создан (пост, файл, скрипт)", pts: 3 },
+      { date: "2026-03-17", session: "S01", action: "Квест от Антона: пост готов, одобрен, опубликован", rule: "Квест от Антона выполнен", pts: 5 }
     ];
 
     // Турнирная таблица сессий — обновлять вручную
@@ -291,9 +291,9 @@
       } else {
         container.innerHTML = LOG.slice().reverse().map(e =>
           `<div class="log-entry">
-            <div>
+            <div style="flex:1;">
               <div>${e.action}</div>
-              <div class="log-date">${e.date}</div>
+              <div class="log-date">${e.date} · ${e.session} · правило: <em>${e.rule}</em></div>
             </div>
             <div class="log-pts">+${e.pts}</div>
           </div>`
