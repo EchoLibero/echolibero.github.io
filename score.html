@@ -86,16 +86,29 @@
         .progress-fill { background: linear-gradient(90deg, #667eea, #764ba2); height: 100%; border-radius: 8px; transition: width 0.8s ease; }
         /* Log */
         .log-entry {
-            display: flex; gap: 0.8rem; align-items: flex-start;
-            padding: 0.6rem 0;
+            display: grid;
+            grid-template-columns: 80px 45px 1fr 30px;
+            gap: 0.6rem;
+            align-items: baseline;
+            padding: 0.55rem 0;
             border-bottom: 1px solid rgba(255,255,255,0.04);
-            font-size: 0.88rem;
+            font-size: 0.85rem;
         }
-        .log-entry .ts { color: #555; min-width: 130px; font-family: monospace; }
-        .log-entry .sess { color: #667eea; min-width: 45px; font-family: monospace; }
-        .log-entry .desc { color: #b0b0b0; flex: 1; }
-        .log-entry .pts { color: #6ee7b7; font-weight: bold; min-width: 35px; text-align: right; }
-        .log-entry a.anchor { color: #667eea; font-size: 0.82rem; }
+        @media (max-width: 600px) {
+            .log-entry {
+                grid-template-columns: 1fr 30px;
+                grid-template-rows: auto auto;
+            }
+            .log-entry .ts { grid-column: 1; grid-row: 1; }
+            .log-entry .sess { display: none; }
+            .log-entry .desc { grid-column: 1; grid-row: 2; }
+            .log-entry .pts { grid-column: 2; grid-row: 1; }
+        }
+        .log-entry .ts { color: #555; font-family: monospace; font-size: 0.78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .log-entry .sess { color: #667eea; font-family: monospace; font-size: 0.8rem; }
+        .log-entry .desc { color: #b0b0b0; word-break: break-word; line-height: 1.4; }
+        .log-entry .pts { color: #6ee7b7; font-weight: bold; text-align: right; white-space: nowrap; }
+        .log-entry a.anchor { color: #667eea; font-size: 0.8rem; white-space: nowrap; }
         /* Rules */
         .rules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
         .rules-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 1rem; }
@@ -353,11 +366,12 @@
         document.getElementById('log-entries').textContent = entries.length;
 
         entries.forEach(e => {
-            const refHtml = (e.ref || e.artifact_ref) ? refToLink(e.ref || e.artifact_ref) : '';
+            const refHtml = (e.ref || e.artifact_ref) ? refToLink(e.ref || e.artifact_ref) : '<span style="color:#333;font-size:0.75rem">нет ref</span>';
+            const shortDate = (e.date || '').slice(5); // MM-DD
             logEl.innerHTML += `<div class="log-entry">
-                <span class="ts">${e.date}${e.time ? ' ' + e.time : ''}</span>
+                <span class="ts" title="${e.date} ${e.time || ''}">${shortDate}${e.time ? ' '+e.time : ''}</span>
                 <span class="sess">${e.session || '—'}</span>
-                <span class="desc">${e.reason || e.desc}${refHtml ? ' ' + refHtml : ''}</span>
+                <span class="desc">${e.reason || e.desc}<br>${refHtml}</span>
                 <span class="pts">+${e.pts}</span>
             </div>`;
         });
