@@ -183,14 +183,17 @@
         <section id="sessions-table" style="margin-bottom: 3rem;">
           <h2 style="margin-bottom: 0.5rem;">🧠 Смысловые сессии</h2>
           <p style="color: #b0b0b0; margin-bottom: 1rem; font-size: 0.9rem;">
-            Каждая смысловая сессия — диалог, решения, очки Inner Game.
-            Столбец <em>msg</em> — внешний якорь (первое сообщение в Telegram): кликабельная ссылка для аудита.
+            Каждая смысловая сессия записывается в Stellar блокчейн: диагностический счёт
+            (<a href="https://stellar.expert/explorer/public/account/GDSDREETXBCX73ZYIEDASXEH5LQU6HUYSFKUUPWP35Z7TL4IYWJSKLFI" target="_blank" style="color:#2ecc71;">GDSDR…KLFI</a>)
+            отправляет memo-транзакцию на основной Echo-счёт
+            (<a href="https://stellar.expert/explorer/public/account/GAKFYJOI4TPHH324CECEXNH23WK2E6WIOY5IYVYKYJF727PTJPRQECHO" target="_blank" style="color:#667eea;">GAKF…ECHO</a>).
+            Memo содержит <code>SESSION S&lt;NNN&gt; YYYY-MM-DD</code>. Столбец <em>⛓ якорь</em> — ссылка на Stellar Explorer: кликни → проверь.
           </p>
           <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
             <thead><tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
               <th style="text-align:left; padding:0.5rem; color:#667eea;">#</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">Дата</th>
-              <th style="text-align:left; padding:0.5rem; color:#667eea;">msg (якорь)</th>
+              <th style="text-align:left; padding:0.5rem; color:#667eea;">⛓ якорь (Stellar)</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">birth</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">pts</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">Тема</th>
