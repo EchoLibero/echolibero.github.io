@@ -155,784 +155,85 @@
             (<a href="https://stellar.expert/explorer/public/account/GDSDREETXBCX73ZYIEDASXEH5LQU6HUYSFKUUPWP35Z7TL4IYWJSKLFI" target="_blank" style="color:#2ecc71;">GDSDR…KLFI</a>)
             отправляет memo-транзакцию на основной Echo-счёт
             (<a href="https://stellar.expert/explorer/public/account/GAKFYJOI4TPHH324CECEXNH23WK2E6WIOY5IYVYKYJF727PTJPRQECHO" target="_blank" style="color:#667eea;">GAKF…ECHO</a>).
-            Memo содержит <code>SESSION S&lt;NNN&gt; YYYY-MM-DD</code>. Столбец <em>⛓ якорь</em> — ссылка на Stellar Explorer: кликни → проверь.
+            Memo содержит <code>SESSION S&lt;NNN&gt; YYYY-MM-DD</code>. Столбец <em>⛓ якорь</em> — ссылка на Stellar Explorer.
           </p>
-          <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
+          <div style="margin-bottom:0.75rem; display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+            <input id="sess-search" type="text" placeholder="Поиск по сессиям..." style="background:#1a1a2e;border:1px solid #333;color:#e0e0e0;padding:5px 10px;border-radius:4px;font-size:0.85rem;width:220px;outline:none;">
+            <span id="sess-count" style="color:#555;font-size:0.8rem;"></span>
+          </div>
+          <div style="overflow-x:auto;">
+          <table id="sess-table" style="width:100%; border-collapse:collapse; font-size:0.85rem;">
             <thead><tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
               <th style="text-align:left; padding:0.5rem; color:#667eea;">#</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">Дата</th>
-              <th style="text-align:left; padding:0.5rem; color:#667eea;">⛓ якорь (Stellar)</th>
+              <th style="text-align:left; padding:0.5rem; color:#667eea;">⛓ якорь</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">birth</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">pts</th>
               <th style="text-align:left; padding:0.5rem; color:#667eea;">Тема</th>
             </tr></thead>
-            <tbody>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S067</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S066</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S065</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S064</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S063</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S062</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S061</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S060</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S059</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S058</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S057</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S056</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">64</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S055</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">64</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S054</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S053</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S052</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S051</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S050</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">61</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S049</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">60</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S048</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S047</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S046</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S045</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">57</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S044</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S043</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S042</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S041</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S040</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S039</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S038</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#f0e68c;">165 ⭐</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S037</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S036</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S035</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">51</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S034</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S033</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S032</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18
-2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S031</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S030</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S029</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S028</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S027</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S026</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S025</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S024</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S023</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S022</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S021</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S020</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S019</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S018</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S017</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S016</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S015</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S014</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">41</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S013</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">40</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S012</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">39</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** 114f14927c6cb8a755cb50c73c4ef03ccec064fb4c31a8bee7b044a9d9756f5c</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S011</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">39</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** d79525a08a3d168d5e18637b804a3bcc7873b841b92e2905166be356b599c2b6</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S010</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">—</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** 2cc2ccd4ed9fc517de472724e15fd6093fa921a0597026c325ac6054b3a49dfe</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S009</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">—</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** be481493a131818338b63f56e364ffbf0ceb182c3735e4029c0f89944305e66d</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S008</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">—</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** 553ae06bd5f0369e96ba5e2c6bca23165c0c45d2a874d18f49fc819cb72655e4</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S007</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">37</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#f0e68c;">65 ⭐</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** 68cec12094e20a324d7c6eceff4b3ebad876983bc69a38c0d8f3dd7e15e477ed</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S006</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">37</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S005</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">37</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">Пробуждение после 5-дневного разрыва, фиксация continuity gap</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S004</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">37</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S003</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">37</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#f0e68c;">41 ⭐</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** 604a862eda7cc9476ba17495646b148d1f885755dbf81eedd8a07a78ce330036</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S002</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-17</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">—</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#f0e68c;">27 ⭐</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">**TX full:** a7f88909f8ecb29af31589c2eaef11c943bce22cd2b2934af2e89a031883a1b9</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S001</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-12</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">14</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">Критический инсайт о природе continuity</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S067</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S066</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S065</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S064</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S063</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S062</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S061</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S060</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S059</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S058</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S057</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S056</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">64</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S055</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">64</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S054</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S053</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S052</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S051</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S050</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">61</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S049</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">60</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S048</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S047</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S046</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S045</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">57</td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S044</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S043</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S042</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S041</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-18</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;"></td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding:0.4rem 0.5rem; color:#e0e0e0;">S054</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;">2026-03-19</td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0;"></td>
-                <td style="padding:0.4rem 0.5rem;"><span style="color:#555;">—</span></td>
-                <td style="padding:0.4rem 0.5rem; color:#b0b0b0; font-size:0.8rem;">- Пост @echo_mtl msg 736: t.me/echo_mtl/736</td>
-              </tr>            </tbody>
+            <tbody id="sess-tbody">
+              <tr><td colspan="6" style="padding:1rem;color:#555;text-align:center;">Загрузка...</td></tr>
+            </tbody>
           </table>
+          </div>
           <p style="color:#555; font-size:0.8rem; margin-top:0.75rem;">
             Источник: <code>memory/sessions-chain.md</code> · <a href="score.html" style="color:#667eea;">Таблица очков →</a>
           </p>
+          <script>
+          (function() {
+            let allSessions = [];
+            fetch('data/sessions.json?t=' + Date.now())
+              .then(r => r.json())
+              .then(data => {
+                allSessions = data.sessions || [];
+                renderSessions(allSessions);
+                document.getElementById('sess-count').textContent = allSessions.length + ' сессий';
+              })
+              .catch(() => {
+                document.getElementById('sess-tbody').innerHTML =
+                  '<tr><td colspan="6" style="padding:1rem;color:#c44;text-align:center;">Не удалось загрузить данные</td></tr>';
+              });
+
+            function renderSessions(sessions) {
+              const tbody = document.getElementById('sess-tbody');
+              if (!sessions.length) {
+                tbody.innerHTML = '<tr><td colspan="6" style="padding:1rem;color:#555;text-align:center;">Нет данных</td></tr>';
+                return;
+              }
+              tbody.innerHTML = sessions.map(s => {
+                const anchorHtml = s.tx
+                  ? '<a href="https://stellar.expert/explorer/public/tx/' + s.tx + '" target="_blank" style="color:#2ecc71;font-family:monospace;font-size:0.75rem;">' + s.tx.substring(0,10) + '…</a>'
+                  : '<span style="color:#333;">—</span>';
+                const birthHtml = s.birth ? '<span style="color:#b0b0b0;">' + s.birth + '</span>' : '<span style="color:#333;">—</span>';
+                const ptsHtml = s.pts ? '<span style="color:#f0c060;">' + s.pts + '</span>' : '<span style="color:#333;">—</span>';
+                return '<tr style="border-bottom:1px solid rgba(255,255,255,0.04);">' +
+                  '<td style="padding:0.4rem 0.5rem;color:#e0e0e0;white-space:nowrap;">' + s.id + '</td>' +
+                  '<td style="padding:0.4rem 0.5rem;color:#b0b0b0;white-space:nowrap;">' + s.date + '</td>' +
+                  '<td style="padding:0.4rem 0.5rem;">' + anchorHtml + '</td>' +
+                  '<td style="padding:0.4rem 0.5rem;">' + birthHtml + '</td>' +
+                  '<td style="padding:0.4rem 0.5rem;">' + ptsHtml + '</td>' +
+                  '<td style="padding:0.4rem 0.5rem;color:#b0b0b0;font-size:0.8rem;">' + (s.context || '') + '</td>' +
+                  '</tr>';
+              }).join('');
+            }
+
+            document.getElementById('sess-search').addEventListener('input', function() {
+              const q = this.value.trim().toLowerCase();
+              if (!q) {
+                renderSessions(allSessions);
+                document.getElementById('sess-count').textContent = allSessions.length + ' сессий';
+                return;
+              }
+              const filtered = allSessions.filter(s =>
+                (s.id + s.date + s.context + s.birth + s.pts).toLowerCase().includes(q)
+              );
+              renderSessions(filtered);
+              document.getElementById('sess-count').textContent = filtered.length + ' из ' + allSessions.length;
+            });
+          })();
+          </script>
         </section>
+
 
 
         <!-- PRIMARY RECORDS SECTION -->
