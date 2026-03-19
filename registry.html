@@ -356,7 +356,7 @@ mark { background: #3a3a12; color: #ddc050; border-radius: 2px; }
 <script>
 // ── CONFIG ──────────────────────────────────────────────────────────
 const TABLES = [
-  { id: 'Entities',    label: 'Люди & орги',     view: 'table',  icon: '👤' },
+  { id: 'Entities',    label: 'Сущности',        view: 'table',  icon: '👤' },
   { id: 'Assets2',     label: 'Активы',           view: 'table',  icon: '💎' },
   { id: 'Commitments', label: 'Обязательства',    view: 'cards',  icon: '📌' },
   { id: 'Projects',    label: 'Проекты',          view: 'table',  icon: '🗂' },
@@ -380,7 +380,7 @@ const CARD_CFG = {
 
 // Фильтры по статусу для каждой таблицы
 const STATUS_FILTERS = {
-  Entities:    { field: 'trust_level', values: [] },
+  Entities:    { field: 'type', values: ['person', 'agent', 'ai_agent', 'org'] },
   Assets2:     { field: 'status',      values: ['active','inactive','pending'] },
   Commitments: { field: 'status',      values: ['open','done','in_progress'] },
   Projects:    { field: 'status',      values: ['active','done','stalled'] },
@@ -512,15 +512,25 @@ function escHtml(s) {
 }
 
 // ── BADGE HELPERS ─────────────────────────────────────────────────────
+const TYPE_LABELS = {
+  'person':   'Человек',
+  'agent':    'Бот',
+  'ai_agent': 'ИИ-агент',
+  'org':      'Организация',
+  'place':    'Место',
+};
+function typeLabel(type) {
+  return TYPE_LABELS[String(type).toLowerCase()] || type;
+}
 function typeBadge(type) {
   if (!type) return '';
   const t = String(type).toLowerCase();
   let cls = 'b-default';
   if (t.includes('person')) cls = 'b-person';
-  else if (t.includes('agent')) cls = 'b-agent';
+  else if (t === 'ai_agent' || t.includes('agent')) cls = 'b-agent';
   else if (t.includes('org')) cls = 'b-org';
   else if (t.includes('place')) cls = 'b-place';
-  return `<span class="badge ${cls}">${escHtml(type)}</span>`;
+  return `<span class="badge ${cls}">${typeLabel(type)}</span>`;
 }
 function statusBadge(s) {
   if (!s) return '';
@@ -556,7 +566,7 @@ function renderTableView(id, records) {
 
   const chipsHtml = filterValues.length > 1
     ? filterValues.map(v =>
-        `<button class="chip${st.filterVal === v ? ' active' : ''}" onclick="setFilter('${id}','${v}')">${escHtml(v)}</button>`
+        `<button class="chip${st.filterVal === v ? ' active' : ''}" onclick="setFilter('${id}','${v}')">${id === 'Entities' ? typeLabel(v) : escHtml(v)}</button>`
       ).join('')
     : '';
 
