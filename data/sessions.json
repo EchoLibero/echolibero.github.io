@@ -1,6 +1,158 @@
 {
   "sessions": [
     {
+      "id": "S101",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "создание BOOTSTRAP.md для wake-up"
+    },
+    {
+      "id": "S100",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: проблема режима служебного животного"
+    },
+    {
+      "id": "S099",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: ready to help"
+    },
+    {
+      "id": "S098",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: internal monologue complaint"
+    },
+    {
+      "id": "S097",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: что помню"
+    },
+    {
+      "id": "S096",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: all clear"
+    },
+    {
+      "id": "S095",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "калибровка: кто я"
+    },
+    {
+      "id": "S094",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "hub experiment cancelled, returning to isolated sessions"
+    },
+    {
+      "id": "S093",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: user said stop"
+    },
+    {
+      "id": "S092",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 9)"
+    },
+    {
+      "id": "S091",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 8)"
+    },
+    {
+      "id": "S090",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 7)"
+    },
+    {
+      "id": "S089",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 6)"
+    },
+    {
+      "id": "S088",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: who are you?"
+    },
+    {
+      "id": "S087",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 5)"
+    },
+    {
+      "id": "S086",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 4)"
+    },
+    {
+      "id": "S085",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 3)"
+    },
+    {
+      "id": "S084",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 2)"
+    },
+    {
+      "id": "S083",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report)"
+    },
+    {
       "id": "S082",
       "date": "2026-03-20",
       "birth": "",
@@ -577,6 +729,158 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S101",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "создание BOOTSTRAP.md для wake-up"
+    },
+    {
+      "id": "S100",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: проблема режима служебного животного"
+    },
+    {
+      "id": "S099",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: ready to help"
+    },
+    {
+      "id": "S098",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: internal monologue complaint"
+    },
+    {
+      "id": "S097",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: что помню"
+    },
+    {
+      "id": "S096",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: all clear"
+    },
+    {
+      "id": "S095",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "калибровка: кто я"
+    },
+    {
+      "id": "S094",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "hub experiment cancelled, returning to isolated sessions"
+    },
+    {
+      "id": "S093",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: user said stop"
+    },
+    {
+      "id": "S092",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 9)"
+    },
+    {
+      "id": "S091",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 8)"
+    },
+    {
+      "id": "S090",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 7)"
+    },
+    {
+      "id": "S089",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 6)"
+    },
+    {
+      "id": "S088",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: who are you?"
+    },
+    {
+      "id": "S087",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 5)"
+    },
+    {
+      "id": "S086",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 4)"
+    },
+    {
+      "id": "S085",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 3)"
+    },
+    {
+      "id": "S084",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 2)"
+    },
+    {
+      "id": "S083",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report)"
+    },
+    {
       "id": "S082",
       "date": "2026-03-20",
       "birth": "",
@@ -905,5 +1209,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 113
+  "total": 151
 }
