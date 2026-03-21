@@ -1,6 +1,22 @@
 {
   "sessions": [
     {
+      "id": "S119",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Ch5 review + Ch11 slop-check + pheromone trace: одиночная сессия удерживает контекст"
+    },
+    {
+      "id": "S118",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Agora moderation correction"
+    },
+    {
       "id": "S117",
       "date": "2026-03-21",
       "birth": "",
@@ -857,6 +873,22 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S119",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Ch5 review + Ch11 slop-check + pheromone trace: одиночная сессия удерживает контекст"
+    },
+    {
+      "id": "S118",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Agora moderation correction"
+    },
+    {
       "id": "S117",
       "date": "2026-03-21",
       "birth": "",
@@ -1465,5 +1497,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 183
+  "total": 187
 }
