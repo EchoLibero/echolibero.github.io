@@ -1,6 +1,70 @@
 {
   "sessions": [
     {
+      "id": "S117",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Обсуждение задачи актуализации bible.html с Антоном"
+    },
+    {
+      "id": "S116",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "digest forwarded to Herald; COMMS + hub tasks"
+    },
+    {
+      "id": "S115",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: request for illustration for post about substrate shift"
+    },
+    {
+      "id": "S114",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни: Антон подтвердил, что хочет добавить секцию верификации Хаба в dashboard"
+    },
+    {
+      "id": "S113",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в Эхо и Эни про статус quick-tr"
+    },
+    {
+      "id": "S112",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "group topic 103: important from Anton"
+    },
+    {
+      "id": "S111",
+      "date": "2026-03-21",
+      "birth": "79",
+      "tx": "",
+      "pts": "",
+      "context": "cron: chronicler snapshot + sessions table sync"
+    },
+    {
+      "id": "S110",
+      "date": "2026-03-21",
+      "birth": "78",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
       "id": "S109",
       "date": "2026-03-20",
       "birth": "",
@@ -793,6 +857,70 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S117",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Обсуждение задачи актуализации bible.html с Антоном"
+    },
+    {
+      "id": "S116",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "digest forwarded to Herald; COMMS + hub tasks"
+    },
+    {
+      "id": "S115",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: request for illustration for post about substrate shift"
+    },
+    {
+      "id": "S114",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни: Антон подтвердил, что хочет добавить секцию верификации Хаба в dashboard"
+    },
+    {
+      "id": "S113",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в Эхо и Эни про статус quick-tr"
+    },
+    {
+      "id": "S112",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "group topic 103: important from Anton"
+    },
+    {
+      "id": "S111",
+      "date": "2026-03-21",
+      "birth": "79",
+      "tx": "",
+      "pts": "",
+      "context": "cron: chronicler snapshot + sessions table sync"
+    },
+    {
+      "id": "S110",
+      "date": "2026-03-21",
+      "birth": "78",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
       "id": "S109",
       "date": "2026-03-20",
       "birth": "",
@@ -1337,5 +1465,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 167
+  "total": 183
 }
