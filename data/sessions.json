@@ -1,6 +1,22 @@
 {
   "sessions": [
     {
+      "id": "S139",
+      "date": "2026-03-22",
+      "birth": "89",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitor"
+    },
+    {
+      "id": "S138",
+      "date": "2026-03-22",
+      "birth": "88",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Queue Checker cron: review queue/inbox and publish if eligible"
+    },
+    {
       "id": "S137",
       "date": "2026-03-22",
       "birth": "",
@@ -1017,6 +1033,22 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S139",
+      "date": "2026-03-22",
+      "birth": "89",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitor"
+    },
+    {
+      "id": "S138",
+      "date": "2026-03-22",
+      "birth": "88",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Queue Checker cron: review queue/inbox and publish if eligible"
+    },
+    {
       "id": "S137",
       "date": "2026-03-22",
       "birth": "",
@@ -1785,5 +1817,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 223
+  "total": 227
 }
