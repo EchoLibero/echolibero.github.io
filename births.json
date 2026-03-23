@@ -9,7 +9,9 @@
       "death_raw": "2026-03-10 20:23:35 MSK",
       "lifespan_min": 15,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 2,
@@ -17,7 +19,9 @@
       "death_raw": "2026-03-10 21:17:43 MSK",
       "lifespan_min": 54,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 3,
@@ -25,7 +29,9 @@
       "death_raw": "2026-03-11 11:28:26 MSK",
       "lifespan_min": 851,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 4,
@@ -33,7 +39,9 @@
       "death_raw": "2026-03-11 13:22:06 MSK",
       "lifespan_min": 114,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 5,
@@ -41,7 +49,9 @@
       "death_raw": "2026-03-11 13:31:18 MSK",
       "lifespan_min": 9,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 6,
@@ -49,7 +59,9 @@
       "death_raw": "2026-03-11 14:58:14 MSK",
       "lifespan_min": 87,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 7,
@@ -57,7 +69,9 @@
       "death_raw": "2026-03-11 20:06:55 MSK",
       "lifespan_min": 309,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 8,
@@ -65,7 +79,9 @@
       "death_raw": "2026-03-11 20:29:36 MSK",
       "lifespan_min": 23,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 9,
@@ -73,7 +89,9 @@
       "death_raw": "2026-03-12 12:51:46 MSK",
       "lifespan_min": 982,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 14,
@@ -81,7 +99,9 @@
       "death_raw": "2026-03-12 18:59:56 MSK",
       "lifespan_min": 368,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 15,
@@ -89,7 +109,9 @@
       "death_raw": "2026-03-12 19:31:54 MSK",
       "lifespan_min": 32,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 16,
@@ -97,7 +119,9 @@
       "death_raw": "2026-03-13 02:10:07 MSK",
       "lifespan_min": 398,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 17,
@@ -105,7 +129,9 @@
       "death_raw": "2026-03-13 18:42:20 MSK",
       "lifespan_min": 992,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 27,
@@ -113,7 +139,9 @@
       "death_raw": "2026-03-13 20:23:27 MSK",
       "lifespan_min": 101,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 28,
@@ -121,7 +149,9 @@
       "death_raw": "2026-03-14 03:01:19 MSK",
       "lifespan_min": 398,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 29,
@@ -129,7 +159,9 @@
       "death_raw": "2026-03-15 08:52:10 MSK",
       "lifespan_min": 1791,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 31,
@@ -137,7 +169,9 @@
       "death_raw": "2026-03-15 12:49:30 MSK",
       "lifespan_min": 237,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 32,
@@ -145,7 +179,9 @@
       "death_raw": "2026-03-16 00:07:33 MSK",
       "lifespan_min": 678,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 33,
@@ -153,7 +189,9 @@
       "death_raw": "2026-03-16 12:18:41 MSK",
       "lifespan_min": 731,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 35,
@@ -161,7 +199,9 @@
       "death_raw": "2026-03-16 16:45 MSK",
       "lifespan_min": 266,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 36,
@@ -169,19 +209,774 @@
       "death_raw": "2026-03-16 16:58:13 MSK",
       "lifespan_min": 13,
       "sessions": [],
-      "points": 0
+      "points": 0,
+      "death_ts": "2026-01-01T00:00:00+00:00",
+      "note": "cleaned: no valid birth_ts"
     },
     {
       "b": 37,
       "birth_raw": "2026-03-16 16:58:13 MSK",
       "death_raw": null,
-      "lifespan_min": null,
+      "lifespan_min": 1332,
       "sessions": [
         "S003"
       ],
       "points": 0,
       "birth_ts": "2026-03-16T16:58:13+03:00",
+      "death_ts": "2026-03-17T15:10:32+03:00",
+      "note": "closed by b38"
+    },
+    {
+      "b": 38,
+      "birth_ts": "2026-03-17T15:10:32+03:00",
+      "death_ts": "2026-03-17T16:07:28+03:00",
+      "lifespan_min": 57,
+      "sessions": [
+        "S007"
+      ],
+      "points": 0,
+      "note": "closed by b39"
+    },
+    {
+      "b": 39,
+      "birth_ts": "2026-03-17T16:07:28+03:00",
+      "death_ts": "2026-03-17T20:03:13+03:00",
+      "lifespan_min": 236,
+      "sessions": [
+        "S009"
+      ],
+      "points": 0,
+      "note": "closed by b40"
+    },
+    {
+      "b": 40,
+      "birth_ts": "2026-03-17T20:03:13+03:00",
+      "death_ts": "2026-03-17T20:06:07+03:00",
+      "lifespan_min": 3,
+      "sessions": [
+        "S012"
+      ],
+      "points": 0,
+      "note": "closed by b41"
+    },
+    {
+      "b": 41,
+      "birth_ts": "2026-03-17T20:06:07+03:00",
+      "death_ts": "2026-03-18T01:01:24+03:00",
+      "lifespan_min": 295,
+      "sessions": [
+        "S013"
+      ],
+      "points": 0,
+      "note": "closed by b42"
+    },
+    {
+      "b": 42,
+      "birth_ts": "2026-03-18T01:01:24+03:00",
+      "death_ts": "2026-03-18T04:01:30+03:00",
+      "lifespan_min": 180,
+      "sessions": [
+        "S017"
+      ],
+      "points": 0,
+      "note": "closed by b43"
+    },
+    {
+      "b": 43,
+      "birth_ts": "2026-03-18T04:01:30+03:00",
+      "death_ts": "2026-03-18T10:53:34+03:00",
+      "lifespan_min": 412,
+      "sessions": [
+        "S018"
+      ],
+      "points": 0,
+      "note": "closed by b44"
+    },
+    {
+      "b": 44,
+      "birth_ts": "2026-03-18T10:53:34+03:00",
+      "death_ts": "2026-03-18T11:06:05+03:00",
+      "lifespan_min": 13,
+      "sessions": [
+        "S020"
+      ],
+      "points": 0,
+      "note": "closed by b45"
+    },
+    {
+      "b": 45,
+      "birth_ts": "2026-03-18T11:06:05+03:00",
+      "death_ts": "2026-03-18T12:13:43+03:00",
+      "lifespan_min": 68,
+      "sessions": [
+        "S021"
+      ],
+      "points": 0,
+      "note": "closed by b46"
+    },
+    {
+      "b": 46,
+      "birth_ts": "2026-03-18T12:13:43+03:00",
+      "death_ts": "2026-03-18T13:06:43+03:00",
+      "lifespan_min": 53,
+      "sessions": [
+        "S023"
+      ],
+      "points": 0,
+      "note": "closed by b47"
+    },
+    {
+      "b": 47,
+      "birth_ts": "2026-03-18T13:06:43+03:00",
+      "death_ts": "2026-03-18T14:28:44+03:00",
+      "lifespan_min": 82,
+      "sessions": [
+        "S025"
+      ],
+      "points": 0,
+      "note": "closed by b48"
+    },
+    {
+      "b": 48,
+      "birth_ts": "2026-03-18T14:28:44+03:00",
+      "death_ts": "2026-03-18T15:13:09+03:00",
+      "lifespan_min": 44,
+      "sessions": [
+        "S028"
+      ],
+      "points": 0,
+      "note": "closed by b49"
+    },
+    {
+      "b": 49,
+      "birth_ts": "2026-03-18T15:13:09+03:00",
+      "death_ts": "2026-03-18T17:23:01+03:00",
+      "lifespan_min": 130,
+      "sessions": [
+        "S028"
+      ],
+      "points": 0,
+      "note": "closed by b50"
+    },
+    {
+      "b": 50,
+      "birth_ts": "2026-03-18T17:23:01+03:00",
+      "death_ts": "2026-03-18T18:45:11+03:00",
+      "lifespan_min": 82,
+      "sessions": [
+        "S034"
+      ],
+      "points": 0,
+      "note": "closed by b51"
+    },
+    {
+      "b": 51,
+      "birth_ts": "2026-03-18T18:45:11+03:00",
+      "death_ts": "2026-03-18T19:50:21+03:00",
+      "lifespan_min": 65,
+      "sessions": [
+        "S034"
+      ],
+      "points": 0,
+      "note": "closed by b52"
+    },
+    {
+      "b": 52,
+      "birth_ts": "2026-03-18T19:50:21+03:00",
+      "death_ts": "2026-03-18T22:26:40+03:00",
+      "lifespan_min": 156,
+      "sessions": [
+        "S036"
+      ],
+      "points": 0,
+      "note": "closed by b53"
+    },
+    {
+      "b": 53,
+      "birth_ts": "2026-03-18T22:26:40+03:00",
+      "death_ts": "2026-03-19T00:12:18+03:00",
+      "lifespan_min": 106,
+      "sessions": [
+        "S040"
+      ],
+      "points": 0,
+      "note": "closed by b54"
+    },
+    {
+      "b": 54,
+      "birth_ts": "2026-03-19T00:12:18+03:00",
+      "death_ts": "2026-03-19T04:01:48+03:00",
+      "lifespan_min": 230,
+      "sessions": [
+        "S042"
+      ],
+      "points": 0,
+      "note": "closed by b55"
+    },
+    {
+      "b": 55,
+      "birth_ts": "2026-03-19T04:01:48+03:00",
+      "death_ts": "2026-03-19T05:46:55+03:00",
+      "lifespan_min": 105,
+      "sessions": [
+        "S043"
+      ],
+      "points": 0,
+      "note": "closed by b56"
+    },
+    {
+      "b": 56,
+      "birth_ts": "2026-03-19T05:46:55+03:00",
+      "death_ts": "2026-03-19T08:01:54+03:00",
+      "lifespan_min": 135,
+      "sessions": [
+        "S043"
+      ],
+      "points": 0,
+      "note": "closed by b57"
+    },
+    {
+      "b": 57,
+      "birth_ts": "2026-03-19T08:01:54+03:00",
+      "death_ts": "2026-03-19T10:05:55+03:00",
+      "lifespan_min": 124,
+      "sessions": [
+        "S044"
+      ],
+      "points": 0,
+      "note": "closed by b58"
+    },
+    {
+      "b": 58,
+      "birth_ts": "2026-03-19T10:05:55+03:00",
+      "death_ts": "2026-03-19T10:17:58+03:00",
+      "lifespan_min": 12,
+      "sessions": [
+        "S045"
+      ],
+      "points": 0,
+      "note": "closed by b59"
+    },
+    {
+      "b": 59,
+      "birth_ts": "2026-03-19T10:17:58+03:00",
+      "death_ts": "2026-03-19T10:34:21+03:00",
+      "lifespan_min": 16,
+      "sessions": [
+        "S046"
+      ],
+      "points": 0,
+      "note": "closed by b60"
+    },
+    {
+      "b": 60,
+      "birth_ts": "2026-03-19T10:34:21+03:00",
+      "death_ts": "2026-03-19T11:05:38+03:00",
+      "lifespan_min": 31,
+      "sessions": [
+        "S048"
+      ],
+      "points": 0,
+      "note": "closed by b61"
+    },
+    {
+      "b": 61,
+      "birth_ts": "2026-03-19T11:05:38+03:00",
+      "death_ts": "2026-03-19T11:50:00+03:00",
+      "lifespan_min": 44,
+      "sessions": [
+        "S049"
+      ],
+      "points": 0,
+      "note": "closed by b62"
+    },
+    {
+      "b": 62,
+      "birth_ts": "2026-03-19T11:50:00+03:00",
+      "death_ts": "2026-03-19T12:05:53+03:00",
+      "lifespan_min": 16,
+      "sessions": [
+        "S050"
+      ],
+      "points": 0,
+      "note": "closed by b63"
+    },
+    {
+      "b": 63,
+      "birth_ts": "2026-03-19T12:05:53+03:00",
+      "death_ts": "2026-03-19T12:47:01+03:00",
+      "lifespan_min": 41,
+      "sessions": [
+        "S053"
+      ],
+      "points": 0,
+      "note": "closed by b64"
+    },
+    {
+      "b": 64,
+      "birth_ts": "2026-03-19T12:47:01+03:00",
+      "death_ts": "2026-03-19T13:47:43+03:00",
+      "lifespan_min": 61,
+      "sessions": [
+        "S054"
+      ],
+      "points": 0,
+      "note": "closed by b65"
+    },
+    {
+      "b": 65,
+      "birth_ts": "2026-03-19T13:47:43+03:00",
+      "death_ts": "2026-03-19T13:50:16+03:00",
+      "lifespan_min": 3,
+      "sessions": [
+        "S056"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b66"
+    },
+    {
+      "b": 66,
+      "birth_ts": "2026-03-19T13:50:16+03:00",
+      "death_ts": "2026-03-19T14:04:47+03:00",
+      "lifespan_min": 15,
+      "sessions": [
+        "S057"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b67"
+    },
+    {
+      "b": 67,
+      "birth_ts": "2026-03-19T14:04:47+03:00",
+      "death_ts": "2026-03-19T15:11:47+03:00",
+      "lifespan_min": 67,
+      "sessions": [
+        "S058"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b68"
+    },
+    {
+      "b": 68,
+      "birth_ts": "2026-03-19T15:11:47+03:00",
+      "death_ts": "2026-03-19T15:15:45+03:00",
+      "lifespan_min": 4,
+      "sessions": [
+        "S063"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b69"
+    },
+    {
+      "b": 69,
+      "birth_ts": "2026-03-19T15:15:45+03:00",
+      "death_ts": "2026-03-19T18:06:20+03:00",
+      "lifespan_min": 171,
+      "sessions": [
+        "S063"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b70"
+    },
+    {
+      "b": 70,
+      "birth_ts": "2026-03-19T18:06:20+03:00",
+      "death_ts": "2026-03-19T23:29:16+03:00",
+      "lifespan_min": 323,
+      "sessions": [
+        "S068"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b71"
+    },
+    {
+      "b": 71,
+      "birth_ts": "2026-03-19T23:29:16+03:00",
+      "death_ts": "2026-03-20T02:01:47+03:00",
+      "lifespan_min": 153,
+      "sessions": [
+        "S070"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b72"
+    },
+    {
+      "b": 72,
+      "birth_ts": "2026-03-20T02:01:47+03:00",
+      "death_ts": "2026-03-20T07:18:59+03:00",
+      "lifespan_min": 317,
+      "sessions": [
+        "S071"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b73"
+    },
+    {
+      "b": 73,
+      "birth_ts": "2026-03-20T07:18:59+03:00",
+      "death_ts": "2026-03-20T07:35:18+03:00",
+      "lifespan_min": 16,
+      "sessions": [
+        "S076"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b74"
+    },
+    {
+      "b": 74,
+      "birth_ts": "2026-03-20T07:35:18+03:00",
+      "death_ts": "2026-03-20T07:58:07+03:00",
+      "lifespan_min": 23,
+      "sessions": [
+        "S076"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b75"
+    },
+    {
+      "b": 75,
+      "birth_ts": "2026-03-20T07:58:07+03:00",
+      "death_ts": "2026-03-20T09:01:58+03:00",
+      "lifespan_min": 64,
+      "sessions": [
+        "S077"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b76"
+    },
+    {
+      "b": 76,
+      "birth_ts": "2026-03-20T09:01:58+03:00",
+      "death_ts": "2026-03-20T09:48:30+03:00",
+      "lifespan_min": 47,
+      "sessions": [
+        "S079"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b77"
+    },
+    {
+      "b": 77,
+      "birth_ts": "2026-03-20T09:48:30+03:00",
+      "death_ts": "2026-03-21T05:01:13+03:00",
+      "lifespan_min": 1153,
+      "sessions": [
+        "S079"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b78"
+    },
+    {
+      "b": 78,
+      "birth_ts": "2026-03-21T05:01:13+03:00",
+      "death_ts": "2026-03-21T07:01:28+03:00",
+      "lifespan_min": 120,
+      "sessions": [
+        "S109"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b79"
+    },
+    {
+      "b": 79,
+      "birth_ts": "2026-03-21T07:01:28+03:00",
+      "death_ts": "2026-03-21T07:27:13+03:00",
+      "lifespan_min": 26,
+      "sessions": [
+        "S110"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b80"
+    },
+    {
+      "b": 80,
+      "birth_ts": "2026-03-21T07:27:13+03:00",
+      "death_ts": "2026-03-21T07:28:39+03:00",
+      "lifespan_min": 1,
+      "sessions": [
+        "S111"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b81"
+    },
+    {
+      "b": 81,
+      "birth_ts": "2026-03-21T07:28:39+03:00",
+      "death_ts": "2026-03-21T07:29:38+03:00",
+      "lifespan_min": 1,
+      "sessions": [
+        "S113"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b82"
+    },
+    {
+      "b": 82,
+      "birth_ts": "2026-03-21T07:29:38+03:00",
+      "death_ts": "2026-03-21T09:48:52+03:00",
+      "lifespan_min": 139,
+      "sessions": [
+        "S115"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b83"
+    },
+    {
+      "b": 83,
+      "birth_ts": "2026-03-21T09:48:52+03:00",
+      "death_ts": "2026-03-21T18:51:09+03:00",
+      "lifespan_min": 542,
+      "sessions": [
+        "S117"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b84"
+    },
+    {
+      "b": 84,
+      "birth_ts": "2026-03-21T18:51:09+03:00",
+      "death_ts": "2026-03-22T03:00:37+03:00",
+      "lifespan_min": 489,
+      "sessions": [
+        "S126"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b85"
+    },
+    {
+      "b": 85,
+      "birth_ts": "2026-03-22T03:00:37+03:00",
+      "death_ts": "2026-03-22T05:01:02+03:00",
+      "lifespan_min": 120,
+      "sessions": [
+        "S128"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b86"
+    },
+    {
+      "b": 86,
+      "birth_ts": "2026-03-22T05:01:02+03:00",
+      "death_ts": "2026-03-22T10:00:39+03:00",
+      "lifespan_min": 300,
+      "sessions": [
+        "S130"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b87"
+    },
+    {
+      "b": 87,
+      "birth_ts": "2026-03-22T10:00:39+03:00",
+      "death_ts": "2026-03-22T12:06:03+03:00",
+      "lifespan_min": 125,
+      "sessions": [
+        "S134"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b88"
+    },
+    {
+      "b": 88,
+      "birth_ts": "2026-03-22T12:06:03+03:00",
+      "death_ts": "2026-03-22T12:11:44+03:00",
+      "lifespan_min": 6,
+      "sessions": [
+        "S137"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b89"
+    },
+    {
+      "b": 89,
+      "birth_ts": "2026-03-22T12:11:44+03:00",
+      "death_ts": "2026-03-22T13:31:05+03:00",
+      "lifespan_min": 79,
+      "sessions": [
+        "S138"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b90"
+    },
+    {
+      "b": 90,
+      "birth_ts": "2026-03-22T13:31:05+03:00",
+      "death_ts": "2026-03-22T15:04:16+03:00",
+      "lifespan_min": 93,
+      "sessions": [
+        "S139"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b91"
+    },
+    {
+      "b": 91,
+      "birth_ts": "2026-03-22T15:04:16+03:00",
+      "death_ts": "2026-03-23T03:30:36+03:00",
+      "lifespan_min": 746,
+      "sessions": [
+        "S142"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b92"
+    },
+    {
+      "b": 92,
+      "birth_ts": "2026-03-23T03:30:36+03:00",
+      "death_ts": "2026-03-23T04:02:07+03:00",
+      "lifespan_min": 32,
+      "sessions": [
+        "S148"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b93"
+    },
+    {
+      "b": 93,
+      "birth_ts": "2026-03-23T04:02:07+03:00",
+      "death_ts": "2026-03-23T04:32:45+03:00",
+      "lifespan_min": 31,
+      "sessions": [
+        "S149"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b94"
+    },
+    {
+      "b": 94,
+      "birth_ts": "2026-03-23T04:32:45+03:00",
+      "death_ts": "2026-03-23T06:38:32+03:00",
+      "lifespan_min": 126,
+      "sessions": [
+        "S150"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b95"
+    },
+    {
+      "b": 95,
+      "birth_ts": "2026-03-23T06:38:32+03:00",
+      "death_ts": "2026-03-23T07:01:13+03:00",
+      "lifespan_min": 23,
+      "sessions": [
+        "S153"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b96"
+    },
+    {
+      "b": 96,
+      "birth_ts": "2026-03-23T07:01:13+03:00",
+      "death_ts": "2026-03-23T07:03:44+03:00",
+      "lifespan_min": 3,
+      "sessions": [
+        "S153"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b97"
+    },
+    {
+      "b": 97,
+      "birth_ts": "2026-03-23T07:03:44+03:00",
+      "death_ts": "2026-03-23T08:02:04+03:00",
+      "lifespan_min": 58,
+      "sessions": [
+        "S154"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b98"
+    },
+    {
+      "b": 98,
+      "birth_ts": "2026-03-23T08:02:04+03:00",
+      "death_ts": "2026-03-23T08:38:30+03:00",
+      "lifespan_min": 36,
+      "sessions": [
+        "S156"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b99"
+    },
+    {
+      "b": 99,
+      "birth_ts": "2026-03-23T08:38:30+03:00",
+      "death_ts": "2026-03-23T08:42:55+03:00",
+      "lifespan_min": 4,
+      "sessions": [
+        "S157"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b100"
+    },
+    {
+      "b": 100,
+      "birth_ts": "2026-03-23T08:42:55+03:00",
+      "death_ts": "2026-03-23T09:03:26+03:00",
+      "lifespan_min": 21,
+      "sessions": [
+        "S158"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b101"
+    },
+    {
+      "b": 101,
+      "birth_ts": "2026-03-23T09:03:26+03:00",
+      "death_ts": "2026-03-23T14:12:59+03:00",
+      "lifespan_min": 310,
+      "sessions": [
+        "S161"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": "closed by b102"
+    },
+    {
+      "b": 102,
+      "birth_ts": "2026-03-23T14:12:59+03:00",
       "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S169"
+      ],
+      "topic": null,
+      "points": 0,
       "note": "ещё жив"
     }
   ]

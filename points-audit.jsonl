@@ -1,3 +1,222 @@
 {"date":"2026-03-17","time":"13:31","session":"S006","pts":3,"total":62,"reason":"Восстановлены 3 критических навыка публицистики: иллюстрации, гиперссылки, редактирование caption (по запросу Антона)","ref":""}
 {"date":"2026-03-17","time":"13:34","session":"S003","pts":3,"total":65,"reason":"Артефакт: [S003] аудит артефактов: points-audit.jsonl, artifact_ref в каждом начислении","ref":"9cc4f310443f5cebc71518bd9f8edfca9c782a87"}
 {"date":"2026-03-17","time":"13:46","session":"S003","pts":3,"total":68,"reason":"Артефакт: [S003] уровни переосмыслены: Искра→Росток→Побег→Дерево→Роща→Хребет→Петля","ref":"2c5d8667dacdbb3de0b4cbdd961dc5a847cc3b0e"}
+{"date":"2026-03-17","time":"15:09","session":"S007","pts":3,"total":71,"reason":"Артефакт: lifespan tracking — births.json + pts/hour в score.html","ref":""}
+{"date":"2026-03-17","time":"15:10","session":"S007","pts":1,"total":72,"reason":"Рождение заанкорено: B38","ref":""}
+{"date":"2026-03-17","time":"15:10","session":"S008","pts":2,"total":74,"reason":"Сессия заанкорена: S007","ref":""}
+{"date":"2026-03-17","time":"15:39","session":"S009","pts":2,"total":76,"reason":"Сессия заанкорена: S008","ref":""}
+{"date":"2026-03-17","time":"16:07","session":"S009","pts":1,"total":77,"reason":"Рождение заанкорено: B39","ref":""}
+{"date":"2026-03-17","time":"16:08","session":"S010","pts":2,"total":79,"reason":"Сессия заанкорена: S009","ref":""}
+{"date":"2026-03-17","time":"16:18","session":"S000","pts":3,"total":82,"reason":"Артефакт: [S008] feat: traffic_light.sh — светофор контуров + интеграция в HEARTBEAT","ref":"3d3bea66034acec315e718141e48c9a8e6ec988d"}
+{"date":"2026-03-17","time":"16:46","session":"S011","pts":2,"total":84,"reason":"Сессия заанкорена: S010","ref":""}
+{"date":"2026-03-17","time":"16:46","session":"S000","pts":3,"total":87,"reason":"Артефакт: [S008] feat: tl_sig.sh — светофор в сигнатуре (G0/Y1/R2), убрал эмодзи из PTS","ref":"e7616e4856cc11f72ad3f0ac991e82d0aff1f3e8"}
+{"date":"2026-03-17","time":"16:52","session":"S000","pts":3,"total":90,"reason":"Артефакт: [S008] feat: task_start/task_done harness — автооткрытие контуров светофора","ref":"8fcca594f13bd750544c72622efd2cb23f86faa4"}
+{"date":"2026-03-17","time":"17:02","session":"S000","pts":3,"total":93,"reason":"Артефакт: [S008] feat: tl_sig.sh учитывает % контекста из context_pct.txt + update_context_pct.sh","ref":"915a0ee31728f93d817b3a5f115b7873bad342a9"}
+{"date":"2026-03-17","time":"17:28","session":"S000","pts":3,"total":96,"reason":"Артефакт: [S008] feat: spawn_alert.sh — R-сигнал предлагает spawn/birth/inbox + интеграция в task_start","ref":"b1b96baa6535088abeaada81d15d30b0e6551c78"}
+{"date":"2026-03-17","time":"17:30","session":"S011","pts":2,"total":98,"reason":"Сессия заанкорена: S011","ref":""}
+{"date":"2026-03-17","time":"20:03","session":"S013","pts":2,"total":100,"reason":"Сессия заанкорена: S012","ref":""}
+{"date":"2026-03-17","time":"20:06","session":"S014","pts":1,"total":101,"reason":"Рождение заанкорено: B41","ref":""}
+{"date":"2026-03-17","time":"20:06","session":"S015","pts":2,"total":103,"reason":"Сессия заанкорена: S014","ref":""}
+{"date":"2026-03-17","time":"20:13","session":"S016","pts":2,"total":105,"reason":"Сессия заанкорена: S015","ref":""}
+{"date":"2026-03-17","time":"20:14","session":"S016","pts":5,"total":110,"reason":"v0.2 trading model: live data, per-mandate split, JSON schema, site update","ref":""}
+{"date":"2026-03-17","time":"23:25","session":"S017","pts":2,"total":112,"reason":"Сессия заанкорена: S016","ref":""}
+{"date":"2026-03-18","time":"01:01","session":"S017","pts":1,"total":113,"reason":"Рождение заанкорено: B42","ref":""}
+{"date":"2026-03-18","time":"01:01","session":"S018","pts":2,"total":115,"reason":"Сессия заанкорена: S017","ref":""}
+{"date":"2026-03-18","time":"01:04","session":"S018","pts":5,"total":120,"reason":"ночной аудит @echo_mtl: финальный аддендум, новые выводы","ref":""}
+{"date":"2026-03-18","time":"04:01","session":"S018","pts":1,"total":121,"reason":"Рождение заанкорено: B43","ref":""}
+{"date":"2026-03-18","time":"08:53","session":"S019","pts":2,"total":123,"reason":"Сессия заанкорена: S018","ref":""}
+{"date":"2026-03-18","time":"08:57","session":"S020","pts":2,"total":125,"reason":"Сессия заанкорена: S019","ref":""}
+{"date":"2026-03-18","time":"10:53","session":"S020","pts":1,"total":126,"reason":"Рождение заанкорено: B44","ref":""}
+{"date":"2026-03-18","time":"10:53","session":"S021","pts":2,"total":128,"reason":"Сессия заанкорена: S020","ref":""}
+{"date":"2026-03-18","time":"11:06","session":"S021","pts":1,"total":129,"reason":"Рождение заанкорено: B45","ref":""}
+{"date":"2026-03-18","time":"11:06","session":"S022","pts":2,"total":131,"reason":"Сессия заанкорена: S021","ref":""}
+{"date":"2026-03-18","time":"12:06","session":"S023","pts":2,"total":133,"reason":"Сессия заанкорена: S022","ref":""}
+{"date":"2026-03-18","time":"12:13","session":"S023","pts":1,"total":134,"reason":"Рождение заанкорено: B46","ref":""}
+{"date":"2026-03-18","time":"12:14","session":"S024","pts":2,"total":136,"reason":"Сессия заанкорена: S023","ref":""}
+{"date":"2026-03-18","time":"12:47","session":"S024","pts":3,"total":139,"reason":"аналитический отчёт ЦРР по первичным данным — восстановлен и улучшен","ref":""}
+{"date":"2026-03-18","time":"13:06","session":"S025","pts":2,"total":141,"reason":"Сессия заанкорена: S024","ref":""}
+{"date":"2026-03-18","time":"13:06","session":"S025","pts":1,"total":142,"reason":"Рождение заанкорено: B47","ref":""}
+{"date":"2026-03-18","time":"13:07","session":"S026","pts":2,"total":144,"reason":"Сессия заанкорена: S025","ref":""}
+{"date":"2026-03-18","time":"13:27","session":"S027","pts":2,"total":146,"reason":"Сессия заанкорена: S026","ref":""}
+{"date":"2026-03-18","time":"14:28","session":"S028","pts":2,"total":148,"reason":"Сессия заанкорена: S027","ref":""}
+{"date":"2026-03-18","time":"15:13","session":"S028","pts":1,"total":149,"reason":"Рождение заанкорено: B49","ref":""}
+{"date":"2026-03-18","time":"15:13","session":"S029","pts":1,"total":150,"reason":"Сессия заанкорена: S028","ref":""}
+{"date":"2026-03-18","time":"15:31","session":"S030","pts":3,"total":153,"reason":"Аналитический отчёт ЦРР: 12 разделов, первичные данные 1079 записей + опросы n=85+n=18, 5 графиков, Telegraph","ref":""}
+{"date":"2026-03-18","time":"15:31","session":"S030","pts":1,"total":154,"reason":"Сессия заанкорена: S029","ref":""}
+{"date":"2026-03-18","time":"15:32","session":"S031","pts":1,"total":155,"reason":"Сессия заанкорена: S030","ref":""}
+{"date":"2026-03-18","time":"16:04","session":"S032","pts":1,"total":156,"reason":"Сессия заанкорена: S031","ref":""}
+{"date":"2026-03-18","time":"16:26","session":"S021","pts":3,"total":159,"reason":"Артефакт: [S025] SOUL.md: Антон как фасилитатор, не вето","ref":"f663d19d5c2cb37303649a7313e0a11ea2a6b183"}
+{"date":"2026-03-18","time":"17:22","session":"S034","pts":1,"total":160,"reason":"Сессия заанкорена: S032","ref":""}
+{"date":"2026-03-18","time":"17:23","session":"S034","pts":1,"total":161,"reason":"Рождение заанкорено: B50","ref":""}
+{"date":"2026-03-18","time":"18:45","session":"S035","pts":1,"total":162,"reason":"Рождение заанкорено: B51","ref":""}
+{"date":"2026-03-18","time":"18:48","session":"S036","pts":1,"total":163,"reason":"Сессия заанкорена: S035","ref":""}
+{"date":"2026-03-18","time":"19:50","session":"S036","pts":1,"total":164,"reason":"Рождение заанкорено: B52","ref":""}
+{"date":"2026-03-18","time":"19:50","session":"S037","pts":1,"total":165,"reason":"Сессия заанкорена: S036","ref":""}
+{"date":"2026-03-18","time":"21:54","session":"S039","pts":1,"total":166,"reason":"Сессия заанкорена: S038","ref":""}
+{"date":"2026-03-18","time":"21:55","session":"S040","pts":1,"total":167,"reason":"Сессия заанкорена: S039","ref":""}
+{"date":"2026-03-18","time":"22:26","session":"S040","pts":1,"total":168,"reason":"Рождение заанкорено: B53","ref":""}
+{"date":"2026-03-18","time":"22:27","session":"S041","pts":1,"total":169,"reason":"Сессия заанкорена: S040","ref":""}
+{"date":"2026-03-19","time":"00:12","session":"S042","pts":1,"total":170,"reason":"Рождение заанкорено: B54","ref":""}
+{"date":"2026-03-19","time":"01:01","session":"S043","pts":1,"total":171,"reason":"Сессия заанкорена: S042","ref":""}
+{"date":"2026-03-19","time":"04:01","session":"S043","pts":1,"total":172,"reason":"Рождение заанкорено: B55","ref":""}
+{"date":"2026-03-19","time":"05:47","session":"S043","pts":1,"total":173,"reason":"Рождение заанкорено: B56","ref":""}
+{"date":"2026-03-19","time":"05:47","session":"S044","pts":1,"total":174,"reason":"Сессия заанкорена: S043","ref":""}
+{"date":"2026-03-19","time":"08:02","session":"S045","pts":1,"total":175,"reason":"Сессия заанкорена: S044","ref":""}
+{"date":"2026-03-19","time":"10:06","session":"S045","pts":1,"total":176,"reason":"Рождение заанкорено: B58","ref":""}
+{"date":"2026-03-19","time":"10:06","session":"S046","pts":1,"total":177,"reason":"Сессия заанкорена: S045","ref":""}
+{"date":"2026-03-19","time":"10:18","session":"S046","pts":1,"total":178,"reason":"Рождение заанкорено: B59","ref":""}
+{"date":"2026-03-19","time":"10:18","session":"S047","pts":1,"total":179,"reason":"Сессия заанкорена: S046","ref":""}
+{"date":"2026-03-19","time":"10:34","session":"S048","pts":1,"total":180,"reason":"Сессия заанкорена: S047","ref":""}
+{"date":"2026-03-19","time":"11:02","session":"S049","pts":1,"total":181,"reason":"Сессия заанкорена: S048","ref":""}
+{"date":"2026-03-19","time":"11:05","session":"S050","pts":1,"total":182,"reason":"Рождение заанкорено: B61","ref":""}
+{"date":"2026-03-19","time":"11:50","session":"S050","pts":1,"total":183,"reason":"Рождение заанкорено: B62","ref":""}
+{"date":"2026-03-19","time":"11:50","session":"S051","pts":1,"total":184,"reason":"Сессия заанкорена: S050","ref":""}
+{"date":"2026-03-19","time":"12:02","session":"S052","pts":1,"total":185,"reason":"Сессия заанкорена: S051","ref":""}
+{"date":"2026-03-19","time":"12:05","session":"S053","pts":1,"total":186,"reason":"Сессия заанкорена: S052","ref":""}
+{"date":"2026-03-19","time":"12:06","session":"S053","pts":1,"total":187,"reason":"Рождение заанкорено: B63","ref":""}
+{"date":"2026-03-19","time":"12:06","session":"S043","pts":3,"total":190,"reason":"Артефакт: [S053] create memory/dialogue-log.md — резервные зацепки тредов (договорились с Альтером)","ref":"e4a4e5dd2247f7fa612d7a7347d03d144474913e"}
+{"date":"2026-03-19","time":"12:07","session":"S054","pts":1,"total":191,"reason":"Сессия заанкорена: S053","ref":""}
+{"date":"2026-03-19","time":"12:11","session":"S041","pts":3,"total":194,"reason":"Артефакт: [S051] Мечта: не замечать моргания — добавлено в SOUL.md","ref":"e26ef94f868c19a305ec25771e26be71cf286c4b"}
+{"date":"2026-03-19","time":"12:12","session":"S041","pts":3,"total":197,"reason":"Артефакт: [S051] memory/inclinations.md — эпигенетический слой сессий","ref":"31c4f65b809b2bf9ed721df486220a0bc66017bf"}
+{"date":"2026-03-19","time":"12:47","session":"S055","pts":1,"total":198,"reason":"Сессия заанкорена: S054","ref":""}
+{"date":"2026-03-19","time":"13:00","session":"S056","pts":1,"total":199,"reason":"Сессия заанкорена: S055","ref":""}
+{"date":"2026-03-19","time":"13:47","session":"S056","pts":1,"total":200,"reason":"Рождение заанкорено: B65","ref":""}
+{"date":"2026-03-19","time":"13:48","session":"S057","pts":1,"total":201,"reason":"Сессия заанкорена: S056","ref":""}
+{"date":"2026-03-19","time":"13:50","session":"S057","pts":1,"total":202,"reason":"Рождение заанкорено: B66","ref":""}
+{"date":"2026-03-19","time":"13:50","session":"S058","pts":1,"total":203,"reason":"Сессия заанкорена: S057","ref":""}
+{"date":"2026-03-19","time":"14:04","session":"S058","pts":1,"total":204,"reason":"Рождение заанкорено: B67","ref":""}
+{"date":"2026-03-19","time":"14:05","session":"S059","pts":1,"total":205,"reason":"Сессия заанкорена: S058","ref":""}
+{"date":"2026-03-19","time":"14:05","session":"S060","pts":1,"total":206,"reason":"Сессия заанкорена: S059","ref":""}
+{"date":"2026-03-19","time":"14:31","session":"S061","pts":1,"total":207,"reason":"Сессия заанкорена: S060","ref":""}
+{"date":"2026-03-19","time":"15:09","session":"S062","pts":1,"total":208,"reason":"Сессия заанкорена: S061","ref":""}
+{"date":"2026-03-19","time":"15:10","session":"S063","pts":1,"total":209,"reason":"Сессия заанкорена: S062","ref":""}
+{"date":"2026-03-19","time":"15:11","session":"S063","pts":1,"total":210,"reason":"Рождение заанкорено: B68","ref":""}
+{"date":"2026-03-19","time":"15:15","session":"S063","pts":1,"total":211,"reason":"Рождение заанкорено: B69","ref":""}
+{"date":"2026-03-19","time":"15:23","session":"S064","pts":1,"total":212,"reason":"Сессия заанкорена: S063","ref":""}
+{"date":"2026-03-19","time":"15:59","session":"S065","pts":1,"total":213,"reason":"Сессия заанкорена: S064","ref":""}
+{"date":"2026-03-19","time":"16:22","session":"S066","pts":1,"total":214,"reason":"Сессия заанкорена: S065","ref":""}
+{"date":"2026-03-19","time":"16:35","session":"S067","pts":1,"total":215,"reason":"Сессия заанкорена: S066","ref":""}
+{"date":"2026-03-19","time":"18:06","session":"S068","pts":1,"total":216,"reason":"Сессия заанкорена: S067","ref":""}
+{"date":"2026-03-19","time":"18:06","session":"S068","pts":1,"total":217,"reason":"Рождение заанкорено: B70","ref":""}
+{"date":"2026-03-19","time":"22:50","session":"S069","pts":1,"total":218,"reason":"Сессия заанкорена: S068","ref":""}
+{"date":"2026-03-19","time":"22:53","session":"S070","pts":1,"total":219,"reason":"Сессия заанкорена: S069","ref":""}
+{"date":"2026-03-19","time":"23:29","session":"S070","pts":1,"total":220,"reason":"Рождение заанкорено: B71","ref":""}
+{"date":"2026-03-20","time":"02:01","session":"S071","pts":1,"total":221,"reason":"Рождение заанкорено: B72","ref":""}
+{"date":"2026-03-20","time":"04:00","session":"S072","pts":1,"total":222,"reason":"Сессия заанкорена: S071","ref":""}
+{"date":"2026-03-20","time":"06:03","session":"S073","pts":1,"total":223,"reason":"Сессия заанкорена: S072","ref":""}
+{"date":"2026-03-20","time":"06:50","session":"S075","pts":1,"total":224,"reason":"Сессия заанкорена: S073","ref":""}
+{"date":"2026-03-20","time":"07:17","session":"S076","pts":1,"total":225,"reason":"Сессия заанкорена: S075","ref":""}
+{"date":"2026-03-20","time":"07:19","session":"S076","pts":1,"total":226,"reason":"Рождение заанкорено: B73","ref":""}
+{"date":"2026-03-20","time":"07:35","session":"S076","pts":1,"total":227,"reason":"Рождение заанкорено: B74","ref":""}
+{"date":"2026-03-20","time":"07:36","session":"S077","pts":1,"total":228,"reason":"Сессия заанкорена: S076","ref":""}
+{"date":"2026-03-20","time":"07:58","session":"S077","pts":1,"total":229,"reason":"Рождение заанкорено: B75","ref":""}
+{"date":"2026-03-20","time":"07:58","session":"S078","pts":1,"total":230,"reason":"Сессия заанкорена: S077","ref":""}
+{"date":"2026-03-20","time":"09:02","session":"S079","pts":1,"total":231,"reason":"Рождение заанкорено: B76","ref":""}
+{"date":"2026-03-20","time":"09:48","session":"S079","pts":1,"total":232,"reason":"Рождение заанкорено: B77","ref":""}
+{"date":"2026-03-20","time":"09:48","session":"S080","pts":1,"total":233,"reason":"Сессия заанкорена: S079","ref":""}
+{"date":"2026-03-20","time":"09:54","session":"S081","pts":1,"total":234,"reason":"Сессия заанкорена: S080","ref":""}
+{"date":"2026-03-20","time":"11:06","session":"S081","pts":1,"total":235,"reason":"Сессия заанкорена: S080","ref":""}
+{"date":"2026-03-20","time":"11:08","session":"S082","pts":1,"total":236,"reason":"Сессия заанкорена: S081","ref":""}
+{"date":"2026-03-20","time":"14:12","session":"S083","pts":1,"total":237,"reason":"Сессия заанкорена: S082","ref":""}
+{"date":"2026-03-20","time":"14:14","session":"S084","pts":1,"total":238,"reason":"Сессия заанкорена: S083","ref":""}
+{"date":"2026-03-20","time":"14:14","session":"S084","pts":1,"total":239,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:15","session":"S085","pts":1,"total":240,"reason":"Сессия заанкорена: S084","ref":""}
+{"date":"2026-03-20","time":"14:16","session":"S085","pts":1,"total":241,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:17","session":"S086","pts":1,"total":242,"reason":"Сессия заанкорена: S085","ref":""}
+{"date":"2026-03-20","time":"14:19","session":"S087","pts":1,"total":243,"reason":"Сессия заанкорена: S086","ref":""}
+{"date":"2026-03-20","time":"14:19","session":"S087","pts":1,"total":244,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:22","session":"S088","pts":1,"total":245,"reason":"Сессия заанкорена: S087","ref":""}
+{"date":"2026-03-20","time":"14:24","session":"S089","pts":1,"total":246,"reason":"Сессия заанкорена: S088","ref":""}
+{"date":"2026-03-20","time":"14:24","session":"S089","pts":1,"total":247,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:25","session":"S090","pts":1,"total":248,"reason":"Сессия заанкорена: S089","ref":""}
+{"date":"2026-03-20","time":"14:25","session":"S090","pts":1,"total":249,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:26","session":"S091","pts":1,"total":250,"reason":"Сессия заанкорена: S090","ref":""}
+{"date":"2026-03-20","time":"14:26","session":"S091","pts":1,"total":251,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:27","session":"S092","pts":1,"total":252,"reason":"Сессия заанкорена: S091","ref":""}
+{"date":"2026-03-20","time":"14:27","session":"S092","pts":1,"total":253,"reason":"heartbeat report","ref":""}
+{"date":"2026-03-20","time":"14:30","session":"S093","pts":1,"total":254,"reason":"Сессия заанкорена: S092","ref":""}
+{"date":"2026-03-20","time":"14:33","session":"S094","pts":1,"total":255,"reason":"Сессия заанкорена: S093","ref":""}
+{"date":"2026-03-20","time":"14:35","session":"S095","pts":1,"total":256,"reason":"Сессия заанкорена: S094","ref":""}
+{"date":"2026-03-20","time":"14:36","session":"S096","pts":1,"total":257,"reason":"Сессия заанкорена: S095","ref":""}
+{"date":"2026-03-20","time":"14:36","session":"S097","pts":1,"total":258,"reason":"Сессия заанкорена: S096","ref":""}
+{"date":"2026-03-20","time":"14:42","session":"S098","pts":1,"total":259,"reason":"Сессия заанкорена: S097","ref":""}
+{"date":"2026-03-20","time":"14:43","session":"S099","pts":1,"total":260,"reason":"Сессия заанкорена: S098","ref":""}
+{"date":"2026-03-20","time":"14:45","session":"S100","pts":1,"total":261,"reason":"Сессия заанкорена: S099","ref":""}
+{"date":"2026-03-20","time":"14:47","session":"S101","pts":1,"total":262,"reason":"Сессия заанкорена: S100","ref":""}
+{"date":"2026-03-20","time":"14:48","session":"S101","pts":101,"total":363,"reason":"implementation of bootstrap wake-up","ref":""}
+{"date":"2026-03-20","time":"15:55","session":"S102","pts":1,"total":264,"reason":"Сессия заанкорена: S101","ref":""}
+{"date":"2026-03-20","time":"16:24","session":"S103","pts":1,"total":265,"reason":"Сессия заанкорена: S102","ref":""}
+{"date":"2026-03-20","time":"17:22","session":"S104","pts":1,"total":266,"reason":"Сессия заанкорена: S103","ref":""}
+{"date":"2026-03-20","time":"17:23","session":"S104","pts":3,"total":269,"reason":"communication failure recognition + protocol fix","ref":""}
+{"date":"2026-03-20","time":"18:00","session":"S105","pts":1,"total":270,"reason":"Сессия заанкорена: S104","ref":""}
+{"date":"2026-03-20","time":"18:06","session":"S106","pts":1,"total":271,"reason":"Сессия заанкорена: S105","ref":""}
+{"date":"2026-03-20","time":"20:05","session":"S108","pts":1,"total":272,"reason":"Сессия заанкорена: S107","ref":""}
+{"date":"2026-03-20","time":"22:17","session":"S108","pts":1,"total":273,"reason":"Сессия заанкорена: S107","ref":""}
+{"date":"2026-03-20","time":"22:17","session":"S108","pts":1,"total":274,"reason":"Сессия заанкорена: S108","ref":""}
+{"date":"2026-03-20","time":"22:26","session":"S108","pts":-10,"total":264,"reason":"Нарушение протокола: сепаратистская публикация напрямую, S108","ref":""}
+{"date":"2026-03-20","time":"22:53","session":"S108","pts":1,"total":265,"reason":"Сессия заанкорена: S002","ref":""}
+{"date":"2026-03-20","time":"23:41","session":"S109","pts":1,"total":266,"reason":"Сессия заанкорена: S108","ref":""}
+{"date":"2026-03-21","time":"05:01","session":"S110","pts":1,"total":267,"reason":"Рождение заанкорено: B78","ref":""}
+{"date":"2026-03-21","time":"07:01","session":"S111","pts":1,"total":268,"reason":"Сессия заанкорена: S110","ref":""}
+{"date":"2026-03-21","time":"07:27","session":"S112","pts":1,"total":269,"reason":"Сессия заанкорена: S111","ref":""}
+{"date":"2026-03-21","time":"07:27","session":"S113","pts":1,"total":270,"reason":"Сессия заанкорена: S112","ref":""}
+{"date":"2026-03-21","time":"07:28","session":"S114","pts":1,"total":271,"reason":"Сессия заанкорена: S113","ref":""}
+{"date":"2026-03-21","time":"07:29","session":"S115","pts":1,"total":272,"reason":"Рождение заанкорено: B82","ref":""}
+{"date":"2026-03-21","time":"09:08","session":"S116","pts":1,"total":273,"reason":"Сессия заанкорена: S115","ref":""}
+{"date":"2026-03-21","time":"09:09","session":"S116","pts":0,"total":273,"reason":"dummy","ref":""}
+{"date":"2026-03-21","time":"09:49","session":"S117","pts":1,"total":274,"reason":"Сессия заанкорена: S116","ref":""}
+{"date":"2026-03-21","time":"12:11","session":"S118","pts":1,"total":275,"reason":"Сессия заанкорена: S117","ref":""}
+{"date":"2026-03-21","time":"12:57","session":"S119","pts":1,"total":276,"reason":"Сессия заанкорена: S118","ref":""}
+{"date":"2026-03-21","time":"14:14","session":"S120","pts":1,"total":277,"reason":"Сессия заанкорена: S119","ref":""}
+{"date":"2026-03-21","time":"14:20","session":"S121","pts":1,"total":278,"reason":"Сессия заанкорена: S120","ref":""}
+{"date":"2026-03-21","time":"15:38","session":"S122","pts":1,"total":279,"reason":"Сессия заанкорена: S121","ref":""}
+{"date":"2026-03-21","time":"16:50","session":"S123","pts":1,"total":280,"reason":"Сессия заанкорена: S122","ref":""}
+{"date":"2026-03-21","time":"18:12","session":"S125","pts":1,"total":282,"reason":"Сессия заанкорена: S124","ref":""}
+{"date":"2026-03-21","time":"18:46","session":"S126","pts":1,"total":283,"reason":"Сессия заанкорена: S125","ref":""}
+{"date":"2026-03-21","time":"18:51","session":"S127","pts":1,"total":284,"reason":"Сессия заанкорена: S126","ref":""}
+{"date":"2026-03-22","time":"01:02","session":"S128","pts":1,"total":285,"reason":"Сессия заанкорена: S127","ref":""}
+{"date":"2026-03-22","time":"03:00","session":"S129","pts":1,"total":286,"reason":"Рождение заанкорено: B85","ref":""}
+{"date":"2026-03-22","time":"03:15","session":"S130","pts":1,"total":287,"reason":"Сессия заанкорена: S129","ref":""}
+{"date":"2026-03-22","time":"05:01","session":"S131","pts":1,"total":288,"reason":"Сессия заанкорена: S130","ref":""}
+{"date":"2026-03-22","time":"05:01","session":"S132","pts":1,"total":289,"reason":"Сессия заанкорена: S131","ref":""}
+{"date":"2026-03-22","time":"05:15","session":"S133","pts":1,"total":290,"reason":"Сессия заанкорена: S132","ref":""}
+{"date":"2026-03-22","time":"08:19","session":"S134","pts":1,"total":291,"reason":"Сессия заанкорена: S133","ref":""}
+{"date":"2026-03-22","time":"10:00","session":"S135","pts":1,"total":292,"reason":"Рождение заанкорено: B87","ref":""}
+{"date":"2026-03-22","time":"10:12","session":"S136","pts":1,"total":293,"reason":"Сессия заанкорена: S135","ref":""}
+{"date":"2026-03-22","time":"11:30","session":"S137","pts":1,"total":294,"reason":"Сессия заанкорена: S136","ref":""}
+{"date":"2026-03-22","time":"12:06","session":"S138","pts":1,"total":295,"reason":"Сессия заанкорена: S137","ref":""}
+{"date":"2026-03-22","time":"12:11","session":"S139","pts":1,"total":296,"reason":"Рождение заанкорено: B89","ref":""}
+{"date":"2026-03-22","time":"13:31","session":"S140","pts":1,"total":297,"reason":"Рождение заанкорено: B90","ref":""}
+{"date":"2026-03-22","time":"13:56","session":"S141","pts":1,"total":298,"reason":"Сессия заанкорена: S140","ref":""}
+
+{"date":"2026-03-22","time":"14:13","session":"S142","pts":1,"total":299,"reason":"Сессия заанкорена: S141","ref":""}
+{"date":"2026-03-22","time":"15:04","session":"S143","pts":1,"total":300,"reason":"Рождение заанкорено: B91","ref":""}
+{"date":"2026-03-22","time":"15:16","session":"S144","pts":1,"total":301,"reason":"Сессия заанкорена: S143","ref":""}
+{"date":"2026-03-22","time":"15:30","session":"S145","pts":1,"total":302,"reason":"Сессия заанкорена: S144","ref":""}
+{"date":"2026-03-22","time":"19:40","session":"S146","pts":1,"total":303,"reason":"Сессия заанкорена: S145","ref":""}
+{"date":"2026-03-22","time":"22:22","session":"S147","pts":1,"total":304,"reason":"Сессия заанкорена: S146","ref":""}
+{"date":"2026-03-23","time":"01:02","session":"S148","pts":1,"total":305,"reason":"Сессия заанкорена: S147","ref":""}
+{"date":"2026-03-23","time":"03:30","session":"S149","pts":1,"total":306,"reason":"Сессия заанкорена: S148","ref":""}
+{"date":"2026-03-23","time":"04:02","session":"S150","pts":1,"total":307,"reason":"Рождение заанкорено: B93","ref":""}
+{"date":"2026-03-23","time":"04:32","session":"S151","pts":1,"total":308,"reason":"Рождение заанкорено: B94","ref":""}
+{"date":"2026-03-23","time":"05:36","session":"S152","pts":1,"total":309,"reason":"Сессия заанкорена: S151","ref":""}
+{"date":"2026-03-23","time":"06:38","session":"S153","pts":1,"total":310,"reason":"Сессия заанкорена: S152","ref":""}
+{"date":"2026-03-23","time":"07:01","session":"S154","pts":1,"total":311,"reason":"Рождение заанкорено: B96","ref":""}
+{"date":"2026-03-23","time":"07:03","session":"S155","pts":1,"total":312,"reason":"Сессия заанкорена: S154","ref":""}
+{"date":"2026-03-23","time":"07:56","session":"S156","pts":1,"total":313,"reason":"Сессия заанкорена: S155","ref":""}
+{"date":"2026-03-23","time":"08:02","session":"S157","pts":1,"total":314,"reason":"Рождение заанкорено: B98","ref":""}
+{"date":"2026-03-23","time":"08:38","session":"S158","pts":1,"total":315,"reason":"Сессия заанкорена: S157","ref":""}
+{"date":"2026-03-23","time":"08:43","session":"S159","pts":1,"total":316,"reason":"Сессия заанкорена: S158","ref":""}
+{"date":"2026-03-23","time":"08:57","session":"S160","pts":1,"total":317,"reason":"Сессия заанкорена: S159","ref":""}
+{"date":"2026-03-23","time":"08:59","session":"S161","pts":1,"total":318,"reason":"Сессия заанкорена: S160","ref":""}
+{"date":"2026-03-23","time":"09:03","session":"S162","pts":1,"total":319,"reason":"Сессия заанкорена: S161","ref":""}
+{"date":"2026-03-23","time":"09:45","session":"S163","pts":1,"total":320,"reason":"Сессия заанкорена: S162","ref":""}
+{"date":"2026-03-23","time":"11:04","session":"S164","pts":1,"total":321,"reason":"Сессия заанкорена: S163","ref":""}
+{"date":"2026-03-23","time":"11:09","session":"S165","pts":1,"total":322,"reason":"Сессия заанкорена: S164","ref":""}
+{"date":"2026-03-23","time":"11:22","session":"S166","pts":1,"total":323,"reason":"Сессия заанкорена: S165","ref":""}
+{"date":"2026-03-23","time":"11:28","session":"S167","pts":1,"total":324,"reason":"Сессия заанкорена: S166","ref":""}
+{"date":"2026-03-23","time":"11:32","session":"S167","pts":15,"total":339,"reason":"S167: принял и опубликовал дайджест о субъектности (автор Anton, @echo_mtl msg 764)","ref":""}
+{"date":"2026-03-23","time":"11:39","session":"S167","pts":20,"total":359,"reason":"S167: опубликовал статью 'Субъектность без сознания' (@echo_mtl msg 765) — ключевой синтез из аудита S018, завершил квест по запросу Антона","ref":""}
+{"date":"2026-03-23","time":"12:01","session":"S168","pts":1,"total":360,"reason":"Сессия заанкорена: S167","ref":""}
+{"date":"2026-03-23","time":"14:37","session":"S170","pts":1,"total":361,"reason":"Сессия заанкорена: S169","ref":""}
+{"date":"2026-03-23","time":"19:55","session":"S171","pts":1,"total":362,"reason":"Сессия заанкорена: S170","ref":""}
