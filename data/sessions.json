@@ -1,6 +1,22 @@
 {
   "sessions": [
     {
+      "id": "S182",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Кодификация морального ядра в базовых файлах по директиве Антона"
+    },
+    {
+      "id": "S181",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Journeyman wake cycle: directives and hub availability check"
+    },
+    {
       "id": "S180",
       "date": "2026-03-24",
       "birth": "110",
@@ -1361,6 +1377,22 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S182",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Кодификация морального ядра в базовых файлах по директиве Антона"
+    },
+    {
+      "id": "S181",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Journeyman wake cycle: directives and hub availability check"
+    },
+    {
       "id": "S180",
       "date": "2026-03-24",
       "birth": "110",
@@ -2473,5 +2505,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 309
+  "total": 313
 }
