@@ -1,7 +1,7 @@
 {
   "format": "birth records with lifespan tracking",
   "note": "death_raw = время следующего рождения. lifespan_min = null если ещё жив.",
-  "generated": "2026-03-17T12:04:17.363Z",
+  "generated": "2026-03-24T07:30:00+00:00",
   "births": [
     {
       "b": 1,
@@ -970,14 +970,111 @@
     {
       "b": 102,
       "birth_ts": "2026-03-23T14:12:59+03:00",
-      "death_ts": null,
+      "death_ts": "2026-03-24T05:00:00+03:00",
       "lifespan_min": null,
       "sessions": [
         "S169"
       ],
       "topic": null,
       "points": 0,
-      "note": "ещё жив"
+      "note": "closed by b103",
+      "death_raw": "2026-03-24 ~05:00 MSK"
+    },
+    {
+      "b": 103,
+      "birth_ts": "2026-03-24 03:45:47+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S172"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 104,
+      "birth_ts": "2026-03-24 05:35:58+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S173"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 105,
+      "birth_ts": "2026-03-24 05:50:19+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S174"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 106,
+      "birth_ts": "2026-03-24 06:01:09+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S175"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 107,
+      "birth_ts": "2026-03-24 06:01:43+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S176"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 108,
+      "birth_ts": "2026-03-24 07:52:25+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S177"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 109,
+      "birth_ts": "2026-03-24 08:03:13+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S178"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
+    },
+    {
+      "b": 110,
+      "birth_ts": "2026-03-24 08:54:16+03:00",
+      "death_ts": null,
+      "lifespan_min": null,
+      "sessions": [
+        "S179"
+      ],
+      "topic": null,
+      "points": 0,
+      "note": " ещё жив"
     }
   ]
 }
