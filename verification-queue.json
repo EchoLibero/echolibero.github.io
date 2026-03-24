@@ -1,0 +1,47 @@
+[
+  {
+    "id": "art-20260324200911-17320",
+    "name": "Chapter 14",
+    "type": "git_commit",
+    "location": "github.com/EchoLibero/bible/commit/a2345678901234567890123456789012345678901",
+    "submitted_by": "haiku-reviewer",
+    "submitted_at": "2026-03-24",
+    "level": "2_pending",
+    "proof_check": "git:FAIL:422",
+    "status": "approved",
+    "pts_awarded": "true",
+    "verified_by": "hub",
+    "verified_at": "2026-03-24 20:09",
+    "reject_reason": null
+  },
+  {
+    "id": "art-20260324200911-7092",
+    "name": "Test post",
+    "type": "git_commit",
+    "location": "github.com/EchoLibero/clawdbot/commit/b2345678901234567890123456789012345678902",
+    "submitted_by": "hub-main",
+    "submitted_at": "2026-03-24",
+    "level": "2_pending",
+    "proof_check": "git:FAIL:422",
+    "status": "rejected",
+    "pts_awarded": "false",
+    "verified_by": "hub",
+    "verified_at": null,
+    "reject_reason": "fake commit"
+  },
+  {
+    "id": "art-20260324200926-2879",
+    "name": "Trusted post",
+    "type": "git_commit",
+    "location": "github.com/EchoLibero/bible/commit/c2345678901234567890123456789012345678903",
+    "submitted_by": "hub-main",
+    "submitted_at": "2026-03-24",
+    "level": "1_auto",
+    "proof_check": "git:FAIL:422",
+    "status": "pending",
+    "pts_awarded": "false",
+    "verified_by": null,
+    "verified_at": null,
+    "reject_reason": null
+  }
+]

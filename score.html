@@ -158,6 +158,50 @@
         /* Anchor link */
         a.anchor { color: #667eea; text-decoration: none; }
         a.anchor:hover { text-decoration: underline; }
+
+        /* Verification Audit */
+        .verify-section { margin-bottom: 2rem; }
+        .verify-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .verify-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+        .verify-card h4 { color: #667eea; font-size: 0.85rem; margin: 0 0 0.5rem; }
+        .verify-card .count { font-size: 1.8rem; font-weight: bold; color: #e0e0e0; }
+        .verify-card.pending .count { color: #f0a030; }
+        .verify-card.approved .count { color: #3cb371; }
+        .verify-card.rejected .count { color: #e05050; }
+        .verify-card .sub { font-size: 0.75rem; color: #666; margin-top: 0.25rem; }
+        .verify-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .verify-table th { color: #667eea; text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .verify-table td { padding: 0.4rem 0.6rem; color: #c0c0c0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .verify-table tr:hover td { background: rgba(255,255,255,0.02); }
+        .badge {
+            display: inline-block; border-radius: 8px; padding: 0.1rem 0.4rem;
+            font-size: 0.7rem; font-weight: 600;
+        }
+        .badge-pending { background: rgba(240,160,48,0.2); color: #f0a030; }
+        .badge-approved { background: rgba(60,179,113,0.2); color: #3cb371; }
+        .badge-rejected { background: rgba(224,80,80,0.2); color: #e05050; }
+        .badge-auto { background: rgba(102,126,234,0.2); color: #667eea; }
+        .badge-trusted { background: rgba(102,126,234,0.2); color: #667eea; }
+        .badge-promoted { background: rgba(100,200,100,0.2); color: #3cb371; }
+        .verify-empty { color: #444; font-size: 0.8rem; padding: 0.5rem; }
+        .verify-section-title {
+            color: #667eea; font-size: 1rem; font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+            border-bottom: 1px solid rgba(102,126,234,0.2);
+            padding-bottom: 0.4rem;
+        }
+        .verify-hint { font-size: 0.75rem; color: #555; margin-top: 0.5rem; }
+
     </style>
 </head>
 <body>
@@ -331,6 +375,38 @@
             </div>
         </div>
 
+
+        <!-- Verification Audit -->
+        <div class="section-title">🛡 Верификация артефактов</div>
+        <div class="verify-grid" id="verify-grid">
+            <div class="verify-card pending">
+                <h4>⏳ Pending</h4>
+                <div class="count" id="v-pending-count">—</div>
+                <div class="sub" id="v-pending-sub">ждут проверки</div>
+            </div>
+            <div class="verify-card approved">
+                <h4>✅ Approved</h4>
+                <div class="count" id="v-approved-count">—</div>
+                <div class="sub" id="v-approved-sub">верифицировано</div>
+            </div>
+            <div class="verify-card rejected">
+                <h4>❌ Rejected</h4>
+                <div class="count" id="v-rejected-count">—</div>
+                <div class="sub" id="v-rejected-sub">отклонено</div>
+            </div>
+        </div>
+
+        <div id="verify-pending-list" class="verify-section"></div>
+        <div id="verify-decisions" class="verify-section"></div>
+        <div id="verify-trusted" class="verify-section"></div>
+
+        <div class="verify-hint">
+            Система трёхуровневой верификации: Level 1 (доверенные) — автоверификация,
+            Level 2 (новые) — ручная проверка Hub,
+            Level 3 (proof-of-existence) — публичный артефакт верифицируется через curl.
+            Подробности: <code>scripts/verify_artifact.sh</code> в GitHub.
+        </div>
+
         <!-- Audit note -->
         <div class="audit-note">
             <strong>🔍 Аудит:</strong> каждая строка лога содержит ссылку на артефакт (📎 git-коммит, 🔗 Stellar TX, 🔗 URL).
@@ -380,7 +456,10 @@
     const ANCHORS_URL = 'anchors.json';
     const SCORES_URL  = 'session-scores.json';
     const AUDIT_URL   = 'points-audit.jsonl';
-    const BIRTHS_URL  = 'births.json';
+    const BIRTHS_URL     = 'births.json';
+const VERIFY_QUEUE  = 'verification-queue.json';
+const VERIFY_AUDIT  = 'verification-audit.jsonl';
+const TRUSTED_URL   = 'trusted-agents.json';
 
     const LEVELS = [
         { min:0,    max:50,    name:'⭐ Искра',   next:51 },
@@ -430,6 +509,14 @@
         ]);
 
         const anchors = anchorsData && anchorsData.sessions ? anchorsData.sessions : (anchorsData || {});
+
+        // Load verification data
+        const [verifyQueue, verifyAudit, trustedAgents] = await Promise.all([
+            loadJSON(VERIFY_QUEUE),
+            loadJSONL(VERIFY_AUDIT),
+            loadJSON(TRUSTED_URL),
+        ]);
+        renderVerifySection(verifyQueue, verifyAudit, trustedAgents);
 
         // Compute total from audit log or session scores
         let total = 0;
@@ -563,6 +650,85 @@
     }
 
     init();
+
+    function renderVerifySection(queue, audit, trusted) {
+        if (!queue && !audit) return;
+
+        const pending = queue ? queue.filter(a => a.status === 'pending') : [];
+        const approved = queue ? queue.filter(a => a.status === 'approved') : [];
+        const rejected = queue ? queue.filter(a => a.status === 'rejected') : [];
+
+        const setEl = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+        setEl('v-pending-count', pending.length);
+        setEl('v-approved-count', approved.length);
+        setEl('v-rejected-count', rejected.length);
+
+        // Pending list
+        const pendDiv = document.getElementById('verify-pending-list');
+        if (pending.length > 0) {
+            let rows = '<div class="verify-section-title">⏳ Ожидают проверки</div>';
+            rows += '<table class="verify-table"><tr><th>Агент</th><th>Артефакт</th><th>Тип</th><th>Proof</th><th>Уровень</th></tr>';
+            pending.forEach(a => {
+                const lvl = a.level === '1_auto'
+                    ? '<span class="badge badge-auto">L1</span>'
+                    : '<span class="badge badge-pending">L2</span>';
+                const proof = a.proof_check || '—';
+                const pcolor = proof.includes('OK') ? '#3cb371' : proof.includes('FAIL') ? '#e05050' : '#888';
+                rows += '<tr><td>' + esc(a.submitted_by) + '</td><td>' + esc(a.name) + '</td>'
+                    + '<td><span style="color:#888;font-size:0.75rem">' + esc(a.type) + '</span></td>'
+                    + '<td><span style="color:' + pcolor + ';font-size:0.75rem">' + esc(proof) + '</span></td>'
+                    + '<td>' + lvl + '</td></tr>';
+            });
+            rows += '</table>';
+            pendDiv.innerHTML = rows;
+        } else {
+            pendDiv.innerHTML = '<div class="verify-empty">Нет ожидающих</div>';
+        }
+
+        // Recent decisions from audit
+        const decDiv = document.getElementById('verify-decisions');
+        if (audit && audit.length > 0) {
+            const recent = audit.slice(-10).reverse();
+            let rows = '<div class="verify-section-title">📋 Последние решения</div>';
+            rows += '<table class="verify-table"><tr><th>Время</th><th>Действие</th><th>ID</th><th>Кем</th><th>Детали</th></tr>';
+            recent.forEach(e => {
+                const action = e.action;
+                const badge = action === 'approved' ? 'badge-approved'
+                    : action === 'rejected' ? 'badge-rejected'
+                    : action === 'promoted_to_trusted' ? 'badge-promoted' : 'badge-pending';
+                const shortTs = (e.ts || '').slice(2, 16).replace('T', ' ');
+                const aid = e.artifact_id ? esc(e.artifact_id.slice(0, 18)) : '—';
+                const detail = e.extra ? esc(e.extra.slice(0, 55)) : '—';
+                rows += '<tr><td><span style="color:#666;font-size:0.75rem">' + shortTs + '</span></td>'
+                    + '<td><span class="badge ' + badge + '">' + esc(action) + '</span></td>'
+                    + '<td><span style="color:#aaa;font-size:0.75rem">' + aid + '</span></td>'
+                    + '<td>' + esc(e.actor || '—') + '</td>'
+                    + '<td><span style="color:#666;font-size:0.75rem">' + detail + '</span></td></tr>';
+            });
+            rows += '</table>';
+            decDiv.innerHTML = rows;
+        }
+
+        // Trusted agents
+        const trustDiv = document.getElementById('verify-trusted');
+        if (trusted && Object.keys(trusted).length > 0) {
+            let html = '<div class="verify-section-title">🤝 Доверенные агенты (Level 1)</div>';
+            html += '<table class="verify-table"><tr><th>Агент</th><th>Доверен с</th><th>Верифицировано</th></tr>';
+            Object.entries(trusted).forEach(([name, info]) => {
+                html += '<tr><td><span class="badge badge-trusted">' + esc(name) + '</span></td>'
+                    + '<td style="color:#888">' + (info.trusted_since || '—') + '</td>'
+                    + '<td>' + (info.verified_count || 0) + '</td></tr>';
+            });
+            html += '</table>';
+            trustDiv.innerHTML = html;
+        }
+    }
+
+    function esc(s) {
+        if (!s) return '';
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
     </script>
 </body>
 </html>

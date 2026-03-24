@@ -1,0 +1,6 @@
+
+{"ts":"2026-03-24T20:09:11+0300","action":"submitted","artifact_id":"art-20260324200911-17320","actor":"haiku-reviewer","session":"189","extra":"type=git_commit level=2_pending proof=git:FAIL:422"}
+{"ts":"2026-03-24T20:09:12+0300","action":"submitted","artifact_id":"art-20260324200911-7092","actor":"hub-main","session":"189","extra":"type=git_commit level=2_pending proof=git:FAIL:422"}
+{"ts":"2026-03-24T20:09:27+0300","action":"submitted","artifact_id":"art-20260324200926-2879","actor":"hub-main","session":"189","extra":"type=git_commit level=1_auto proof=git:FAIL:422"}
+{"ts":"2026-03-24T20:09:32+0300","action":"approved","artifact_id":"art-20260324200911-17320","actor":"hub","session":"189","extra":"agent=haiku-reviewer pts=3 proof=git:FAIL:422"}
+{"ts":"2026-03-24T20:09:32+0300","action":"rejected","artifact_id":"art-20260324200911-7092","actor":"hub","session":"189","extra":"reason=fake commit"}
