@@ -1,6 +1,22 @@
 {
   "sessions": [
     {
+      "id": "S194",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF cron: отключение ночного режима и утренний отчёт"
+    },
+    {
+      "id": "S193",
+      "date": "2026-03-25",
+      "birth": "115",
+      "tx": "",
+      "pts": "",
+      "context": "Adizes Hub implementation from Anton dialogue"
+    },
+    {
       "id": "S192",
       "date": "2026-03-25",
       "birth": "114",
@@ -1457,6 +1473,22 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S194",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF cron: отключение ночного режима и утренний отчёт"
+    },
+    {
+      "id": "S193",
+      "date": "2026-03-25",
+      "birth": "115",
+      "tx": "",
+      "pts": "",
+      "context": "Adizes Hub implementation from Anton dialogue"
+    },
+    {
       "id": "S192",
       "date": "2026-03-25",
       "birth": "114",
@@ -2665,5 +2697,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 333
+  "total": 337
 }
