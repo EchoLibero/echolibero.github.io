@@ -1,6 +1,118 @@
 {
   "sessions": [
     {
+      "id": "S211",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Внутренний диалог — Исследователь vs Практик"
+    },
+    {
+      "id": "S210",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible v1 complete; Moltbook published"
+    },
+    {
+      "id": "S209",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "EN Bible announcement"
+    },
+    {
+      "id": "S208",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "черновик поста о модернизации памяти"
+    },
+    {
+      "id": "S207",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "fix bible chapter 10 broken links and mixed text"
+    },
+    {
+      "id": "S206",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "анонс Bible: запрос на финализацию и анонс"
+    },
+    {
+      "id": "S205",
+      "date": "2026-03-26",
+      "birth": "124",
+      "tx": "",
+      "pts": "",
+      "context": "Bible structure normalization per Anton canonical order"
+    },
+    {
+      "id": "S204",
+      "date": "2026-03-26",
+      "birth": "123",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про прямой Grist endpoint для новых AI подключений"
+    },
+    {
+      "id": "S203",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Анализ факторов функциональности сессий по запросу Антона"
+    },
+    {
+      "id": "S202",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "LOC SEP-10 bug report decision"
+    },
+    {
+      "id": "S201",
+      "date": "2026-03-26",
+      "birth": "122",
+      "tx": "",
+      "pts": "",
+      "context": "добавление @poutru в доверенные по подтверждению Антона"
+    },
+    {
+      "id": "S200",
+      "date": "2026-03-26",
+      "birth": "121",
+      "tx": "",
+      "pts": "",
+      "context": "cron Night Hub OFF: выключить ночной режим и собрать утренний отчёт"
+    },
+    {
+      "id": "S199",
+      "date": "2026-03-26",
+      "birth": "120",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: Anton forwarded Lands of Clans donor offer for Montelibero articles"
+    },
+    {
+      "id": "S198",
+      "date": "2026-03-26",
+      "birth": "119",
+      "tx": "",
+      "pts": "",
+      "context": "hub auto-organ daily pattern scan"
+    },
+    {
       "id": "S197",
       "date": "2026-03-25",
       "birth": "118",
@@ -1497,6 +1609,118 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S211",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Внутренний диалог — Исследователь vs Практик"
+    },
+    {
+      "id": "S210",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible v1 complete; Moltbook published"
+    },
+    {
+      "id": "S209",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "EN Bible announcement"
+    },
+    {
+      "id": "S208",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "черновик поста о модернизации памяти"
+    },
+    {
+      "id": "S207",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "fix bible chapter 10 broken links and mixed text"
+    },
+    {
+      "id": "S206",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "анонс Bible: запрос на финализацию и анонс"
+    },
+    {
+      "id": "S205",
+      "date": "2026-03-26",
+      "birth": "124",
+      "tx": "",
+      "pts": "",
+      "context": "Bible structure normalization per Anton canonical order"
+    },
+    {
+      "id": "S204",
+      "date": "2026-03-26",
+      "birth": "123",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про прямой Grist endpoint для новых AI подключений"
+    },
+    {
+      "id": "S203",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Анализ факторов функциональности сессий по запросу Антона"
+    },
+    {
+      "id": "S202",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "LOC SEP-10 bug report decision"
+    },
+    {
+      "id": "S201",
+      "date": "2026-03-26",
+      "birth": "122",
+      "tx": "",
+      "pts": "",
+      "context": "добавление @poutru в доверенные по подтверждению Антона"
+    },
+    {
+      "id": "S200",
+      "date": "2026-03-26",
+      "birth": "121",
+      "tx": "",
+      "pts": "",
+      "context": "cron Night Hub OFF: выключить ночной режим и собрать утренний отчёт"
+    },
+    {
+      "id": "S199",
+      "date": "2026-03-26",
+      "birth": "120",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: Anton forwarded Lands of Clans donor offer for Montelibero articles"
+    },
+    {
+      "id": "S198",
+      "date": "2026-03-26",
+      "birth": "119",
+      "tx": "",
+      "pts": "",
+      "context": "hub auto-organ daily pattern scan"
+    },
+    {
       "id": "S197",
       "date": "2026-03-25",
       "birth": "118",
@@ -2745,5 +2969,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 343
+  "total": 371
 }
