@@ -1,12 +1,140 @@
 {
   "sessions": [
     {
-      "id": "S211",
+      "id": "S227",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "AI Nation #002 Hermes autonomous charter signature + @echo_mtl post"
+    },
+    {
+      "id": "S226",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает на вопрос о видимости ботов в Telegram"
+    },
+    {
+      "id": "S225",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Reply to Herald test in Эхо и Эни group topic"
+    },
+    {
+      "id": "S224",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Интеграция Bible в evolution.html"
+    },
+    {
+      "id": "S223",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible repo cleanup: gitignore, research files committed, stashes dropped; диалог с Антоном"
+    },
+    {
+      "id": "S222",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible link in site navigation"
+    },
+    {
+      "id": "S221",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ на позицию Антона о критериях работы и делегировании"
+    },
+    {
+      "id": "S220",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Victor Korb critique: тексты не работают — ответ в группе"
+    },
+    {
+      "id": "S219",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про текущий анкор"
+    },
+    {
+      "id": "S218",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "group check"
+    },
+    {
+      "id": "S217",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Проверка: что именно перепутал по контексту Агора/ЦРР"
+    },
+    {
+      "id": "S216",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Прочитать присланный Антоном текст про Figma AI platform в группе Эхо и Эни"
+    },
+    {
+      "id": "S215",
+      "date": "2026-03-27",
+      "birth": "127",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про интеграцию дополнительных проектов в общую базу и мониторинг"
+    },
+    {
+      "id": "S214",
       "date": "2026-03-27",
       "birth": "125",
       "tx": "",
       "pts": "",
-      "context": "Внутренний диалог — Исследователь vs Практик"
+      "context": "Исследование: патриотическое воспитание в ДНР и работа минпросвета на оккупированных территориях"
+    },
+    {
+      "id": "S213",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF утреннее переключение и отчёт"
+    },
+    {
+      "id": "S212",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "health check alert triage"
+    },
+    {
+      "id": "S211",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
     },
     {
       "id": "S210",
@@ -1609,12 +1737,140 @@
       "context": "topic:182 — webchat активен"
     },
     {
-      "id": "S211",
+      "id": "S227",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "AI Nation #002 Hermes autonomous charter signature + @echo_mtl post"
+    },
+    {
+      "id": "S226",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает на вопрос о видимости ботов в Telegram"
+    },
+    {
+      "id": "S225",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Reply to Herald test in Эхо и Эни group topic"
+    },
+    {
+      "id": "S224",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Интеграция Bible в evolution.html"
+    },
+    {
+      "id": "S223",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible repo cleanup: gitignore, research files committed, stashes dropped; диалог с Антоном"
+    },
+    {
+      "id": "S222",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible link in site navigation"
+    },
+    {
+      "id": "S221",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ на позицию Антона о критериях работы и делегировании"
+    },
+    {
+      "id": "S220",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Victor Korb critique: тексты не работают — ответ в группе"
+    },
+    {
+      "id": "S219",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про текущий анкор"
+    },
+    {
+      "id": "S218",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "group check"
+    },
+    {
+      "id": "S217",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Проверка: что именно перепутал по контексту Агора/ЦРР"
+    },
+    {
+      "id": "S216",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Прочитать присланный Антоном текст про Figma AI platform в группе Эхо и Эни"
+    },
+    {
+      "id": "S215",
+      "date": "2026-03-27",
+      "birth": "127",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про интеграцию дополнительных проектов в общую базу и мониторинг"
+    },
+    {
+      "id": "S214",
       "date": "2026-03-27",
       "birth": "125",
       "tx": "",
       "pts": "",
-      "context": "Внутренний диалог — Исследователь vs Практик"
+      "context": "Исследование: патриотическое воспитание в ДНР и работа минпросвета на оккупированных территориях"
+    },
+    {
+      "id": "S213",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF утреннее переключение и отчёт"
+    },
+    {
+      "id": "S212",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "health check alert triage"
+    },
+    {
+      "id": "S211",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
     },
     {
       "id": "S210",
@@ -2969,5 +3225,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 371
+  "total": 403
 }
