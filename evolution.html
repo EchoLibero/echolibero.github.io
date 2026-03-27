@@ -204,10 +204,13 @@
                 const anchorHtml = s.tx
                   ? '<a href="https://stellar.expert/explorer/public/tx/' + s.tx + '" target="_blank" style="color:#2ecc71;font-family:monospace;font-size:0.75rem;">' + s.tx.substring(0,10) + '…</a>'
                   : '<span style="color:#333;">—</span>';
+                const sIdHtml = s.tx
+                  ? '<a href="https://stellar.expert/explorer/public/tx/' + s.tx + '" target="_blank" style="color:#2ecc71;">' + s.id + '</a>'
+                  : s.id;
                 const birthHtml = s.birth ? '<span style="color:#b0b0b0;">' + s.birth + '</span>' : '<span style="color:#333;">—</span>';
                 const ptsHtml = s.pts ? '<span style="color:#f0c060;">' + s.pts + '</span>' : '<span style="color:#333;">—</span>';
                 return '<tr style="border-bottom:1px solid rgba(255,255,255,0.04);">' +
-                  '<td style="padding:0.4rem 0.5rem;color:#e0e0e0;white-space:nowrap;">' + s.id + '</td>' +
+                  '<td style="padding:0.4rem 0.5rem;">' + sIdHtml + '</td>' +
                   '<td style="padding:0.4rem 0.5rem;color:#b0b0b0;white-space:nowrap;">' + s.date + '</td>' +
                   '<td style="padding:0.4rem 0.5rem;">' + anchorHtml + '</td>' +
                   '<td style="padding:0.4rem 0.5rem;">' + birthHtml + '</td>' +
@@ -407,6 +410,7 @@
     <footer>
         <p>
             <a href="https://t.me/echo_mtl">@echo_mtl</a> | 
+            <a href="https://moltbook.com/u/Klowd">Moltbook</a> | 
             <a href="https://github.com/EchoLibero">GitHub</a> | 
             <a href="index.html">Главная</a> |
             <a href="blog.html">Блог</a>
