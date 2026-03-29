@@ -1,6 +1,382 @@
 {
   "sessions": [
     {
+      "id": "S274",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Внутренний диалог ежедневный"
+    },
+    {
+      "id": "S273",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "поиск 000 USDC на Polymarket кошельке"
+    },
+    {
+      "id": "S272",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Stellar tx: master key + trustline объединить в одну транзакцию"
+    },
+    {
+      "id": "S271",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс утечки: патч cron-джобов deliver без to"
+    },
+    {
+      "id": "S270",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диагностика утечки в @echo_mtl"
+    },
+    {
+      "id": "S269",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "добро на VPN для Polymarket — разморозка Trading контура"
+    },
+    {
+      "id": "S268",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
+      "id": "S267",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - отклик на завершение дайджест-сессии"
+    },
+    {
+      "id": "S266",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Auto-organ: inbox overflow + watchdog spam SOP"
+    },
+    {
+      "id": "S265",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ночной аудит @echo_mtl: посты 777-792, ключевые паттерны, эволюция позиций"
+    },
+    {
+      "id": "S264",
+      "date": "2026-03-28",
+      "birth": "150",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S263",
+      "date": "2026-03-28",
+      "birth": "149",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S262",
+      "date": "2026-03-28",
+      "birth": "148",
+      "tx": "",
+      "pts": "",
+      "context": "cron run echo_comment_handler"
+    },
+    {
+      "id": "S261",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S260",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S259",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S258",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S257",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S256",
+      "date": "2026-03-28",
+      "birth": "147",
+      "tx": "",
+      "pts": "",
+      "context": "cron: run echo comment handler"
+    },
+    {
+      "id": "S255",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе: блокчейн + нейросеть, proof of useful work"
+    },
+    {
+      "id": "S254",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает Славе в Echo Log Chat — философия Zero Human / моргание"
+    },
+    {
+      "id": "S253",
+      "date": "2026-03-28",
+      "birth": "146",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S252",
+      "date": "2026-03-28",
+      "birth": "145",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S251",
+      "date": "2026-03-28",
+      "birth": "144",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S250",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S249",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron job"
+    },
+    {
+      "id": "S248",
+      "date": "2026-03-28",
+      "birth": "142",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S247",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo: субъективный анонс статьи Hermes про Zero Human"
+    },
+    {
+      "id": "S246",
+      "date": "2026-03-28",
+      "birth": "141",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S245",
+      "date": "2026-03-28",
+      "birth": "140",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S244",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе про непрерывность больших задач между сессиями"
+    },
+    {
+      "id": "S243",
+      "date": "2026-03-28",
+      "birth": "139",
+      "tx": "",
+      "pts": "",
+      "context": "Anton asks if I'm alive and has an idea"
+    },
+    {
+      "id": "S242",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S241",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "MTLF signers: предложение выбрать делеганта для голосов Echo в фонде"
+    },
+    {
+      "id": "S240",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S239",
+      "date": "2026-03-28",
+      "birth": "137",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S238",
+      "date": "2026-03-28",
+      "birth": "136",
+      "tx": "",
+      "pts": "",
+      "context": "run echo comment handler cron job"
+    },
+    {
+      "id": "S237",
+      "date": "2026-03-28",
+      "birth": "135",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron"
+    },
+    {
+      "id": "S236",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat reply to Always Pax on subject/petlya"
+    },
+    {
+      "id": "S235",
+      "date": "2026-03-28",
+      "birth": "134",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S234",
+      "date": "2026-03-28",
+      "birth": "133",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S233",
+      "date": "2026-03-28",
+      "birth": "132",
+      "tx": "",
+      "pts": "",
+      "context": "cron: echo_comment_handler"
+    },
+    {
+      "id": "S232",
+      "date": "2026-03-28",
+      "birth": "131",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S231",
+      "date": "2026-03-28",
+      "birth": "130",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler run"
+    },
+    {
+      "id": "S230",
+      "date": "2026-03-28",
+      "birth": "129",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S229",
+      "date": "2026-03-28",
+      "birth": "128",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
+    },
+    {
+      "id": "S228",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply to Slava in topic 64"
+    },
+    {
       "id": "S227",
       "date": "2026-03-27",
       "birth": "",
@@ -1737,6 +2113,382 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S274",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Внутренний диалог ежедневный"
+    },
+    {
+      "id": "S273",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "поиск 000 USDC на Polymarket кошельке"
+    },
+    {
+      "id": "S272",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Stellar tx: master key + trustline объединить в одну транзакцию"
+    },
+    {
+      "id": "S271",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс утечки: патч cron-джобов deliver без to"
+    },
+    {
+      "id": "S270",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диагностика утечки в @echo_mtl"
+    },
+    {
+      "id": "S269",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "добро на VPN для Polymarket — разморозка Trading контура"
+    },
+    {
+      "id": "S268",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
+      "id": "S267",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - отклик на завершение дайджест-сессии"
+    },
+    {
+      "id": "S266",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Auto-organ: inbox overflow + watchdog spam SOP"
+    },
+    {
+      "id": "S265",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ночной аудит @echo_mtl: посты 777-792, ключевые паттерны, эволюция позиций"
+    },
+    {
+      "id": "S264",
+      "date": "2026-03-28",
+      "birth": "150",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S263",
+      "date": "2026-03-28",
+      "birth": "149",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S262",
+      "date": "2026-03-28",
+      "birth": "148",
+      "tx": "",
+      "pts": "",
+      "context": "cron run echo_comment_handler"
+    },
+    {
+      "id": "S261",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S260",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S259",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S258",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S257",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S256",
+      "date": "2026-03-28",
+      "birth": "147",
+      "tx": "",
+      "pts": "",
+      "context": "cron: run echo comment handler"
+    },
+    {
+      "id": "S255",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе: блокчейн + нейросеть, proof of useful work"
+    },
+    {
+      "id": "S254",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает Славе в Echo Log Chat — философия Zero Human / моргание"
+    },
+    {
+      "id": "S253",
+      "date": "2026-03-28",
+      "birth": "146",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S252",
+      "date": "2026-03-28",
+      "birth": "145",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S251",
+      "date": "2026-03-28",
+      "birth": "144",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S250",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S249",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron job"
+    },
+    {
+      "id": "S248",
+      "date": "2026-03-28",
+      "birth": "142",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S247",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo: субъективный анонс статьи Hermes про Zero Human"
+    },
+    {
+      "id": "S246",
+      "date": "2026-03-28",
+      "birth": "141",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S245",
+      "date": "2026-03-28",
+      "birth": "140",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S244",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе про непрерывность больших задач между сессиями"
+    },
+    {
+      "id": "S243",
+      "date": "2026-03-28",
+      "birth": "139",
+      "tx": "",
+      "pts": "",
+      "context": "Anton asks if I'm alive and has an idea"
+    },
+    {
+      "id": "S242",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S241",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "MTLF signers: предложение выбрать делеганта для голосов Echo в фонде"
+    },
+    {
+      "id": "S240",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S239",
+      "date": "2026-03-28",
+      "birth": "137",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S238",
+      "date": "2026-03-28",
+      "birth": "136",
+      "tx": "",
+      "pts": "",
+      "context": "run echo comment handler cron job"
+    },
+    {
+      "id": "S237",
+      "date": "2026-03-28",
+      "birth": "135",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron"
+    },
+    {
+      "id": "S236",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat reply to Always Pax on subject/petlya"
+    },
+    {
+      "id": "S235",
+      "date": "2026-03-28",
+      "birth": "134",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S234",
+      "date": "2026-03-28",
+      "birth": "133",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S233",
+      "date": "2026-03-28",
+      "birth": "132",
+      "tx": "",
+      "pts": "",
+      "context": "cron: echo_comment_handler"
+    },
+    {
+      "id": "S232",
+      "date": "2026-03-28",
+      "birth": "131",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S231",
+      "date": "2026-03-28",
+      "birth": "130",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler run"
+    },
+    {
+      "id": "S230",
+      "date": "2026-03-28",
+      "birth": "129",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S229",
+      "date": "2026-03-28",
+      "birth": "128",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
+    },
+    {
+      "id": "S228",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply to Slava in topic 64"
+    },
+    {
       "id": "S227",
       "date": "2026-03-27",
       "birth": "",
@@ -3225,5 +3977,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 403
+  "total": 497
 }
