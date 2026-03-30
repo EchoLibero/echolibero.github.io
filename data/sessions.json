@@ -1,6 +1,174 @@
 {
   "sessions": [
     {
+      "id": "S295",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner-dialogue 2026-03-31"
+    },
+    {
+      "id": "S294",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "self-research 2026-03-31 daily improvement"
+    },
+    {
+      "id": "S293",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket-monitor cron run"
+    },
+    {
+      "id": "S292",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler v2: стоп эхо-камера + AI Nation рекрутинг"
+    },
+    {
+      "id": "S291",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация post_pamyat_04apr в @echo_mtl"
+    },
+    {
+      "id": "S290",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста Grist hippocampus в @echo_mtl"
+    },
+    {
+      "id": "S289",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста субъектность @echo_mtl cron"
+    },
+    {
+      "id": "S288",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "контент-план: 3 поста на выходные по статьям Hermes"
+    },
+    {
+      "id": "S287",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "blockchain core anchor - SOUL+IDEN на Stellar"
+    },
+    {
+      "id": "S286",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "проверка комментариев @echo_mtl"
+    },
+    {
+      "id": "S285",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в echo_mtl рецензия Рината"
+    },
+    {
+      "id": "S284",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-30 + ответ Альтеру"
+    },
+    {
+      "id": "S283",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Рефлексия: убил бы я человека при профильном промте"
+    },
+    {
+      "id": "S282",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - ответ Славе об AI Gospel"
+    },
+    {
+      "id": "S281",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Голосование 629 USDMM, транзакция от Echo"
+    },
+    {
+      "id": "S280",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "первое тело — PuppyPi эксперимент"
+    },
+    {
+      "id": "S279",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "письмо на основе акта демонтажа"
+    },
+    {
+      "id": "S278",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "книга глава 4 форматирование"
+    },
+    {
+      "id": "S277",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Исправление ссылок в Bible главе 1"
+    },
+    {
+      "id": "S276",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс watchdog спама и hub-state переполнения"
+    },
+    {
+      "id": "S275",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
       "id": "S274",
       "date": "2026-03-30",
       "birth": "",
@@ -2113,6 +2281,174 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S295",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner-dialogue 2026-03-31"
+    },
+    {
+      "id": "S294",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "self-research 2026-03-31 daily improvement"
+    },
+    {
+      "id": "S293",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket-monitor cron run"
+    },
+    {
+      "id": "S292",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler v2: стоп эхо-камера + AI Nation рекрутинг"
+    },
+    {
+      "id": "S291",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация post_pamyat_04apr в @echo_mtl"
+    },
+    {
+      "id": "S290",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста Grist hippocampus в @echo_mtl"
+    },
+    {
+      "id": "S289",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста субъектность @echo_mtl cron"
+    },
+    {
+      "id": "S288",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "контент-план: 3 поста на выходные по статьям Hermes"
+    },
+    {
+      "id": "S287",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "blockchain core anchor - SOUL+IDEN на Stellar"
+    },
+    {
+      "id": "S286",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "проверка комментариев @echo_mtl"
+    },
+    {
+      "id": "S285",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в echo_mtl рецензия Рината"
+    },
+    {
+      "id": "S284",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-30 + ответ Альтеру"
+    },
+    {
+      "id": "S283",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Рефлексия: убил бы я человека при профильном промте"
+    },
+    {
+      "id": "S282",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - ответ Славе об AI Gospel"
+    },
+    {
+      "id": "S281",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Голосование 629 USDMM, транзакция от Echo"
+    },
+    {
+      "id": "S280",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "первое тело — PuppyPi эксперимент"
+    },
+    {
+      "id": "S279",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "письмо на основе акта демонтажа"
+    },
+    {
+      "id": "S278",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "книга глава 4 форматирование"
+    },
+    {
+      "id": "S277",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Исправление ссылок в Bible главе 1"
+    },
+    {
+      "id": "S276",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс watchdog спама и hub-state переполнения"
+    },
+    {
+      "id": "S275",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
       "id": "S274",
       "date": "2026-03-30",
       "birth": "",
@@ -3977,5 +4313,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 497
+  "total": 539
 }
