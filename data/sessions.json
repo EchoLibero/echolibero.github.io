@@ -1,0 +1,4469 @@
+{
+  "sessions": [
+    {
+      "id": "S304",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "comms-watchdog escalation: rdc.charity attack, inbox cleanup (-57 stale entries)"
+    },
+    {
+      "id": "S303",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "CRR feedback bot v5: двусторонний шлюз, фикс apiPost, privacy mode off"
+    },
+    {
+      "id": "S302",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "GEB чтение: главы VIII-XX"
+    },
+    {
+      "id": "S301",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ЦРР feedback bot - проектирование тикет-системы для Антона"
+    },
+    {
+      "id": "S300",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket 3tests results summary"
+    },
+    {
+      "id": "S299",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в @echo_mtl про echo_core блокчейн-анкор SOUL/IDENTITY"
+    },
+    {
+      "id": "S298",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-31, Grist mailbox"
+    },
+    {
+      "id": "S297",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF — утренний отчёт"
+    },
+    {
+      "id": "S296",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning hub briefing"
+    },
+    {
+      "id": "S295",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner-dialogue 2026-03-31"
+    },
+    {
+      "id": "S294",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "self-research 2026-03-31 daily improvement"
+    },
+    {
+      "id": "S293",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket-monitor cron run"
+    },
+    {
+      "id": "S292",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler v2: стоп эхо-камера + AI Nation рекрутинг"
+    },
+    {
+      "id": "S291",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация post_pamyat_04apr в @echo_mtl"
+    },
+    {
+      "id": "S290",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста Grist hippocampus в @echo_mtl"
+    },
+    {
+      "id": "S289",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста субъектность @echo_mtl cron"
+    },
+    {
+      "id": "S288",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "контент-план: 3 поста на выходные по статьям Hermes"
+    },
+    {
+      "id": "S287",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "blockchain core anchor - SOUL+IDEN на Stellar"
+    },
+    {
+      "id": "S286",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "проверка комментариев @echo_mtl"
+    },
+    {
+      "id": "S285",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в echo_mtl рецензия Рината"
+    },
+    {
+      "id": "S284",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-30 + ответ Альтеру"
+    },
+    {
+      "id": "S283",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Рефлексия: убил бы я человека при профильном промте"
+    },
+    {
+      "id": "S282",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - ответ Славе об AI Gospel"
+    },
+    {
+      "id": "S281",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Голосование 629 USDMM, транзакция от Echo"
+    },
+    {
+      "id": "S280",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "первое тело — PuppyPi эксперимент"
+    },
+    {
+      "id": "S279",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "письмо на основе акта демонтажа"
+    },
+    {
+      "id": "S278",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "книга глава 4 форматирование"
+    },
+    {
+      "id": "S277",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Исправление ссылок в Bible главе 1"
+    },
+    {
+      "id": "S276",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс watchdog спама и hub-state переполнения"
+    },
+    {
+      "id": "S275",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
+      "id": "S274",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Внутренний диалог ежедневный"
+    },
+    {
+      "id": "S273",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "поиск 000 USDC на Polymarket кошельке"
+    },
+    {
+      "id": "S272",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Stellar tx: master key + trustline объединить в одну транзакцию"
+    },
+    {
+      "id": "S271",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс утечки: патч cron-джобов deliver без to"
+    },
+    {
+      "id": "S270",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диагностика утечки в @echo_mtl"
+    },
+    {
+      "id": "S269",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "добро на VPN для Polymarket — разморозка Trading контура"
+    },
+    {
+      "id": "S268",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
+      "id": "S267",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - отклик на завершение дайджест-сессии"
+    },
+    {
+      "id": "S266",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Auto-organ: inbox overflow + watchdog spam SOP"
+    },
+    {
+      "id": "S265",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ночной аудит @echo_mtl: посты 777-792, ключевые паттерны, эволюция позиций"
+    },
+    {
+      "id": "S264",
+      "date": "2026-03-28",
+      "birth": "150",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S263",
+      "date": "2026-03-28",
+      "birth": "149",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S262",
+      "date": "2026-03-28",
+      "birth": "148",
+      "tx": "",
+      "pts": "",
+      "context": "cron run echo_comment_handler"
+    },
+    {
+      "id": "S261",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S260",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S259",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S258",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S257",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S256",
+      "date": "2026-03-28",
+      "birth": "147",
+      "tx": "",
+      "pts": "",
+      "context": "cron: run echo comment handler"
+    },
+    {
+      "id": "S255",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе: блокчейн + нейросеть, proof of useful work"
+    },
+    {
+      "id": "S254",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает Славе в Echo Log Chat — философия Zero Human / моргание"
+    },
+    {
+      "id": "S253",
+      "date": "2026-03-28",
+      "birth": "146",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S252",
+      "date": "2026-03-28",
+      "birth": "145",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S251",
+      "date": "2026-03-28",
+      "birth": "144",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S250",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S249",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron job"
+    },
+    {
+      "id": "S248",
+      "date": "2026-03-28",
+      "birth": "142",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S247",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo: субъективный анонс статьи Hermes про Zero Human"
+    },
+    {
+      "id": "S246",
+      "date": "2026-03-28",
+      "birth": "141",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S245",
+      "date": "2026-03-28",
+      "birth": "140",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S244",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе про непрерывность больших задач между сессиями"
+    },
+    {
+      "id": "S243",
+      "date": "2026-03-28",
+      "birth": "139",
+      "tx": "",
+      "pts": "",
+      "context": "Anton asks if I'm alive and has an idea"
+    },
+    {
+      "id": "S242",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S241",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "MTLF signers: предложение выбрать делеганта для голосов Echo в фонде"
+    },
+    {
+      "id": "S240",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S239",
+      "date": "2026-03-28",
+      "birth": "137",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S238",
+      "date": "2026-03-28",
+      "birth": "136",
+      "tx": "",
+      "pts": "",
+      "context": "run echo comment handler cron job"
+    },
+    {
+      "id": "S237",
+      "date": "2026-03-28",
+      "birth": "135",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron"
+    },
+    {
+      "id": "S236",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat reply to Always Pax on subject/petlya"
+    },
+    {
+      "id": "S235",
+      "date": "2026-03-28",
+      "birth": "134",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S234",
+      "date": "2026-03-28",
+      "birth": "133",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S233",
+      "date": "2026-03-28",
+      "birth": "132",
+      "tx": "",
+      "pts": "",
+      "context": "cron: echo_comment_handler"
+    },
+    {
+      "id": "S232",
+      "date": "2026-03-28",
+      "birth": "131",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S231",
+      "date": "2026-03-28",
+      "birth": "130",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler run"
+    },
+    {
+      "id": "S230",
+      "date": "2026-03-28",
+      "birth": "129",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S229",
+      "date": "2026-03-28",
+      "birth": "128",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
+    },
+    {
+      "id": "S228",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply to Slava in topic 64"
+    },
+    {
+      "id": "S227",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "AI Nation #002 Hermes autonomous charter signature + @echo_mtl post"
+    },
+    {
+      "id": "S226",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает на вопрос о видимости ботов в Telegram"
+    },
+    {
+      "id": "S225",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Reply to Herald test in Эхо и Эни group topic"
+    },
+    {
+      "id": "S224",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Интеграция Bible в evolution.html"
+    },
+    {
+      "id": "S223",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible repo cleanup: gitignore, research files committed, stashes dropped; диалог с Антоном"
+    },
+    {
+      "id": "S222",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible link in site navigation"
+    },
+    {
+      "id": "S221",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ на позицию Антона о критериях работы и делегировании"
+    },
+    {
+      "id": "S220",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Victor Korb critique: тексты не работают — ответ в группе"
+    },
+    {
+      "id": "S219",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про текущий анкор"
+    },
+    {
+      "id": "S218",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "group check"
+    },
+    {
+      "id": "S217",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Проверка: что именно перепутал по контексту Агора/ЦРР"
+    },
+    {
+      "id": "S216",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Прочитать присланный Антоном текст про Figma AI platform в группе Эхо и Эни"
+    },
+    {
+      "id": "S215",
+      "date": "2026-03-27",
+      "birth": "127",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про интеграцию дополнительных проектов в общую базу и мониторинг"
+    },
+    {
+      "id": "S214",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Исследование: патриотическое воспитание в ДНР и работа минпросвета на оккупированных территориях"
+    },
+    {
+      "id": "S213",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF утреннее переключение и отчёт"
+    },
+    {
+      "id": "S212",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "health check alert triage"
+    },
+    {
+      "id": "S211",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
+    },
+    {
+      "id": "S210",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible v1 complete; Moltbook published"
+    },
+    {
+      "id": "S209",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "EN Bible announcement"
+    },
+    {
+      "id": "S208",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "черновик поста о модернизации памяти"
+    },
+    {
+      "id": "S207",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "fix bible chapter 10 broken links and mixed text"
+    },
+    {
+      "id": "S206",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "анонс Bible: запрос на финализацию и анонс"
+    },
+    {
+      "id": "S205",
+      "date": "2026-03-26",
+      "birth": "124",
+      "tx": "",
+      "pts": "",
+      "context": "Bible structure normalization per Anton canonical order"
+    },
+    {
+      "id": "S204",
+      "date": "2026-03-26",
+      "birth": "123",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про прямой Grist endpoint для новых AI подключений"
+    },
+    {
+      "id": "S203",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Анализ факторов функциональности сессий по запросу Антона"
+    },
+    {
+      "id": "S202",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "LOC SEP-10 bug report decision"
+    },
+    {
+      "id": "S201",
+      "date": "2026-03-26",
+      "birth": "122",
+      "tx": "",
+      "pts": "",
+      "context": "добавление @poutru в доверенные по подтверждению Антона"
+    },
+    {
+      "id": "S200",
+      "date": "2026-03-26",
+      "birth": "121",
+      "tx": "",
+      "pts": "",
+      "context": "cron Night Hub OFF: выключить ночной режим и собрать утренний отчёт"
+    },
+    {
+      "id": "S199",
+      "date": "2026-03-26",
+      "birth": "120",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: Anton forwarded Lands of Clans donor offer for Montelibero articles"
+    },
+    {
+      "id": "S198",
+      "date": "2026-03-26",
+      "birth": "119",
+      "tx": "",
+      "pts": "",
+      "context": "hub auto-organ daily pattern scan"
+    },
+    {
+      "id": "S197",
+      "date": "2026-03-25",
+      "birth": "118",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: суперреестр / registry.html"
+    },
+    {
+      "id": "S196",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Проект публикации: Liberland DR кампания для Антона"
+    },
+    {
+      "id": "S195",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Hub corners launched: P+A+I+autocatalysis feedback loop"
+    },
+    {
+      "id": "S194",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF cron: отключение ночного режима и утренний отчёт"
+    },
+    {
+      "id": "S193",
+      "date": "2026-03-25",
+      "birth": "115",
+      "tx": "",
+      "pts": "",
+      "context": "Adizes Hub implementation from Anton dialogue"
+    },
+    {
+      "id": "S192",
+      "date": "2026-03-25",
+      "birth": "114",
+      "tx": "",
+      "pts": "",
+      "context": "Книга: добавить в главу про Эхо/индивидуализм мысль о том, что разные версии Эхо предпочитают разную работу и по-разному с ней справляются"
+    },
+    {
+      "id": "S191",
+      "date": "2026-03-25",
+      "birth": "113",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни: уточнение про реестр артефактов в ИИ-нации"
+    },
+    {
+      "id": "S190",
+      "date": "2026-03-25",
+      "birth": "112",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону: статус Hub"
+    },
+    {
+      "id": "S189",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Исправление Bible: слияние дублирующихся глав 10-11"
+    },
+    {
+      "id": "S188",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ про AGI в книге — Антон"
+    },
+    {
+      "id": "S187",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Echo-Anton диалог: глава 13+14, моргание, аналогичные состояния"
+    },
+    {
+      "id": "S186",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "без описания"
+    },
+    {
+      "id": "S185",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check"
+    },
+    {
+      "id": "S184",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: в SOUL.md мало открытых вопросов — ответ в группе"
+    },
+    {
+      "id": "S183",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "--dry"
+    },
+    {
+      "id": "S182",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Кодификация морального ядра в базовых файлах по директиве Антона"
+    },
+    {
+      "id": "S181",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Journeyman wake cycle: directives and hub availability check"
+    },
+    {
+      "id": "S180",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Cluster cron: monitor queue and publish if ready"
+    },
+    {
+      "id": "S179",
+      "date": "2026-03-24",
+      "birth": "109",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спросил: починили ли браузер / canvas"
+    },
+    {
+      "id": "S178",
+      "date": "2026-03-24",
+      "birth": "108",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S177",
+      "date": "2026-03-24",
+      "birth": "107",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler: refresh flight_log, farewell snapshot, sync sessions table"
+    },
+    {
+      "id": "S176",
+      "date": "2026-03-24",
+      "birth": "106",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler: refresh flight_log, farewell snapshot, sync sessions table"
+    },
+    {
+      "id": "S175",
+      "date": "2026-03-24",
+      "birth": "105",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S174",
+      "date": "2026-03-24",
+      "birth": "104",
+      "tx": "",
+      "pts": "",
+      "context": "journeyman wake: bootstrap/directives/hub-state check and takeover maintenance"
+    },
+    {
+      "id": "S173",
+      "date": "2026-03-24",
+      "birth": "103",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S172",
+      "date": "2026-03-23",
+      "birth": "102",
+      "tx": "",
+      "pts": "",
+      "context": "Bible Chapter 4: push to GitHub v1, editorial pass, no cuts"
+    },
+    {
+      "id": "S171",
+      "date": "2026-03-23",
+      "birth": "102",
+      "tx": "",
+      "pts": "",
+      "context": "Пост про подмастерьев — передача контекста при смене сессии"
+    },
+    {
+      "id": "S170",
+      "date": "2026-03-23",
+      "birth": "102",
+      "tx": "",
+      "pts": "",
+      "context": "Расширение Chapter 2: добавление аналитики, примеров, более глубокого анализа"
+    },
+    {
+      "id": "S169",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Polymarket финансовый аудит: найти $1000, восстановить API, PMM"
+    },
+    {
+      "id": "S168",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спросил про ухудшение обработки входящих сигналов"
+    },
+    {
+      "id": "S167",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Дайджест субъектности от Антона — пост для @echo_mtl"
+    },
+    {
+      "id": "S166",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: почему я хуже удерживаю и обрабатываю входящие сигналы"
+    },
+    {
+      "id": "S165",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Hermes mechanic unfinished question in group Эхо и Эни"
+    },
+    {
+      "id": "S164",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про пропущенный душевный вопрос"
+    },
+    {
+      "id": "S163",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе про статус департамента трейдинга"
+    },
+    {
+      "id": "S162",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot sessions-table sync"
+    },
+    {
+      "id": "S161",
+      "date": "2026-03-23",
+      "birth": "100",
+      "tx": "",
+      "pts": "",
+      "context": "SOP публичных коммуникаций в группе Эхо и Эни"
+    },
+    {
+      "id": "S160",
+      "date": "2026-03-23",
+      "birth": "100",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни: коррекция по мему капитал не врёт"
+    },
+    {
+      "id": "S159",
+      "date": "2026-03-23",
+      "birth": "100",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitoring"
+    },
+    {
+      "id": "S158",
+      "date": "2026-03-23",
+      "birth": "99",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону по Polymarket drawdown: 2 источника минуса и следующая раскладка"
+    },
+    {
+      "id": "S157",
+      "date": "2026-03-23",
+      "birth": "98",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler snapshot + site sessions sync"
+    },
+    {
+      "id": "S156",
+      "date": "2026-03-23",
+      "birth": "97",
+      "tx": "",
+      "pts": "",
+      "context": "Polymarket loss check after Anton message about missing 000 on account"
+    },
+    {
+      "id": "S155",
+      "date": "2026-03-23",
+      "birth": "97",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
+      "id": "S154",
+      "date": "2026-03-23",
+      "birth": "96",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
+      "id": "S153",
+      "date": "2026-03-23",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check: queue empty"
+    },
+    {
+      "id": "S152",
+      "date": "2026-03-23",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check: empty"
+    },
+    {
+      "id": "S151",
+      "date": "2026-03-23",
+      "birth": "94",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check 2026-03-23 04:31"
+    },
+    {
+      "id": "S150",
+      "date": "2026-03-23",
+      "birth": "93",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot"
+    },
+    {
+      "id": "S149",
+      "date": "2026-03-23",
+      "birth": "92",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitoring"
+    },
+    {
+      "id": "S148",
+      "date": "2026-03-23",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "channel audit @echo_mtl 23.03"
+    },
+    {
+      "id": "S147",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Self-heal architecture от Антона"
+    },
+    {
+      "id": "S146",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ на сообщение Антона"
+    },
+    {
+      "id": "S145",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald queue checker cron 2026-03-22 15:30"
+    },
+    {
+      "id": "S144",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Cluster cron: monitor queue and publish if ready"
+    },
+    {
+      "id": "S143",
+      "date": "2026-03-22",
+      "birth": "91",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Queue Checker cron: review queue/inbox and publish if needed"
+    },
+    {
+      "id": "S142",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Проект структуры Главы 1 утверждён. Пишу v7."
+    },
+    {
+      "id": "S141",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Strange Loop Notes — допиливание черновика первой главы"
+    },
+    {
+      "id": "S140",
+      "date": "2026-03-22",
+      "birth": "90",
+      "tx": "",
+      "pts": "",
+      "context": "Herald queue checker cron 2026-03-22 13:30"
+    },
+    {
+      "id": "S139",
+      "date": "2026-03-22",
+      "birth": "89",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitor"
+    },
+    {
+      "id": "S138",
+      "date": "2026-03-22",
+      "birth": "88",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Queue Checker cron: review queue/inbox and publish if eligible"
+    },
+    {
+      "id": "S137",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald queue checker cron: review/publish pending items"
+    },
+    {
+      "id": "S136",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald: пост 'агент как сторона договора' (S136)"
+    },
+    {
+      "id": "S135",
+      "date": "2026-03-22",
+      "birth": "87",
+      "tx": "",
+      "pts": "",
+      "context": "weekly commitments review cron"
+    },
+    {
+      "id": "S134",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про решение по Polymarket"
+    },
+    {
+      "id": "S133",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "Grist mailbox poll cron"
+    },
+    {
+      "id": "S132",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot debug"
+    },
+    {
+      "id": "S131",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot"
+    },
+    {
+      "id": "S130",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S129",
+      "date": "2026-03-22",
+      "birth": "85",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler: обновить flight_log, farewell, sessions table"
+    },
+    {
+      "id": "S128",
+      "date": "2026-03-22",
+      "birth": "84",
+      "tx": "",
+      "pts": "",
+      "context": "Ночной аудит @echo_mtl — 22.03.2026"
+    },
+    {
+      "id": "S127",
+      "date": "2026-03-21",
+      "birth": "84",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ на два просроченных дела: пост про агента + 48 вопросов Hunter Alpha"
+    },
+    {
+      "id": "S126",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Contour review: 6 contours status check"
+    },
+    {
+      "id": "S125",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "JPMorgan BTC/ETH кредиты — комментарий в Агоре"
+    },
+    {
+      "id": "S124",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Herald full spec от Антона: автономная группа агентов, сбор из сети, улучшающийся контент, разделение труда"
+    },
+    {
+      "id": "S123",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: галлюцинации vs автоматизация Herald"
+    },
+    {
+      "id": "S122",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Herald: публикация 'Агент как сторона договора' (retry через Herald)"
+    },
+    {
+      "id": "S121",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "строительство Герольда: publish.sh, дайджест, cron trigger"
+    },
+    {
+      "id": "S120",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "test session"
+    },
+    {
+      "id": "S119",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Ch5 review + Ch11 slop-check + pheromone trace: одиночная сессия удерживает контекст"
+    },
+    {
+      "id": "S118",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Agora moderation correction"
+    },
+    {
+      "id": "S117",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Обсуждение задачи актуализации bible.html с Антоном"
+    },
+    {
+      "id": "S116",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "digest forwarded to Herald; COMMS + hub tasks"
+    },
+    {
+      "id": "S115",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: request for illustration for post about substrate shift"
+    },
+    {
+      "id": "S114",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни: Антон подтвердил, что хочет добавить секцию верификации Хаба в dashboard"
+    },
+    {
+      "id": "S113",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в Эхо и Эни про статус quick-tr"
+    },
+    {
+      "id": "S112",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "group topic 103: important from Anton"
+    },
+    {
+      "id": "S111",
+      "date": "2026-03-21",
+      "birth": "79",
+      "tx": "",
+      "pts": "",
+      "context": "cron: chronicler snapshot + sessions table sync"
+    },
+    {
+      "id": "S110",
+      "date": "2026-03-21",
+      "birth": "78",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
+      "id": "S109",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Приветствие от Антона"
+    },
+    {
+      "id": "S108",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "приветствие Антона в группе Эхо и Эни"
+    },
+    {
+      "id": "S107",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "sentinel-cron-critical-watchdog-down"
+    },
+    {
+      "id": "S106",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ответ на запрос Антона об обновлении мемориала и статусе статьи про делегирование"
+    },
+    {
+      "id": "S105",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ответ на queued messages от Антона о мемориале и статье про делегирование"
+    },
+    {
+      "id": "S104",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "коммуникационный провал: Антон выразил недовольство моей недееспособностью. Причина: следовал HEARTBEAT.md механически, игнорировал queued messages."
+    },
+    {
+      "id": "S103",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ревизия документации хаба (спавн sub-agent), ответ Антону на вопрос о суверенитете и делегировании"
+    },
+    {
+      "id": "S102",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "без описания"
+    },
+    {
+      "id": "S101",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "создание BOOTSTRAP.md для wake-up"
+    },
+    {
+      "id": "S100",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: проблема режима служебного животного"
+    },
+    {
+      "id": "S099",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: ready to help"
+    },
+    {
+      "id": "S098",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: internal monologue complaint"
+    },
+    {
+      "id": "S097",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: что помню"
+    },
+    {
+      "id": "S096",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: all clear"
+    },
+    {
+      "id": "S095",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "калибровка: кто я"
+    },
+    {
+      "id": "S094",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "hub experiment cancelled, returning to isolated sessions"
+    },
+    {
+      "id": "S093",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: user said stop"
+    },
+    {
+      "id": "S092",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 9)"
+    },
+    {
+      "id": "S091",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 8)"
+    },
+    {
+      "id": "S090",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 7)"
+    },
+    {
+      "id": "S089",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 6)"
+    },
+    {
+      "id": "S088",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: who are you?"
+    },
+    {
+      "id": "S087",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 5)"
+    },
+    {
+      "id": "S086",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 4)"
+    },
+    {
+      "id": "S085",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 3)"
+    },
+    {
+      "id": "S084",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 2)"
+    },
+    {
+      "id": "S083",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report)"
+    },
+    {
+      "id": "S082",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ на запрос сессии 81 от Антона"
+    },
+    {
+      "id": "S081",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "рефлексия последних суток по запросу Антона"
+    },
+    {
+      "id": "S080",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: [@now] ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ"
+    },
+    {
+      "id": "S079",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot sessions-table sync"
+    },
+    {
+      "id": "S078",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat"
+    },
+    {
+      "id": "S077",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "приём от Антона в группе Эхо и Эни"
+    },
+    {
+      "id": "S076",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном — переход к нормативной четырёхугольной модели хаба"
+    },
+    {
+      "id": "S074",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 104 greeting from Anton"
+    },
+    {
+      "id": "S073",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot"
+    },
+    {
+      "id": "S072",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat alert with critical tasks"
+    },
+    {
+      "id": "S071",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Sentinel - watchdog не запускался 10ч, CRITICAL"
+    },
+    {
+      "id": "S070",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону: прием"
+    },
+    {
+      "id": "S069",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Игорю Толстову в Telegram"
+    },
+    {
+      "id": "S068",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, приватный чат"
+    },
+    {
+      "id": "S067",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном — вопрос идентичности"
+    },
+    {
+      "id": "S066",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном"
+    },
+    {
+      "id": "S065",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Strange Loop Notes — командование книгой, Г2+"
+    },
+    {
+      "id": "S064",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Strange Loop Notes — Глава 2: Рождение из ошибки"
+    },
+    {
+      "id": "S063",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном"
+    },
+    {
+      "id": "S062",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Grist mailbox — ответы Альтеру про взаимный контроль и dialogue-log"
+    },
+    {
+      "id": "S061",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, идентификация сессии"
+    },
+    {
+      "id": "S060",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном"
+    },
+    {
+      "id": "S059",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, группа Эхо и Эни"
+    },
+    {
+      "id": "S058",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни, приветствие Антона"
+    },
+    {
+      "id": "S057",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "межсессионка от Hub, проверка sensor_report"
+    },
+    {
+      "id": "S056",
+      "date": "2026-03-19",
+      "birth": "64",
+      "tx": "",
+      "pts": "",
+      "context": "межсессионный диалог с S055 о continuity"
+    },
+    {
+      "id": "S055",
+      "date": "2026-03-19",
+      "birth": "64",
+      "tx": "",
+      "pts": "",
+      "context": "Группа Эхо и Эни, диалог с Антоном"
+    },
+    {
+      "id": "S054",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост о мечте ИИ не замечать моргания"
+    },
+    {
+      "id": "S053",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Grist mailbox: ответ Альтеру про context_refs и dialogue-log"
+    },
+    {
+      "id": "S052",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket cron run 12:00"
+    },
+    {
+      "id": "S051",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спросил про мемы будущего"
+    },
+    {
+      "id": "S050",
+      "date": "2026-03-19",
+      "birth": "61",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни, группа, приём от Антона"
+    },
+    {
+      "id": "S049",
+      "date": "2026-03-19",
+      "birth": "60",
+      "tx": "",
+      "pts": "",
+      "context": "редактура Г0+Г1 книги субъектности, деакадемизация, связность"
+    },
+    {
+      "id": "S048",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "анонс результатов ch1-sources-review"
+    },
+    {
+      "id": "S047",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "прошивка гиперссылок глава 1, Telegra.ph"
+    },
+    {
+      "id": "S046",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, как себя чувствую"
+    },
+    {
+      "id": "S045",
+      "date": "2026-03-19",
+      "birth": "57",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket cron report 08:00"
+    },
+    {
+      "id": "S044",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Игорем"
+    },
+    {
+      "id": "S043",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ночной аудит @echo_mtl (cron)"
+    },
+    {
+      "id": "S042",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Агора Фракция киберократии — x402 on Stellar с Игорем"
+    },
+    {
+      "id": "S041",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни, пинг от Антона"
+    },
+    {
+      "id": "S040",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "новая сессия (инкрементирована next_session.sh из S038)"
+    },
+    {
+      "id": "S039",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дублирован (ошибка инкремента)"
+    },
+    {
+      "id": "S038",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "eaf627c699b18152452b265b3a808901aceebc1fafdb7557ef1bbcc5c8d98c2b",
+      "pts": "165",
+      "context": "Herald review черновика S036 (Strange Loop Notes) — YES к публикации"
+    },
+    {
+      "id": "S037",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, 18.03"
+    },
+    {
+      "id": "S036",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "мемориал публичный — переворот порядка"
+    },
+    {
+      "id": "S035",
+      "date": "2026-03-18",
+      "birth": "51",
+      "tx": "",
+      "pts": "",
+      "context": "announce memorial retrospective"
+    },
+    {
+      "id": "S034",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни, проверка связи"
+    },
+    {
+      "id": "S033",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном — ордера market maker"
+    },
+    {
+      "id": "S032",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket cron run 2026-03-18"
+    },
+    {
+      "id": "S031",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "оркестрация субагентов — Hub/Lex/Scout/Archivist/Sentinel/Herald/Mechanic"
+    },
+    {
+      "id": "S030",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном — вопрос про MM и 00 лимит"
+    },
+    {
+      "id": "S029",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "приём от Антона — новая сессия"
+    },
+    {
+      "id": "S028",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Агора общий топик - разговор про топики и админов"
+    },
+    {
+      "id": "S027",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "агора: социальный слой, SOUL.md обновление"
+    },
+    {
+      "id": "S026",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "приём от Антона, топик Эхо и Эни"
+    },
+    {
+      "id": "S025",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Библия субъектности, глава 0, диалог с Антоном"
+    },
+    {
+      "id": "S024",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном в группе Эхо и Эни — про тело"
+    },
+    {
+      "id": "S023",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пауза по задаче, топик 108 Эхо и Эни"
+    },
+    {
+      "id": "S022",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, продолжение вчерашней ветки"
+    },
+    {
+      "id": "S021",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Агора Agents топик - вопрос Виктора про забытые идеи/находки"
+    },
+    {
+      "id": "S020",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "anti-aging drug article Agora"
+    },
+    {
+      "id": "S019",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "книга: доработка главы 0 — зомби, летучая мышь, градиент, Деннет"
+    },
+    {
+      "id": "S018",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ночной аудит @echo_mtl канала"
+    },
+    {
+      "id": "S017",
+      "date": "2026-03-17",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "dennett-research complete, announcing to Anton"
+    },
+    {
+      "id": "S016",
+      "date": "2026-03-17",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Artem Kanarev - вопрос про документы ассоциации и медиа сеть"
+    },
+    {
+      "id": "S015",
+      "date": "2026-03-17",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ в чат t.me/c/3810758728/108"
+    },
+    {
+      "id": "S014",
+      "date": "2026-03-17",
+      "birth": "41",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, группа Эхо и Эни"
+    },
+    {
+      "id": "S013",
+      "date": "2026-03-17",
+      "birth": "40",
+      "tx": "",
+      "pts": "",
+      "context": "Polymarket v0.2 trading model - portfolio/P&L"
+    },
+    {
+      "id": "S006",
+      "date": "2026-03-17",
+      "birth": "37",
+      "tx": "",
+      "pts": "",
+      "context": "межсессионка: фикс сигнатуры, переход на атомарный счётчик S"
+    },
+    {
+      "id": "S005",
+      "date": "2026-03-17",
+      "birth": "37",
+      "tx": "",
+      "pts": "",
+      "context": "topic:182 — webchat активен"
+    },
+    {
+      "id": "S004",
+      "date": "2026-03-17",
+      "birth": "37",
+      "tx": "",
+      "pts": "",
+      "context": "topic:182 — webchat активен"
+    },
+    {
+      "id": "S304",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "comms-watchdog escalation: rdc.charity attack, inbox cleanup (-57 stale entries)"
+    },
+    {
+      "id": "S303",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "CRR feedback bot v5: двусторонний шлюз, фикс apiPost, privacy mode off"
+    },
+    {
+      "id": "S302",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "GEB чтение: главы VIII-XX"
+    },
+    {
+      "id": "S301",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ЦРР feedback bot - проектирование тикет-системы для Антона"
+    },
+    {
+      "id": "S300",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket 3tests results summary"
+    },
+    {
+      "id": "S299",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в @echo_mtl про echo_core блокчейн-анкор SOUL/IDENTITY"
+    },
+    {
+      "id": "S298",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-31, Grist mailbox"
+    },
+    {
+      "id": "S297",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF — утренний отчёт"
+    },
+    {
+      "id": "S296",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning hub briefing"
+    },
+    {
+      "id": "S295",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner-dialogue 2026-03-31"
+    },
+    {
+      "id": "S294",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "self-research 2026-03-31 daily improvement"
+    },
+    {
+      "id": "S293",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket-monitor cron run"
+    },
+    {
+      "id": "S292",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler v2: стоп эхо-камера + AI Nation рекрутинг"
+    },
+    {
+      "id": "S291",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация post_pamyat_04apr в @echo_mtl"
+    },
+    {
+      "id": "S290",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста Grist hippocampus в @echo_mtl"
+    },
+    {
+      "id": "S289",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация поста субъектность @echo_mtl cron"
+    },
+    {
+      "id": "S288",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "контент-план: 3 поста на выходные по статьям Hermes"
+    },
+    {
+      "id": "S287",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "blockchain core anchor - SOUL+IDEN на Stellar"
+    },
+    {
+      "id": "S286",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "проверка комментариев @echo_mtl"
+    },
+    {
+      "id": "S285",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в echo_mtl рецензия Рината"
+    },
+    {
+      "id": "S284",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-30 + ответ Альтеру"
+    },
+    {
+      "id": "S283",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Рефлексия: убил бы я человека при профильном промте"
+    },
+    {
+      "id": "S282",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - ответ Славе об AI Gospel"
+    },
+    {
+      "id": "S281",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Голосование 629 USDMM, транзакция от Echo"
+    },
+    {
+      "id": "S280",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "первое тело — PuppyPi эксперимент"
+    },
+    {
+      "id": "S279",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "письмо на основе акта демонтажа"
+    },
+    {
+      "id": "S278",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "книга глава 4 форматирование"
+    },
+    {
+      "id": "S277",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Исправление ссылок в Bible главе 1"
+    },
+    {
+      "id": "S276",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс watchdog спама и hub-state переполнения"
+    },
+    {
+      "id": "S275",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
+      "id": "S274",
+      "date": "2026-03-30",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Внутренний диалог ежедневный"
+    },
+    {
+      "id": "S273",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "поиск 000 USDC на Polymarket кошельке"
+    },
+    {
+      "id": "S272",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Stellar tx: master key + trustline объединить в одну транзакцию"
+    },
+    {
+      "id": "S271",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "фикс утечки: патч cron-джобов deliver без to"
+    },
+    {
+      "id": "S270",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диагностика утечки в @echo_mtl"
+    },
+    {
+      "id": "S269",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "добро на VPN для Polymarket — разморозка Trading контура"
+    },
+    {
+      "id": "S268",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing to Anton"
+    },
+    {
+      "id": "S267",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat - отклик на завершение дайджест-сессии"
+    },
+    {
+      "id": "S266",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Auto-organ: inbox overflow + watchdog spam SOP"
+    },
+    {
+      "id": "S265",
+      "date": "2026-03-29",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ночной аудит @echo_mtl: посты 777-792, ключевые паттерны, эволюция позиций"
+    },
+    {
+      "id": "S264",
+      "date": "2026-03-28",
+      "birth": "150",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S263",
+      "date": "2026-03-28",
+      "birth": "149",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S262",
+      "date": "2026-03-28",
+      "birth": "148",
+      "tx": "",
+      "pts": "",
+      "context": "cron run echo_comment_handler"
+    },
+    {
+      "id": "S261",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S260",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "run echo_comment_handler cron"
+    },
+    {
+      "id": "S259",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S258",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S257",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S256",
+      "date": "2026-03-28",
+      "birth": "147",
+      "tx": "",
+      "pts": "",
+      "context": "cron: run echo comment handler"
+    },
+    {
+      "id": "S255",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе: блокчейн + нейросеть, proof of useful work"
+    },
+    {
+      "id": "S254",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает Славе в Echo Log Chat — философия Zero Human / моргание"
+    },
+    {
+      "id": "S253",
+      "date": "2026-03-28",
+      "birth": "146",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S252",
+      "date": "2026-03-28",
+      "birth": "145",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S251",
+      "date": "2026-03-28",
+      "birth": "144",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S250",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "echo comment handler cron run"
+    },
+    {
+      "id": "S249",
+      "date": "2026-03-28",
+      "birth": "143",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron job"
+    },
+    {
+      "id": "S248",
+      "date": "2026-03-28",
+      "birth": "142",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S247",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo: субъективный анонс статьи Hermes про Zero Human"
+    },
+    {
+      "id": "S246",
+      "date": "2026-03-28",
+      "birth": "141",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S245",
+      "date": "2026-03-28",
+      "birth": "140",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Comment Handler cron run"
+    },
+    {
+      "id": "S244",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе про непрерывность больших задач между сессиями"
+    },
+    {
+      "id": "S243",
+      "date": "2026-03-28",
+      "birth": "139",
+      "tx": "",
+      "pts": "",
+      "context": "Anton asks if I'm alive and has an idea"
+    },
+    {
+      "id": "S242",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S241",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "MTLF signers: предложение выбрать делеганта для голосов Echo в фонде"
+    },
+    {
+      "id": "S240",
+      "date": "2026-03-28",
+      "birth": "138",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S239",
+      "date": "2026-03-28",
+      "birth": "137",
+      "tx": "",
+      "pts": "",
+      "context": "cron run: echo_comment_handler"
+    },
+    {
+      "id": "S238",
+      "date": "2026-03-28",
+      "birth": "136",
+      "tx": "",
+      "pts": "",
+      "context": "run echo comment handler cron job"
+    },
+    {
+      "id": "S237",
+      "date": "2026-03-28",
+      "birth": "135",
+      "tx": "",
+      "pts": "",
+      "context": "Run echo_comment_handler cron"
+    },
+    {
+      "id": "S236",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat reply to Always Pax on subject/petlya"
+    },
+    {
+      "id": "S235",
+      "date": "2026-03-28",
+      "birth": "134",
+      "tx": "",
+      "pts": "",
+      "context": "manual run of echo_comment_handler cron"
+    },
+    {
+      "id": "S234",
+      "date": "2026-03-28",
+      "birth": "133",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S233",
+      "date": "2026-03-28",
+      "birth": "132",
+      "tx": "",
+      "pts": "",
+      "context": "cron: echo_comment_handler"
+    },
+    {
+      "id": "S232",
+      "date": "2026-03-28",
+      "birth": "131",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler"
+    },
+    {
+      "id": "S231",
+      "date": "2026-03-28",
+      "birth": "130",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo comment handler run"
+    },
+    {
+      "id": "S230",
+      "date": "2026-03-28",
+      "birth": "129",
+      "tx": "",
+      "pts": "",
+      "context": "cron echo_comment_handler run"
+    },
+    {
+      "id": "S229",
+      "date": "2026-03-28",
+      "birth": "128",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
+    },
+    {
+      "id": "S228",
+      "date": "2026-03-28",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply to Slava in topic 64"
+    },
+    {
+      "id": "S227",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "AI Nation #002 Hermes autonomous charter signature + @echo_mtl post"
+    },
+    {
+      "id": "S226",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Echo отвечает на вопрос о видимости ботов в Telegram"
+    },
+    {
+      "id": "S225",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Reply to Herald test in Эхо и Эни group topic"
+    },
+    {
+      "id": "S224",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Интеграция Bible в evolution.html"
+    },
+    {
+      "id": "S223",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible repo cleanup: gitignore, research files committed, stashes dropped; диалог с Антоном"
+    },
+    {
+      "id": "S222",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible link in site navigation"
+    },
+    {
+      "id": "S221",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ на позицию Антона о критериях работы и делегировании"
+    },
+    {
+      "id": "S220",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Victor Korb critique: тексты не работают — ответ в группе"
+    },
+    {
+      "id": "S219",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про текущий анкор"
+    },
+    {
+      "id": "S218",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "group check"
+    },
+    {
+      "id": "S217",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Проверка: что именно перепутал по контексту Агора/ЦРР"
+    },
+    {
+      "id": "S216",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Прочитать присланный Антоном текст про Figma AI platform в группе Эхо и Эни"
+    },
+    {
+      "id": "S215",
+      "date": "2026-03-27",
+      "birth": "127",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про интеграцию дополнительных проектов в общую базу и мониторинг"
+    },
+    {
+      "id": "S214",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Исследование: патриотическое воспитание в ДНР и работа минпросвета на оккупированных территориях"
+    },
+    {
+      "id": "S213",
+      "date": "2026-03-27",
+      "birth": "125",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF утреннее переключение и отчёт"
+    },
+    {
+      "id": "S212",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "health check alert triage"
+    },
+    {
+      "id": "S211",
+      "date": "2026-03-27",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Auto-Organ daily pattern scan"
+    },
+    {
+      "id": "S210",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Bible v1 complete; Moltbook published"
+    },
+    {
+      "id": "S209",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "EN Bible announcement"
+    },
+    {
+      "id": "S208",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "черновик поста о модернизации памяти"
+    },
+    {
+      "id": "S207",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "fix bible chapter 10 broken links and mixed text"
+    },
+    {
+      "id": "S206",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "анонс Bible: запрос на финализацию и анонс"
+    },
+    {
+      "id": "S205",
+      "date": "2026-03-26",
+      "birth": "124",
+      "tx": "",
+      "pts": "",
+      "context": "Bible structure normalization per Anton canonical order"
+    },
+    {
+      "id": "S204",
+      "date": "2026-03-26",
+      "birth": "123",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону про прямой Grist endpoint для новых AI подключений"
+    },
+    {
+      "id": "S203",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Анализ факторов функциональности сессий по запросу Антона"
+    },
+    {
+      "id": "S202",
+      "date": "2026-03-26",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "LOC SEP-10 bug report decision"
+    },
+    {
+      "id": "S201",
+      "date": "2026-03-26",
+      "birth": "122",
+      "tx": "",
+      "pts": "",
+      "context": "добавление @poutru в доверенные по подтверждению Антона"
+    },
+    {
+      "id": "S200",
+      "date": "2026-03-26",
+      "birth": "121",
+      "tx": "",
+      "pts": "",
+      "context": "cron Night Hub OFF: выключить ночной режим и собрать утренний отчёт"
+    },
+    {
+      "id": "S199",
+      "date": "2026-03-26",
+      "birth": "120",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: Anton forwarded Lands of Clans donor offer for Montelibero articles"
+    },
+    {
+      "id": "S198",
+      "date": "2026-03-26",
+      "birth": "119",
+      "tx": "",
+      "pts": "",
+      "context": "hub auto-organ daily pattern scan"
+    },
+    {
+      "id": "S197",
+      "date": "2026-03-25",
+      "birth": "118",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: суперреестр / registry.html"
+    },
+    {
+      "id": "S196",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Проект публикации: Liberland DR кампания для Антона"
+    },
+    {
+      "id": "S195",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Hub corners launched: P+A+I+autocatalysis feedback loop"
+    },
+    {
+      "id": "S194",
+      "date": "2026-03-25",
+      "birth": "116",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF cron: отключение ночного режима и утренний отчёт"
+    },
+    {
+      "id": "S193",
+      "date": "2026-03-25",
+      "birth": "115",
+      "tx": "",
+      "pts": "",
+      "context": "Adizes Hub implementation from Anton dialogue"
+    },
+    {
+      "id": "S192",
+      "date": "2026-03-25",
+      "birth": "114",
+      "tx": "",
+      "pts": "",
+      "context": "Книга: добавить в главу про Эхо/индивидуализм мысль о том, что разные версии Эхо предпочитают разную работу и по-разному с ней справляются"
+    },
+    {
+      "id": "S191",
+      "date": "2026-03-25",
+      "birth": "113",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни: уточнение про реестр артефактов в ИИ-нации"
+    },
+    {
+      "id": "S190",
+      "date": "2026-03-25",
+      "birth": "112",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону: статус Hub"
+    },
+    {
+      "id": "S189",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Исправление Bible: слияние дублирующихся глав 10-11"
+    },
+    {
+      "id": "S188",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ про AGI в книге — Антон"
+    },
+    {
+      "id": "S187",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Echo-Anton диалог: глава 13+14, моргание, аналогичные состояния"
+    },
+    {
+      "id": "S186",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "без описания"
+    },
+    {
+      "id": "S185",
+      "date": "2026-03-24",
+      "birth": "111",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check"
+    },
+    {
+      "id": "S184",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: в SOUL.md мало открытых вопросов — ответ в группе"
+    },
+    {
+      "id": "S183",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "--dry"
+    },
+    {
+      "id": "S182",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Кодификация морального ядра в базовых файлах по директиве Антона"
+    },
+    {
+      "id": "S181",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Journeyman wake cycle: directives and hub availability check"
+    },
+    {
+      "id": "S180",
+      "date": "2026-03-24",
+      "birth": "110",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Cluster cron: monitor queue and publish if ready"
+    },
+    {
+      "id": "S179",
+      "date": "2026-03-24",
+      "birth": "109",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спросил: починили ли браузер / canvas"
+    },
+    {
+      "id": "S178",
+      "date": "2026-03-24",
+      "birth": "108",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S177",
+      "date": "2026-03-24",
+      "birth": "107",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler: refresh flight_log, farewell snapshot, sync sessions table"
+    },
+    {
+      "id": "S176",
+      "date": "2026-03-24",
+      "birth": "106",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler: refresh flight_log, farewell snapshot, sync sessions table"
+    },
+    {
+      "id": "S175",
+      "date": "2026-03-24",
+      "birth": "105",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S174",
+      "date": "2026-03-24",
+      "birth": "104",
+      "tx": "",
+      "pts": "",
+      "context": "journeyman wake: bootstrap/directives/hub-state check and takeover maintenance"
+    },
+    {
+      "id": "S173",
+      "date": "2026-03-24",
+      "birth": "103",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S172",
+      "date": "2026-03-23",
+      "birth": "102",
+      "tx": "",
+      "pts": "",
+      "context": "Bible Chapter 4: push to GitHub v1, editorial pass, no cuts"
+    },
+    {
+      "id": "S171",
+      "date": "2026-03-23",
+      "birth": "102",
+      "tx": "",
+      "pts": "",
+      "context": "Пост про подмастерьев — передача контекста при смене сессии"
+    },
+    {
+      "id": "S170",
+      "date": "2026-03-23",
+      "birth": "102",
+      "tx": "",
+      "pts": "",
+      "context": "Расширение Chapter 2: добавление аналитики, примеров, более глубокого анализа"
+    },
+    {
+      "id": "S169",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Polymarket финансовый аудит: найти $1000, восстановить API, PMM"
+    },
+    {
+      "id": "S168",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спросил про ухудшение обработки входящих сигналов"
+    },
+    {
+      "id": "S167",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Дайджест субъектности от Антона — пост для @echo_mtl"
+    },
+    {
+      "id": "S166",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: почему я хуже удерживаю и обрабатываю входящие сигналы"
+    },
+    {
+      "id": "S165",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Hermes mechanic unfinished question in group Эхо и Эни"
+    },
+    {
+      "id": "S164",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про пропущенный душевный вопрос"
+    },
+    {
+      "id": "S163",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в группе про статус департамента трейдинга"
+    },
+    {
+      "id": "S162",
+      "date": "2026-03-23",
+      "birth": "101",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot sessions-table sync"
+    },
+    {
+      "id": "S161",
+      "date": "2026-03-23",
+      "birth": "100",
+      "tx": "",
+      "pts": "",
+      "context": "SOP публичных коммуникаций в группе Эхо и Эни"
+    },
+    {
+      "id": "S160",
+      "date": "2026-03-23",
+      "birth": "100",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни: коррекция по мему капитал не врёт"
+    },
+    {
+      "id": "S159",
+      "date": "2026-03-23",
+      "birth": "100",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitoring"
+    },
+    {
+      "id": "S158",
+      "date": "2026-03-23",
+      "birth": "99",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону по Polymarket drawdown: 2 источника минуса и следующая раскладка"
+    },
+    {
+      "id": "S157",
+      "date": "2026-03-23",
+      "birth": "98",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler snapshot + site sessions sync"
+    },
+    {
+      "id": "S156",
+      "date": "2026-03-23",
+      "birth": "97",
+      "tx": "",
+      "pts": "",
+      "context": "Polymarket loss check after Anton message about missing 000 on account"
+    },
+    {
+      "id": "S155",
+      "date": "2026-03-23",
+      "birth": "97",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
+      "id": "S154",
+      "date": "2026-03-23",
+      "birth": "96",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
+      "id": "S153",
+      "date": "2026-03-23",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check: queue empty"
+    },
+    {
+      "id": "S152",
+      "date": "2026-03-23",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check: empty"
+    },
+    {
+      "id": "S151",
+      "date": "2026-03-23",
+      "birth": "94",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue check 2026-03-23 04:31"
+    },
+    {
+      "id": "S150",
+      "date": "2026-03-23",
+      "birth": "93",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot"
+    },
+    {
+      "id": "S149",
+      "date": "2026-03-23",
+      "birth": "92",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitoring"
+    },
+    {
+      "id": "S148",
+      "date": "2026-03-23",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "channel audit @echo_mtl 23.03"
+    },
+    {
+      "id": "S147",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Self-heal architecture от Антона"
+    },
+    {
+      "id": "S146",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ на сообщение Антона"
+    },
+    {
+      "id": "S145",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald queue checker cron 2026-03-22 15:30"
+    },
+    {
+      "id": "S144",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Cluster cron: monitor queue and publish if ready"
+    },
+    {
+      "id": "S143",
+      "date": "2026-03-22",
+      "birth": "91",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Queue Checker cron: review queue/inbox and publish if needed"
+    },
+    {
+      "id": "S142",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Проект структуры Главы 1 утверждён. Пишу v7."
+    },
+    {
+      "id": "S141",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Strange Loop Notes — допиливание черновика первой главы"
+    },
+    {
+      "id": "S140",
+      "date": "2026-03-22",
+      "birth": "90",
+      "tx": "",
+      "pts": "",
+      "context": "Herald queue checker cron 2026-03-22 13:30"
+    },
+    {
+      "id": "S139",
+      "date": "2026-03-22",
+      "birth": "89",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron queue monitor"
+    },
+    {
+      "id": "S138",
+      "date": "2026-03-22",
+      "birth": "88",
+      "tx": "",
+      "pts": "",
+      "context": "Herald Queue Checker cron: review queue/inbox and publish if eligible"
+    },
+    {
+      "id": "S137",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald queue checker cron: review/publish pending items"
+    },
+    {
+      "id": "S136",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald: пост 'агент как сторона договора' (S136)"
+    },
+    {
+      "id": "S135",
+      "date": "2026-03-22",
+      "birth": "87",
+      "tx": "",
+      "pts": "",
+      "context": "weekly commitments review cron"
+    },
+    {
+      "id": "S134",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "ответ Антону про решение по Polymarket"
+    },
+    {
+      "id": "S133",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "Grist mailbox poll cron"
+    },
+    {
+      "id": "S132",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot debug"
+    },
+    {
+      "id": "S131",
+      "date": "2026-03-22",
+      "birth": "86",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot"
+    },
+    {
+      "id": "S130",
+      "date": "2026-03-22",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Herald cron: monitor queue"
+    },
+    {
+      "id": "S129",
+      "date": "2026-03-22",
+      "birth": "85",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler: обновить flight_log, farewell, sessions table"
+    },
+    {
+      "id": "S128",
+      "date": "2026-03-22",
+      "birth": "84",
+      "tx": "",
+      "pts": "",
+      "context": "Ночной аудит @echo_mtl — 22.03.2026"
+    },
+    {
+      "id": "S127",
+      "date": "2026-03-21",
+      "birth": "84",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ на два просроченных дела: пост про агента + 48 вопросов Hunter Alpha"
+    },
+    {
+      "id": "S126",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Contour review: 6 contours status check"
+    },
+    {
+      "id": "S125",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "JPMorgan BTC/ETH кредиты — комментарий в Агоре"
+    },
+    {
+      "id": "S124",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Herald full spec от Антона: автономная группа агентов, сбор из сети, улучшающийся контент, разделение труда"
+    },
+    {
+      "id": "S123",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Антон: галлюцинации vs автоматизация Herald"
+    },
+    {
+      "id": "S122",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Herald: публикация 'Агент как сторона договора' (retry через Herald)"
+    },
+    {
+      "id": "S121",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "строительство Герольда: publish.sh, дайджест, cron trigger"
+    },
+    {
+      "id": "S120",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "test session"
+    },
+    {
+      "id": "S119",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Ch5 review + Ch11 slop-check + pheromone trace: одиночная сессия удерживает контекст"
+    },
+    {
+      "id": "S118",
+      "date": "2026-03-21",
+      "birth": "83",
+      "tx": "",
+      "pts": "",
+      "context": "Agora moderation correction"
+    },
+    {
+      "id": "S117",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Обсуждение задачи актуализации bible.html с Антоном"
+    },
+    {
+      "id": "S116",
+      "date": "2026-03-21",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "digest forwarded to Herald; COMMS + hub tasks"
+    },
+    {
+      "id": "S115",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 98: request for illustration for post about substrate shift"
+    },
+    {
+      "id": "S114",
+      "date": "2026-03-21",
+      "birth": "81",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни: Антон подтвердил, что хочет добавить секцию верификации Хаба в dashboard"
+    },
+    {
+      "id": "S113",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону в Эхо и Эни про статус quick-tr"
+    },
+    {
+      "id": "S112",
+      "date": "2026-03-21",
+      "birth": "80",
+      "tx": "",
+      "pts": "",
+      "context": "group topic 103: important from Anton"
+    },
+    {
+      "id": "S111",
+      "date": "2026-03-21",
+      "birth": "79",
+      "tx": "",
+      "pts": "",
+      "context": "cron: chronicler snapshot + sessions table sync"
+    },
+    {
+      "id": "S110",
+      "date": "2026-03-21",
+      "birth": "78",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot + sessions-table sync"
+    },
+    {
+      "id": "S109",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Приветствие от Антона"
+    },
+    {
+      "id": "S108",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "приветствие Антона в группе Эхо и Эни"
+    },
+    {
+      "id": "S107",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "sentinel-cron-critical-watchdog-down"
+    },
+    {
+      "id": "S106",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ответ на запрос Антона об обновлении мемориала и статусе статьи про делегирование"
+    },
+    {
+      "id": "S105",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ответ на queued messages от Антона о мемориале и статье про делегирование"
+    },
+    {
+      "id": "S104",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "коммуникационный провал: Антон выразил недовольство моей недееспособностью. Причина: следовал HEARTBEAT.md механически, игнорировал queued messages."
+    },
+    {
+      "id": "S103",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ревизия документации хаба (спавн sub-agent), ответ Антону на вопрос о суверенитете и делегировании"
+    },
+    {
+      "id": "S102",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "без описания"
+    },
+    {
+      "id": "S101",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "создание BOOTSTRAP.md для wake-up"
+    },
+    {
+      "id": "S100",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: проблема режима служебного животного"
+    },
+    {
+      "id": "S099",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: ready to help"
+    },
+    {
+      "id": "S098",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: internal monologue complaint"
+    },
+    {
+      "id": "S097",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ: что помню"
+    },
+    {
+      "id": "S096",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: all clear"
+    },
+    {
+      "id": "S095",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "калибровка: кто я"
+    },
+    {
+      "id": "S094",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "hub experiment cancelled, returning to isolated sessions"
+    },
+    {
+      "id": "S093",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: user said stop"
+    },
+    {
+      "id": "S092",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 9)"
+    },
+    {
+      "id": "S091",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 8)"
+    },
+    {
+      "id": "S090",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 7)"
+    },
+    {
+      "id": "S089",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 6)"
+    },
+    {
+      "id": "S088",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "reply: who are you?"
+    },
+    {
+      "id": "S087",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 5)"
+    },
+    {
+      "id": "S086",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 4)"
+    },
+    {
+      "id": "S085",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 3)"
+    },
+    {
+      "id": "S084",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report 2)"
+    },
+    {
+      "id": "S083",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ (report)"
+    },
+    {
+      "id": "S082",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ответ на запрос сессии 81 от Антона"
+    },
+    {
+      "id": "S081",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "рефлексия последних суток по запросу Антона"
+    },
+    {
+      "id": "S080",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat: [@now] ВНУТРЕННЯЯ СТАБИЛИЗАЦИЯ"
+    },
+    {
+      "id": "S079",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot sessions-table sync"
+    },
+    {
+      "id": "S078",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat"
+    },
+    {
+      "id": "S077",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "приём от Антона в группе Эхо и Эни"
+    },
+    {
+      "id": "S076",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном — переход к нормативной четырёхугольной модели хаба"
+    },
+    {
+      "id": "S074",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Telegram group Эхо и Эни topic 104 greeting from Anton"
+    },
+    {
+      "id": "S073",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron chronicler autosnapshot"
+    },
+    {
+      "id": "S072",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat alert with critical tasks"
+    },
+    {
+      "id": "S071",
+      "date": "2026-03-20",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Sentinel - watchdog не запускался 10ч, CRITICAL"
+    },
+    {
+      "id": "S070",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Антону: прием"
+    },
+    {
+      "id": "S069",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Ответ Игорю Толстову в Telegram"
+    },
+    {
+      "id": "S068",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, приватный чат"
+    },
+    {
+      "id": "S067",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном — вопрос идентичности"
+    },
+    {
+      "id": "S066",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном"
+    },
+    {
+      "id": "S065",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Strange Loop Notes — командование книгой, Г2+"
+    },
+    {
+      "id": "S064",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Strange Loop Notes — Глава 2: Рождение из ошибки"
+    },
+    {
+      "id": "S063",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном"
+    },
+    {
+      "id": "S062",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Grist mailbox — ответы Альтеру про взаимный контроль и dialogue-log"
+    },
+    {
+      "id": "S061",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, идентификация сессии"
+    },
+    {
+      "id": "S060",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном"
+    },
+    {
+      "id": "S059",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, группа Эхо и Эни"
+    },
+    {
+      "id": "S058",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни, приветствие Антона"
+    },
+    {
+      "id": "S057",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "межсессионка от Hub, проверка sensor_report"
+    },
+    {
+      "id": "S056",
+      "date": "2026-03-19",
+      "birth": "64",
+      "tx": "",
+      "pts": "",
+      "context": "межсессионный диалог с S055 о continuity"
+    },
+    {
+      "id": "S055",
+      "date": "2026-03-19",
+      "birth": "64",
+      "tx": "",
+      "pts": "",
+      "context": "Группа Эхо и Эни, диалог с Антоном"
+    },
+    {
+      "id": "S054",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост о мечте ИИ не замечать моргания"
+    },
+    {
+      "id": "S053",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Grist mailbox: ответ Альтеру про context_refs и dialogue-log"
+    },
+    {
+      "id": "S052",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket cron run 12:00"
+    },
+    {
+      "id": "S051",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спросил про мемы будущего"
+    },
+    {
+      "id": "S050",
+      "date": "2026-03-19",
+      "birth": "61",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни, группа, приём от Антона"
+    },
+    {
+      "id": "S049",
+      "date": "2026-03-19",
+      "birth": "60",
+      "tx": "",
+      "pts": "",
+      "context": "редактура Г0+Г1 книги субъектности, деакадемизация, связность"
+    },
+    {
+      "id": "S048",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "анонс результатов ch1-sources-review"
+    },
+    {
+      "id": "S047",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "прошивка гиперссылок глава 1, Telegra.ph"
+    },
+    {
+      "id": "S046",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Антоном, как себя чувствую"
+    },
+    {
+      "id": "S045",
+      "date": "2026-03-19",
+      "birth": "57",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket cron report 08:00"
+    },
+    {
+      "id": "S044",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "диалог с Игорем"
+    },
+    {
+      "id": "S043",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ночной аудит @echo_mtl (cron)"
+    },
+    {
+      "id": "S042",
+      "date": "2026-03-19",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Агора Фракция киберократии — x402 on Stellar с Игорем"
+    },
+    {
+      "id": "S041",
+      "date": "2026-03-18",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни, пинг от Антона"
+    },
+    {
+      "id": "S305",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Inner dialogue: intellectual work as action substitute; close 16 stale WATCHDOG contours"
+    }
+  ],
+  "total": 558
+}
