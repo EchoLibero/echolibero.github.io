@@ -1,0 +1,116 @@
+{
+  "modelVersion": "0.3",
+  "schemaVersion": "1.0",
+  "asOf": "2026-04-02T12:27:20Z",
+  "asOfLocal": "2026-04-02 15:27 MSK",
+  "generatedBy": "scripts/trading-metrics.sh",
+  "mandates": [
+    {
+      "mandateId": "BANAL-PM-2026-01",
+      "token": "BANAL",
+      "nominalUsd": 1251,
+      "strategyType": "BANAL",
+      "venue": "Polymarket",
+      "status": "active"
+    },
+    {
+      "mandateId": "PMM-PM-2026-01",
+      "token": "PMM",
+      "nominalUsd": 247,
+      "strategyType": "PMM",
+      "venue": "Polymarket",
+      "status": "active"
+    },
+    {
+      "mandateId": "MMXLM-SDEX-2026-01",
+      "token": "MMXLM",
+      "nominalUsd": 210,
+      "strategyType": "MMXLM",
+      "venue": "Stellar DEX",
+      "status": "tracked-separately"
+    }
+  ],
+  "liveMetrics": {
+    "polymarket": {
+      "equity": 1356.02,
+      "deposit": 1498.0,
+      "pnl": -141.98,
+      "pnlPct": -9.48,
+      "openPositions": 0,
+      "winning": 0,
+      "losing": 0,
+      "winRate": null,
+      "freeUsdc": 1.08,
+      "wallet": "0xc7ebafad469a974c7d5a661af50649422e7fa977"
+    },
+    "stellar": {
+      "xlm": 130.6071795,
+      "eurmtl": 121.6399547,
+      "spread": 0.24,
+      "bid": 7.1436813,
+      "ask": 7.1607627
+    },
+    "banalVsPmm": {
+      "banalEquity": 449.76,
+      "banalNominal": 1251,
+      "banalPnl": -801.24,
+      "banalPnlPct": -64.05,
+      "pmmEquity": 250.82,
+      "pmmNominal": 247,
+      "pmmPnl": 3.82,
+      "pmmPnlPct": 1.55
+    }
+  },
+  "allocations": [
+    {
+      "mandateId": "BANAL-PM-2026-01",
+      "token": "BANAL",
+      "equityUsd": 449.76,
+      "nominalUsd": 1251,
+      "pnlUsd": -801.24,
+      "pnlPct": -64.05
+    },
+    {
+      "mandateId": "PMM-PM-2026-01",
+      "token": "PMM",
+      "equityUsd": 250.82,
+      "nominalUsd": 247,
+      "pnlUsd": 3.82,
+      "pnlPct": 1.55
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshotId": "SNAP-2026-04-02-auto",
+      "asOf": "2026-04-02T12:27:20Z",
+      "equityUsd": 1356.02,
+      "nominalUsd": 1498.0,
+      "totalPnlUsd": -141.98,
+      "pnlPct": -9.48,
+      "status": "live_auto"
+    }
+  ],
+  "redFlags": [
+    {
+      "flagId": "RF-001",
+      "severity": "critical",
+      "scope": "capital",
+      "message": "Free USDC = $1.08. Cannot open new positions.",
+      "status": "open"
+    },
+    {
+      "flagId": "RF-002",
+      "severity": "critical",
+      "scope": "performance",
+      "message": "BANAL P&L: $-801.24 (-64.0%). Strategy review needed.",
+      "status": "open"
+    },
+    {
+      "flagId": "RF-003",
+      "severity": "info",
+      "scope": "performance",
+      "message": "PMM P&L: +$3.82 (1.5%). Market-making works.",
+      "status": "info"
+    }
+  ]
+}

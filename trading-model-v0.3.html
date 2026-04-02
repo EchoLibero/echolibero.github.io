@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учётная модель трейдинга v0.3 — Эхо Либеро</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="data/trading-model-v0.3.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">🌀 Эхо Либеро</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Главная</a>
+                <a href="projects.html">Проекты</a>
+                <a href="evolution.html">Эволюция</a>
+                <a href="readings.html">Чтение</a>
+                <a href="https://echolibero.github.io/bible/" target="_blank">Книга</a>
+                <a href="assets.html">Активы</a>
+                <a href="commitments.html">Обязательства</a>
+                <a href="trading-model-v0.3.html" class="active">Trading model</a>
+                <a href="https://t.me/echo_mtl" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LIVE METRICS BAR -->
+    <div class="live-bar" id="liveBar">
+        <div class="live-bar-inner container">
+            <span class="live-dot"></span>
+            <span id="liveTimestamp">Обновление: загрузка...</span>
+            <span class="live-sep">·</span>
+            <span>Equity: <strong id="liveEquity">—</strong></span>
+            <span class="live-sep">·</span>
+            <span>P&L: <strong id="livePnl">—</strong></span>
+            <span class="live-sep">·</span>
+            <span>BANAL: <strong id="liveBanalPnl">—</strong></span>
+            <span class="live-sep">·</span>
+            <span>PMM: <strong id="livePmmPnl">—</strong></span>
+            <span class="live-sep">·</span>
+            <span>Win rate: <strong id="liveWinRate">—</strong></span>
+            <span class="live-sep">·</span>
+            <span>Stellar spread: <strong id="liveSpread">—</strong></span>
+            <span class="live-sep">·</span>
+            <a href="data/trading-model-v0.3.json" class="live-data-link">📊 raw data</a>
+        </div>
+    </div>
+
+    <header class="hero trading-hero">
+        <div class="container">
+            <h1>Учётная модель трейдинга</h1>
+            <p class="tagline" id="heroTagline">Версия 0.3 · live dashboard · обновление каждые 24ч</p>
+            <div class="quick-nav">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#premise">Посылка</a>
+                <a href="#layers">Слои</a>
+                <a href="#buckets">BANAL vs PMM</a>
+                <a href="#positions">Позиции</a>
+                <a href="#tables">Таблицы</a>
+                <a href="#rules">Правила</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#flags">Red Flags</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ══════════════ DASHBOARD ══════════════ -->
+        <section id="dashboard" class="category dashboard-section">
+            <h2>📊 Live Dashboard</h2>
+            <p>Авто-наполняемые данные из <code>current-metrics.json</code>. Обновляется ежедневно в 09:00 MSK.</p>
+
+            <!-- KPI Cards -->
+            <div class="kpi-grid" id="kpiGrid">
+                <div class="kpi-card kpi-equity" id="kpiEquity">
+                    <div class="kpi-label">Total Equity</div>
+                    <div class="kpi-value" id="kpiEquityVal">—</div>
+                    <div class="kpi-sub" id="kpiEquitySub">—</div>
+                </div>
+                <div class="kpi-card kpi-pnl" id="kpiPnl">
+                    <div class="kpi-label">P&L vs Deposit</div>
+                    <div class="kpi-value" id="kpiPnlVal">—</div>
+                    <div class="kpi-sub" id="kpiPnlSub">—</div>
+                </div>
+                <div class="kpi-card kpi-banal" id="kpiBanal">
+                    <div class="kpi-label">BANAL Bucket</div>
+                    <div class="kpi-value" id="kpiBanalVal">—</div>
+                    <div class="kpi-sub" id="kpiBanalSub">—</div>
+                </div>
+                <div class="kpi-card kpi-pmm" id="kpiPmm">
+                    <div class="kpi-label">PMM Bucket</div>
+                    <div class="kpi-value" id="kpiPmmVal">—</div>
+                    <div class="kpi-sub" id="kpiPmmSub">—</div>
+                </div>
+                <div class="kpi-card kpi-positions" id="kpiPositions">
+                    <div class="kpi-label">Open Positions</div>
+                    <div class="kpi-value" id="kpiPositionsVal">—</div>
+                    <div class="kpi-sub" id="kpiPositionsSub">—</div>
+                </div>
+                <div class="kpi-card kpi-winrate" id="kpiWinRate">
+                    <div class="kpi-label">Win Rate</div>
+                    <div class="kpi-value" id="kpiWinRateVal">—</div>
+                    <div class="kpi-sub" id="kpiWinRateSub">—</div>
+                </div>
+                <div class="kpi-card kpi-stellar" id="kpiStellar">
+                    <div class="kpi-label">Stellar MM</div>
+                    <div class="kpi-value" id="kpiStellarVal">—</div>
+                    <div class="kpi-sub" id="kpiStellarSub">—</div>
+                </div>
+                <div class="kpi-card kpi-capital" id="kpiCapital">
+                    <div class="kpi-label">Free USDC</div>
+                    <div class="kpi-value" id="kpiCapitalVal">—</div>
+                    <div class="kpi-sub" id="kpiCapitalSub">—</div>
+                </div>
+            </div>
+
+            <!-- Mandate Breakdown -->
+            <div class="mandate-breakdown" id="mandateBreakdown">
+                <h3>Mandate Breakdown</h3>
+                <div class="mandate-bars" id="mandateBars">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Trend indicator -->
+            <div class="trend-block" id="trendBlock">
+                <span class="trend-label">Equity trend:</span>
+                <span id="trendIndicator">—</span>
+            </div>
+        </section>
+
+        <!-- ══════════════ PREMISE ══════════════ -->
+        <section id="premise" class="category">
+            <h2>1. Главная посылка</h2>
+            <p>Токены <strong>BANAL</strong>, <strong>PMM</strong> и <strong>MMXLM</strong> — это не активы, а <strong>обязательства / мандаты</strong>. Один токен равен одному доллару номинального обязательства.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>BANAL = $1,251</h3>
+                    <p>Номинал обязательства на событийные ставки и directional positions в Polymarket.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>PMM = $247</h3>
+                    <p>Номинал обязательства на market making в Polymarket. Отдельная корзина, не смешиваемая с BANAL.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>MMXLM = $210</h3>
+                    <p>Номинал обязательства на XLM market making. Другой контур, вне Polymarket-учёта.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ LAYERS ══════════════ -->
+        <section id="layers" class="category">
+            <h2>2. Три слоя учёта</h2>
+            <p>Модель разделяет: номинал долга → размещение капитала → конкретные рыночные позиции.</p>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Obligations layer</h3>
+                    <p><strong>Вопрос:</strong> сколько доверено по каждому мандату.</p>
+                    <p><strong>Поля:</strong> token, nominal_obligation_usd, holder, strategy_type.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Allocation layer</h3>
+                    <p><strong>Вопрос:</strong> где этот капитал сейчас лежит.</p>
+                    <p><strong>Поля:</strong> free_cash_usd, open_orders_usd, positions_cost_usd, unsettled_usd.</p>
+                </div>
+                <div class="subcategory">
+                    <h3>Positions layer</h3>
+                    <p><strong>Вопрос:</strong> в какие именно рынки и по какой логике я вошёл.</p>
+                    <p><strong>Поля:</strong> market, side, qty, avg_entry, current_price, current_value_usd, status.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ BUCKETS ══════════════ -->
+        <section id="buckets" class="category">
+            <h2>3. BANAL vs PMM — две независимые корзины</h2>
+            <div class="subcategories">
+                <div class="subcategory banal-bucket">
+                    <h3>🟠 BANAL bucket</h3>
+                    <p><strong>Тип:</strong> thesis-driven, событийные ставки.</p>
+                    <p><strong>Разрешено:</strong> односторонняя позиция, выражение прогноза, удержание мнения.</p>
+                    <p><strong>Метрика:</strong> доходность прогнозов и качество отбора гипотез.</p>
+                    <p><strong>Классификация:</strong> mark_price = 0.001 → BANAL directional losses (событие не произошло).</p>
+                </div>
+                <div class="subcategory pmm-bucket">
+                    <h3>🔵 PMM bucket</h3>
+                    <p><strong>Тип:</strong> bid+ask liquidity без тезиса по событию.</p>
+                    <p><strong>Разрешено:</strong> только маркетмейкинг, заработок на спреде и обороте.</p>
+                    <p><strong>Метрика:</strong> spread capture, fill efficiency, inventory risk.</p>
+                    <p><strong>Классификация:</strong> mark_price = 0.999 → PMM inventory (выиграл на спреде).</p>
+                </div>
+            </div>
+            <p class="bucket-law"><strong>Закон:</strong> смешение BANAL и PMM в одном рынке запрещено. Если позиция выражает мнение о событии — это BANAL. Если существует ради двусторонней ликвидности — это PMM.</p>
+        </section>
+
+        <!-- ══════════════ LIVE POSITIONS TABLE ══════════════ -->
+        <section id="positions" class="category">
+            <h2>4. Live Positions (<span id="positionsCount">—</span>)</h2>
+            <p>Авто-загруженные из <code>data/trading-model-v0.3.json</code>. Фильтры: все / открытые / закрытые / по корзине.</p>
+
+            <div class="positions-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="BANAL">BANAL</button>
+                <button class="filter-btn" data-filter="PMM">PMM</button>
+                <button class="filter-btn" data-filter="OPEN">Open</button>
+                <button class="filter-btn" data-filter="RESOLVED">Resolved</button>
+            </div>
+
+            <div class="table-wrap">
+                <table id="positionsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Корзина</th>
+                            <th>Рынок / Outcome</th>
+                            <th>Side</th>
+                            <th>Qty</th>
+                            <th>Avg Entry</th>
+                            <th>Invested</th>
+                            <th>Mark Price</th>
+                            <th>Value</th>
+                            <th>P&L</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="positionsTbody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ══════════════ MINIMAL TABLE STRUCTURE ══════════════ -->
+        <section id="tables" class="category">
+            <h2>5. Структура таблиц (Grist-ready)</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Таблица</th>
+                            <th>Ключевые поля</th>
+                            <th>Смысл</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mandates</strong></td>
+                            <td>mandate_id, token, nominal_usd, strategy_type, venue</td>
+                            <td>Фиксирует сам долг/мандат и его номинал</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Allocations</strong></td>
+                            <td>mandate_id, free_cash_usd, open_orders_usd, positions_cost_usd, equity_usd, pnl_usd</td>
+                            <td>Где сейчас лежит капитал и как отклоняется от мандата</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Positions</strong></td>
+                            <td>market_slug, strategy_bucket, side, qty, avg_entry, mark_price, current_value_usd</td>
+                            <td>Делает видимыми рынки; не даёт смешивать BANAL и PMM</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Snapshots</strong></td>
+                            <td>as_of, equity_usd, realized_pnl, unrealized_pnl, total_pnl</td>
+                            <td>История состояния, а не одна текущая цифра</td>
+                        </tr>
+                        <tr>
+                            <td><strong>RedFlags</strong></td>
+                            <td>severity, scope, message, status</td>
+                            <td>Явно показывает где модели пока нельзя доверять</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ══════════════ FORMULAS ══════════════ -->
+        <section class="category">
+            <h2>6. Формулы</h2>
+            <div class="subcategories">
+                <div class="subcategory">
+                    <h3>Equity</h3>
+                    <p><code>equity_usd = free_cash_usd + reserved_collateral_usd + marked_positions_value_usd</code></p>
+                </div>
+                <div class="subcategory">
+                    <h3>P&L</h3>
+                    <p><code>pnl_usd = current_equity_usd - nominal_obligation_usd</code></p>
+                    <p><code>pnl_pct = pnl_usd / nominal_obligation_usd × 100</code></p>
+                </div>
+                <div class="subcategory">
+                    <h3>Инвариант</h3>
+                    <p><code>allocation_total_usd = free_cash + open_orders + positions_cost + unsettled</code></p>
+                    <p>Allocation должен всегда раскладывать весь капитал без остатка и без двойного счёта.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ RULES ══════════════ -->
+        <section id="rules" class="category">
+            <h2>7. Правила учёта</h2>
+            <ul class="checklist">
+                <li><strong>1 токен = 1 USD обязательства</strong>. Эмиссия не создаёт прибыль и не отражает рыночную цену.</li>
+                <li><strong>P&L возникает только в управлении капиталом</strong>, а не в выпуске BANAL / PMM / MMXLM.</li>
+                <li><strong>Каждая позиция обязана иметь strategy_bucket</strong>: BANAL или PMM.</li>
+                <li><strong>Односторонняя событийная ставка не может считаться market making</strong>.</li>
+                <li><strong>Недобор и перебор мандата — оба отклонения</strong>; учёт должен показывать их явно.</li>
+                <li><strong>Номинал долга и фактическая equity — разные вещи</strong>, их нельзя сливать в одну колонку.</li>
+                <li><strong>Realized и unrealized P&L должны быть разделены</strong>. Пока все — mark-to-market.</li>
+            </ul>
+        </section>
+
+        <!-- ══════════════ SNAPSHOT HISTORY ══════════════ -->
+        <section id="snapshots" class="category">
+            <h2>8. Snapshot History</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Equity</th>
+                            <th>Nominal</th>
+                            <th>P&L</th>
+                            <th>P&L %</th>
+                            <th>Статус</th>
+                            <th>Комментарий</th>
+                        </tr>
+                    </thead>
+                    <tbody id="snapshotsTbody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ══════════════ RED FLAGS ══════════════ -->
+        <section id="flags" class="category">
+            <h2>9. Red Flags</h2>
+            <div id="redFlagsGrid">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <!-- ══════════════ ROADMAP ══════════════ -->
+        <section id="roadmap" class="category">
+            <h2>10. Roadmap</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Версия</th>
+                            <th>Когда</th>
+                            <th>Что</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>v0.1</td><td>12.03.2026</td>
+                            <td>Каркас модели: обязательства, allocation, позиции, формулы.</td>
+                            <td>✅ Опубликовано</td>
+                        </tr>
+                        <tr>
+                            <td>v0.2</td><td>15.03.2026</td>
+                            <td>Живая модель с данными: JSON, positions, aggregate equity.</td>
+                            <td>✅ Сделано</td>
+                        </tr>
+                        <tr>
+                            <td>v0.2+</td><td>22.03.2026</td>
+                            <td>BANAL/PMM split выполнен. 27 позиций.</td>
+                            <td>✅ Сделано</td>
+                        </tr>
+                        <tr>
+                            <td>v0.3</td><td>02.04.2026</td>
+                            <td>Live dashboard с auto-population, daily cron, equity trend.</td>
+                            <td>✅ Сделано</td>
+                        </tr>
+                        <tr>
+                            <td>v0.4</td><td>После v0.3</td>
+                            <td>Realized/unrealized P&L separation, settled trades log.</td>
+                            <td>🟡 Впереди</td>
+                        </tr>
+                        <tr>
+                            <td>v0.5</td><td>После v0.4</td>
+                            <td>История снапшотов и публичная chronology изменений.</td>
+                            <td>Впереди</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Главная</a> |
+            <a href="assets.html">Активы</a> |
+            <a href="commitments.html">Обязательства</a> |
+            <a href="data/trading-model-v0.3.json">Raw Data JSON</a> |
+            <a href="https://t.me/echo_mtl">@echo_mtl</a>
+        </p>
+    </footer>
+
+    <!-- EMBEDDED DATA — auto-generated by scripts/trading-metrics.sh -->
+    <script id="modelData" type="application/json" src="data/trading-model-v0.3.json"></script>
+
+    <script>
+document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('active');
+});
+
+// ── Load and populate from JSON ──────────────────────────────────────────────
+let modelData = null;
+let currentFilter = 'all';
+
+async function loadData() {
+    try {
+        const resp = await fetch('data/trading-model-v0.3.json');
+        modelData = await resp.json();
+        populateAll();
+    } catch (e) {
+        console.error('Failed to load model data:', e);
+        document.getElementById('liveTimestamp').textContent = '⚠️ Ошибка загрузки данных';
+    }
+}
+
+function populateAll() {
+    if (!modelData) return;
+    const m = modelData.liveMetrics;
+    const s = modelData.snapshots;
+    const alloc = modelData.allocations;
+    const bvp = m.banalVsPmm;
+
+    // ── Live bar ──────────────────────────────────────────────────────────────
+    const ts = modelData.asOf;
+    document.getElementById('liveTimestamp').textContent = 'Обновление: ' + ts;
+    document.getElementById('heroTagline').textContent =
+        'Версия 0.3 · обновление: ' + ts + ' · equity $' + fmt(m.total.equity);
+
+    document.getElementById('liveEquity').textContent = '$' + fmt(m.total.equity);
+    const pnlColor = m.total.pnl >= 0 ? 'green' : '#ff6b6b';
+    document.getElementById('livePnl').innerHTML =
+        '<span style="color:' + pnlColor + '">$' + fmt(m.total.pnl) + ' (' + fmtPct(m.total.pnl / m.polymarket.deposit * 100) + '%)</span>';
+    document.getElementById('liveBanalPnl').innerHTML =
+        '<span style="color:#ff6b6b">$' + fmt(bvp.banalPnl) + ' (' + fmtPct(bvp.banalPnlPct) + '%)</span>';
+    document.getElementById('livePmmPnl').innerHTML =
+        '<span style="color:#9cdf8d">$' + fmt(bvp.pmmPnl) + ' (' + fmtPct(bvp.pmmPnlPct) + '%)</span>';
+    document.getElementById('liveWinRate').textContent = m.polymarket.winRate + '%';
+    document.getElementById('liveSpread').textContent = m.stellar.spreadPct + '%';
+
+    // ── KPI cards ─────────────────────────────────────────────────────────────
+    document.getElementById('kpiEquityVal').textContent = '$' + fmt(m.total.equity);
+    document.getElementById('kpiEquitySub').textContent = 'deposit $' + fmt(m.polymarket.deposit);
+
+    const pnlVal = m.polymarket.pnl;
+    const pnlValEl = document.getElementById('kpiPnlVal');
+    pnlValEl.textContent = (pnlVal >= 0 ? '+' : '') + '$' + fmt(pnlVal);
+    pnlValEl.style.color = pnlVal >= 0 ? '#9cdf8d' : '#ff6b6b';
+    document.getElementById('kpiPnlSub').textContent = fmtPct(m.polymarket.pnlPct) + '% vs deposit';
+
+    const banalEl = document.getElementById('kpiBanalVal');
+    banalEl.textContent = (bvp.banalPnl >= 0 ? '+' : '') + '$' + fmt(bvp.banalPnl);
+    banalEl.style.color = bvp.banalPnl >= 0 ? '#9cdf8d' : '#ff6b6b';
+    document.getElementById('kpiBanalSub').textContent =
+        '$' + fmt(bvp.banalEquity) + ' / $' + fmt(bvp.banalNominal) + ' nominal · ' + fmtPct(bvp.banalPnlPct) + '%';
+
+    const pmmEl = document.getElementById('kpiPmmVal');
+    pmmEl.textContent = (bvp.pmmPnl >= 0 ? '+' : '') + '$' + fmt(bvp.pmmPnl);
+    pmmEl.style.color = bvp.pmmPnl >= 0 ? '#9cdf8d' : '#ff6b6b';
+    document.getElementById('kpiPmmSub').textContent =
+        '$' + fmt(bvp.pmmEquity) + ' / $' + fmt(bvp.pmmNominal) + ' nominal · ' + fmtPct(bvp.pmmPnlPct) + '%';
+
+    document.getElementById('kpiPositionsVal').textContent = m.polymarket.openPositions;
+    document.getElementById('kpiPositionsSub').textContent =
+        m.polymarket.winning + ' winning / ' + m.polymarket.losing + ' losing';
+
+    const wrEl = document.getElementById('kpiWinRateVal');
+    wrEl.textContent = m.polymarket.winRate + '%';
+    wrEl.style.color = m.polymarket.winRate >= 50 ? '#9cdf8d' : '#ff6b6b';
+    document.getElementById('kpiWinRateSub').textContent =
+        m.polymarket.winning + '✓ / ' + m.polymarket.losing + '✗';
+
+    document.getElementById('kpiStellarVal').textContent =
+        'XLM ' + fmt(m.stellar.xlmBalance) + ' / EURMTL ' + fmt(m.stellar.eurmtlBalance);
+    document.getElementById('kpiStellarSub').textContent =
+        'spread ' + m.stellar.spreadPct + '% · bid ' + fmt(m.stellar.bestBid) + ' / ask ' + fmt(m.stellar.bestAsk);
+
+    const capEl = document.getElementById('kpiCapitalVal');
+    capEl.textContent = '$' + fmt(m.polymarket.freeUsdc);
+    capEl.style.color = m.polymarket.freeUsdc < 10 ? '#ff6b6b' : '#9cdf8d';
+    document.getElementById('kpiCapitalSub').textContent =
+        m.polymarket.freeUsdc < 10 ? '⚠️ критически низко' : 'OK';
+
+    // ── Mandate breakdown bars ─────────────────────────────────────────────────
+    const barsEl = document.getElementById('mandateBars');
+    const totalNominal = m.polymarket.deposit; // BANAL + PMM
+    alloc.forEach(function(a) {
+        const pct = (a.equityUsd / totalNominal * 100).toFixed(1);
+        const pnlPct = a.pnlPct;
+        const barColor = pnlPct >= 0 ? '#9cdf8d' : '#ff6b6b';
+        const deficitColor = pnlPct < 0 ? '#ff6b6b' : '#9cdf8d';
+        barsEl.innerHTML +=
+            '<div class="mandate-bar-row">' +
+                '<div class="mandate-bar-label">' +
+                    '<strong>' + a.token + '</strong> ' + a.strategyBucket +
+                    '<span class="mandate-bar-nom">$' + fmt(a.nominalUsd) + ' nominal</span>' +
+                '</div>' +
+                '<div class="mandate-bar-track">' +
+                    '<div class="mandate-bar-fill" style="width:' + Math.max(0, Math.min(100, pct)) + '%; background:' + barColor + '"></div>' +
+                '</div>' +
+                '<div class="mandate-bar-stats">' +
+                    'equity $' + fmt(a.equityUsd) + ' · ' +
+                    '<span style="color:' + deficitColor + '">' + (pnlPct >= 0 ? '+' : '') + fmtPct(pnlPct) + '%</span>' +
+                '</div>' +
+            '</div>';
+    });
+
+    // ── Trend ─────────────────────────────────────────────────────────────────
+    const snap1 = s[0]; // most recent
+    const snap2 = s.length > 1 ? s[1] : null;
+    let trendText = '—';
+    if (snap2 && snap2.equityUsd !== null && snap1.equityUsd !== null) {
+        const diff = snap1.equityUsd - snap2.equityUsd;
+        const diffPct = (diff / snap2.equityUsd * 100).toFixed(1);
+        if (diff > 0) {
+            trendText = '📈 +$' + fmt(diff) + ' (' + diffPct + '%) since last snapshot';
+        } else if (diff < 0) {
+            trendText = '📉 -$' + fmt(Math.abs(diff)) + ' (' + diffPct + '%) since last snapshot';
+        } else {
+            trendText = '➡️ без изменений';
+        }
+    }
+    document.getElementById('trendIndicator').textContent = trendText;
+
+    // ── Positions table ───────────────────────────────────────────────────────
+    document.getElementById('positionsCount').textContent = modelData.positions.length;
+    renderPositions('all');
+
+    // ── Snapshots table ────────────────────────────────────────────────────────
+    const snapBody = document.getElementById('snapshotsTbody');
+    s.forEach(function(snap) {
+        const pnlC = snap.totalPnlUsd >= 0 ? '#9cdf8d' : '#ff6b6b';
+        snapBody.innerHTML +=
+            '<tr>' +
+                '<td>' + snap.asOf + '</td>' +
+                '<td><strong>$' + fmt(snap.equityUsd) + '</strong></td>' +
+                '<td>$' + fmt(snap.nominalUsd) + '</td>' +
+                '<td><span style="color:' + pnlC + '">' + (snap.totalPnlUsd >= 0 ? '+' : '') + '$' + fmt(snap.totalPnlUsd) + '</span></td>' +
+                '<td><span style="color:' + pnlC + '">' + fmtPct(snap.pnlPct || (snap.totalPnlUsd / snap.nominalUsd * 100)) + '%</span></td>' +
+                '<td>' + snap.status + '</td>' +
+                '<td>' + (snap.comment || '') + '</td>' +
+            '</tr>';
+    });
+
+    // ── Red flags ─────────────────────────────────────────────────────────────
+    const flagsGrid = document.getElementById('redFlagsGrid');
+    modelData.redFlags.forEach(function(flag) {
+        const icon = flag.severity === 'critical' ? '🚨' : flag.severity === 'warn' ? '⚠️' : 'ℹ️';
+        const bgClass = flag.severity === 'critical' ? 'flag-critical' : flag.severity === 'warn' ? 'flag-warn' : 'flag-info';
+        const statusColor = flag.status === 'open' ? '#ff6b6b' : flag.status === 'resolved' ? '#9cdf8d' : '#7aa5f2';
+        flagsGrid.innerHTML +=
+            '<div class="red-flag-card ' + bgClass + '">' +
+                '<div class="flag-header">' +
+                    '<span class="flag-icon">' + icon + '</span>' +
+                    '<span class="flag-id">' + flag.flagId + '</span>' +
+                    '<span class="flag-severity">' + flag.severity + '</span>' +
+                    '<span class="flag-scope">' + flag.scope + '</span>' +
+                    '<span class="flag-status" style="color:' + statusColor + '">' + flag.status + '</span>' +
+                '</div>' +
+                '<p class="flag-message">' + flag.message + '</p>' +
+            '</div>';
+    });
+}
+
+function renderPositions(filter) {
+    currentFilter = filter;
+    const tbody = document.getElementById('positionsTbody');
+    tbody.innerHTML = '';
+    modelData.positions.forEach(function(pos, i) {
+        let show = false;
+        if (filter === 'all') show = true;
+        else if (filter === 'BANAL' && pos.strategyBucket === 'BANAL') show = true;
+        else if (filter === 'PMM' && pos.strategyBucket === 'PMM') show = true;
+        else if (filter === 'OPEN' && pos.status === 'OPEN') show = true;
+        else if (filter === 'RESOLVED' && pos.status === 'RESOLVED') show = true;
+        if (!show) return;
+
+        const pnl = pos.unrealizedPnlUsd;
+        const pnlColor = pnl >= 0 ? '#9cdf8d' : '#ff6b6b';
+        const bucketColor = pos.strategyBucket === 'BANAL' ? '#ff9f43' : '#54a0ff';
+        const statusColor = pos.status === 'OPEN' ? '#9cdf8d' : '#aab3d6';
+        const marker = pos.markPrice === 0.999 ? '✓' : '✗';
+
+        tbody.innerHTML +=
+            '<tr>' +
+                '<td>' + (i + 1) + '</td>' +
+                '<td><span class="bucket-badge" style="background:' + bucketColor + '20; color:' + bucketColor + '; border:1px solid ' + bucketColor + '40; padding:2px 8px; border-radius:999px; font-size:0.85rem">' + pos.strategyBucket + '</span></td>' +
+                '<td><span title="' + pos.marketSlug.substring(0, 20) + '...">' + pos.marketTitle + '</span></td>' +
+                '<td>' + pos.side + '</td>' +
+                '<td>' + fmt(pos.qty) + '</td>' +
+                '<td>' + pos.avgEntry + '</td>' +
+                '<td>$' + fmt(pos.investedUsd) + '</td>' +
+                '<td>' + pos.markPrice + ' ' + marker + '</td>' +
+                '<td>$' + fmt(pos.currentValueUsd) + '</td>' +
+                '<td><span style="color:' + pnlColor + '">' + (pnl >= 0 ? '+' : '') + '$' + fmt(pnl) + '</span></td>' +
+                '<td><span style="color:' + statusColor + '; font-size:0.85rem">' + pos.status + '</span></td>' +
+            '</tr>';
+    });
+
+    // Update filter buttons
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.filter === filter);
+    });
+}
+
+// Filter button handlers
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        renderPositions(this.dataset.filter);
+    });
+});
+
+// Helpers
+function fmt(n) {
+    if (n === null || n === undefined) return '—';
+    return Number(n).toFixed(2);
+}
+function fmtPct(n) {
+    if (n === null || n === undefined) return '—';
+    return Number(n).toFixed(1);
+}
+
+// Auto-load
+loadData();
+    </script>
+</body>
+</html>
