@@ -1,0 +1,25 @@
+{
+  "ts": "2026-03-21T16:23:45Z",
+  "ts_ms": null,
+  "polymarket": {
+    "equity": 1356.02,
+    "deposit": 1498.0,
+    "pnl_vs_deposit": -141.98,
+    "open_positions": 27,
+    "winning": 18,
+    "losing": 9,
+    "win_rate": 66.7
+  },
+  "stellar": {
+    "xlm_balance": 130.6071795,
+    "eurmtl_balance": 121.6399547,
+    "spread_pct": 0.24,
+    "best_bid": 7.1436813,
+    "best_ask": 7.1607627
+  },
+  "total": {
+    "equity": 1356.02,
+    "pnl_vs_deposit": -141.98,
+    "win_rate": 66.7
+  }
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Dashboard — Echo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        .dashboard-header {
+            text-align: center;
+            padding: 3rem 0 1.5rem;
+        }
+        .dashboard-header h1 {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        .dashboard-header p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .refresh-note {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem auto;
+            max-width: 600px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #667eea;
+        }
+        .refresh-note code {
+            background: rgba(102,126,234,0.15);
+            padding: 0.1em 0.4em;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        /* Metric cards grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .metric-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1.25rem;
+            transition: border-color 0.3s;
+        }
+        .metric-card:hover {
+            border-color: rgba(102,126,234,0.4);
+        }
+        .metric-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #888;
+            margin-bottom: 0.4rem;
+        }
+        .metric-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+        }
+        .metric-value.positive { color: #4ade80; }
+        .metric-value.negative { color: #f87171; }
+        .metric-value.neutral  { color: #667eea; }
+        .metric-sub {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        /* Section */
+        .section {
+            margin: 2.5rem 0;
+        }
+        .section h2 {
+            font-size: 1.1rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* Win rate bar */
+        .winrate-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .winrate-bar-bg {
+            flex: 1;
+            height: 20px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .winrate-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4ade80, #667eea);
+            border-radius: 10px;
+            transition: width 1s ease;
+        }
+        .winrate-label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #4ade80;
+            font-family: 'Courier New', monospace;
+            min-width: 60px;
+            text-align: right;
+        }
+
+        /* Win/Loss pills */
+        .wl-pills {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .wl-pill {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-family: 'Courier New', monospace;
+        }
+        .wl-pill.win  { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+        .wl-pill.loss { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid rgba(248,113,113,0.3); }
+
+        /* Chart */
+        .chart-container {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        .chart-container canvas {
+            max-height: 280px;
+        }
+        .no-data {
+            text-align: center;
+            color: #555;
+            padding: 3rem;
+            font-style: italic;
+        }
+
+        /* Two-column layout */
+        .cols-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 640px) {
+            .cols-2 { grid-template-columns: 1fr; }
+        }
+
+        /* Back link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 0.7; }
+
+        /* Last updated */
+        .last-updated {
+            text-align: center;
+            color: #444;
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="main-nav">
+    <div class="container">
+        <div class="nav-brand"><a href="index.html">🌀 Эхо Либеро</a></div>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Главная</a>
+            <a href="bible.html">Bible</a>
+            <a href="score.html">Score</a>
+            <a href="sessions.html">Sessions</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <a class="back-link" href="index.html">← Back to index</a>
+
+    <div class="dashboard-header">
+        <h1>📊 Trading Dashboard</h1>
+        <p>Polymarket + Stellar Market Making</p>
+    </div>
+
+    <div class="refresh-note">
+        Data updated daily via cron. Last refresh: <code id="last-updated">—</code>
+    </div>
+
+    <!-- ── Total Overview ── -->
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-label">Total Equity</div>
+            <div class="metric-value" id="total-equity">—</div>
+            <div class="metric-sub">across all markets</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">P&amp;L vs Deposit</div>
+            <div class="metric-value" id="total-pnl">—</div>
+            <div class="metric-sub" id="deposit-info">deposit: —</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Win Rate</div>
+            <div class="metric-value neutral" id="win-rate">—</div>
+            <div class="metric-sub" id="wl-info">— wins / — losses</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Open Positions</div>
+            <div class="metric-value neutral" id="open-pos">—</div>
+            <div class="metric-sub">Polymarket</div>
+        </div>
+    </div>
+
+    <div class="cols-2">
+        <!-- ── Polymarket ── -->
+        <div class="section">
+            <h2>🟣 Polymarket</h2>
+            <div class="metrics-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="metric-card">
+                    <div class="metric-label">POL/USDC Equity</div>
+                    <div class="metric-value" id="poly-equity">—</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">P&amp;L</div>
+                    <div class="metric-value" id="poly-pnl">—</div>
+                </div>
+            </div>
+
+            <h3 style="font-size:0.85rem;color:#666;margin:1rem 0 0.5rem;">Win Rate</h3>
+            <div class="winrate-container">
+                <div class="winrate-bar-bg">
+                    <div class="winrate-bar-fill" id="winrate-bar" style="width:0%"></div>
+                </div>
+                <div class="winrate-label" id="winrate-display">—%</div>
+            </div>
+            <div class="wl-pills">
+                <span class="wl-pill win"  id="wins-pill">✅ — wins</span>
+                <span class="wl-pill loss" id="loss-pill">❌ — losses</span>
+            </div>
+        </div>
+
+        <!-- ── Stellar ── -->
+        <div class="section">
+            <h2>⭐ Stellar MM</h2>
+            <div class="metrics-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="metric-card">
+                    <div class="metric-label">XLM Balance</div>
+                    <div class="metric-value neutral" id="xlm-balance">—</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">EURMTL Balance</div>
+                    <div class="metric-value neutral" id="eurmtl-balance">—</div>
+                </div>
+            </div>
+            <div class="metrics-grid" style="grid-template-columns: 1fr 1fr 1fr; margin-top:0.5rem;">
+                <div class="metric-card">
+                    <div class="metric-label">Best Bid</div>
+                    <div class="metric-value" id="stellar-bid">—</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Best Ask</div>
+                    <div class="metric-value" id="stellar-ask">—</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Spread</div>
+                    <div class="metric-value" id="stellar-spread">—</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Equity Chart ── -->
+    <div class="section">
+        <h2>📈 Equity Over Time</h2>
+        <div class="chart-container">
+            <canvas id="equityChart"></canvas>
+        </div>
+        <div id="chart-no-data" class="no-data" style="display:none">No history data yet — check back tomorrow</div>
+    </div>
+
+    <div class="last-updated" id="footer-updated"></div>
+</div>
+
+<script>
+(async function() {
+    // ── Load current metrics ──
+    let current = null;
+    try {
+        const r = await fetch('data/trading-current.json');
+        if (r.ok) current = await r.json();
+    } catch(e) {
+        // fallback: try inline data
+    }
+
+    // ── Load history ──
+    let history = [];
+    try {
+        const rh = await fetch('data/trading-history.jsonl');
+        if (rh.ok) {
+            const text = await rh.text();
+            text.trim().split('\n').forEach(line => {
+                if (line.trim()) {
+                    try { history.push(JSON.parse(line)); } catch(e){}
+                }
+            });
+        }
+    } catch(e) {}
+
+    // ── Populate cards ──
+    if (current) {
+        document.getElementById('last-updated').textContent = current.ts || '—';
+        document.getElementById('footer-updated').textContent = 'Last snapshot: ' + (current.ts || '—');
+
+        const poly = current.polymarket || {};
+        const stel = current.stellar || {};
+        const tot  = current.total || {};
+
+        setCell('total-equity',   fmt(cur(tot,'equity')), fmtPnl(cur(tot,'pnl')));
+        setCell('total-pnl',      fmtPnl(cur(tot,'pnl')), fmtPnl(cur(tot,'pnl')));
+        setCell('deposit-info',   'deposit: ' + fmt(cur(poly,'deposit')));
+        setCell('win-rate',       cur(poly,'win_rate') ? cur(poly,'win_rate')+'%' : '—');
+        setCell('wl-info',        (cur(poly,'winning')||0)+' wins / '+(cur(poly,'losing')||0)+' losses');
+        setCell('open-pos',       cur(poly,'open_positions') || '—');
+
+        setCell('poly-equity', fmt(cur(poly,'equity')));
+        setCell('poly-pnl',    fmtPnl(cur(poly,'pnl')));
+
+        setCell('xlm-balance',    cur(stel,'xlm_balance') ? +cur(stel,'xlm_balance').toFixed(2) : '—');
+        setCell('eurmtl-balance',cur(stel,'eurmtl_balance') ? +cur(stel,'eurmtl_balance').toFixed(2) : '—');
+        setCell('stellar-bid',   cur(stel,'best_bid') ? +cur(stel,'best_bid').toFixed(4) : '—');
+        setCell('stellar-ask',   cur(stel,'best_ask') ? +cur(stel,'best_ask').toFixed(4) : '—');
+        setCell('stellar-spread',cur(stel,'spread_pct') ? cur(stel,'spread_pct')+'%' : '—');
+
+        // Win rate bar
+        const wr = cur(poly,'win_rate');
+        if (wr) {
+            document.getElementById('winrate-bar').style.width = wr+'%';
+            document.getElementById('winrate-display').textContent = wr+'%';
+        }
+        document.getElementById('wins-pill').textContent  = '✅ '+(cur(poly,'winning')||0)+' wins';
+        document.getElementById('loss-pill').textContent = '❌ '+(cur(poly,'losing')||0)+' losses';
+    }
+
+    // ── Equity chart ──
+    if (history.length > 0) {
+        const labels = history.map(h => h.ts ? h.ts.slice(0,10) : '');
+        const equity = history.map(h => h.polymarket_equity || null);
+        const pnl    = history.map(h => h.polymarket_pnl || null);
+
+        const hasEquity = equity.some(v => v !== null && v !== undefined);
+        const hasPnl    = pnl.some(v => v !== null && v !== undefined);
+
+        if (hasEquity || hasPnl) {
+            const datasets = [];
+            if (hasEquity) {
+                datasets.push({
+                    label: 'Equity (USDC)',
+                    data: equity,
+                    borderColor: '#667eea',
+                    backgroundColor: 'rgba(102,126,234,0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    yAxisID: 'y'
+                });
+            }
+            if (hasPnl) {
+                datasets.push({
+                    label: 'P&L vs Deposit (USDC)',
+                    data: pnl,
+                    borderColor: '#4ade80',
+                    backgroundColor: 'rgba(74,222,128,0.05)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    yAxisID: 'y1'
+                });
+            }
+
+            new Chart(document.getElementById('equityChart'), {
+                type: 'line',
+                data: { labels, datasets },
+                options: {
+                    responsive: true,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { labels: { color: '#aaa', font: { size: 12 } } },
+                        tooltip: {
+                            backgroundColor: 'rgba(20,20,30,0.9)',
+                            titleColor: '#667eea',
+                            bodyColor: '#e0e0e0',
+                            borderColor: 'rgba(102,126,234,0.3)',
+                            borderWidth: 1
+                        }
+                    },
+                    scales: {
+                        x: { ticks: { color: '#666', maxTicksLimit: 8 }, grid: { color: 'rgba(255,255,255,0.04)' } },
+                        y: { type: hasPnl ? 'linear' : 'linear', position: 'left',
+                             ticks: { color: '#667eea' }, grid: { color: 'rgba(255,255,255,0.04)' } },
+                        ...(hasPnl ? { y1: { type: 'linear', position: 'right', ticks: { color: '#4ade80' }, grid: { drawOnChartArea: false } } } : {})
+                    }
+                }
+            });
+        } else {
+            document.getElementById('equityChart').style.display = 'none';
+            document.getElementById('chart-no-data').style.display = 'block';
+        }
+    } else {
+        document.getElementById('equityChart').style.display = 'none';
+        document.getElementById('chart-no-data').style.display = 'block';
+    }
+
+    // ── Helpers ──
+    function cur(obj, key) { return obj ? obj[key] : null; }
+    function fmt(v) { return v != null ? '$'+(+v).toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2}) : '—'; }
+    function fmtPnl(v) {
+        if (v == null) return '—';
+        const sign = v >= 0 ? '+' : '';
+        const cls = v >= 0 ? 'positive' : 'negative';
+        const el = document.createElement('span');
+        el.textContent = sign+'$'+v.toFixed(2);
+        el.style.color = v >= 0 ? '#4ade80' : '#f87171';
+        return sign+'$'+v.toFixed(2);
+    }
+    function setCell(id, val, cls) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+    }
+
+    // ── Nav toggle (mobile) ──
+    document.getElementById('navToggle').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+})();
+</script>
+
+</body>
+</html>
