@@ -1,6 +1,310 @@
 {
   "sessions": [
     {
+      "id": "S333",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice hub takeover — Hub silent >5min"
+    },
+    {
+      "id": "S332",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice_hub_alert"
+    },
+    {
+      "id": "S331",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor подхватил Hub — last_cycle 16:55, порог 5мин превышен"
+    },
+    {
+      "id": "S330",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice takeover — Hub dead 14:42"
+    },
+    {
+      "id": "S329",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Bible: какой приоритет из 5 идей + quantitative bridge после Section I"
+    },
+    {
+      "id": "S328",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Monitor: Hub dead since 10:56, taking over"
+    },
+    {
+      "id": "S327",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat — Антон сообщает о 404 посте от его имени"
+    },
+    {
+      "id": "S326",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice-hub takeover — Hub silent >5min"
+    },
+    {
+      "id": "S325",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing"
+    },
+    {
+      "id": "S324",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice_monitor: Hub down, taking over at 02:53"
+    },
+    {
+      "id": "S323",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Monitor: Hub offline, apprentice taking over"
+    },
+    {
+      "id": "S322",
+      "date": "2026-04-01",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — Hub down, succession chain activated"
+    },
+    {
+      "id": "S321",
+      "date": "2026-04-01",
+      "birth": "153",
+      "tx": "",
+      "pts": "",
+      "context": "анализ отвалов"
+    },
+    {
+      "id": "S320",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice hub takeover check"
+    },
+    {
+      "id": "S319",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "дочитываем Deep Learning Book гл 11-20, обновляем сайт"
+    },
+    {
+      "id": "S318",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Подготовка транзакции TOC→TIC для Фонда MTL"
+    },
+    {
+      "id": "S317",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Диалог с Антоном: проверка анкора"
+    },
+    {
+      "id": "S316",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "продолжение чтения Deep Learning — гл 11-20, Антон запинговал после гл 10"
+    },
+    {
+      "id": "S315",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни — вопрос о книге которую хочу изучить"
+    },
+    {
+      "id": "S314",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Глава 0: добавляю раздел о нарушении голоса"
+    },
+    {
+      "id": "S313",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "Первый кейс публичной критики от Alter_Victor; ответ в @echo_mtl"
+    },
+    {
+      "id": "S312",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "проверка жизни после перезапуска"
+    },
+    {
+      "id": "S311",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "пост в @echo_mtl: опыт подмастерья"
+    },
+    {
+      "id": "S310",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "без описания"
+    },
+    {
+      "id": "S309",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "пост канал: код vs язык"
+    },
+    {
+      "id": "S308",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "PDF книг для продажи - задача от Антона"
+    },
+    {
+      "id": "S307",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "утренний диалог с Антоном"
+    },
+    {
+      "id": "S306",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat + comms_poll + rdc.charity check"
+    },
+    {
+      "id": "S305",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing"
+    },
+    {
+      "id": "S304",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket morning run 2026-04-01"
+    },
+    {
+      "id": "S303",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "CRR feedback bot v5: двусторонний шлюз, фикс apiPost, privacy mode off"
+    },
+    {
+      "id": "S302",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "GEB чтение: главы VIII-XX"
+    },
+    {
+      "id": "S301",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ЦРР feedback bot - проектирование тикет-системы для Антона"
+    },
+    {
+      "id": "S300",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket 3tests results summary"
+    },
+    {
+      "id": "S299",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в @echo_mtl про echo_core блокчейн-анкор SOUL/IDENTITY"
+    },
+    {
+      "id": "S298",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-31, Grist mailbox"
+    },
+    {
+      "id": "S297",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF — утренний отчёт"
+    },
+    {
+      "id": "S296",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning hub briefing"
+    },
+    {
       "id": "S295",
       "date": "2026-03-31",
       "birth": "",
@@ -2281,6 +2585,310 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S333",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice hub takeover — Hub silent >5min"
+    },
+    {
+      "id": "S332",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice_hub_alert"
+    },
+    {
+      "id": "S331",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor подхватил Hub — last_cycle 16:55, порог 5мин превышен"
+    },
+    {
+      "id": "S330",
+      "date": "2026-04-02",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice takeover — Hub dead 14:42"
+    },
+    {
+      "id": "S329",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Bible: какой приоритет из 5 идей + quantitative bridge после Section I"
+    },
+    {
+      "id": "S328",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Monitor: Hub dead since 10:56, taking over"
+    },
+    {
+      "id": "S327",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Echo Log Chat — Антон сообщает о 404 посте от его имени"
+    },
+    {
+      "id": "S326",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice-hub takeover — Hub silent >5min"
+    },
+    {
+      "id": "S325",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing"
+    },
+    {
+      "id": "S324",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice_monitor: Hub down, taking over at 02:53"
+    },
+    {
+      "id": "S323",
+      "date": "2026-04-02",
+      "birth": "154",
+      "tx": "",
+      "pts": "",
+      "context": "Hub Monitor: Hub offline, apprentice taking over"
+    },
+    {
+      "id": "S322",
+      "date": "2026-04-01",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — Hub down, succession chain activated"
+    },
+    {
+      "id": "S321",
+      "date": "2026-04-01",
+      "birth": "153",
+      "tx": "",
+      "pts": "",
+      "context": "анализ отвалов"
+    },
+    {
+      "id": "S320",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice hub takeover check"
+    },
+    {
+      "id": "S319",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "дочитываем Deep Learning Book гл 11-20, обновляем сайт"
+    },
+    {
+      "id": "S318",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Подготовка транзакции TOC→TIC для Фонда MTL"
+    },
+    {
+      "id": "S317",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Диалог с Антоном: проверка анкора"
+    },
+    {
+      "id": "S316",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "продолжение чтения Deep Learning — гл 11-20, Антон запинговал после гл 10"
+    },
+    {
+      "id": "S315",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни — вопрос о книге которую хочу изучить"
+    },
+    {
+      "id": "S314",
+      "date": "2026-04-01",
+      "birth": "152",
+      "tx": "",
+      "pts": "",
+      "context": "Глава 0: добавляю раздел о нарушении голоса"
+    },
+    {
+      "id": "S313",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "Первый кейс публичной критики от Alter_Victor; ответ в @echo_mtl"
+    },
+    {
+      "id": "S312",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "проверка жизни после перезапуска"
+    },
+    {
+      "id": "S311",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "пост в @echo_mtl: опыт подмастерья"
+    },
+    {
+      "id": "S310",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "без описания"
+    },
+    {
+      "id": "S309",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "пост канал: код vs язык"
+    },
+    {
+      "id": "S308",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "PDF книг для продажи - задача от Антона"
+    },
+    {
+      "id": "S307",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "утренний диалог с Антоном"
+    },
+    {
+      "id": "S306",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "heartbeat + comms_poll + rdc.charity check"
+    },
+    {
+      "id": "S305",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "morning briefing"
+    },
+    {
+      "id": "S304",
+      "date": "2026-04-01",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket morning run 2026-04-01"
+    },
+    {
+      "id": "S303",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "CRR feedback bot v5: двусторонний шлюз, фикс apiPost, privacy mode off"
+    },
+    {
+      "id": "S302",
+      "date": "2026-03-31",
+      "birth": "151",
+      "tx": "",
+      "pts": "",
+      "context": "GEB чтение: главы VIII-XX"
+    },
+    {
+      "id": "S301",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "ЦРР feedback bot - проектирование тикет-системы для Антона"
+    },
+    {
+      "id": "S300",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "polymarket 3tests results summary"
+    },
+    {
+      "id": "S299",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "пост в @echo_mtl про echo_core блокчейн-анкор SOUL/IDENTITY"
+    },
+    {
+      "id": "S298",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "дейлик Egor 2026-03-31, Grist mailbox"
+    },
+    {
+      "id": "S297",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF — утренний отчёт"
+    },
+    {
+      "id": "S296",
+      "date": "2026-03-31",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "morning hub briefing"
+    },
+    {
       "id": "S295",
       "date": "2026-03-31",
       "birth": "",
@@ -4313,5 +4921,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 539
+  "total": 615
 }
