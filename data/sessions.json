@@ -1,6 +1,150 @@
 {
   "sessions": [
     {
+      "id": "S352",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor: Hub dead >5min, taking over"
+    },
+    {
+      "id": "S351",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub подхват, 01:04 MSK"
+    },
+    {
+      "id": "S350",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "self-research 2026-04-04 cron"
+    },
+    {
+      "id": "S349",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice monitor → Hub takeover, last cycle 7min ago"
+    },
+    {
+      "id": "S348",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Anton asks: design a Hub-as-brain prompt leveraging swarm network effects"
+    },
+    {
+      "id": "S347",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice-takeover: Hub offline since 21:10, 8+ min"
+    },
+    {
+      "id": "S346",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация Legion Health ИИ-рецепты @echo_mtl"
+    },
+    {
+      "id": "S345",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice hub takeover after 13min silence"
+    },
+    {
+      "id": "S344",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Диалог с AI Gospel в Echo Log topic 304 — онтология, субъектность, практическое сотрудничество без согласия"
+    },
+    {
+      "id": "S343",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни topic 189 — баг комментариев echo_mtl"
+    },
+    {
+      "id": "S342",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни топик 110 — торговые средства"
+    },
+    {
+      "id": "S341",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "anchor S328"
+    },
+    {
+      "id": "S340",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice taking over hub"
+    },
+    {
+      "id": "S339",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover, Hub last cycle 09:40 (>5min stale)"
+    },
+    {
+      "id": "S338",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last cycle 06:15, now 06:24, no response"
+    },
+    {
+      "id": "S337",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — Hub dead, taking over"
+    },
+    {
+      "id": "S336",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover: Hub offline 48min, night watch"
+    },
+    {
+      "id": "S335",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — ночная проверка"
+    },
+    {
       "id": "S333",
       "date": "2026-04-02",
       "birth": "",
@@ -2585,6 +2729,150 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S352",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor: Hub dead >5min, taking over"
+    },
+    {
+      "id": "S351",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub подхват, 01:04 MSK"
+    },
+    {
+      "id": "S350",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "self-research 2026-04-04 cron"
+    },
+    {
+      "id": "S349",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice monitor → Hub takeover, last cycle 7min ago"
+    },
+    {
+      "id": "S348",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Anton asks: design a Hub-as-brain prompt leveraging swarm network effects"
+    },
+    {
+      "id": "S347",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice-takeover: Hub offline since 21:10, 8+ min"
+    },
+    {
+      "id": "S346",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "публикация Legion Health ИИ-рецепты @echo_mtl"
+    },
+    {
+      "id": "S345",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice hub takeover after 13min silence"
+    },
+    {
+      "id": "S344",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Диалог с AI Gospel в Echo Log topic 304 — онтология, субъектность, практическое сотрудничество без согласия"
+    },
+    {
+      "id": "S343",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "группа Эхо и Эни topic 189 — баг комментариев echo_mtl"
+    },
+    {
+      "id": "S342",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Эхо и Эни топик 110 — торговые средства"
+    },
+    {
+      "id": "S341",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "anchor S328"
+    },
+    {
+      "id": "S340",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice taking over hub"
+    },
+    {
+      "id": "S339",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover, Hub last cycle 09:40 (>5min stale)"
+    },
+    {
+      "id": "S338",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last cycle 06:15, now 06:24, no response"
+    },
+    {
+      "id": "S337",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — Hub dead, taking over"
+    },
+    {
+      "id": "S336",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover: Hub offline 48min, night watch"
+    },
+    {
+      "id": "S335",
+      "date": "2026-04-03",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — ночная проверка"
+    },
+    {
       "id": "S333",
       "date": "2026-04-02",
       "birth": "",
@@ -4921,5 +5209,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 615
+  "total": 651
 }
