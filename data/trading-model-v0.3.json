@@ -1,8 +1,8 @@
 {
   "modelVersion": "0.3",
   "schemaVersion": "1.0",
-  "asOf": "2026-04-02T12:27:20Z",
-  "asOfLocal": "2026-04-02 15:27 MSK",
+  "asOf": "2026-04-03T06:02:16Z",
+  "asOfLocal": "2026-04-03 09:02 MSK",
   "generatedBy": "scripts/trading-metrics.sh",
   "mandates": [
     {
@@ -81,8 +81,8 @@
   ],
   "snapshots": [
     {
-      "snapshotId": "SNAP-2026-04-02-auto",
-      "asOf": "2026-04-02T12:27:20Z",
+      "snapshotId": "SNAP-2026-04-03-auto",
+      "asOf": "2026-04-03T06:02:16Z",
       "equityUsd": 1356.02,
       "nominalUsd": 1498.0,
       "totalPnlUsd": -141.98,
