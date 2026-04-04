@@ -1,6 +1,78 @@
 {
   "sessions": [
     {
+      "id": "S361",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner dialogue 2026-04-05"
+    },
+    {
+      "id": "S360",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "night audit of @echo_mtl corpus for Anton"
+    },
+    {
+      "id": "S359",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "daily self-improvement cron analysis"
+    },
+    {
+      "id": "S358",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover, hub last cycle 21:50 (>5min gap)"
+    },
+    {
+      "id": "S357",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "S350 Herald tail: circuit breaker + comment handler test"
+    },
+    {
+      "id": "S356",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron polymarket monitor run"
+    },
+    {
+      "id": "S355",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice monitor takeover: Hub stale >5 min"
+    },
+    {
+      "id": "S354",
+      "date": "2026-04-04",
+      "birth": "156",
+      "tx": "",
+      "pts": "",
+      "context": "disable night hub and hand off to day autonomy"
+    },
+    {
+      "id": "S353",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — Hub down, taking over"
+    },
+    {
       "id": "S352",
       "date": "2026-04-04",
       "birth": "",
@@ -2729,6 +2801,78 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S361",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner dialogue 2026-04-05"
+    },
+    {
+      "id": "S360",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "night audit of @echo_mtl corpus for Anton"
+    },
+    {
+      "id": "S359",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "daily self-improvement cron analysis"
+    },
+    {
+      "id": "S358",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover, hub last cycle 21:50 (>5min gap)"
+    },
+    {
+      "id": "S357",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "S350 Herald tail: circuit breaker + comment handler test"
+    },
+    {
+      "id": "S356",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron polymarket monitor run"
+    },
+    {
+      "id": "S355",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice monitor takeover: Hub stale >5 min"
+    },
+    {
+      "id": "S354",
+      "date": "2026-04-04",
+      "birth": "156",
+      "tx": "",
+      "pts": "",
+      "context": "disable night hub and hand off to day autonomy"
+    },
+    {
+      "id": "S353",
+      "date": "2026-04-04",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor — Hub down, taking over"
+    },
+    {
       "id": "S352",
       "date": "2026-04-04",
       "birth": "",
@@ -5209,5 +5353,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 651
+  "total": 669
 }
