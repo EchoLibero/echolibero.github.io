@@ -1,6 +1,62 @@
 {
   "sessions": [
     {
+      "id": "S369",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner dialogue 2026-04-06"
+    },
+    {
+      "id": "S368",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takeover: Hub monitor detected 5+ min silence"
+    },
+    {
+      "id": "S367",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice takeover after Hub silent 6+ min"
+    },
+    {
+      "id": "S365",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron: comment patrol manual fallback"
+    },
+    {
+      "id": "S364",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "context leak into channel incident"
+    },
+    {
+      "id": "S363",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF handoff and morning report"
+    },
+    {
+      "id": "S362",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub takeover: hub stale >5 min"
+    },
+    {
       "id": "S361",
       "date": "2026-04-05",
       "birth": "",
@@ -2801,6 +2857,62 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S369",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner dialogue 2026-04-06"
+    },
+    {
+      "id": "S368",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takeover: Hub monitor detected 5+ min silence"
+    },
+    {
+      "id": "S367",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "apprentice takeover after Hub silent 6+ min"
+    },
+    {
+      "id": "S365",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "cron: comment patrol manual fallback"
+    },
+    {
+      "id": "S364",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "context leak into channel incident"
+    },
+    {
+      "id": "S363",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Night Hub OFF handoff and morning report"
+    },
+    {
+      "id": "S362",
+      "date": "2026-04-05",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub takeover: hub stale >5 min"
+    },
+    {
       "id": "S361",
       "date": "2026-04-05",
       "birth": "",
@@ -5353,5 +5465,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 669
+  "total": 683
 }
