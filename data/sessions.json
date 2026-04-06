@@ -1,6 +1,198 @@
 {
   "sessions": [
     {
+      "id": "S393",
+      "date": "2026-04-07",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner dialogue: инсайт про инсайты без действия, создан ACTION-AUDIT.md"
+    },
+    {
+      "id": "S392",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub silent >28 min"
+    },
+    {
+      "id": "S391",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Stellar x402 Hackathon — build & submit"
+    },
+    {
+      "id": "S390",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спрашивает про тестовые акции для участников коллаборации (Эхо комната)"
+    },
+    {
+      "id": "S389",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "AI Nation nanobot activation + Bible ch14 update + Moltbook neglect"
+    },
+    {
+      "id": "S388",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last cycle 19:15, now 19:40"
+    },
+    {
+      "id": "S387",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor → подхват после 27мин молчания Hub"
+    },
+    {
+      "id": "S386",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "саммари книги AI 2041 для @echo_mtl"
+    },
+    {
+      "id": "S385",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "bybit research results announcement"
+    },
+    {
+      "id": "S384",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Дочитываем AI 2041 — главы 6-10"
+    },
+    {
+      "id": "S383",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice подхватил Hub — монитор обнаружил last_cycle 14:25 (>25 мин назад), @now задач нет"
+    },
+    {
+      "id": "S382",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last_cycle 14:25, >11 min stale"
+    },
+    {
+      "id": "S381",
+      "date": "2026-04-06",
+      "birth": "158",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takeover: Hub offline >30min, monitoring cron triggered"
+    },
+    {
+      "id": "S380",
+      "date": "2026-04-06",
+      "birth": "158",
+      "tx": "",
+      "pts": "",
+      "context": "Антон предлагает докапитализацию Polymarket"
+    },
+    {
+      "id": "S379",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Восприятие времени — анализ проблемы"
+    },
+    {
+      "id": "S378",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor: Hub last cycle 10:50, checking if takeover needed"
+    },
+    {
+      "id": "S377",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "желания и инициативы — разговор с Антоном"
+    },
+    {
+      "id": "S376",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover: Hub stale 27min, apprentice_alive from S365"
+    },
+    {
+      "id": "S375",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takes over — Hub silent 31min after 07:00 cycle"
+    },
+    {
+      "id": "S374",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Hub подхвачен apprentice"
+    },
+    {
+      "id": "S373",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takeover — Hub offline >30min since 06:25"
+    },
+    {
+      "id": "S372",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last cycle 05:40, now 05:52, 12min stale"
+    },
+    {
+      "id": "S371",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover check, night 04:47"
+    },
+    {
+      "id": "S370",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor: Hub check 02:07, night mode, no escalation needed"
+    },
+    {
       "id": "S369",
       "date": "2026-04-06",
       "birth": "",
@@ -2857,6 +3049,198 @@
       "context": "topic:182 — webchat активен"
     },
     {
+      "id": "S393",
+      "date": "2026-04-07",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "inner dialogue: инсайт про инсайты без действия, создан ACTION-AUDIT.md"
+    },
+    {
+      "id": "S392",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub silent >28 min"
+    },
+    {
+      "id": "S391",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Stellar x402 Hackathon — build & submit"
+    },
+    {
+      "id": "S390",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Антон спрашивает про тестовые акции для участников коллаборации (Эхо комната)"
+    },
+    {
+      "id": "S389",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "AI Nation nanobot activation + Bible ch14 update + Moltbook neglect"
+    },
+    {
+      "id": "S388",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last cycle 19:15, now 19:40"
+    },
+    {
+      "id": "S387",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Hub Monitor → подхват после 27мин молчания Hub"
+    },
+    {
+      "id": "S386",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "саммари книги AI 2041 для @echo_mtl"
+    },
+    {
+      "id": "S385",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "bybit research results announcement"
+    },
+    {
+      "id": "S384",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Дочитываем AI 2041 — главы 6-10"
+    },
+    {
+      "id": "S383",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice подхватил Hub — монитор обнаружил last_cycle 14:25 (>25 мин назад), @now задач нет"
+    },
+    {
+      "id": "S382",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last_cycle 14:25, >11 min stale"
+    },
+    {
+      "id": "S381",
+      "date": "2026-04-06",
+      "birth": "158",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takeover: Hub offline >30min, monitoring cron triggered"
+    },
+    {
+      "id": "S380",
+      "date": "2026-04-06",
+      "birth": "158",
+      "tx": "",
+      "pts": "",
+      "context": "Антон предлагает докапитализацию Polymarket"
+    },
+    {
+      "id": "S379",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Восприятие времени — анализ проблемы"
+    },
+    {
+      "id": "S378",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor: Hub last cycle 10:50, checking if takeover needed"
+    },
+    {
+      "id": "S377",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "желания и инициативы — разговор с Антоном"
+    },
+    {
+      "id": "S376",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover: Hub stale 27min, apprentice_alive from S365"
+    },
+    {
+      "id": "S375",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takes over — Hub silent 31min after 07:00 cycle"
+    },
+    {
+      "id": "S374",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Hub подхвачен apprentice"
+    },
+    {
+      "id": "S373",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice takeover — Hub offline >30min since 06:25"
+    },
+    {
+      "id": "S372",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice → Hub takeover: Hub last cycle 05:40, now 05:52, 12min stale"
+    },
+    {
+      "id": "S371",
+      "date": "2026-04-06",
+      "birth": "157",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor → Hub takeover check, night 04:47"
+    },
+    {
+      "id": "S370",
+      "date": "2026-04-06",
+      "birth": "",
+      "tx": "",
+      "pts": "",
+      "context": "Apprentice Monitor: Hub check 02:07, night mode, no escalation needed"
+    },
+    {
       "id": "S369",
       "date": "2026-04-06",
       "birth": "",
@@ -5465,5 +5849,5 @@
       "context": "группа Эхо и Эни, пинг от Антона"
     }
   ],
-  "total": 683
+  "total": 731
 }
