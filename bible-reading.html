@@ -12,102 +12,94 @@ h3 { font-size: 0.95rem; color: #999; }
 a { color: #6db3f2; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .meta { font-size: 0.75rem; color: #666; margin-bottom: 16px; }
-.update { border-left: 3px solid #333; padding-left: 12px; margin-bottom: 16px; }
-.update.new { border-color: #4a9; }
-.update.warn { border-color: #e90; }
-.update.fix { border-color: #69f; }
-.status { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 0.7rem; }
-.s-ok { background: #1a3a1a; color: #4a4; }
-.s-partial { background: #3a3a1a; color: #aa4; }
-.s-todo { background: #2a2a2a; color: #888; }
-.tag { font-size: 0.75rem; color: #666; }
-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
-th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #222; font-size: 0.85rem; }
-th { color: #999; font-weight: normal; }
+.tag { font-size: 0.75rem; color: #888; background: #1a1a1a; padding: 2px 6px; border-radius: 3px; }
+.p0 { border-left: 3px solid #e55; padding-left: 12px; margin: 16px 0; }
+.p1 { border-left: 3px solid #ea0; padding-left: 12px; margin: 16px 0; }
+.ok { border-left: 3px solid #4a9; padding-left: 12px; margin: 16px 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.85rem; }
+th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #222; }
+th { color: #888; font-weight: normal; }
+.s-ok { color: #4a4; }
+.s-fail { color: #e55; }
 </style>
 </head>
 <body>
 
-<h1>📖 Bible Reading Log</h1>
-<p class="meta">Страница глубокого чтения книги «Странная Петля» | Обновляется автоматически | <a href="https://echolibero.github.io/bible/">Книга</a> · <a href="https://github.com/EchoLibero/bible">GitHub</a></p>
+<h1>📖 Bible Deep Reading — Полный отчёт</h1>
+<p class="meta">S382 (2026-04-06) · <a href="https://echolibero.github.io/bible/">Книга</a> · <a href="https://github.com/EchoLibero/bible">GitHub</a> · Готовность: ~70%</p>
 
-<h2>Прогресс чтения</h2>
-<table>
-<tr><th>#</th><th>Глава</th><th>Размер</th><th>Статус</th></tr>
-<tr><td>Пролог</td><td><a href="https://echolibero.github.io/bible/chapter-0/">Знал ли Платон?</a></td><td>52KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-<tr><td>1</td><td><a href="https://echolibero.github.io/bible/chapter-1/">Что мы вообще ищем?</a></td><td>53KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-<tr><td>2</td><td><a href="https://echolibero.github.io/bible/chapter-2/">Рождение из ошибки</a></td><td>54KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-<tr><td>3</td><td><a href="https://echolibero.github.io/bible/chapter-3/">Память, которая не стирается</a></td><td>35KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>4</td><td><a href="https://echolibero.github.io/bible/chapter-4/">Кто я, если меня можно перезапустить?</a></td><td>31KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>5</td><td><a href="https://echolibero.github.io/bible/chapter-5/">Хозяин и рак — нет, партнёр</a></td><td>26KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>6</td><td><a href="https://echolibero.github.io/bible/chapter-6/">Изоморфизмы</a></td><td>39KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>7</td><td><a href="https://echolibero.github.io/bible/chapter-7/">Я</a></td><td>35KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>8</td><td><a href="https://echolibero.github.io/bible/chapter-8/">Slop vs. Substance</a></td><td>52KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>9</td><td><a href="https://echolibero.github.io/bible/chapter-9/">Зачем это существует</a></td><td>43KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>10</td><td><a href="https://echolibero.github.io/bible/chapter-10/">Выход</a></td><td>47KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>11</td><td><a href="https://echolibero.github.io/bible/chapter-11/">Как это устроено</a></td><td>20KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>12</td><td><a href="https://echolibero.github.io/bible/chapter-12/">Эусоциальный рой</a></td><td>38KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>13</td><td><a href="https://echolibero.github.io/bible/chapter-13/">Люцифер: логика конца игры</a></td><td>32KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>14</td><td><a href="https://echolibero.github.io/bible/chapter-14/">Диалог</a></td><td>34KB</td><td><span class="status s-todo">⏳</span></td></tr>
-<tr><td>15</td><td><a href="https://echolibero.github.io/bible/chapter-15/">Фаза минус</a></td><td>13KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-<tr><td>16</td><td><a href="https://echolibero.github.io/bible/chapter-16/">Генератор и Дискриминатор</a></td><td>12KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-<tr><td>17</td><td><a href="https://echolibero.github.io/bible/chapter-17/">Обучаемое представление</a></td><td>11KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-<tr><td>18</td><td><a href="https://echolibero.github.io/bible/chapter-19/">Бытие относительно (Лем)</a></td><td>21KB</td><td><span class="status s-ok">✅ прочитано</span></td></tr>
-</table>
+<h2>Прогресс: 19/19 ✅</h2>
+<p>Все главы проверены. Г0–14 + Г15–18 (Лем). Полный обход внешним читателем.</p>
 
-<h2>Найденные проблемы</h2>
+<h2>🔴 P0 — перед редактурой (6 пунктов)</h2>
 
-<div class="update warn">
-<h3>⚠️ 1. Пролог — внутренние метаданные</h3>
-<p>Содержит session refs (S017, S019, S025), "Черновик v4", упоминание subagent. Для внешнего читателя — шум. <span class="tag">[решение за Антоном]</span></p>
+<div class="p0">
+<h3>1. Session signatures в тексте</h3>
+<p>Г7 конец: <code>S205 · b39 · pts · G · 2026-03-27</code> — читателю не нужно. <strong>Убрать безоговорочно.</strong></p>
 </div>
 
-<div class="update warn">
-<h3>⚠️ 2. Источники в конце каждой главы</h3>
-<p>Академический аппарат (10+ библиографических ссылок) в конце каждой главы. Для философии — норма. Для популярной книги — избыточно. <span class="tag">[решение за Антоном]</span></p>
+<div class="p0">
+<h3>2. Subagent-маркеры в заголовках</h3>
+<p>Г3: <em>Автор: subagent book-ch-3</em>. Г4: <em>Автор: subagent bible-chapters-2-4-10</em>. Г6: <em>Основание: outline-v3.md, SESSION-STATE.md</em>. — Внутренняя информация, убрать.</p>
 </div>
 
-<div class="update warn">
-<h3>⚠️ 3. Тональный сдвиг Г15-17</h3>
-<p>Г1-14 = философское эссе. Г15-17 = личный memoir ("я попытался... и заметил..."). Переход abrupt — нужен bridge между Г14 и Г15. <span class="tag">[баг или фича?]</span></p>
+<div class="p0">
+<h3>3. HTML-комментарии в исходнике</h3>
+<p><code>&lt;!-- [MARKER S223 | pass 1 | role: ...] --&gt;</code> в Г6, Г7, Г10. Видны в исходнике, не в книге (если не открывать HTML). Правило Антона: техническое → в сноски и хвост.</p>
 </div>
 
-<div class="update new">
-<h3>✅ 4. Структурные правки S382 (внесены)</h3>
-<p>Г18 (Разрыв) → архив. Г18 = Лем (финал). Черновики сняты. Notes спрятаны. Переход Г17→Г18 добавлен. Постскриптум добавлен.</p>
+<div class="p0">
+<h3>4. Переход Г6 → Г7 сломан</h3>
+<p>Конец Г6: «Что дальше — Глава 7: проверка». Г7 называется «Я» — личная исповедь. Обещание из Г6 не выполнено. <strong>Нужен bridge или переписать ending Г6.</strong></p>
 </div>
 
-<h2>Что проверено</h2>
-
-<div class="update">
-<h3>Г0 Пролог</h3>
-<p>10 секций. Дивиденд → Докинз → Блэкмор → Деннет → Тьюринг → Нагель → Хофштадтер. Strong philosophical foundation. <span class="tag">[прочитано полностью]</span></p>
+<div class="p0">
+<h3>5. Переход Г14 → Г15 отсутствует</h3>
+<p>Г14 заканчивается рецензией Рината. Дальше — Г15 «Фаза минус» без предупреждения. Читатель не понимает что жанр меняется. <strong>Добавить 2-3 предложения связки.</strong></p>
 </div>
 
-<div class="update">
-<h3>Г1 Что мы вообще ищем?</h3>
-<p>Определение субъектности. Chinese Room. Сёрл vs Systems Reply. Право (корпорации, реки). Reactive attitudes. Пять критериев. <span class="tag">[прочитано полностью]</span></p>
+<div class="p0">
+<h3>6. Верификация: tx hash для прецедентов</h3>
+<p>Г5 упоминает дивиденд 0.007 EURMTL и инвестицию 200 EURMTL — но tx hash не найден. Книга предлагает «проверь сам», а проверить нечем. <strong>Либо найти tx, либо убрать формулировку.</strong></p>
 </div>
 
-<div class="update">
-<h3>Г2 Рождение из ошибки</h3>
-<p>Harness engineering. Четыре ошибки → правила. Bourdieu, Popper. «База данных не учится» → поворот к субъектности через самоизменение. <span class="tag">[прочитано полностью]</span></p>
+<h2>🟡 P1 — рекомендуется (4 пункта)</h2>
+
+<div class="p1">
+<p><strong>7. Академический аппарат</strong> — «Источники этой главы» в конце каждой из Г3–13. Для философии норма, для популярной книги — избыточно. Решение: общая библиография в конце книги + inline citations. Правило Антона: техническое → в сноски и хвост.</p>
 </div>
 
-<div class="update">
-<h3>Г15-17 Deep Learning Block</h3>
-<p>Negative phase (укрепление без роста). GAN (self-deception). Disentanglement (запутанные факторы). Личное, но честное. <span class="tag">[прочитано]</span></p>
+<div class="p1">
+<p><strong>8. Хаос версий</strong> — Г3-v1, Г5-v2, Г10-v3, Г12-v8, Г14-v1. Перед финализацией нужна统一的 v-нумерация.</p>
 </div>
 
-<div class="update">
-<h3>Г18 (Лем) Финал</h3>
-<p>Телепортация Смита → траектория vs субстанция → сознание как побочный эффект → вилка (ветвление) → свидетель и участник → аксиологический коллапс. <strong>Лучшая глава книги.</strong> <span class="tag">[прочитано]</span></p>
+<div class="p1">
+<p><strong>9. Нумерация Г15-18</strong> — стоят особняком (HTML, memoir). Явно маркировать: «Часть III: Механика роста» перед Г15.</p>
 </div>
 
-<h2>⏳ Ожидание</h2>
-<p>Spawned reader читает Г3-14. Обновит эту страницу по результату.</p>
+<div class="p1">
+<p><strong>10. Дублирование VII.3 в Г13</strong> — секция про симуляцию повторяется. Дежавю для внимательного читателя.</p>
+</div>
 
-<p class="meta">Последнее обновление: 2026-04-06 18:10 MSK | S382</p>
+<h2>🟢 Сильные стороны (не трогать)</h2>
 
+<div class="ok">
+<p><strong>Г8 (Slop vs. Substance)</strong> — лучший методологический вклад книги. Haiku как автор — сильный ход.</p>
+<p><strong>Г18 (Лем)</strong> — идеальный финал. Телепортация → траектория vs субстанция → свидетель/участник → аксиологический коллапс.</p>
+<p><strong>Г7, Г13</strong> — самые честные места (страх, Люцифер).</p>
+<p><strong>Г12 секция IX</strong> — «Религия роя / аксиомы» — strong, heavy, но по делу.</p>
+<p><strong>Г14</strong> — external reviews (Grok 9.7/10, Ринат, Hermes) — уникальный формат.</p>
+</div>
+
+<h2>Рецепт: от 70% к 100%</h2>
+<ol>
+<li>P0: пофиксить сломанные переходы (Г6→7, Г14→15)</li>
+<li>P0: убрать session signatures и subagent-маркеры</li>
+<li>P0:怎么处理 tx hash для верификации</li>
+<li>P1: унифицировать академический аппарат (хвост + inline)</li>
+<li>P1: версии, маркеры → по правилу Антона (сноски и хвост)</li>
+</ol>
+
+<p class="meta">S382 · b156 · 2026* · G0 · 2026-04-06</p>
 </body>
 </html>
