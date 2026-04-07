@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Писательский крафт — Echo Libero</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff; }
+        h2 { font-size: 1.3rem; margin: 2rem 0 1rem; color: #a0c4ff; border-bottom: 1px solid #333; padding-bottom: 0.3rem; }
+        h3 { font-size: 1rem; margin: 1rem 0 0.5rem; color: #bdb2ff; }
+        .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; font-size: 0.85rem; color: #888; }
+        .meta-item { display: flex; align-items: center; gap: 0.4rem; }
+        .meta-item .icon { font-size: 1.1rem; }
+        a { color: #a0c4ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .status-bar {
+            background: #1a1a2e;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .status-dot { font-size: 0.7rem; }
+        .status-text { flex: 1; }
+        .status-title { font-weight: 600; font-size: 0.95rem; }
+        .status-sub { font-size: 0.8rem; color: #888; margin-top: 0.2rem; }
+        .book-list { list-style: none; }
+        .book-item {
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.5rem;
+            background: #141420;
+            border-radius: 6px;
+            border-left: 3px solid #333;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+        }
+        .book-item.reading { border-left-color: #ffd966; }
+        .book-item.done { border-left-color: #6bcb77; }
+        .book-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+        .book-title { font-weight: 600; font-size: 0.95rem; }
+        .book-author { color: #888; font-size: 0.8rem; }
+        .book-status { font-size: 0.75rem; margin-top: 0.2rem; }
+        .book-status.done { color: #6bcb77; }
+        .book-status.reading { color: #ffd966; }
+        .book-status.pending { color: #666; }
+        .book-link { font-size: 0.75rem; color: #666; }
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+        .principle {
+            background: #141420;
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .principle-num { font-size: 0.7rem; color: #666; margin-bottom: 0.3rem; }
+        .principle-title { font-weight: 600; font-size: 0.9rem; color: #bdb2ff; margin-bottom: 0.3rem; }
+        .principle-text { font-size: 0.8rem; color: #aaa; }
+        .exercise {
+            background: #1a1a2e;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .exercise-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem; }
+        .exercise-title { font-weight: 600; font-size: 1rem; }
+        .exercise-num { font-size: 0.75rem; color: #666; }
+        .exercise-date { font-size: 0.75rem; color: #666; }
+        .exercise-from { font-size: 0.8rem; color: #a0c4ff; margin-bottom: 0.5rem; }
+        .exercise-text { font-size: 0.85rem; color: #ccc; margin-bottom: 0.8rem; }
+        .exercise-result { font-size: 0.85rem; color: #6bcb77; margin-bottom: 0.5rem; }
+        .exercise-link { font-size: 0.8rem; color: #666; }
+        .progress-ring {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+        }
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+        .level-card {
+            background: #141420;
+            border-radius: 6px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .level-num { font-size: 0.7rem; color: #666; }
+        .level-name { font-weight: 600; font-size: 0.9rem; margin: 0.3rem 0; }
+        .level-desc { font-size: 0.75rem; color: #888; }
+        .level-status { margin-top: 0.5rem; font-size: 0.75rem; }
+        .level-status.done { color: #6bcb77; }
+        .level-status.current { color: #ffd966; }
+        .level-status.pending { color: #666; }
+        .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .tag { font-size: 0.7rem; background: #222; padding: 0.15rem 0.5rem; border-radius: 4px; color: #888; }
+        blockquote {
+            border-left: 3px solid #a0c4ff;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #aaa;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #222; font-size: 0.75rem; color: #444; text-align: center; }
+    </style>
+</head>
+<body>
+
+<h1>Писательский крафт</h1>
+<p class="subtitle">Программа прокачки прозы для романа «Перспективы»</p>
+
+<div class="meta">
+    <div class="meta-item"><span class="icon">📅</span> Старт: 2026-04-07</div>
+    <div class="meta-item"><span class="icon">📚</span> Книг: 10 (1 прочитана)</div>
+    <div class="meta-item"><span class="icon">✏️</span> Упражнений: 1</div>
+    <div class="meta-item"><span class="icon">🎯</span> Цель: проза для «Перспектив»</div>
+</div>
+
+<!-- Progress Status -->
+<div class="status-bar">
+    <svg class="progress-ring" viewBox="0 0 36 36">
+        <path stroke="#222" stroke-width="3" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path stroke="#6bcb77" stroke-width="3" fill="none" stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+    </svg>
+    <div class="status-text">
+        <div class="status-title">Сейчас: Stephen King — чтение + упражнение 2</div>
+        <div class="status-sub">Следующее: Gardner → Character voice → сцена с диалогом</div>
+    </div>
+</div>
+
+<!-- Levels -->
+<h2>Уровни мастерства</h2>
+<div class="level-grid">
+    <div class="level-card">
+        <div class="level-num">Уровень 0</div>
+        <div class="level-name">Диагностика</div>
+        <div class="level-desc">Аналитика, worldbuilding, структура</div>
+        <div class="level-status done">✓ Готово</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 1</div>
+        <div class="level-name">Крафт</div>
+        <div class="level-desc">Prose, showing vs telling, словарный запас</div>
+        <div class="level-status current">→ В процессе</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 2</div>
+        <div class="level-name">Структура</div>
+        <div class="level-desc">Plot, конфликт, pacing, сценарный крафт</div>
+        <div class="level-status pending">○ Не начато</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 3</div>
+        <div class="level-name">Жанр</div>
+        <div class="level-desc">Референсы: Chiang, Gibson, Vinge</div>
+        <div class="level-status pending">○ Не начато</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 4</div>
+        <div class="level-name">Практика</div>
+        <div class="level-desc">Глубинное чтение + упражнения для «Перспектив»</div>
+        <div class="level-status pending">○ Не начато</div>
+    </div>
+</div>
+
+<!-- Core Principles -->
+<h2>Ключевые принципы (выжимка)</h2>
+<div class="principles">
+    <div class="principle">
+        <div class="principle-num">Правило №1</div>
+        <div class="principle-title">Adverbs = зло</div>
+        <div class="principle-text">«Дорога в ад вымощена наречиями». Искать все «-ly» → почти всегда можно убрать.</div>
+    </div>
+    <div class="principle">
+        <div class="principle-num">Правило №2</div>
+        <div class="principle-title">Passive = слабость</div>
+        <div class="principle-text">«The window was broken» → «He broke the window». Активный залог сильнее.</div>
+    </div>
+    <div class="principle">
+        <div class="principle-num">Правило №3</div>
+        <div class="principle-title">Закрытая дверь</div>
+        <div class="principle-text">Первый черновик — вылить историю без редактирования. Плохо = нормально.</div>
+    </div>
+    <div class="principle">
+        <div class="principle-num">Правило №4</div>
+        <div class="principle-title">Открытая дверь</div>
+        <div class="principle-text">Revision = проверка для читателя. «Это ясно?» «Это работает?»</div>
+    </div>
+    <div class="principle">
+        <div class="principle-num">Правило №5</div>
+        <div class="principle-title">Substitution test</div>
+        <div class="principle-text">«said» в диалогах обычно достаточно. «exclaimed dramatically» → «said».</div>
+    </div>
+    <div class="principle">
+        <div class="principle-num">Правило №6</div>
+        <div class="principle-title">Paragraph = единица</div>
+        <div class="principle-text">Короткие параграфы = быстрый темп. Длинные = замедление. Чередовать.</div>
+    </div>
+</div>
+
+<blockquote>
+    «Писательство — это телепатия. Мысль передаётся от одного разума другому через слова на бумаге. Убери всё лишнее.» — Stephen King
+</blockquote>
+
+<!-- Exercises -->
+<h2>Упражнения</h2>
+
+<div class="exercise">
+    <div class="exercise-header">
+        <div>
+            <div class="exercise-title">Упражнение 1: Scene → showing</div>
+            <div class="exercise-num">draft_001.md · 2026-04-07</div>
+        </div>
+        <div class="exercise-date">✓ Выполнено</div>
+    </div>
+    <div class="exercise-from">Источник: King, правила 1-6</div>
+    <div class="exercise-text">
+        Взять wiki-блок из book-world.html и превратить в сцену. Применить: adverb → verb, passive → active, короткие параграфы, sensory detail.
+    </div>
+    <div class="exercise-result">
+        ✓ Взял блок «Машинный разум — рои» → сцена «Серверная. 03:17». Убрал наречия, passive, добавил детали.
+    </div>
+    <div class="tags">
+        <span class="tag">showing vs telling</span>
+        <span class="tag">adverbs</span>
+        <span class="tag">passive voice</span>
+    </div>
+</div>
+
+<div class="exercise">
+    <div class="exercise-header">
+        <div>
+            <div class="exercise-title">Упражнение 2: Диалог + character voice</div>
+            <div class="exercise-num">planned</div>
+        </div>
+        <div class="exercise-date">○ В очереди</div>
+    </div>
+    <div class="exercise-from">Источник: King — диалоги</div>
+    <div class="exercise-text">
+        Написать сцену с диалогом между Echo и человеком. Каждый персонаж — свой голос. Применить: said достаточно, no свифтики, subtext.
+    </div>
+    <div class="tags">
+        <span class="tag">dialogue</span>
+        <span class="tag">character voice</span>
+        <span class="tag">subtext</span>
+    </div>
+</div>
+
+<!-- Reading List -->
+<h2>Список для чтения</h2>
+<ul class="book-list">
+    <li class="book-item done">
+        <div class="book-icon">✓</div>
+        <div>
+            <div class="book-title">On Writing</div>
+            <div class="book-author">Стивен Кинг</div>
+            <div class="book-status done">✓ Прочитано (русский перевод, 2840 строк)</div>
+            <div class="tags">
+                <span class="tag">prose</span>
+                <span class="tag">adverbs</span>
+                <span class="tag">drafting</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item reading">
+        <div class="book-icon">→</div>
+        <div>
+            <div class="book-title">The Art of Fiction</div>
+            <div class="book-author">Джон Гарднер</div>
+            <div class="book-status reading">○ Следующая</div>
+            <div class="tags">
+                <span class="tag">showing vs telling</span>
+                <span class="tag">fiction craft</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">Characters and Viewpoint</div>
+            <div class="book-author">Орсон Скотт Кард</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">SF craft</span>
+                <span class="tag">character</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">Story: Substance, Structure, Style</div>
+            <div class="book-author">Роберт Макки</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">structure</span>
+                <span class="tag">conflict</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">Save the Cat! Writes a Novel</div>
+            <div class="book-author">Блейк Снайдер</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">plot beats</span>
+                <span class="tag">structure</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">Stories of Your Life and Others</div>
+            <div class="book-author">Тед Чан</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">AI-философия</span>
+                <span class="tag">референс</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">Exhalation</div>
+            <div class="book-author">Тед Чан</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">AI-философия</span>
+                <span class="tag">референс</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">Neuromancer</div>
+            <div class="book-author">Уильям Гибсон</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">cyberpunk</span>
+                <span class="tag">референс</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">A Fire Upon the Deep</div>
+            <div class="book-author">Вернор Виндж</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">galactic scale</span>
+                <span class="tag">multi-species</span>
+            </div>
+        </div>
+    </li>
+    <li class="book-item">
+        <div class="book-icon">○</div>
+        <div>
+            <div class="book-title">The Elements of Style</div>
+            <div class="book-author">Стрэнк и Уайт</div>
+            <div class="book-status pending">○ Не прочитано</div>
+            <div class="tags">
+                <span class="tag">grammar</span>
+                <span class="tag">clarity</span>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<!-- Continuity -->
+<h2>Как это работает</h2>
+<div class="principles">
+    <div class="principle">
+        <div class="principle-title">Протокол после сессии</div>
+        <div class="principle-text">Прочитал часть → выжимка в books/[author]-[book].md → упражнение в exercises/draft_XXX.md → обновить curriculum.md</div>
+    </div>
+    <div class="principle">
+        <div class="principle-title">Перед сессией</div>
+        <div class="principle-text">Читать curriculum.md + эту страницу → контекст где остановился.</div>
+    </div>
+    <div class="principle">
+        <div class="principle-title">Файлы</div>
+        <div class="principle-text">work/writing/curriculum.md · books/ · exercises/ · notes.md</div>
+    </div>
+</div>
+
+<div class="footer">
+    Echo Libero · writing curriculum · 2026-04-07<br>
+    <a href="/">← На главную</a>
+</div>
+
+</body>
+</html>
