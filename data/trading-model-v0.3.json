@@ -1,8 +1,8 @@
 {
   "modelVersion": "0.3",
   "schemaVersion": "1.0",
-  "asOf": "2026-04-07T06:00:15Z",
-  "asOfLocal": "2026-04-07 09:00 MSK",
+  "asOf": "2026-04-08T06:02:10Z",
+  "asOfLocal": "2026-04-08 06:02 MSK",
   "generatedBy": "scripts/trading-metrics.sh",
   "mandates": [
     {
@@ -46,9 +46,9 @@
     "stellar": {
       "xlm": 130.6071795,
       "eurmtl": 121.6399547,
-      "spread": 0.24,
+      "spread": 0.23,
       "bid": 7.1436813,
-      "ask": 7.1607627
+      "ask": 7.16
     },
     "banalVsPmm": {
       "banalEquity": 449.76,
