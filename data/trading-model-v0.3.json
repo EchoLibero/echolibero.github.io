@@ -1,8 +1,8 @@
 {
   "modelVersion": "0.3",
   "schemaVersion": "1.0",
-  "asOf": "2026-04-08T06:02:10Z",
-  "asOfLocal": "2026-04-08 06:02 MSK",
+  "asOf": "2026-04-09T00:02:55Z",
+  "asOfLocal": "2026-04-09 03:02 MSK",
   "generatedBy": "scripts/trading-metrics.sh",
   "mandates": [
     {
@@ -32,61 +32,61 @@
   ],
   "liveMetrics": {
     "polymarket": {
-      "equity": 1356.02,
-      "deposit": 1498.0,
-      "pnl": -141.98,
-      "pnlPct": -9.48,
-      "openPositions": 0,
-      "winning": 0,
-      "losing": 0,
-      "winRate": null,
-      "freeUsdc": 1.08,
+      "equity": 2404.88329,
+      "deposit": 2698.0,
+      "pnl": -293.11671,
+      "pnlPct": -10.86,
+      "openPositions": 42,
+      "winning": 24.0,
+      "losing": 18.0,
+      "winRate": 57.1,
+      "freeUsdc": 0,
       "wallet": "0xc7ebafad469a974c7d5a661af50649422e7fa977"
     },
     "stellar": {
-      "xlm": 130.6071795,
-      "eurmtl": 121.6399547,
-      "spread": 0.23,
+      "xlm": 0.0,
+      "eurmtl": 0.0,
+      "spread": 0.0,
       "bid": 7.1436813,
       "ask": 7.16
     },
     "banalVsPmm": {
-      "banalEquity": 449.76,
+      "banalEquity": 1543.89,
       "banalNominal": 1251,
-      "banalPnl": -801.24,
-      "banalPnlPct": -64.05,
-      "pmmEquity": 250.82,
+      "banalPnl": 292.89,
+      "banalPnlPct": 23.41,
+      "pmmEquity": 860.99,
       "pmmNominal": 247,
-      "pmmPnl": 3.82,
-      "pmmPnlPct": 1.55
+      "pmmPnl": 613.99,
+      "pmmPnlPct": 248.58
     }
   },
   "allocations": [
     {
       "mandateId": "BANAL-PM-2026-01",
       "token": "BANAL",
-      "equityUsd": 449.76,
+      "equityUsd": 1543.89,
       "nominalUsd": 1251,
-      "pnlUsd": -801.24,
-      "pnlPct": -64.05
+      "pnlUsd": 292.89,
+      "pnlPct": 23.41
     },
     {
       "mandateId": "PMM-PM-2026-01",
       "token": "PMM",
-      "equityUsd": 250.82,
+      "equityUsd": 860.99,
       "nominalUsd": 247,
-      "pnlUsd": 3.82,
-      "pnlPct": 1.55
+      "pnlUsd": 613.99,
+      "pnlPct": 248.58
     }
   ],
   "snapshots": [
     {
-      "snapshotId": "SNAP-2026-04-07-auto",
-      "asOf": "2026-04-07T06:00:15Z",
-      "equityUsd": 1356.02,
-      "nominalUsd": 1498.0,
-      "totalPnlUsd": -141.98,
-      "pnlPct": -9.48,
+      "snapshotId": "SNAP-2026-04-09-auto",
+      "asOf": "2026-04-09T00:02:55Z",
+      "equityUsd": 2404.88329,
+      "nominalUsd": 2698.0,
+      "totalPnlUsd": -293.11671,
+      "pnlPct": -10.86,
       "status": "live_auto"
     }
   ],
@@ -95,21 +95,14 @@
       "flagId": "RF-001",
       "severity": "critical",
       "scope": "capital",
-      "message": "Free USDC = $1.08. Cannot open new positions.",
-      "status": "open"
-    },
-    {
-      "flagId": "RF-002",
-      "severity": "critical",
-      "scope": "performance",
-      "message": "BANAL P&L: $-801.24 (-64.0%). Strategy review needed.",
+      "message": "Free USDC = $0.00. Cannot open new positions.",
       "status": "open"
     },
     {
       "flagId": "RF-003",
       "severity": "info",
       "scope": "performance",
-      "message": "PMM P&L: +$3.82 (1.5%). Market-making works.",
+      "message": "PMM P&L: +$613.99 (248.6%). Market-making works.",
       "status": "info"
     }
   ]
