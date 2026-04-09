@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-04-09"
+  },
+  "exercises": [
+    {
+      "id": "ex_001",
+      "title": "Scene → showing",
+      "date": "2026-04-07",
+      "status": "done",
+      "source": "King, правила 1-6",
+      "description": "Взять wiki-блок из book-world.html и превратить в сцену. Применить: adverb → verb, passive → active, короткие параграфы, sensory detail.",
+      "result": "Взял блок «Машинный разум — рои» → сцена «Серверная. 03:17». Убрал наречия, passive, добавил детали.",
+      "practices": ["king_c02", "king_c03", "king_c04"],
+      "artifacts": [],
+      "tags": ["showing-vs-telling", "adverbs", "passive-voice"]
+    },
+    {
+      "id": "ex_mckee_04",
+      "title": "Четыре «я» персонажа",
+      "date": "2026-04-07",
+      "status": "done",
+      "source": "McKee, Персонаж: гл.5",
+      "description": "Взять персонажа из упражнения 3 (женщина с цветами). Прописать все 4 уровня: центральное, личное, социальное, скрытое.",
+      "result": "Социальное: пациент/посетитель. Личное: дочь/сестра. Центральное: не знает какой день. Скрытое: маркер на запястье. Вывод: 4 «я» превращают «образ» в «человека».",
+      "practices": ["mckee_p03"],
+      "artifacts": [],
+      "tags": ["four-self", "character-creation", "inhabitation"]
+    },
+    {
+      "id": "ex_mckee_05",
+      "title": "Сознательное vs Подсознательное желание",
+      "date": "2026-04-07",
+      "status": "done",
+      "source": "McKee, Персонаж: гл.8",
+      "description": "Взять персонажа. Добавить сознательное желание и противоречащее ему подсознательное.",
+      "result": "Женщина с цветами: сознательное = понять какой день; подсознательное = НЕ вспоминать. Грань: хочет знать vs не хочет. Конфликт движет сильнее внешнего врага.",
+      "practices": ["mckee_p04"],
+      "artifacts": [],
+      "tags": ["desire", "subconscious", "conflict", "character"]
+    },
+    {
+      "id": "ex_mckee_final",
+      "title": "Схема ансамбля",
+      "date": "2026-04-07",
+      "status": "done",
+      "source": "McKee, Персонаж: гл.16-17",
+      "description": "Построить схему ансамбля. Три круга: центр (герой с 4 гранями), средний (2-3 второстепенных), внешний (массовка). Каждый среднего — контраст к одной грани героя.",
+      "result": "Герой: Женщина с цветами. Средний круг: Мужчина в коридоре (знание/забвение), Врач (власть/бессилие), Ребёнок (память). Вывод: ансамбль — не «кто говорит», а «чьими глазами лучше виден герой».",
+      "practices": ["mckee_p07"],
+      "artifacts": [],
+      "tags": ["ensemble", "schema", "contrast"]
+    },
+    {
+      "id": "ex_002",
+      "title": "Диалог + character voice",
+      "date": "planned",
+      "status": "planned",
+      "source": "McKee, Диалог: гл.1-5",
+      "description": "Написать сцену с диалогом между Echo и человеком. Каждый персонаж — свой голос. Применить: said достаточно, no свифтики, subtext.",
+      "result": null,
+      "practices": ["mckee_d01", "mckee_d02", "mckee_d05"],
+      "artifacts": [],
+      "tags": ["dialogue", "character-voice", "subtext"]
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-04-09",
+    "total_principles": 37
+  },
+  "principles": [
+    {
+      "id": "king_c01",
+      "text": "Жизнь — не поддерживающая система для искусства. Всё совсем наоборот.",
+      "source": "King, О крафте: Жизнь и искусство",
+      "tags": ["philosophy", "why-write"],
+      "practiced_in": [],
+      "reading_session": null
+    },
+    {
+      "id": "king_c02",
+      "text": "Первое слово — правильное. «Дождь» > «атмосферные осадки». Искать длиннее — трусость.",
+      "source": "King, О крафте: слова",
+      "tags": ["word-choice", "economy", "voice"],
+      "practiced_in": ["ex_001"],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c03",
+      "text": "Ад вымощен наречиями. Один на газоне — мило. Пятьдесят — газон мёртв.",
+      "source": "King, О крафте: грамматика",
+      "tags": ["adverbs", "economy"],
+      "practiced_in": ["ex_001"],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c04",
+      "text": "Пассивный залог — трусость. «The body was carried» → «Myra and Freddy carried the body». Подлежащее делает, а не страдает.",
+      "source": "King, О крафте: грамматика",
+      "tags": ["passive-voice", "clarity"],
+      "practiced_in": ["ex_001"],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c05",
+      "text": "Said в диалогах почти всегда хватает. «exclaimed dramatically» → «said». Свифтики — никогда.",
+      "source": "King, О крафте: слова",
+      "tags": ["dialogue", "economy", "voice"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c06",
+      "text": "Абзац — основная единица письма, не предложение. Короткий = скорость. Длинный = вес. Чередовать.",
+      "source": "King, О крафте: абзацы",
+      "tags": ["pacing", "rhythm", "structure"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c07",
+      "text": "Описание: хватит 4 конкретных деталей. Больше не надо. Мяч должен катиться.",
+      "source": "King, О крафте: описание",
+      "tags": ["description", "economy", "showing"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c08",
+      "text": "Если персонаж попал молотком по пальцу — он скажет «бля», а не «ой». Честность > приличие.",
+      "source": "King, О крафте: описание",
+      "tags": ["dialogue", "truth", "character"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c09",
+      "text": "Каждый считает себя главным героем. Анни Уилкс для себя — не сумасшедшая, а женщина в осаде.",
+      "source": "King, О крафте: персонаж",
+      "tags": ["character", "empathy", "perspective"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c10",
+      "text": "Закрытая дверь: первый черновик — вылить историю без остановки. 2000 слов/день. Плохо = нормально.",
+      "source": "King, О крафте: первый черновик",
+      "tags": ["first-draft", "process", "momentum"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c11",
+      "text": "Открытая дверь: revision = 2-й вариант = 1-й − 10%. 6 недель отлежаться. Вычитка + вопрос: история связывается?",
+      "source": "King, О крафте: revision",
+      "tags": ["revision", "process"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c12",
+      "text": "Книга командует, писатель не инвестор. Найди окаменелость — не выбирай по ROI.",
+      "source": "King, О крафте: что писать",
+      "tags": ["theme", "discovery", "philosophy"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c13",
+      "text": "70 книг/год минимум. Плохие книги учат не меньше хороших. Без чтения — нечего писать.",
+      "source": "King, О крафте: чтение",
+      "tags": ["reading", "craft", "discipline"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "king_c14",
+      "text": "Идея приходит на перечитывании, не в начале. Кровь в «Кэрри» — не план, а открытие.",
+      "source": "King, О крафте: что писать",
+      "tags": ["discovery", "theme", "process"],
+      "practiced_in": [],
+      "reading_session": "king_cr1"
+    },
+    {
+      "id": "mckee_d01",
+      "text": "Диалог — это действие. «Сказать — значит сделать.» Вопрос не «что говорит» а «что ДЕЛАЕТ словами».",
+      "source": "McKee, Диалог: Определение (гл.1)",
+      "tags": ["dialogue", "action", "core"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d02",
+      "text": "Три уровня: высказанное (текст) → невысказанное (подтекст сознательный) → невысказываемое (подсознательное).",
+      "source": "McKee, Диалог: Определение (гл.1)",
+      "tags": ["dialogue", "subtext", "iceberg", "core"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d03",
+      "text": "Подтекст важнее текста. «Доктор Глас» (Сёдерберг): герой НИКОГДА не говорит прямо.",
+      "source": "McKee, Диалог: Определение (гл.1)",
+      "tags": ["dialogue", "subtext"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d04",
+      "text": "Четыре уровня конфликта: физический → общественный → личный → внутренний. Чем ближе к личному/внутреннему, тем больше нужен диалог.",
+      "source": "McKee, Диалог: Функции (гл.4)",
+      "tags": ["dialogue", "conflict", "structure"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d05",
+      "text": "Шесть задач диалога: действие · пауза/противодействие · экспозиция · словесный портрет · напряжение · соответствие.",
+      "source": "McKee, Диалог: Функции (гл.2–3)",
+      "tags": ["dialogue", "functions"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d06",
+      "text": "Четыре ошибки: пустой разговор · мелодрама · лобовое письмо (= смерть!) · отговорки вместо мотивации.",
+      "source": "McKee, Диалог: Ошибки (гл.6–9)",
+      "tags": ["dialogue", "mistakes", "avoid"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d07",
+      "text": "Триалог: конфликт между двумя ← через «третье» (канарейки, Хайзенберг, Годо).",
+      "source": "McKee, Диалог: Форма (гл.5)",
+      "tags": ["dialogue", "conflict", "structure"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d08",
+      "text": "Мотивация vs Отговорка: «Мне нужно было» ≠ «Я хотел». Персонаж редко осознаёт свои мотивы.",
+      "source": "McKee, Диалог: Ошибки (гл.8)",
+      "tags": ["dialogue", "character", "motivation"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d09",
+      "text": "Повтор — враг. Закон убывающей отдачи: 1й=100%, 2й=50%, 3й=ноль+обратный. Записывать → слушать.",
+      "source": "McKee, Диалог: Форма (гл.5)",
+      "tags": ["dialogue", "pacing", "rhythm"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d10",
+      "text": "Главное слово — в конце реплики. «Молотком его» > «сильно забивай этот большой гвоздь».",
+      "source": "McKee, Диалог: Форма (гл.5)",
+      "tags": ["dialogue", "pacing", "economy"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d11",
+      "text": "Своевременность: слишком рано = скучно. Слишком поздно = раздражает. В конце реплики — максимум.",
+      "source": "McKee, Диалог: Форма (гл.5)",
+      "tags": ["dialogue", "pacing", "timing"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d12",
+      "text": "Форма сцены: первые такты сильные → поворотная точка → развязка.",
+      "source": "McKee, Диалог: Форма (гл.5)",
+      "tags": ["dialogue", "scene", "structure"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d13",
+      "text": "Четыре расколотых сцены: скучная · мелодрама · нелогичная · бессобытийная. Перефразирование НЕ лечит плохую сцену.",
+      "source": "McKee, Диалог: Ошибки (гл.6–9)",
+      "tags": ["dialogue", "mistakes", "scene"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d14",
+      "text": "Проблемы диалога = проблемы истории. Если реплики не работают, сначала проверить конфликт и желания, не формулировки.",
+      "source": "McKee, Диалог: Ошибки (гл.6–9)",
+      "tags": ["dialogue", "plot", "diagnosis"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d15",
+      "text": "Голос = отбор. Что НЕ говоришь — важнее что говоришь. Субъективность голоса создаёт характер.",
+      "source": "McKee, Диалог: Язык (гл.7)",
+      "tags": ["dialogue", "voice", "character"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d16",
+      "text": "Два таланта: придумывать истории + владеть словом. Айсберг: невысказанное внизу, слова наверху.",
+      "source": "McKee, Диалог: Язык (гл.7)",
+      "tags": ["dialogue", "iceberg", "craft"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d17",
+      "text": "Нет универсально «хорошего» диалога. Кино, театр, ТВ, проза требуют разной степени естественности и условности.",
+      "source": "McKee, Диалог: Носители (гл.10)",
+      "tags": ["dialogue", "medium", "form"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_d18",
+      "text": "Проза свободнее всех. Диалог может быть прямым, косвенным, внутренним, обращённым к читателю и почти слитым с повествованием.",
+      "source": "McKee, Диалог: Носители (гл.10)",
+      "tags": ["dialogue", "prose", "form"],
+      "practiced_in": [],
+      "reading_session": "mckee_d01"
+    },
+    {
+      "id": "mckee_p01",
+      "text": "Персонаж ≠ человек. Персонаж = законченный образ. Прозрачнее, сложнее, доступнее любого знакомого.",
+      "source": "McKee, Персонаж: Введение",
+      "tags": ["character", "definition", "core"],
+      "practiced_in": [],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p02",
+      "text": "Сюжет = персонаж. Ложная оппозиция. Событие = персонаж в действии.",
+      "source": "McKee, Персонаж: Введение",
+      "tags": ["character", "plot", "action"],
+      "practiced_in": [],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p03",
+      "text": "Четыре «я» персонажа: центральное (наблюдатель) → личное (близость) → социальное (власть) → скрытое (желание).",
+      "source": "McKee, Персонаж: Гл.5",
+      "tags": ["character", "depth", "four-self"],
+      "practiced_in": ["ex_mckee_04"],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p04",
+      "text": "Сознательное желание ≠ подсознательное. Внутренний конфликт = сознательное ↔ подсознательное. Это движет персонажа сильнее внешнего врага.",
+      "source": "McKee, Персонаж: Гл.8",
+      "tags": ["character", "desire", "conflict", "core"],
+      "practiced_in": ["ex_mckee_05"],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p05",
+      "text": "Грань = противоречие. Свет и тьма внутри одного персонажа. Без граней — иллюстрация. С гранями — живой.",
+      "source": "McKee, Персонаж: Гл.6",
+      "tags": ["character", "depth", "contradiction"],
+      "practiced_in": [],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p06",
+      "text": "Арка персонажа = ломаная линия. Не прямая. Плюсы чередуются с минусами. Пять стадий: экспозиция → новый мир → освоение → проверка → возврат.",
+      "source": "McKee, Персонаж: Гл.9",
+      "tags": ["character", "arc", "structure"],
+      "practiced_in": [],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p07",
+      "text": "Принцип ансамбля: каждый персонаж должен раскрывать свойства других. Без контраста — интерес гаснет.",
+      "source": "McKee, Персонаж: Гл.16–17",
+      "tags": ["character", "ensemble", "contrast"],
+      "practiced_in": ["ex_mckee_final"],
+      "reading_session": "mckee_p01"
+    },
+    {
+      "id": "mckee_p08",
+      "text": "Власть и смерть — глубинные темы. Страх смерти → поиск контроля. Все сильные персонажи работают с этой темой.",
+      "source": "McKee, Персонаж: Заключение",
+      "tags": ["theme", "character", "power", "death"],
+      "practiced_in": [],
+      "reading_session": "mckee_p01"
+    }
+  ]
+}

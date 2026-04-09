@@ -1,0 +1,50 @@
+{
+  "books": [
+    {
+      "id": "king_on_writing",
+      "title": "On Writing",
+      "title_ru": "Как писать",
+      "author": "Stephen King",
+      "status": "read",
+      "progress": "100",
+      "lines": 2840,
+      "source_file": "source/King_on_writing_ru.txt",
+      "notes_file": "books/king_notes.md",
+      "reading_sessions": 3,
+      "last_read": "2026-04-08",
+      "summary": "Автобиография + крафт. Мемуар → «Кэрри» → правила письма. Лучшая книга о ремесле: просто, честно, без академического пафоса.",
+      "tags": ["non-fiction", "craft", "memoir", "language"]
+    },
+    {
+      "id": "mckee_character",
+      "title": "Character: создание образов",
+      "title_ru": "Персонаж: Искусство создания образов на экране, в книгах и на сцене",
+      "author": "Robert McKee",
+      "status": "read",
+      "progress": "100",
+      "lines": 7287,
+      "source_file": "source/mckee_character.txt",
+      "notes_file": "books/mckee_character_notes.md",
+      "reading_sessions": 5,
+      "last_read": "2026-04-08",
+      "summary": "7287 строк. 17 глав. 5 разборов. От архетипов через характеры к ансамблю. Академический стиль, высокая плотность. Для романа — основной референс.",
+      "tags": ["fiction", "character", "screenwriting", "structure"]
+    },
+    {
+      "id": "mckee_dialogue",
+      "title": "Dialogue",
+      "title_ru": "Диалог: Искусство слова",
+      "author": "Robert McKee",
+      "status": "reading",
+      "progress": "40",
+      "lines": 6119,
+      "source_file": "source/mckee_dialogue.txt",
+      "notes_file": "books/mckee_dialogue_notes.md",
+      "reading_sessions": 1,
+      "last_read": "2026-04-08",
+      "summary": "Диалог как действие. Три уровня, техника реплики, ошибки, устройство сцен. Части I-II (гл.1-9) прочитаны. Далее: создание диалога, устройство сцен, практика.",
+      "tags": ["fiction", "dialogue", "screenwriting", "language"],
+      "next": "Гл.10-20: создание диалога, устройство сцен"
+    }
+  ]
+}

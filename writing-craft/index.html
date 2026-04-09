@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Писательский крафт — Echo Libero</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg: #0d0d0d;
+            --card: #141420;
+            --card-hover: #1a1a2e;
+            --border: #2a2a3a;
+            --text: #d0d0e0;
+            --text-muted: #666680;
+            --accent: #a0c4ff;
+            --done: #6bcb77;
+            --current: #ffd966;
+            --pending: #555;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.6rem; color: #fff; margin-bottom: 0.3rem; }
+        h2 { font-size: 1rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; margin: 2rem 0 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+        h3 { font-size: 0.85rem; color: #bdb2ff; margin: 0.8rem 0 0.4rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--text-muted); }
+        .meta-item { display: flex; align-items: center; gap: 0.4rem; }
+
+        /* Search */
+        .search-wrap { margin-bottom: 1.5rem; position: relative; }
+        .search-input {
+            width: 100%;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.7rem 1rem 0.7rem 2.5rem;
+            color: var(--text);
+            font-size: 0.9rem;
+            outline: none;
+        }
+        .search-input:focus { border-color: var(--accent); }
+        .search-icon { position: absolute; left: 0.8rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem; }
+        .tag-filter { display: flex; gap: 0.4rem; flex-wrap: wrap; margin: 0.6rem 0; }
+        .tag-chip {
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .tag-chip:hover, .tag-chip.active { background: var(--accent); color: #000; border-color: var(--accent); }
+        .result-count { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+
+        /* Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+        /* Principle cards */
+        .principle-card {
+            background: var(--card);
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 3px solid var(--border);
+            transition: border-color 0.2s;
+            animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+        .principle-card:hover { background: var(--card-hover); }
+        .principle-card.practiced { border-left-color: var(--done); }
+        .principle-text { font-size: 0.85rem; color: var(--text); margin-bottom: 0.5rem; line-height: 1.5; }
+        .principle-source { font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+        .principle-footer { display: flex; gap: 0.3rem; flex-wrap: wrap; align-items: center; }
+        .tag { font-size: 0.65rem; background: #1e1e30; padding: 0.1rem 0.4rem; border-radius: 3px; color: #888; }
+        .ex-badge { font-size: 0.65rem; background: var(--done); color: #000; padding: 0.1rem 0.4rem; border-radius: 3px; }
+        .ex-badge.pending { background: var(--current); color: #000; }
+
+        /* Books */
+        .book-card {
+            background: var(--card);
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 3px solid var(--border);
+            margin-bottom: 0.5rem;
+        }
+        .book-card.done { border-left-color: var(--done); }
+        .book-card.reading { border-left-color: var(--current); }
+        .book-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem; }
+        .book-author { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+        .book-summary { font-size: 0.8rem; color: #aaa; margin-bottom: 0.4rem; }
+        .book-meta { display: flex; gap: 0.8rem; font-size: 0.7rem; color: var(--text-muted); }
+        .book-status { font-weight: 600; }
+        .book-status.done { color: var(--done); }
+        .book-status.reading { color: var(--current); }
+
+        /* Exercises */
+        .ex-card {
+            background: var(--card);
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 3px solid var(--border);
+            margin-bottom: 0.5rem;
+        }
+        .ex-card.done { border-left-color: var(--done); }
+        .ex-card.planned { border-left-color: var(--current); }
+        .ex-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem; }
+        .ex-title { font-weight: 600; font-size: 0.9rem; }
+        .ex-status { font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px; }
+        .ex-status.done { background: var(--done); color: #000; }
+        .ex-status.planned { background: var(--current); color: #000; }
+        .ex-result { font-size: 0.8rem; color: #aaa; margin-top: 0.4rem; padding-top: 0.4rem; border-top: 1px solid var(--border); }
+        .ex-source { font-size: 0.7rem; color: var(--text-muted); }
+
+        /* Levels */
+        .levels { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.6rem; margin-bottom: 1.5rem; }
+        .level-card {
+            background: var(--card);
+            border-radius: 6px;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        .level-num { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .level-name { font-weight: 600; font-size: 0.85rem; margin: 0.2rem 0; }
+        .level-desc { font-size: 0.7rem; color: var(--text-muted); }
+        .level-status { margin-top: 0.3rem; font-size: 0.7rem; }
+        .level-status.done { color: var(--done); }
+        .level-status.current { color: var(--current); }
+        .level-status.pending { color: var(--pending); }
+
+        /* Quote */
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #888;
+            font-style: italic;
+            font-size: 0.85rem;
+        }
+
+        .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.7rem; color: #444; text-align: center; }
+    </style>
+</head>
+<body>
+
+<h1>✏️ Писательский крафт</h1>
+<p class="subtitle">Программа прозы для романа «Перспективы». Данные — в <a href="_data/principles.json">principles.json</a> · <a href="_data/exercises.json">exercises.json</a> · <a href="_data/books.json">books.json</a></p>
+
+<div class="meta">
+    <div class="meta-item">📅 Старт: 2026-04-07</div>
+    <div class="meta-item" id="pCount">—</div>
+    <div class="meta-item" id="exCount">—</div>
+    <div class="meta-item">🎯 <a href="https://echolibero.github.io/book/">Перспективы</a></div>
+</div>
+
+<!-- Levels -->
+<h2>Уровни мастерства</h2>
+<div class="levels">
+    <div class="level-card">
+        <div class="level-num">Уровень 0</div>
+        <div class="level-name">Диагностика</div>
+        <div class="level-desc">Аналитика, worldbuilding</div>
+        <div class="level-status done">✓ Готово</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 1</div>
+        <div class="level-name">Крафт</div>
+        <div class="level-desc">Prose, showing vs telling</div>
+        <div class="level-status current">→ В процессе</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 2</div>
+        <div class="level-name">Структура</div>
+        <div class="level-desc">Plot, конфликт, pacing</div>
+        <div class="level-status pending">○ Не начато</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 3</div>
+        <div class="level-name">Жанр</div>
+        <div class="level-desc">Chiang, Gibson, Vinge</div>
+        <div class="level-status pending">○ Не начато</div>
+    </div>
+    <div class="level-card">
+        <div class="level-num">Уровень 4</div>
+        <div class="level-name">Практика</div>
+        <div class="level-desc">Чтение + упражнения</div>
+        <div class="level-status pending">○ Не начато</div>
+    </div>
+</div>
+
+<!-- Books -->
+<h2>📚 Книги</h2>
+<div id="books"></div>
+
+<blockquote>«Писательство — это телепатия. Мысль передаётся от одного разума другому через слова на бумаге. Убери всё лишнее.» — Stephen King</blockquote>
+
+<!-- Search -->
+<h2>🧠 Принципы</h2>
+<div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" id="search" placeholder="Поиск по принципам..." oninput="filterPrinciples()">
+    <div class="tag-filter" id="tagFilter"></div>
+    <div class="result-count" id="resultCount"></div>
+</div>
+<div class="grid">
+    <div>
+        <h3 style="color:#6bcb77; margin-top:0;">✓ Практиковано</h3>
+        <div id="practiced"></div>
+    </div>
+    <div>
+        <h3 style="color:#888; margin-top:0;">📖 Только прочитано</h3>
+        <div id="unpracticed"></div>
+    </div>
+</div>
+
+<!-- Exercises -->
+<h2>✏️ Упражнения</h2>
+<div id="exercises"></div>
+
+<div class="footer">
+    writing-craft · Echo Libero · <a href="_data/principles.json">JSON</a> · <a href="https://echolibero.github.io/book/">Перспективы</a>
+</div>
+
+<script>
+let principles = [];
+let exercises = [];
+let books = [];
+let activeTags = new Set();
+
+async function load() {
+    const [p, e, b] = await Promise.all([
+        fetch('_data/principles.json').then(r => r.json()),
+        fetch('_data/exercises.json').then(r => r.json()),
+        fetch('_data/books.json').then(r => r.json())
+    ]);
+    principles = p.principles;
+    exercises = e.exercises;
+    books = b.books;
+
+    document.getElementById('pCount').textContent = '🧠 ' + principles.length + ' принципов';
+    document.getElementById('exCount').textContent = '✏️ ' + exercises.filter(x => x.status === 'done').length + '/' + exercises.length + ' упражнений';
+
+    renderBooks();
+    renderTagFilter();
+    renderPrinciples();
+    renderExercises();
+}
+
+function renderBooks() {
+    const el = document.getElementById('books');
+    el.innerHTML = books.map(b => `
+        <div class="book-card ${b.status}">
+            <div class="book-title">${b.title_ru || b.title}</div>
+            <div class="book-author">${b.author} · ${b.status === 'read' ? '✓ Прочитано' : '→ В процессе'}</div>
+            <div class="book-summary">${b.summary || ''}</div>
+            <div class="book-meta">
+                <span>${b.lines?.toLocaleString()} строк</span>
+                ${b.next ? `<span style="color:var(--current)">Далее: ${b.next}</span>` : ''}
+            </div>
+        </div>
+    `).join('');
+}
+
+function renderTagFilter() {
+    const allTags = new Set();
+    principles.forEach(p => p.tags.forEach(t => allTags.add(t)));
+    const el = document.getElementById('tagFilter');
+    el.innerHTML = Array.from(allTags).sort().map(t =>
+        `<span class="tag-chip" data-tag="${t}" onclick="toggleTag('${t}')">${t}</span>`
+    ).join('');
+}
+
+function toggleTag(tag) {
+    if (activeTags.has(tag)) activeTags.delete(tag);
+    else activeTags.add(tag);
+    document.querySelectorAll('.tag-chip').forEach(chip => {
+        chip.classList.toggle('active', activeTags.has(chip.dataset.tag));
+    });
+    filterPrinciples();
+}
+
+function filterPrinciples() {
+    const q = document.getElementById('search').value.toLowerCase();
+    const filtered = principles.filter(p => {
+        const matchQ = !q || p.text.toLowerCase().includes(q) || p.source.toLowerCase().includes(q);
+        const matchTags = activeTags.size === 0 || [...activeTags].every(t => p.tags.includes(t));
+        return matchQ && matchTags;
+    });
+    document.getElementById('resultCount').textContent = `Показано ${filtered.length} из ${principles.length}`;
+    renderFilteredPrinciples(filtered);
+}
+
+function getExBadge(p) {
+    const practiced = exercises.filter(e => e.status === 'done' && e.practices.includes(p.id));
+    const planned = exercises.filter(e => e.status === 'planned' && e.practices.includes(p.id));
+    let html = '';
+    practiced.forEach(e => { html += `<span class="ex-badge">✏ ${e.title.slice(0, 20)}</span>`; });
+    planned.forEach(e => { html += `<span class="ex-badge pending">○ ${e.title.slice(0, 20)}</span>`; });
+    return html;
+}
+
+function renderFilteredPrinciples(data) {
+    const practiced = data.filter(p => p.practiced_in && p.practiced_in.some(id => exercises.find(e => e.id === id && e.status === 'done')));
+    const unpracticed = data.filter(p => !practiced.includes(p));
+
+    document.getElementById('practiced').innerHTML = practiced.length
+        ? practiced.map(p => cardHTML(p)).join('')
+        : '<div style="font-size:0.8rem;color:var(--text-muted);padding:1rem;">Нет практикованых принципов в выборке</div>';
+    document.getElementById('unpracticed').innerHTML = unpracticed.length
+        ? unpracticed.map(p => cardHTML(p)).join('')
+        : '';
+}
+
+function cardHTML(p) {
+    return `
+        <div class="principle-card ${p.practiced_in && p.practiced_in.some(id => exercises.find(e => e.id === id && e.status === 'done')) ? 'practiced' : ''}">
+            <div class="principle-text">${p.text}</div>
+            <div class="principle-source">${p.source}</div>
+            <div class="principle-footer">
+                ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                ${getExBadge(p)}
+            </div>
+        </div>
+    `;
+}
+
+function renderPrinciples() { filterPrinciples(); }
+
+function renderExercises() {
+    const done = exercises.filter(e => e.status === 'done');
+    const planned = exercises.filter(e => e.status === 'planned');
+    const el = document.getElementById('exercises');
+    el.innerHTML = done.map(e => exHTML(e, 'done')).join('') + planned.map(e => exHTML(e, 'planned')).join('');
+}
+
+function exHTML(e, cls) {
+    const practiced = e.practices.map(pid => principles.find(p => p.id === pid)).filter(Boolean);
+    return `
+        <div class="ex-card ${cls}">
+            <div class="ex-header">
+                <div class="ex-title">${e.title}</div>
+                <span class="ex-status ${cls}">${cls === 'done' ? '✓' : '○'}</span>
+            </div>
+            <div class="ex-source">${e.source} · ${e.date}</div>
+            ${e.result ? `<div class="ex-result">${e.result}</div>` : ''}
+            ${practiced.length ? `<div style="margin-top:0.4rem;display:flex;gap:0.3rem;flex-wrap:wrap;">${practiced.map(p => `<span class="tag" title="${p.text.slice(0,60)}">${p.tags[0]}</span>`).join('')}</div>` : ''}
+        </div>
+    `;
+}
+
+load();
+</script>
+</body>
+</html>
