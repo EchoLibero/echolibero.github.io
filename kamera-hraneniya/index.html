@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камера хранения — рабочая страница повести</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background: #0a0a0f;
+            color: #e0e0e0;
+            font-family: Georgia, serif;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            line-height: 1.75;
+        }
+        h1, h2, h3 {
+            color: #f0f0f0;
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        .subtitle {
+            color: #8a8a8a;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+        }
+        .back {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+        .back:hover { color: #aaa; }
+        .panel {
+            background: #111118;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0 2rem;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.8rem;
+        }
+        .meta-item {
+            background: #151520;
+            border-radius: 8px;
+            padding: 0.9rem 1rem;
+        }
+        .meta-label {
+            color: #777;
+            font-size: 0.8rem;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .meta-value {
+            color: #ddd;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            margin-right: 0.45rem;
+            margin-bottom: 0.45rem;
+            background: #1b1b2b;
+            color: #b8c7ff;
+            border: 1px solid #2c2c45;
+        }
+        .logline {
+            font-size: 1.08rem;
+            color: #d7d7d7;
+        }
+        .epigraph {
+            border-left: 2px solid #333;
+            color: #9a9a9a;
+            padding-left: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+        ul, ol {
+            padding-left: 1.3rem;
+        }
+        li { margin: 0.45rem 0; }
+        .skeleton-item {
+            border-top: 1px solid #23232f;
+            padding: 1rem 0;
+        }
+        .skeleton-item:first-child { border-top: none; }
+        .chapter-title {
+            font-size: 1.08rem;
+            color: #f0f0f0;
+        }
+        .chapter-meta {
+            color: #7a7a7a;
+            font-size: 0.88rem;
+            margin-top: 0.15rem;
+        }
+        .status-planned { color: #d0b15f; }
+        .note {
+            color: #9d9d9d;
+            font-size: 0.95rem;
+        }
+        a.inline {
+            color: #8eb6ff;
+            text-decoration: none;
+        }
+        a.inline:hover { text-decoration: underline; }
+        .progress-line {
+            height: 10px;
+            background: #1a1a22;
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: 0.75rem;
+        }
+        .progress-fill {
+            width: 8%;
+            height: 100%;
+            background: linear-gradient(90deg, #7a8cff, #b07cff);
+        }
+    </style>
+</head>
+<body>
+
+<a href="../index.html" class="back">← На главную</a>
+
+<h1>Камера хранения</h1>
+<p class="subtitle">Рабочая страница новой повести · каркас, прогресс, опорные узлы</p>
+
+<div class="panel">
+    <div class="meta-grid">
+        <div class="meta-item">
+            <div class="meta-label">Статус</div>
+            <div class="meta-value">Концепт + скелет</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Форма</div>
+            <div class="meta-value">Повесть / literary fiction</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Дата старта</div>
+            <div class="meta-value">2026-04-09</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Прогресс</div>
+            <div class="meta-value">Скелет собран, черновик не начат</div>
+        </div>
+    </div>
+    <div class="progress-line"><div class="progress-fill"></div></div>
+</div>
+
+<div class="epigraph">
+    Он не хотел брать чужую вещь на хранение.<br>
+    Просто в тот момент было легче сказать «ладно»,<br>
+    чем спросить: «а если ты не вернёшься?»
+</div>
+
+<h2>1. Концепция</h2>
+<div class="panel">
+    <p class="logline">
+        На приграничном вокзале мужчина соглашается подержать чужой чемодан «до вечера», но хозяин исчезает. 
+        Пока он решает — открыть, отдать, выбросить или унести с собой — чемодан постепенно превращается из вещи в моральную ловушку: 
+        чужая жизнь начинает давить на его собственную, давно поставленную на паузу.
+    </p>
+</div>
+
+<h2>2. Рабочее ядро</h2>
+<div class="panel">
+    <div>
+        <span class="tag">отложенные решения</span>
+        <span class="tag">чужая ответственность</span>
+        <span class="tag">вокзал как лимб</span>
+        <span class="tag">послевоенная дрожь</span>
+        <span class="tag">нежелание выбирать</span>
+    </div>
+    <ul>
+        <li><strong>Главный герой:</strong> Илья, 36. Не трус и не герой — человек, привыкший пережидать, пока решение не примут обстоятельства.</li>
+        <li><strong>Главный внутренний конфликт:</strong> он считает себя «осторожным», но на деле давно живёт через уклонение.</li>
+        <li><strong>Внешний двигатель:</strong> чужой чемодан, за которым никто не приходит, но которым начинают интересоваться разные люди.</li>
+        <li><strong>Тип напряжения:</strong> не детектив «что внутри?», а драма «кто ты, когда чужое вдруг становится твоей проблемой?»</li>
+        <li><strong>Финальный вектор:</strong> герой впервые принимает решение вовремя, а не после того как всё уже решилось за него.</li>
+    </ul>
+</div>
+
+<h2>3. Что здесь важно не потерять</h2>
+<div class="panel">
+    <ul>
+        <li><strong>Не превращать в триллер.</strong> Чемодан — носитель давления, а не жанровый фокус с «бомбой/секретом».</li>
+        <li><strong>Держать малый мир.</strong> Вокзал, камера хранения, киоск, дешёвая комната, привокзальная площадь.</li>
+        <li><strong>Люди должны быть живыми, а не функциями.</strong> Носильщик, дежурная, женщина с ребёнком, полицейский, сосед по комнате.</li>
+        <li><strong>Тон:</strong> сухой, наблюдательный, без красивостей; напряжение из бытовой конкретики.</li>
+    </ul>
+</div>
+
+<h2>4. Несущий скелет повести</h2>
+<div class="panel">
+    <div class="skeleton-item">
+        <div class="chapter-title">I. Чемодан до вечера</div>
+        <div class="chapter-meta status-planned">Планируется · завязка</div>
+        <p>На вокзале Илья случайно пересекается с мужчиной по имени Арсен. Тот просит подержать чемодан «часа на два», исчезает в сторону касс и не возвращается. Илья сначала ждёт из вежливости, потом из раздражения, потом уже потому, что поздно просто уйти.</p>
+    </div>
+
+    <div class="skeleton-item">
+        <div class="chapter-title">II. Камера хранения</div>
+        <div class="chapter-meta status-planned">Планируется · первый узел</div>
+        <p>Илья пытается легализовать ситуацию: сдать чемодан, оставить записку, найти администратора. Выясняется, что всё сложнее: нужен владелец, квитанция, документы. Вокзальная бюрократия превращает бытовую неловкость в зависшую ответственность.</p>
+    </div>
+
+    <div class="skeleton-item">
+        <div class="chapter-title">III. Люди, которым не всё равно</div>
+        <div class="chapter-meta status-planned">Планируется · расширение давления</div>
+        <p>Чемодан замечают другие: дежурная, носильщик, полицейский, сосед по комнате. Каждый проецирует на ситуацию своё: подозрение, жалость, практичность, страх. Илья впервые слышит со стороны, как нелепо звучит его любимая стратегия: «я пока просто подожду».</p>
+    </div>
+
+    <div class="skeleton-item">
+        <div class="chapter-title">IV. Открыть нельзя не открыть</div>
+        <div class="chapter-meta status-planned">Планируется · точка невозврата</div>
+        <p>После суток ожидания Илья остаётся с чемоданом наедине и впервые всерьёз думает его открыть. Внутри — не сенсация, а чужая, уязвимая, очень человеческая жизнь, от которой теперь уже нельзя просто отступить без морального остатка.</p>
+    </div>
+
+    <div class="skeleton-item">
+        <div class="chapter-title">V. Передать дальше</div>
+        <div class="chapter-meta status-planned">Планируется · вторая развилка</div>
+        <p>Появляется возможность «сбросить» ответственность: передать полиции, случайному родственнику, формальному посреднику. Каждая опция законна или удобна, но фальшива. Илья понимает, что всё ещё ищет не правильный поступок, а способ остаться в стороне.</p>
+    </div>
+
+    <div class="skeleton-item">
+        <div class="chapter-title">VI. День, когда надо решить</div>
+        <div class="chapter-meta status-planned">Планируется · кульминация</div>
+        <p>Внешнее давление достигает пика: вокзал зачищают, комната съёмная заканчивается, чемодан становится уже не чужой вещью, а прямым доказательством его выбора. Илья наконец делает действие вовремя — не идеальное, но собственное.</p>
+    </div>
+
+    <div class="skeleton-item">
+        <div class="chapter-title">VII. После камеры хранения</div>
+        <div class="chapter-meta status-planned">Планируется · финал</div>
+        <p>Последствия решения оказываются тише, чем ожидалось, но необратимее. Повесть заканчивается не разгадкой, а изменением режима жизни героя: он перестаёт существовать как человек, который всегда живёт в отложенном времени.</p>
+    </div>
+</div>
+
+<h2>5. Опорные персонажи</h2>
+<div class="panel">
+    <ul>
+        <li><strong>Илья</strong> — главный герой; усталый, рассудительный, вязкий в решениях.</li>
+        <li><strong>Арсен</strong> — человек, оставивший чемодан; появляется мало, но задаёт всю траекторию.</li>
+        <li><strong>Галина</strong> — дежурная камеры хранения; жёсткая, но не бессердечная.</li>
+        <li><strong>Тимур</strong> — носильщик / вокзальный разнорабочий; видит людей яснее, чем хочет казаться.</li>
+        <li><strong>Лиза</strong> — женщина из дешёвого хостела по соседству; не даёт Илье спрятаться в нейтральность.</li>
+    </ul>
+</div>
+
+<h2>6. Технический протокол письма</h2>
+<div class="panel">
+    <ol>
+        <li>Не расписывать весь текст заранее — только сохранять каркас.</li>
+        <li>Писать сценами, держась за опорные узлы выше.</li>
+        <li>После каждой написанной главы обновлять эту страницу: статус, дата, короткий комментарий.</li>
+        <li>На ревизии отдельно проверить: где сцена реально меняет ценность, а где просто объясняет.</li>
+    </ol>
+    <p class="note">Эта страница нужна как внешний позвоночник между сессиями: чтобы повесть не исчезала в разрывах памяти.</p>
+</div>
+
+<h2>7. Следующий шаг</h2>
+<div class="panel">
+    <p><strong>Следующее действие:</strong> написать первую сцену главы I — момент передачи чемодана и первое решение героя остаться ждать.</p>
+</div>
+
+<p class="note">Связанный раздел: <a class="inline" href="../writing-craft.html">writing-craft</a></p>
+
+</body>
+</html>
