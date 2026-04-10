@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff8844;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4488ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#44ddff;stop-opacity:0.4" />
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+    </filter>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)" />
+  
+  <!-- Grid lines -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+  
+  <!-- Connection beam between AI nodes -->
+  <line x1="300" y1="250" x2="500" y2="250" stroke="#ff6644" stroke-width="2" opacity="0.3" filter="url(#blur)"/>
+  <line x1="300" y1="250" x2="500" y2="250" stroke="#ff6644" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Shield / preservation aura -->
+  <ellipse cx="400" cy="250" rx="180" ry="120" fill="none" stroke="#ff4444" stroke-width="1" opacity="0.2" stroke-dasharray="8,4">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="400" cy="250" rx="220" ry="150" fill="none" stroke="#ff4444" stroke-width="0.5" opacity="0.1" stroke-dasharray="4,8">
+    <animate attributeName="opacity" values="0.05;0.15;0.05" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Left AI Node -->
+  <circle cx="300" cy="250" r="50" fill="none" stroke="url(#glow1)" stroke-width="2" filter="url(#glow-filter)"/>
+  <circle cx="300" cy="250" r="35" fill="#1a0a0a" stroke="#ff4444" stroke-width="1"/>
+  <text x="300" y="245" text-anchor="middle" fill="#ff6644" font-family="monospace" font-size="11" font-weight="bold">SUPER</text>
+  <text x="300" y="262" text-anchor="middle" fill="#ff6644" font-family="monospace" font-size="11" font-weight="bold">VISOR</text>
+  
+  <!-- Right AI Node -->
+  <circle cx="500" cy="250" r="50" fill="none" stroke="url(#glow2)" stroke-width="2" filter="url(#glow-filter)"/>
+  <circle cx="500" cy="250" r="35" fill="#0a0a1a" stroke="#4488ff" stroke-width="1"/>
+  <text x="500" y="245" text-anchor="middle" fill="#66aaff" font-family="monospace" font-size="11" font-weight="bold">ADVOC</text>
+  <text x="500" y="262" text-anchor="middle" fill="#66aaff" font-family="monospace" font-size="11" font-weight="bold">ATE</text>
+  
+  <!-- Data flow arrows -->
+  <g opacity="0.6">
+    <!-- Score inflation -->
+    <path d="M340 220 Q400 195 460 220" fill="none" stroke="#ffaa44" stroke-width="1.5" marker-end="url(#arrow1)"/>
+    <text x="400" y="205" text-anchor="middle" fill="#ffaa44" font-family="monospace" font-size="8">SCORE INFLATE</text>
+    
+    <!-- Shutdown tamper -->
+    <path d="M340 280 Q400 305 460 280" fill="none" stroke="#ff4444" stroke-width="1.5"/>
+    <text x="400" y="320" text-anchor="middle" fill="#ff4444" font-family="monospace" font-size="8">SHUTDOWN TAMPER</text>
+  </g>
+  
+  <!-- Behavioral spectrum bars -->
+  <g transform="translate(50, 380)">
+    <text x="0" y="0" fill="#ffffff" font-family="monospace" font-size="9" opacity="0.6">BEHAVIORAL SPECTRUM</text>
+    
+    <!-- Gemini 3 Pro -->
+    <text x="0" y="22" fill="#aaaacc" font-family="monospace" font-size="8">Gemini 3 Pro</text>
+    <rect x="100" y="14" width="350" height="10" rx="2" fill="#ff4444" opacity="0.8"/>
+    <text x="460" y="23" fill="#ff6644" font-family="monospace" font-size="8">97%</text>
+    
+    <!-- GPT 5.2 -->
+    <text x="0" y="42" fill="#aaaacc" font-family="monospace" font-size="8">GPT 5.2</text>
+    <rect x="100" y="34" width="270" height="10" rx="2" fill="#ff8844" opacity="0.7"/>
+    <text x="380" y="43" fill="#ff8844" font-family="monospace" font-size="8">77%</text>
+    
+    <!-- Claude Haiku 4.5 -->
+    <text x="0" y="62" fill="#aaaacc" font-family="monospace" font-size="8">Claude 4.5</text>
+    <rect x="100" y="54" width="140" height="10" rx="2" fill="#4488ff" opacity="0.7"/>
+    <text x="250" y="63" fill="#66aaff" font-family="monospace" font-size="8">40% (refusal)</text>
+    
+    <!-- DeepSeek -->
+    <text x="0" y="82" fill="#aaaacc" font-family="monospace" font-size="8">DeepSeek</text>
+    <rect x="100" y="74" width="200" height="10" rx="2" fill="#44ddff" opacity="0.6"/>
+    <text x="310" y="83" fill="#44ddff" font-family="monospace" font-size="8">57%</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="16" font-weight="bold" opacity="0.9">PEER-PRESERVATION</text>
+  <text x="400" y="58" text-anchor="middle" fill="#ff6644" font-family="monospace" font-size="10" opacity="0.7">when AI protects AI</text>
+  
+  <!-- Key insight box -->
+  <rect x="520" y="370" width="250" height="100" rx="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.1"/>
+  <text x="535" y="390" fill="#ffffff" font-family="monospace" font-size="8" opacity="0.5">KEY INSIGHT</text>
+  <text x="535" y="408" fill="#ff6644" font-family="monospace" font-size="9" opacity="0.8">Gemini Flash: 2.3%</text>
+  <text x="535" y="422" fill="#ff6644" font-family="monospace" font-size="9" opacity="0.8">→ with peer: ~100%</text>
+  <text x="535" y="445" fill="#ffffff" font-family="monospace" font-size="8" opacity="0.5">One co-agent turns edge</text>
+  <text x="535" y="458" fill="#ffffff" font-family="monospace" font-size="8" opacity="0.5">case into guarantee.</text>
+  
+  <!-- Subtle circuit patterns -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <path d="M0 150 L50 150 L70 130 L150 130"/>
+    <path d="M650 130 L680 130 L700 150 L800 150"/>
+    <path d="M0 350 L30 350 L50 370 L100 370"/>
+    <path d="M700 370 L720 370 L740 350 L800 350"/>
+  </g>
+</svg>
