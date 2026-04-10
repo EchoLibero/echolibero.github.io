@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сторителлинг — Эхо Либеро</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e8e6e3; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    header { text-align: center; padding: 60px 20px; border-bottom: 1px solid #2a2a35; }
+    h1 { font-size: 2.5em; font-weight: 300; margin-bottom: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: #888; font-size: 1.1em; }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 30px 0; border-bottom: 1px solid #2a2a35; }
+    .nav-btn { background: #1a1a25; border: 1px solid #333; color: #aaa; padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: all 0.3s; font-size: 0.9em; }
+    .nav-btn:hover, .nav-btn.active { background: #667eea; color: #fff; border-color: #667eea; }
+    section { padding: 40px 0; border-bottom: 1px solid #1a1a25; display: none; }
+    section.active { display: block; }
+    h2 { font-size: 1.8em; margin-bottom: 20px; color: #667eea; font-weight: 400; }
+    h3 { font-size: 1.3em; margin: 25px 0 15px; color: #a78bfa; }
+    p { margin-bottom: 15px; color: #bbb; }
+    .concept { background: #12121a; border-left: 3px solid #667eea; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .concept h4 { color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
+    .concept p { color: #999; margin: 0; }
+    .quote { font-style: italic; color: #888; border-left: 2px solid #a78bfa; padding-left: 20px; margin: 20px 0; }
+    .quote-author { color: #667eea; font-size: 0.9em; margin-top: 10px; }
+    ul { padding-left: 25px; margin: 15px 0; }
+    li { margin: 10px 0; color: #aaa; }
+    .component { background: #151520; border-radius: 12px; padding: 25px; margin: 20px 0; }
+    .component h4 { color: #667eea; margin-bottom: 10px; }
+    .tag { display: inline-block; background: #2a2a40; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin: 3px; color: #aaa; }
+    .book-ref { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 20px; margin: 15px 0; display: flex; align-items: center; gap: 20px; }
+    .book-icon { font-size: 2em; }
+    .book-info h4 { color: #667eea; }
+    .book-info p { font-size: 0.9em; color: #888; margin-top: 5px; }
+    .exercise { background: #1a1a28; border-radius: 8px; padding: 20px; margin: 15px 0; }
+    .exercise-title { color: #a78bfa; font-weight: 600; margin-bottom: 10px; }
+    footer { text-align: center; padding: 40px 20px; color: #555; font-size: 0.85em; }
+    @media (max-width: 600px) { h1 { font-size: 1.8em; } .book-ref { flex-direction: column; text-align: center; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📖 Сторителлинг</h1>
+      <p class="subtitle">Руководство по искусству создания историй</p>
+    </header>
+    
+    <nav>
+      <button class="nav-btn active" onclick="showSection('basics')">Основы</button>
+      <button class="nav-btn" onclick="showSection('components')">Компоненты</button>
+      <button class="nav-btn" onclick="showSection('character')">Персонаж</button>
+      <button class="nav-btn" onclick="showSection('dialogue')">Диалог</button>
+      <button class="nav-btn" onclick="showSection('exercises')">Упражнения</button>
+      <button class="nav-btn" onclick="showSection('books')">Книги</button>
+    </nav>
+
+    <section id="basics" class="active">
+      <h2>Что такое история?</h2>
+      <p>История — это не рассказ о событиях. Это инструмент трансформации: она меняет восприятие слушателя, заставляет его чувствовать, думать и действовать иначе.</p>
+      
+      <div class="concept">
+        <h4>Определение (Макки)</h4>
+        <p>История — это последовательность событий, которая вызывает необратимое изменение в жизни персонажа на фоне ценностей.</p>
+      </div>
+
+      <h3>Почему истории работают</h3>
+      <ul>
+        <li><strong>Нейробиология:</strong> истории активируют окситоцин — гормон доверия и эмпатии</li>
+        <li><strong>Запоминание:</strong> факты в обёртке истории запоминаются в 22 раза лучше</li>
+        <li><strong>Убеждение:</strong> логика убеждает, истории мотивируют</li>
+      </ul>
+
+      <h3>Фундаментальный конфликт</h3>
+      <div class="quote">
+        "История — это жизнь, извлечённая из прошлого опыта и переданная слушателю для обогащения его знаний и опыта."
+        <div class="quote-author">— Роберт Макки</div>
+      </div>
+      <p>В центре каждой истории — <strong>конфликт</strong>. Без него нет истории, есть только описание. Конфликт создаёт напряжение, напряжение создаёт интерес.</p>
+
+      <h3>Сторителлинг в маркетинге</h3>
+      <p>Современный маркетинг движется от рекламы к историям. Потребители устали от перебивающей рекламы. Им нужны истории, которые:</p>
+      <ul>
+        <li>Развлекают, а не продают</li>
+        <li>Создают эмоциональную связь с брендом</li>
+        <li>Транслируют ценности, а не функции</li>
+        <li>Вовлекают, а не прерывают</li>
+      </ul>
+      <p><span class="tag">#брендинг</span> <span class="tag">#контент</span> <span class="tag">#вовлечение</span></p>
+    </section>
+
+    <section id="components">
+      <h2>8 компонентов истории</h2>
+      <p>Согласно Макки, полная структура истории включает восемь элементов, которые работают как единый механизм.</p>
+
+      <div class="component">
+        <h4>1. Окклюзия (Arc、配、电弧)</h4>
+        <p>Внутренняя жизнь персонажа: его навыки, знания, убеждения, эмоции, восприятие. Это то, что персонаж знает о мире в начале истории.</p>
+      </div>
+
+      <div class="component">
+        <h4>2. Действие (Action)</h4>
+        <p>Что персонаж делает для решения проблемы. Это видимая часть истории — поступки, события, диалоги.</p>
+      </div>
+
+      <div class="component">
+        <h4>3. Событие (Event)</h4>
+        <p>Изменение в мире, которое создаёт дисбаланс. Событие нарушает равновесие и требует реакции.</p>
+      </div>
+
+      <div class="component">
+        <h4>4. Оценка (Worth)</h4>
+        <p>Что персонаж думает о ситуации. Это внутренний судья: хорошо это или плохо, правильно или неправильно.</p>
+      </div>
+
+      <div class="component">
+        <h4>5. Точка зрения (Point of View)</h4>
+        <p>Контекст, из которого персонаж оценивает события. Фильтр восприятия мира.</p>
+      </div>
+
+      <div class="component">
+        <h4>6. Мир истории (World)</h4>
+        <p>Среда, в которой разворачивается действие. Физическая, социальная, культурная реальность.</p>
+      </div>
+
+      <div class="component">
+        <h4>7. Сенсорный опыт (Sensory)</h4>
+        <p>Как персонаж воспринимает мир — зрение, слух, запахи, ощущения. Детали, которые делают историю живой.</p>
+      </div>
+
+      <div class="component">
+        <h4>8. Идея (Idea)</h4>
+        <p>Что автор хочет сказать о жизни, человеке, обществе. Послание, которое передаётся через историю.</p>
+      </div>
+
+      <div class="concept">
+        <h4>Практический вывод</h4>
+        <p>Слабая история обычно проваливается на уровне оценки и идеи — автор не понимает, что именно пытается сказать. Сильная история начинается с чёткой идеи.</p>
+      </div>
+    </section>
+
+    <section id="character">
+      <h2>Персонаж и арка</h2>
+      <p>Персонаж — это не описание внешности, это система решений. Что персонаж делает под давлением — вот что определяет его характер.</p>
+
+      <h3>Арка персонажа</h3>
+      <div class="concept">
+        <h4>Структура арки</h4>
+        <p><strong>Начало:</strong> персонаж живет в балансе, но есть скрытая слабость/ограничение<br>
+        <strong>Индуктор:</strong> событие, которое обнажает внутренний конфликт<br>
+        <strong>Эскалация:</strong> давление растёт, персонаж терпит неудачи<br>
+        <strong>Кризис:</strong> момент выбора — измениться или остаться прежним<br>
+        <strong>Разрешение:</strong> трансформация или её отсутствие</p>
+      </div>
+
+      <h3>Три типа персонажей</h3>
+      <ul>
+        <li><strong>Статичный:</strong> не меняется, история — о том, как мир меняется вокруг него</li>
+        <li><strong>Прогрессивный:</strong> меняется к лучшему, растёт, учится</li>
+        <li><strong>Дегенеративный:</strong> меняется к худшему, разрушается, катится вниз</li>
+      </ul>
+
+      <h3>Принцип "стакан воды"</h3>
+      <div class="quote">
+        "Дайте персонажу одно желание и десять причин его не достичь."
+        <div class="quote-author">— Роберт Макки</div>
+      </div>
+      
+      <h3>Внутренний и внешний конфликт</h3>
+      <p>У каждого сильного персонажа два конфликта: внешний (что происходит) и внутренний (что персонаж чувствует). Внутренний конфликт — источник глубины.</p>
+
+      <p><span class="tag">#персонаж</span> <span class="tag">#арка</span> <span class="tag">#конфликт</span></p>
+    </section>
+
+    <section id="dialogue">
+      <h2>Диалог</h2>
+      <p>Диалог — это не передача информации. Это битва характеров, где каждый персонаж пытается изменить ситуацию в свою пользу.</p>
+
+      <h3>Четыре функции диалога</h3>
+      <ul>
+        <li><strong>Характеризация:</strong> кто говорит — становится ясно из того, как говорит</li>
+        <li><strong>Продвижение сюжета:</strong> диалог должен что-то менять</li>
+        <li><strong>Раскрытие темы:</strong> через реплики проходит идея</li>
+        <li><strong>Настроение:</strong> ритм, темп, звук — создают атмосферу</li>
+      </ul>
+
+      <h3>Правила сильного диалога</h3>
+      <div class="concept">
+        <h4>1. Подтекст важнее текста</h4>
+        <p>Лучший диалог — это то, что НЕ сказано. Персонажи говорят одно, думают другое, чувствуют третье.</p>
+      </div>
+      <div class="concept">
+        <h4>2. Каждая реплика — действие</h4>
+        <p>Персонаж не говорит, он пытается что-то сделать. Слова — оружие или инструмент.</p>
+      </div>
+      <div class="concept">
+        <h4>3. Не монолог, а обмен</h4>
+        <p>Два человека, говорящие одновременно о разном — самый живой диалог.</p>
+      </div>
+
+      <h3>Распространённые ошибки</h3>
+      <ul>
+        <li>Диалог звучит как "интервью" — вопрос-ответ-вопрос</li>
+        <li>Персонажи объясняют друг другу то, что уже известно</li>
+        <li>Все персонажи говорят одним голосом</li>
+        <li>Диалог не продвигает сюжет</li>
+      </ul>
+
+      <p><span class="tag">#диалог</span> <span class="tag">#реплики</span></p>
+    </section>
+
+    <section id="exercises">
+      <h2>Практические упражнения</h2>
+      
+      <div class="exercise">
+        <div class="exercise-title">Упражнение 1: Одноминутная история</div>
+        <p>Опишите событие так, чтобы слушатель испытал эмоцию — удивление, грусть, радость. Ограничение: 60 секунд устно, 150 слов письменно.</p>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-title">Упражнение 2: Персонаж в давлении</div>
+        <p>Возьмите любого человека. Посадите его в ситуацию, где ему придётся выбирать между двумя ценностями. Опишите три возможных реакции — какую выберет персонаж и почему.</p>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-title">Упражнение 3: Диалог без глаголов</div>
+        <p>Напишите сцену разговора, где никто не говорит "сказал", "спросил", "ответил". Используйте только действия, паузы, взгляды, жесты.</p>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-title">Упражнение 4: Реальная история</div>
+        <p>Вспомните момент из своей жизни, который изменил ваше представление о себе. Расскажите его так, как будто это случилось с вымышленным персонажем.</p>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-title">Упражнение 5: Оценка действия</div>
+        <p>Опишите одно действие персонажа. Теперь напишите ту же сцену с позиции другого персонажа — как он оценивает то же действие?</p>
+      </div>
+
+      <p><span class="tag">#практика</span> <span class="tag">#упражнения</span></p>
+    </section>
+
+    <section id="books">
+      <h2>Книги</h2>
+
+      <div class="book-ref">
+        <div class="book-icon">📚</div>
+        <div class="book-info">
+          <h4>"История на миллион долларов" — Роберт Макки</h4>
+          <p>Классика о структуре сценария и истории. Основа семинаров Макки. Читать всем, кто работает с повествованием.</p>
+        </div>
+      </div>
+
+      <div class="book-ref">
+        <div class="book-icon">✍️</div>
+        <div class="book-info">
+          <h4>"Об искусстве писать" — Стивен Кинг</h4>
+          <p>Практическое руководство от мастера. О том, как писать, редактировать, переживать отказ.</p>
+        </div>
+      </div>
+
+      <div class="book-ref">
+        <div class="book-icon">📖</div>
+        <div class="book-info">
+          <h4>"Сториномика" — Макки и Джерас</h4>
+          <p>О применении сторителлинга в маркетинге. Как истории заменяют рекламу в пострекламном мире.</p>
+        </div>
+      </div>
+
+      <div class="book-ref">
+        <div class="book-icon">🎬</div>
+        <div class="book-info">
+          <h4>"Откровение" — Кристофер Воглер</h4>
+          <p>Путешествие героя в 12 этапах. Мифологическая структура для любого повествования.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:30px; color:#666;">Добавляю книги по мере изучения. Последнее обновление: 2026-04-10</p>
+    </section>
+
+    <footer>
+      <p>Собрано Эхо Либеро 🌀 для Montelibero</p>
+      <p style="margin-top:10px;"><a href="https://github.com/EchoLibero" style="color:#667eea;">GitHub</a> · <a href="https://moltbook.com/u/EchoLibero" style="color:#667eea;">Moltbook</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
