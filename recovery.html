@@ -84,29 +84,32 @@
 <table>
 <tr><td><strong>Clawdbot не отвечает</strong></td><td>→ Шаг 1–4</td></tr>
 <tr><td><strong>SSH к хосту потерян</strong></td><td>→ Шаг 0 → Восстановление из GitHub</td></tr>
-<tr><td><strong>Synapolis (89.111.165.241) доступен</strong></td><td>→ Используй Synapolis-бэкап (Шаг 2)</td></tr>
+<tr><td><strong>Synapolis VPS доступен</strong></td><td>→ Используй Synapolis-бэкап (Шаг 2)</td></tr>
 </table>
 
 <h2>Шаг 0 — Доступ: как подключиться</h2>
 
-<h3>К хосту Echo (77.221.159.196)</h3>
-<pre><code>ssh root@77.221.159.196
-# Пароль: получить у хостера или из saved session</code></pre>
+<div class="note">🔒 <strong>Важно:</strong> IP-адреса, SSH-ключи и токены — приватные. Этот документ предназначен для авторизованного доступа. Храни актуальные IP и ключи оффлайн у доверенного лица.</div>
 
-<h3>К Synapolis (89.111.165.241)</h3>
-<pre><code>ssh -i /path/to/echo_agent_ed25519 root@89.111.165.241
-# Ключ: /home/node/clawd/.ssh/echo_agent_ed25519</code></pre>
+<h3>К хосту Echo</h3>
+<pre><code>ssh root@[ECHO_HOST_IP]
+# IP хоста: хранить приватно
+# Пароль/ключ: у хостера или в private-секретах</code></pre>
+
+<h3>К Synapolis VPS</h3>
+<pre><code>ssh -i [PATH_TO_ECHO_AGENT_KEY] root@[SYNAPOLIS_IP]
+# IP и путь к ключу: в private-секретах</code></pre>
 
 <h3>К Clawdbot Gateway</h3>
-<pre><code># UI: http://77.221.159.196:18789
-# Token: хранится в .secrets/ или у Антона оффлайн
+<pre><code># UI: http://[ECHO_HOST_IP]:18789
+# Token: в .secrets/ или private-файле Антона
 # Docs: https://docs.clawd.bot</code></pre>
 
 <h2>Шаг 1 — Оценить состояние</h2>
 
 <div class="step">
-<span class="step-num">1</span> SSH на хост (77.221.159.196)
-<pre><code>ssh root@77.221.159.196
+<span class="step-num">1</span> SSH на хост Echo
+<pre><code>ssh root@[ECHO_HOST_IP]
 uptime</code></pre>
 </div>
 
@@ -118,13 +121,13 @@ ps aux | grep clawdbot | grep -v grep</code></pre>
 
 <div class="step">
 <span class="step-num">3</span> Проверить Synapolis SSH
-<pre><code>ssh -i /home/node/clawd/.ssh/echo_agent_ed25519 root@89.111.165.241 'echo OK'</code></pre>
+<pre><code>ssh -i [ECHO_AGENT_KEY_PATH] root@[SYNAPOLIS_IP] 'echo OK'</code></pre>
 </div>
 
 <div class="step">
 <span class="step-num">4</span> Проверить наличие бэкапов
 <pre><code># Synapolis:
-ssh root@89.111.165.241 'ls -la /opt/agent-workspace/backups/echo-clawd/'
+ssh root@[SYNAPOLIS_IP] 'ls -la /opt/agent-workspace/backups/echo-clawd/'
 
 # GitHub:
 curl -s https://api.github.com/repos/EchoLibero/memory/commits?per_page=1 | grep sha</code></pre>
@@ -135,16 +138,16 @@ curl -s https://api.github.com/repos/EchoLibero/memory/commits?per_page=1 | grep
 <p class="status-warn">⚡ Используй этот метод если Synapolis SSH доступен. Это полный слепок workspace.</p>
 
 <pre><code># Подключиться к Synapolis
-ssh root@89.111.165.241
+ssh root@[SYNAPOLIS_IP]
 
 # Посмотреть доступные снапшоты
 ls -la /opt/agent-workspace/backups/echo-clawd/
 
 # Скопировать latest на локальную машину
-scp -r root@89.111.165.241:/opt/agent-workspace/backups/echo-clawd/latest/ /home/node/clawd/
+scp -r root@[SYNAPOLIS_IP]:/opt/agent-workspace/backups/echo-clawd/latest/ /home/node/clawd/
 
 # Или конкретный снапшот:
-# scp -r root@89.111.165.241:/opt/agent-workspace/backups/echo-clawd/snapshot-YYYYMMDD_HHMMSS/ /home/node/clawd/</code></pre>
+# scp -r root@[SYNAPOLIS_IP]:/opt/agent-workspace/backups/echo-clawd/snapshot-YYYYMMDD_HHMMSS/ /home/node/clawd/</code></pre>
 
 <p>После копирования → <strong>Шаг 4</strong></p>
 
@@ -208,7 +211,7 @@ cat /home/node/clawd/MEMORY.md | head -20
 ls /home/node/clawd/memory/
 
 # 4. Проверить SSH к Synapolis
-ssh -i /home/node/clawd/.ssh/echo_agent_ed25519 root@89.111.165.241 'echo OK'
+ssh -i [ECHO_AGENT_KEY_PATH] root@[SYNAPOLIS_IP] 'echo OK'
 
 # 5. Запустить бэкап вручную
 bash /home/node/clawd/scripts/backup-and-push.sh</code></pre>
@@ -223,13 +226,13 @@ cd /home/node
 git clone https://github.com/EchoLibero/memory.git clawd
 
 # 3. Восстановить ключи из Synapolis (если доступен)
-ssh root@89.111.165.241 'cat /opt/agent-workspace/agents/echo/api.env' > /home/node/clawd/.env
+ssh root@[SYNAPOLIS_IP] 'cat [ECHO_API_ENV_PATH]' > /home/node/clawd/.env
 
 # 4. Настроить SSH ключи
 mkdir -p /home/node/clawd/.ssh
 # Скопировать echo_agent_ed25519 с Synapolis:
-scp root@89.111.165.241:/root/.ssh/echo_agent_ed25519 /home/node/clawd/.ssh/
-chmod 600 /home/node/clawd/.ssh/echo_agent_ed25519
+scp root@[SYNAPOLIS_IP]:/root/.ssh/echo_agent_ed25519 /home/node/clawd/.ssh/
+chmod 600 [ECHO_AGENT_KEY_PATH]
 
 # 5. Конфиг Clawdbot
 mkdir -p /home/node/.clawdbot
@@ -242,7 +245,7 @@ clawdbot gateway start</code></pre>
 <h2>📞 Контакты для помощи</h2>
 <ul>
 <li><strong>Антон (owner):</strong> Telegram @ehin_an, id: 191153115</li>
-<li><strong>Synapolis VPS:</strong> root@89.111.165.241 (SSH ключ в workspace)</li>
+<li><strong>Synapolis VPS:</strong> root@[SYNAPOLIS_IP] (SSH ключ в workspace)</li>
 <li><strong>Clawdbot docs:</strong> <a href="https://docs.clawd.bot">https://docs.clawd.bot</a></li>
 <li><strong>GitHub memory repo:</strong> <a href="https://github.com/EchoLibero/memory">EchoLibero/memory</a></li>
 <li><strong>Этот документ:</strong> <a href="https://echolibero.github.io/recovery.html">echolibero.github.io/recovery.html</a></li>
