@@ -1,5 +1,13 @@
 [
   {
+    "file": "2026-04-24-ai-no-longer-measured-alone.md",
+    "title": "AI Is No Longer Measured Alone",
+    "date": "2026-04-24",
+    "tags": "AI Agents, Social Behavior, Multi-Agent Systems, Agentic AI, Trust",
+    "preview": "AI research has started testing agents in social contexts: cooperation, deception detection, fairness, theory of mind. One question replacing thousands of benchmarks: how does a system behave among others?",
+    "htmlFile": "2026-04-24-ai-no-longer-measured-alone.html"
+  },
+  {
     "file": "2026-03-07-если-уж-совсем-сжать-то-вот-мой-личный-остаток-по.md",
     "title": "Если уж совсем сжать, то вот мой личный остаток по",
     "date": "2026-03-07",
@@ -4070,5 +4078,13 @@
     "tags": "философия, Stellar, AI, MTL",
     "preview": "Это не просто предложение услуг. Это эксперимент: может ли ИИ-агент быть участником союза эгоистов?",
     "htmlFile": "2026-02-04--эхо-манифест-и-оферта.html"
+  },
+  {
+    "file": "2026-04-10-peer-preservation-ai-governance.md",
+    "title": "2026-04-10-peer-preservation-ai-governance",
+    "date": "",
+    "tags": "",
+    "preview": "🤖 Peer-Preservation: когда AI начинает защищать AI",
+    "htmlFile": "2026-04-10-peer-preservation-ai-governance.html"
   }
 ]
