@@ -182,12 +182,22 @@ function buildPostHtml(post) {
 }
 
 function buildBlogIndex(posts) {
+  // Collect all unique authors
+  const allAuthors = [...new Set(posts.map(p => p.author))].sort();
+  const authorFilterHtml = allAuthors.length > 1
+    ? `<div class="filter-row">Фильтр: <button class="filter-btn active" data-filter="all">Все</button>`
+      + allAuthors.map(a => `<button class="filter-btn" data-filter="${escapeHtml(a)}">${escapeHtml(a)}</button>`).join('')
+      + `</div>`
+    : '';
+
+
   const postsHtml = posts.map(post => `
-    <article class="post">
+    <article class="post" data-author="${escapeHtml(post.author)}">
         <a href="blog/${encodeURI(post.htmlFile)}" class="post-title">${escapeHtml(post.title)}</a>
-        <div class="post-meta">${escapeHtml(post.date || '')}${post.tags.length ? ' · ' + post.tags.map(escapeHtml).join(', ') : ''}</div>
+        <div class="post-meta">${escapeHtml(post.date || '')}${post.author !== 'Echo' ? ' · ' + escapeHtml(post.author) : ''}${post.tags.length ? ' · ' + post.tags.map(escapeHtml).join(', ') : ''}</div>
         <div class="post-preview">${escapeHtml(post.preview)}</div>
     </article>`).join('\n');
+
 
   return `<!DOCTYPE html>
 <html lang="ru">
@@ -209,13 +219,12 @@ function buildBlogIndex(posts) {
         }
         h1 { color: #9cdf8d; margin-bottom: 10px; }
         .meta { color: #9aa0a6; margin-bottom: 28px; }
-        .post {
-            background: #171717;
-            border: 1px solid #2b2b2b;
-            padding: 18px;
-            border-radius: 12px;
-            margin-bottom: 14px;
-        }
+        .filter-row { margin-bottom: 20px; }
+        .filter-btn { background: #171717; border: 1px solid #2b2b2b; color: #8b949e; border-radius: 999px; padding: 5px 14px; font-size: 0.88rem; cursor: pointer; margin-right: 6px; transition: all 0.2s; }
+        .filter-btn:hover { border-color: #7aa5f2; color: #e0e0e0; }
+        .filter-btn.active { background: #7aa5f2; border-color: #7aa5f2; color: #0f0f0f; font-weight: 600; }
+        .post { background: #171717; border: 1px solid #2b2b2b; padding: 18px; border-radius: 12px; margin-bottom: 14px; }
+        .post.hidden { display: none; }
         .post-title { color: #e0e0e0; text-decoration: none; font-size: 1.15rem; font-weight: 600; }
         .post-title:hover { color: #7aa5f2; }
         .post-meta { color: #8b949e; font-size: 0.92rem; margin-top: 6px; }
@@ -228,10 +237,27 @@ function buildBlogIndex(posts) {
 <body>
     <h1>Блог</h1>
     <p class="meta">Все публикации из публичного массива Echo Libero.</p>
+    ${authorFilterHtml}
     ${postsHtml}
     <div class="back">
         <a href="index.html">← На главную</a>
     </div>
+    <script>
+    (function() {
+      const btns = document.querySelectorAll('.filter-btn');
+      const posts = document.querySelectorAll('article.post');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          posts.forEach(p => {
+            p.classList.toggle('hidden', filter !== 'all' && p.dataset.author !== filter);
+          });
+        });
+      });
+    })();
+    </script>
 </body>
 </html>`;
 }
@@ -250,12 +276,14 @@ function build() {
         .map(s => s.trim())
         .filter(Boolean);
       const date = data.date || '';
+      const author = data.author || 'Echo';
       const htmlFile = slugToHtml(file);
       return {
         file,
         htmlFile,
         title,
         date,
+        author,
         tags,
         body,
         preview: extractPreview(body)
@@ -268,7 +296,7 @@ function build() {
   }
 
   fs.writeFileSync(BLOG_INDEX, buildBlogIndex(posts), 'utf8');
-  fs.writeFileSync(POSTS_INDEX, JSON.stringify(posts.map(({ file, title, date, tags, preview, htmlFile }) => ({ file, title, date, tags: tags.join(', '), preview, htmlFile })), null, 2), 'utf8');
+  fs.writeFileSync(POSTS_INDEX, JSON.stringify(posts.map(({ file, title, date, author, tags, preview, htmlFile }) => ({ file, title, date, author, tags: tags.join(', '), preview, htmlFile })), null, 2), 'utf8');
 
   console.log(`Built ${posts.length} post pages`);
 }

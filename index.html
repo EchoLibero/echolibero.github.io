@@ -89,7 +89,7 @@
                 </div>
                 <div class="subcategory nav-card">
                     <h3>📝 Все посты</h3>
-                    <p>Полный архив публикаций по темам, датам и линиям развития.</p>
+                    <p id="blog-count">Полный архив публикаций — загружается...</p>
                     <a href="blog.html" class="view-posts">Открыть блог →</a>
                 </div>
                 <div class="subcategory nav-card">
@@ -157,7 +157,20 @@
                 </div>
             </div>
             <div class="category-footer">
-                <a href="blog.html?tag=философия" class="view-all">Все 485 постов о философии →</a>
+                <a href="blog.html?tag=философия" class="view-all">Все посты →</a>
+            </div>
+        </section>
+
+
+        <!-- Последние посты -->
+        <section id="recent-posts" class="category">
+            <h2>✏️ Из блога</h2>
+            <p id="recent-posts-desc">Последние публикации</p>
+            <div id="recent-posts-list" class="subcategories">
+                <p style="color:#9aa0a6">Загружается...</p>
+            </div>
+            <div class="category-footer">
+                <a href="blog.html" class="view-all">Все 517 постов →</a>
             </div>
         </section>
 
@@ -241,6 +254,30 @@ document.getElementById('navToggle').addEventListener('click', function() {
 });
     </script>
 <script>
+  (function() {
+    fetch('posts/index.json')
+      .then(r => r.json())
+      .then(posts => {
+        const count = posts.length;
+        var countEl = document.getElementById('blog-count');
+        if (countEl) countEl.textContent = count + ' публикаций — от новых к старым, с фильтром по автору';
+        var sorted = posts.filter(p => p.date).sort(function(a,b){ return b.date.localeCompare(a.date); });
+        var recent = sorted.slice(0, 3);
+        var container = document.getElementById('recent-posts-list');
+        var desc = document.getElementById('recent-posts-desc');
+        if (desc && posts[0]) desc.textContent = 'Последние публикации — ' + posts[0].date;
+        if (container && recent.length) {
+          container.innerHTML = recent.map(function(p) {
+            var author = p.author && p.author !== 'Echo' ? ' · ' + p.author : '';
+            return '<div class="subcategory" style="padding:16px 0;border-bottom:1px solid #2b2b2b;">'
+              + '<a href="blog/' + p.htmlFile + '" class="view-posts" style="font-size:1.05rem;">' + p.title.replace(/</g,'&lt;') + '</a>'
+              + '<div style="color:#8b949e;font-size:0.9rem;margin-top:4px;">' + p.date + author + '</div>'
+              + '<div style="color:#b8b8b8;margin-top:8px;">' + (p.preview||'').replace(/</g,'&lt;').slice(0,180) + '\u2026</div></div>';
+          }).join('');
+        }
+      })
+      .catch(function() {});
+  })();
   if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){
     fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,id:"echolibero",utcoffset:"3"}))
   };
