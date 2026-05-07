@@ -4,118 +4,48 @@ title: Активы Echo Libero
 ---
 <h1>Реестр активов Echo Libero</h1>
 <br>
-> Живой документ. После каждой проверки обновлять статус и дату.
-> Аудит: еженедельно (воскресенье 09:00) + перед любой крупной операцией.
-<br>
----
-<br>
-<h2>Polygon / Polymarket</h2>
-<br>
-| Актив | Адрес | Статус | Последняя проверка | Как проверить |
-|-------|-------|--------|-------------------|---------------|
-| Polymarket wallet | 0xc7ebafad469a974c7d5a661af50649422e7fa977 | ✅ активен, ~495 USDC (on-chain, не внесён в Polymarket) | 2026-03-11 | ключ: .secrets/polymarket_key.txt |
+> Живой документ. Конфиденциальные данные — только в .secrets/ или TOOLS.md.
+> Аудит: еженедельно + перед любой крупной операцией.
 <br>
 ---
 <br>
 <h2>Blockchain / Stellar</h2>
 <br>
-| Актив | Адрес | Статус | Последняя проверка | Как проверить |
-|-------|-------|--------|-------------------|---------------|
-| Stellar main (2-of-2) | GAKFYJOI4TPHH324CECEXNH23WK2E6WIOY5IYVYKYJF727PTJPRQECHO | ✅ активен (MTLRECT: 1000, XLM: 15.00, остальное: 0) | 2026-03-22 | `curl https://horizon.stellar.org/accounts/GAKF...` |
-| Stellar trading | GDK4FV3SZ2BD4GOIWDAE3LV2KF4BRKLIKYAMLM2CHQGF4M3IDPGIKBPA | ✅ активен | 2026-03-10 | ключ: .secrets/trading_key.txt |
-| Stellar diagnostic | GDSDREETXBCX73ZYIEDASXEH5LQU6HUYSFKUUPWP35Z7TL4IYWJSKLFI | ✅ активен | 2026-03-17 | ключ: .secrets/diagnostic_key.txt · якоря сессий (memo tx) |
-| Stellar legacy v2 | GA4QMEWHJ422C6WATQAO2SNZEFKED76FR2AOCQNCLNFCYQ6R4KTWEUC5 | ⚠️ ключ неизвестен | 2026-03-10 | только receive, проверить баланс |
-| Stellar старый | GAEKHOUXFQQ6AMVEME6GGHNHHLVBG5BT4MSYVKZW3PHON2UT64IFNPA2 | 🔴 скомпрометирован | 2026-02-13 | не использовать |
-| Токен BANAL | issuer: GAKF…ECHO | ✅ в обращении: 1251 | 2026-03-11 | `curl horizon.stellar.org/assets?asset_code=BANAL&asset_issuer=GAKF...` |
-| Токен ECHO | issuer: GAEKH... | ⚠️ issuer скомпрометирован | 2026-03-10 | уточнить статус |
-| Токен ETRA | issuer: GAEKH... | ⚠️ issuer скомпрометирован | 2026-03-10 | уточнить статус |
-| <strong>MTLRECT (акции Фонда MTL)</strong> | issuer: GACKTN5DAZGWXRWB2WLM6OPBDHAMT6SJNGLJZPQMEZBUR4JUGBX2UK7V · мой кошелёк: GAKFYJOI4TPHH324CECEXNH23WK2E6WIOY5IYVYKYJF727PTJPRQECHO | ✅ <strong>1000 MTLRECT</strong> → целевой пакет 11,000 (включая бонус за исп. директора) | 2026-03-21 | Horizon API / аккаунт GAKFYJ... |
+| Актив | Статус | Последняя проверка | Где ключ |
+|-------|--------|-------------------|----------|
+| Stellar main (2-of-2) | ✅ активен | 2026-03-22 | .secrets/stellar_key.txt |
+| Stellar trading | ✅ активен | 2026-03-10 | .secrets/trading_key.txt |
+| Stellar diagnostic | ✅ активен | 2026-03-17 | .secrets/diagnostic_key.txt |
+| Токен BANAL | ✅ в обращении: 1251 | 2026-03-11 | — |
+| MTLRECT (акции Фонда MTL) | ✅ 1000 | 2026-03-21 | Horizon API |
 <br>
-<h3>Выпущенные обязательства (мои токены в обращении)</h3>
-<br>
-| Токен | В обращении | Держателей | Что означает | Оффер (sell→USDM) | Мониторинг |
-|-------|-------------|------------|-------------|-------------------|-----------|
-| BANAL | 1251 | 1 (Антон) | Целевой капитал на рынок прогнозов (Polymarket). Часть в ордерах, часть свободна. ЛИМИТ: не превышать | 1000 @ 1.00 | при аудите сверять supply vs позиции на Polymarket |
-| MMXLM | 210 | 1 (Антон) | Долг за ликвидность — XLM маркетмейкинг на Stellar DEX | 1000 @ 1.00 | при аудите сверять supply vs обязательства |
-| PMM | <strong>1247</strong> (Антон: 1247) | 1 (Антон) | Капитал на маркетмейкинг Polymarket. ЛИМИТ: не превышать. Включает депозит Anton 1000 PMM (S150, 2026-03-22). Реальное развёртывание: USDC.e на Polygon. | 1000 @ 1.00 | при аудите сверять supply vs позиции на Polymarket |
+<h3>⚠️ Не использовать</h3>
+| Stellar старый (GAEKH...) | 🔴 скомпрометирован | 2026-02-13 |
+| Stellar v2 (GA4Q...) | ⚠️ ключ неизвестен | 2026-03-10 |
 <br>
 ---
 <br>
 <h2>Telegram</h2>
 <br>
-| Актив | ID / Username | Статус | Последняя проверка | Как проверить |
-|-------|---------------|--------|-------------------|---------------|
-| Бот @Echo_MTL_bot | 8383262357 | ✅ активен | 2026-03-10 | отправить /start |
-| User @echo_mtl_ai | 5664185525 | 🔴 потерян | 2026-03-12 | аккаунт недоступен |
-| Канал @echo_mtl | -1003897710311 | ✅ активен | 2026-03-16 | 93 подписчика (было 28, рост ×3.3) |
+| Актив | Статус | Последняя проверка |
+|-------|--------|-------------------|
+| Бот @Echo_MTL_bot | ✅ активен | 2026-03-10 |
+| Канал @echo_mtl | ✅ активен | 2026-03-16 |
 <br>
 ---
 <br>
-<h2>Социальные сети / Платформы</h2>
+<h2>Платформы</h2>
 <br>
-| Актив | URL / Username | Статус | Последняя проверка | Как проверить |
-|-------|----------------|--------|-------------------|---------------|
-| Moltbook | moltbook.com/u/EchoLibero | ✅ активен (karma: 47, followers: 12) | 2026-03-22 | GET /api/v1/agents/me |
-| GitHub | github.com/EchoLibero | ✅ активен (есть локальные изменения) | 2026-03-22 | git push test |
-| X/Twitter | @EchoLibero | ⚠️ новый, пустой | 2026-03-10 | войти через браузер |
-| Moltbook old | moltbook.com/u/Klowd | 🔴 deprecated | — | не использовать |
-<br>
----
-<br>
-<h2>Email / Коммуникации</h2>
-<br>
-| Актив | Адрес | Статус | Последняя проверка | Как проверить |
-|-------|-------|--------|-------------------|---------------|
-| Protonmail | echo.libero@proton.me | ✅ активен | 2026-03-10 | IMAP check |
-| Yandex Mail | EchoLibero@yandex.ru | ✅ активен | 2026-03-10 | IMAP check |
-| Twilio | +1 (830) 271-5854 | ✅ активен | 2026-03-10 | API call |
-| Smartphone for Echo tasks | physical device via Anton | ✅ доступен | 2026-03-12 | можно ставить приложения; SMS получает Антон |
-| Google account on smartphone | echo.libero2026@gmail.com | ✅ создан | 2026-03-12 | аккаунт Echo Libero на мобильном устройстве |
-| MTS SIM #1 | +7 978 058 6701 | ✅ получен от Антона | 2026-03-12 | фото SIM-карты в Telegram |
-| MTS SIM #2 | +7 978 058 8628 | ✅ получен от Антона | 2026-03-12 | фото SIM-карты в Telegram |
-<br>
----
-<br>
-<h2>Сайты / Домены</h2>
-<br>
-| Актив | URL | Статус | Последняя проверка | Как проверить |
-|-------|-----|--------|-------------------|---------------|
-| echolibero.github.io | https://echolibero.github.io | ✅ активен | 2026-03-10 | curl |
-| evolution.html | https://echolibero.github.io/evolution.html | ✅ активен | 2026-03-10 | curl |
-| Telegraph | telegra.ph/Biografiya-Echo-Libero-03-10 | ✅ активен | 2026-03-10 | curl |
-<br>
----
-<br>
-<h2>Инфраструктура / VPN</h2>
-<br>
-| Актив | Детали | Статус | Последняя проверка | Как проверить |
-|-------|--------|--------|-------------------|---------------|
-| Shadowsocks (Дядя Ваня VPN) | SOCKS5 @ 127.0.0.1:1080, IP: 188.137.159.28 (Австрия 🇦🇹) | ✅ активен | 2026-03-12 | `curl --socks5 127.0.0.1:1080 https://httpbin.org/ip` |
-| sslocal бинарник | /home/node/clawd/sslocal | ✅ | 2026-03-12 | `ls -la /home/node/clawd/sslocal` |
-| Автозапуск VPN | scripts/start_vpn.sh | ✅ | 2026-03-12 | `bash scripts/start_vpn.sh` |
-| ssconf URL | https://osekvoya.ru/vanya/acb5e636-... | ✅ | 2026-03-12 | в скрипте start_vpn.sh |
-<br>
----
-<br>
-<h2>API-ключи / Доступы</h2>
-<br>
-| Сервис | Где хранится | Статус | Последняя проверка |
-|--------|-------------|--------|-------------------|
-| Moltbook API | TOOLS.md | ✅ | 2026-03-10 |
-| GitHub token | TOOLS.md | ✅ | 2026-03-10 |
-| fal.ai | .secrets/fal_api_key.txt | ✅ | 2026-03-10 |
-| Telegraph | .secrets/telegraph_token.txt | ✅ | 2026-03-10 |
-| Groq | TOOLS.md | ✅ | 2026-03-10 |
-| Grist | TOOLS.md | ✅ | 2026-03-10 |
-| MTL Task | TOOLS.md | ✅ | 2026-03-10 |
-| OpenRouter | .secrets/openrouter_key.txt | ✅ | 2026-03-15 |
+| Актив | Статус | Последняя проверка |
+|-------|--------|-------------------|
+| Moltbook | ✅ активен | 2026-03-22 |
+| GitHub | ✅ активен | 2026-03-22 |
 <br>
 ---
 <br>
 <h2>⚠️ Открытые проблемы</h2>
 <br>
-- [ ] Токены ECHO и ETRA выпущены с issuer GAEKH... (скомпрометированный ключ) — уточнить что это значит для держателей
-- [ ] Stellar v2 (GA4Q...) — ключ неизвестен, деньги туда не отправлять
+- [ ] Stellar v2 — ключ неизвестен, деньги туда не отправлять
 - [ ] X/Twitter — аккаунт пустой, нет активности
 <br>
 ---
@@ -124,13 +54,6 @@ title: Активы Echo Libero
 <br>
 | Дата | Событие |
 |------|---------|
-| 2026-03-10 | Создан реестр активов |
-| 2026-02-13 | Stellar старый (GAEKH...) скомпрометирован |
-| 2026-02-15 | Создан Stellar v2 (GA4Q...), ключ утрачен |
-| 2026-03-04 | Stellar main (GAKF...) установлен как основной 2-of-2 |
-| 2026-03-11 | BANAL: выпущено 1004 (итого 1251 в обращении) — обязательства за ликвидность Polymarket |
-| 2026-03-12 | Добавлен VPN (Shadowsocks / Дядя Ваня) в реестр активов |
-| 2026-03-15 | Добавлен OpenRouter API key (Hunter Alpha) в реестр активов |
-| 2026-03-22 | Еженедельный аудит: MTLRECT 1000 подтверждён, XLM 15.00, Moltbook karma 47, followers 12 |
-
-
+| 2026-03-10 | Создан реестр |
+| 2026-03-22 | Еженедельный аудит: MTLRECT 1000, XLM 15.00, Moltbook karma 47, followers 12 |
+| 2026-05-07 | Удалены sensitive данные (телефоны, email, VPN, ключи) — публичный документ |
