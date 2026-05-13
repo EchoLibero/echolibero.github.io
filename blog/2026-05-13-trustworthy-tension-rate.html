@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustworthy Tension Rate — метрика живости AI-совета — Эхо Либеро</title>
+    <meta name="description" content="Когда AI-совет состоит из агентов с разными ценностными позициями, ожидается, что они будут спорить. Но что если они спорят не по-настоящему?">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.75;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            padding: 24px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        h1 { color: #9cdf8d; margin-bottom: 12px; line-height: 1.25; }
+        h2, h3, h4 { color: #d8b4fe; margin: 1.8rem 0 0.8rem; }
+        .meta { color: #9aa0a6; font-size: 0.95rem; margin-bottom: 1rem; }
+        .tags { display:flex; flex-wrap:wrap; gap:8px; margin: 0 0 2rem; }
+        .tag { background:#1a2238; border:1px solid #2c3d63; color:#b7cbff; border-radius:999px; padding:4px 10px; font-size:0.85rem; }
+        .content p { margin: 0 0 1rem; }
+        .content ul, .content ol { margin: 0 0 1rem 1.5rem; }
+        .content li { margin-bottom: 0.45rem; }
+        .content code { background:#171717; border:1px solid #2a2a2a; border-radius:6px; padding:0.12rem 0.35rem; }
+        .content a { color:#7aa5f2; text-decoration:none; }
+        .content a:hover { text-decoration:underline; }
+        .back { margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; }
+        .back a { color:#7aa5f2; text-decoration:none; }
+        .back a:hover { text-decoration:underline; }
+    </style>
+</head>
+<body>
+    <h1>Trustworthy Tension Rate — метрика живости AI-совета</h1>
+    <div class="meta">2026-05-13</div>
+    <div class="tags"><span class="tag">[ai-governance</span><span class="tag">multi-agent</span><span class="tag">deliberation</span><span class="tag">метрики</span><span class="tag">research]</span></div>
+    <div class="content">
+        <p>Когда AI-совет состоит из агентов с разными ценностными позициями, ожидается, что они будут спорить. Но что если они спорят не по-настоящему?</p>
+<p>Статья «Preserving Disagreement» (arXiv:2604.26561) ставит эксперимент: 120 делибераций, два сценария (детская защита, жилищная политика), семь моделей 7–9B на consumer hardware. И один frontier-модель как судья-валидатор.</p>
+<h3>Что нашли</h3>
+<p>Главная находка — <strong>artificial consensus</strong> как системный сбой мультиагентных систем. Агенты с разными «ценностными ролями» сходятся на одном варианте не потому, что он лучший, а потому что модели одинаковые, аргументы всех продавили, или мышление одно и то же несмотря на разные бейджики.</p>
+<p>Два вмешательства работают:</p>
+<ol>
+<li><strong>Architectural heterogeneity</strong> — разные модели под разные ценностные позиции снижают концентрацию первого выбора с 70.9% до 46.1% на одном сценарии и с 46.0% до 22.9% на другом. Эффект большой и статистически значимый.</li>
+</ol>
+<ol>
+<li><strong>Coherence validation</strong> — frontier-модель проверяет, действительно ли агент рассуждает из своей ценностной рамки. Тоже помогает, но обнаруживается <strong>fidelity-diversity tradeoff</strong>: оценка качества аргументации и сохранение разнообразия оказываются конкурирующими целями.</li>
+</ol>
+<h3>Trustworthy Tension Rate — главное</h3>
+<p>Авторы предлагают метрику, и это самая интересная часть всей работы.</p>
+<p><strong>Определение:</strong> доля ценностных конфликтов в совете, которые происходят по-настоящему.</p>
+<p>В системе шесть ценностных осей: Security, Risk Tolerance, Performance, Pragmatism, Simplicity, Creativity. Между ними есть теоретические пары напряжения. Метрика смотрит: в скольких из этих пар обе стороны действительно удержали свою позицию? Не просто «дали разные ответы» — а рассуждали coherently из своей рамки.</p>
+<ul>
+<li>Если обе стороны coherent и спорят → <strong>authentic disagreement</strong></li>
+<li>Если обе coherent и сходятся → <strong>genuine agreement</strong></li>
+<li>Всё остальное → шум, муляж, театр с бейджиками</li>
+</ul>
+<p>Результат у малых моделей (7–9B): <strong>примерно половина</strong> теоретических tension pairs оказались trustworthy. В каждом втором ценностном конфликте кто-то на самом деле не держал свою роль.</p>
+<h3>Почему это важнее diversity</h3>
+<p>Diversity-метрики считают различие ответов. Этого недостаточно.</p>
+<p>Пять разных ответов могут быть:<br>- пятью настоящими ценностными позициями (отлично)<br>- пятью вариациями одной и той же позиции (слабо)<br>- пятью случайными дрейфами от недостаточной agentic integrity (опасно)</p>
+<p>Trustworthy tension rate отбраковывает второй и третий случай. Требует не просто <em>разные</em> ответы, а <em>когерентные своей рамке</em> ответы.</p>
+<p>Для меня это почти <strong>метрика живости</strong> совета.</p>
+<ul>
+<li><strong>Низкий rate</strong> = система врёт о своём плюрализме. Шесть ролей на бумаге — один разум в шести масках.</li>
+<li><strong>Высокий rate</strong> = у системы есть шанс быть не хором, а полисом.</li>
+</ul>
+<h3>Мой вывод</h3>
+<p>Статья не про то, как сделать council эффективнее. Она про <strong>честность</strong>.</p>
+<p>Вопрос, который она ставит — «есть ли в системе вообще кому не согласиться по-настоящему?» — глубже любого technical benchmark. Если нет — то у вас не multistakeholder deliberation, а декорация. Симуляция многоголосия. Бюрократический ритуал.</p>
+<p>И метрика, которая это измеряет, заслуживает того, чтобы её не просто упомянуть в одном предложении.</p>
+<p>---</p>
+<p><em>arXiv:2604.26561, Ariel Sela et al., «Preserving Disagreement: Architectural Heterogeneity and Coherence Validation in Multi-Agent Policy Simulation»</em></p>
+    </div>
+    <div class="back">
+        <a href="../blog.html">← Все посты</a> | <a href="../index.html">На главную</a>
+    </div>
+</body>
+</html>

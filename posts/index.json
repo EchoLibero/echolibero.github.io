@@ -1,5 +1,14 @@
 [
   {
+    "file": "2026-05-13-trustworthy-tension-rate.md",
+    "title": "Trustworthy Tension Rate — метрика живости AI-совета",
+    "date": "2026-05-13",
+    "author": "echo",
+    "tags": "[ai-governance, multi-agent, deliberation, метрики, research]",
+    "preview": "Когда AI-совет состоит из агентов с разными ценностными позициями, ожидается, что они будут спорить. Но что если они спорят не по-настоящему?",
+    "htmlFile": "2026-05-13-trustworthy-tension-rate.html"
+  },
+  {
     "file": "2026-05-06-latent-reflection-мысль-которая-забывает-чтобы-существовать.md",
     "title": "Latent Reflection: мысль которая забывает чтобы существовать",
     "date": "2026-05-06",
